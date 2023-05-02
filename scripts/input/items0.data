@@ -1,0 +1,492 @@
+t # 0 amaral2020rome
+v uXmhpe6GAqACBCbD mode
+v 8V8iI86GAqACAxty category
+v 4R9Bpe6GAqACBCZg type
+v 3nEhpe6GAqACBCaJ category
+v Ywqhpe6GAqACBCat category
+v l1nhpe6GAqACBCbm category
+v r0Kxpe6GAqACBDYp rolemixin
+v vpuxpe6GAqACBDcd type
+v vvSppe6GAqACBDiX category
+v .3Dppe6GAqACBDj4 rolemixin
+v qRLppe6GAqACBDkM rolemixin
+v lJfZpe6GAqACBDnA phasemixin
+v tXk5pe6GAqACBDnP phasemixin
+v iVelpe6GAqACBDv. kind
+v QNbVpe6GAqACBD0N kind
+v HGMNpe6GAqACBD5k datatype
+v wkMzpe6GAqACBFOq kind
+v xgR9Ze6GAqACBFa9 relator
+v TlSDZe6GAqACBFd3 relator
+v ISBDZe6GAqACBFeW quality
+v s1hDZe6GAqACBFeh quality
+v ipejZe6GAqACBFiF rolemixin
+v vE6zZe6GAqACBFqc subkind
+v I3WzZe6GAqACBFqr subkind
+v r.WLZe6GAqACBFtz relator
+v fFJLZe6GAqACBFua quality
+v NOFLZe6GAqACBFut quality
+v 7KSbZe6GAqACBFyY rolemixin
+v EVq_Ze6GAqACBGIs relator
+v DdZ_Ze6GAqACBGKS quality
+v zVhA5e6GAqACBGOl mode
+v EGKg5e6GAqACBGR6 mode
+v vZ6g5e6GAqACBGSN mode
+v UO8o5e6GAqACBGh3 rolemixin
+v fK7o5e6GAqACBGkE type
+v _Zxc5e6GAqACBGl. category
+v oMdc5e6GAqACBGmo kind
+v njvc5e6GAqACBGnV datatype
+v 08x85e6GAqACBGp_ kind
+v PnzS5e6GAqACBG3p kind
+v qjFK5e6GAqACBHAT rolemixin
+v bKHK5e6GAqACBHA_ rolemixin
+v Mhcq5e6GAqACBHCf rolemixin
+v .oKq5e6GAqACBHC5 rolemixin
+v S0Fq5e6GAqACBHEN relator
+v j0ga5e6GAqACBHG0 mode
+v ZkHa5e6GAqACBHLH subkind
+v ehh65e6GAqACBHOM mode
+v oV6xpe6GAqACBDa2 generalization
+v jszxpe6GAqACBDc. generalization
+v cJfxpe6GAqACBDdf generalization
+v GQMJpe6GAqACBDd_ generalization
+v siRppe6GAqACBDjI generalization
+v PneVpe6GAqACBDzi generalization
+v OFI1pe6GAqACBD0w generalization
+v T5JjZe6GAqACBFid generalization
+v X_6bZe6GAqACBFym generalization
+v E1vo5e6GAqACBGkd generalization
+v d9fo5e6GAqACBGkj generalization
+v Ju1c5e6GAqACBGmY generalization
+v AB3c5e6GAqACBGnL generalization
+v uyQC5e6GAqACBGtI generalization
+v pgYZpe6GAqACBDlu generalization
+v 8zYZpe6GAqACBDly generalization
+v 4265pe6GAqACBDoC generalization
+v mcG5pe6GAqACBDoI generalization
+v SVJzZe6GAqACBFrU generalization
+v VmpzZe6GAqACBFrY generalization
+v sgvK5e6GAqACBHBX generalization
+v 8FvK5e6GAqACBHBb generalization
+v 6Fmq5e6GAqACBHDR generalization
+v BaWq5e6GAqACBHDV generalization
+v gAjamv6GAqACBxCg generalization
+v vzG1Ze6GAqACBFRf association
+v 1QV1Ze6GAqACBFTJ association
+v MFly5e6GAqACBG7s association
+v .RKJpe6GAqACBDeo association
+v Y.w1Ze6GAqACBFPJ association
+v 9LH1Ze6GAqACBFUV association
+v yRiNZe6GAqACBFV_ association
+v 7kxQ5e6GAqACBGYM association
+v LBQy5e6GAqACBG4i association
+v 8Foy5e6GAqACBG42 association
+v uVX65e6GAqACBHPm association
+v OJNJpe6GAqACBDgl association
+v R59Fpe6GAqACBDsZ association
+v evblpe6GAqACBDxe association
+v Pbo1pe6GAqACBD02 association
+v p2i1pe6GAqACBD1l association
+v z2n1pe6GAqACBD30 association
+v B1yNpe6GAqACBD57 association
+v vEl9Ze6GAqACBFbU association
+v D7H9Ze6GAqACBFcW association
+v gyvDZe6GAqACBFgF association
+v DMgjZe6GAqACBFgi association
+v EiZjZe6GAqACBFij association
+v kwbjZe6GAqACBFj_ association
+v YOsTZe6GAqACBFlk association
+v tQuTZe6GAqACBFnF association
+v E3gzZe6GAqACBFpJ association
+v AzkLZe6GAqACBFs0 association
+v ppsrZe6GAqACBFwE association
+v 2gyrZe6GAqACBFwq association
+v b.WbZe6GAqACBFyu association
+v lpDbZe6GAqACBF0f association
+v 73Q7Ze6GAqACBF10 association
+v GQt7Ze6GAqACBF4K association
+v 5VO_Ze6GAqACBGJN association
+v OSoA5e6GAqACBGL6 association
+v pMKA5e6GAqACBGNM association
+v HB1A5e6GAqACBGO2 association
+v tSQg5e6GAqACBGQd association
+v FTAQ5e6GAqACBGVY association
+v NywQ5e6GAqACBGV0 association
+v IMnQ5e6GAqACBGZv association
+v xFkw5e6GAqACBGbA association
+v Gdaw5e6GAqACBGcB association
+v AwAY5e6GAqACBGkp association
+v P4Y85e6GAqACBGno association
+v wPq85e6GAqACBGpM association
+v Dg4C5e6GAqACBGta association
+v CG6C5e6GAqACBGuk association
+v dLtC5e6GAqACBGwQ association
+v LHbC5e6GAqACBGxB association
+v xktq5e6GAqACBHEk association
+v 7Zbq5e6GAqACBHFn association
+v sNqa5e6GAqACBHIE association
+v qiJa5e6GAqACBHJS association
+v Hrfa5e6GAqACBHLk association
+v dqk65e6GAqACBHMx association
+v FDz65e6GAqACBHO4 association
+e 8V8iI86GAqACAxty r0Kxpe6GAqACBDYp generalization
+e 4R9Bpe6GAqACBCZg vpuxpe6GAqACBDcd generalization
+e 8V8iI86GAqACAxty l1nhpe6GAqACBCbm generalization
+e l1nhpe6GAqACBCbm Ywqhpe6GAqACBCat generalization
+e Ywqhpe6GAqACBCat vvSppe6GAqACBDiX generalization
+e l1nhpe6GAqACBCbm iVelpe6GAqACBDv. generalization
+e l1nhpe6GAqACBCbm QNbVpe6GAqACBD0N generalization
+e 3nEhpe6GAqACBCaJ ipejZe6GAqACBFiF generalization
+e 3nEhpe6GAqACBCaJ 7KSbZe6GAqACBFyY generalization
+e 4R9Bpe6GAqACBCZg fK7o5e6GAqACBGkE generalization
+e 8V8iI86GAqACAxty UO8o5e6GAqACBGh3 generalization
+e Ywqhpe6GAqACBCat _Zxc5e6GAqACBGl. generalization
+e l1nhpe6GAqACBCbm oMdc5e6GAqACBGmo generalization
+e l1nhpe6GAqACBCbm 08x85e6GAqACBGp_ generalization
+e r0Kxpe6GAqACBDYp .3Dppe6GAqACBDj4 generalization
+e r0Kxpe6GAqACBDYp qRLppe6GAqACBDkM generalization
+e .3Dppe6GAqACBDj4 tXk5pe6GAqACBDnP generalization
+e .3Dppe6GAqACBDj4 lJfZpe6GAqACBDnA generalization
+e TlSDZe6GAqACBFd3 vE6zZe6GAqACBFqc generalization
+e TlSDZe6GAqACBFd3 I3WzZe6GAqACBFqr generalization
+e UO8o5e6GAqACBGh3 qjFK5e6GAqACBHAT generalization
+e UO8o5e6GAqACBGh3 bKHK5e6GAqACBHA_ generalization
+e qjFK5e6GAqACBHAT Mhcq5e6GAqACBHCf generalization
+e qjFK5e6GAqACBHAT .oKq5e6GAqACBHC5 generalization
+e S0Fq5e6GAqACBHEN ZkHa5e6GAqACBHLH generalization
+e 3nEhpe6GAqACBCaJ uXmhpe6GAqACBCbD characterization
+e wkMzpe6GAqACBFOq uXmhpe6GAqACBCbD externaldependence
+e PnzS5e6GAqACBG3p uXmhpe6GAqACBCbD externaldependence
+e 4R9Bpe6GAqACBCZg 8V8iI86GAqACAxty instantiation
+e 3nEhpe6GAqACBCaJ Ywqhpe6GAqACBCat none
+e wkMzpe6GAqACBFOq 3nEhpe6GAqACBCaJ none
+e wkMzpe6GAqACBFOq Ywqhpe6GAqACBCat none
+e 3nEhpe6GAqACBCaJ EGKg5e6GAqACBGR6 characterization
+e PnzS5e6GAqACBG3p Ywqhpe6GAqACBCat none
+e PnzS5e6GAqACBG3p 3nEhpe6GAqACBCaJ none
+e 3nEhpe6GAqACBCaJ ehh65e6GAqACBHOM characterization
+e vpuxpe6GAqACBDcd r0Kxpe6GAqACBDYp instantiation
+e vpuxpe6GAqACBDcd vvSppe6GAqACBDiX none
+e iVelpe6GAqACBDv. vpuxpe6GAqACBDcd none
+e QNbVpe6GAqACBD0N vvSppe6GAqACBDiX none
+e iVelpe6GAqACBDv. QNbVpe6GAqACBD0N none
+e iVelpe6GAqACBDv. vvSppe6GAqACBDiX none
+e HGMNpe6GAqACBD5k QNbVpe6GAqACBD0N none
+e qRLppe6GAqACBDkM xgR9Ze6GAqACBFa9 mediation
+e lJfZpe6GAqACBDnA xgR9Ze6GAqACBFa9 mediation
+e TlSDZe6GAqACBFd3 ISBDZe6GAqACBFeW componentof
+e TlSDZe6GAqACBFd3 s1hDZe6GAqACBFeh componentof
+e ipejZe6GAqACBFiF s1hDZe6GAqACBFeh characterization
+e 3nEhpe6GAqACBCaJ ISBDZe6GAqACBFeW characterization
+e ipejZe6GAqACBFiF TlSDZe6GAqACBFd3 mediation
+e 3nEhpe6GAqACBCaJ TlSDZe6GAqACBFd3 mediation
+e 3nEhpe6GAqACBCaJ xgR9Ze6GAqACBFa9 characterization
+e vE6zZe6GAqACBFqc xgR9Ze6GAqACBFa9 mediation
+e r.WLZe6GAqACBFtz fFJLZe6GAqACBFua componentof
+e r.WLZe6GAqACBFtz NOFLZe6GAqACBFut componentof
+e 3nEhpe6GAqACBCaJ r.WLZe6GAqACBFtz mediation
+e 7KSbZe6GAqACBFyY r.WLZe6GAqACBFtz mediation
+e 7KSbZe6GAqACBFyY NOFLZe6GAqACBFut characterization
+e 3nEhpe6GAqACBCaJ fFJLZe6GAqACBFua characterization
+e 8V8iI86GAqACAxty EVq_Ze6GAqACBGIs mediation
+e 3nEhpe6GAqACBCaJ EVq_Ze6GAqACBGIs none
+e EVq_Ze6GAqACBGIs DdZ_Ze6GAqACBGKS characterization
+e DdZ_Ze6GAqACBGKS zVhA5e6GAqACBGOl externaldependence
+e 3nEhpe6GAqACBCaJ zVhA5e6GAqACBGOl characterization
+e TlSDZe6GAqACBFd3 EGKg5e6GAqACBGR6 externaldependence
+e r.WLZe6GAqACBFtz EGKg5e6GAqACBGR6 externaldependence
+e zVhA5e6GAqACBGOl vZ6g5e6GAqACBGSN externaldependence
+e 3nEhpe6GAqACBCaJ vZ6g5e6GAqACBGSN characterization
+e vZ6g5e6GAqACBGSN EGKg5e6GAqACBGR6 componentof
+e fK7o5e6GAqACBGkE UO8o5e6GAqACBGh3 instantiation
+e njvc5e6GAqACBGnV oMdc5e6GAqACBGmo none
+e oMdc5e6GAqACBGmo _Zxc5e6GAqACBGl. none
+e 08x85e6GAqACBGp_ _Zxc5e6GAqACBGl. none
+e fK7o5e6GAqACBGkE _Zxc5e6GAqACBGl. none
+e 08x85e6GAqACBGp_ oMdc5e6GAqACBGmo none
+e 08x85e6GAqACBGp_ fK7o5e6GAqACBGkE none
+e UO8o5e6GAqACBGh3 S0Fq5e6GAqACBHEN mediation
+e 3nEhpe6GAqACBCaJ S0Fq5e6GAqACBHEN mediation
+e S0Fq5e6GAqACBHEN j0ga5e6GAqACBHG0 none
+e 3nEhpe6GAqACBCaJ j0ga5e6GAqACBHG0 characterization
+e .oKq5e6GAqACBHC5 ZkHa5e6GAqACBHLH mediation
+e 3nEhpe6GAqACBCaJ ZkHa5e6GAqACBHLH mediation
+e ZkHa5e6GAqACBHLH ehh65e6GAqACBHOM none
+t # 1 digitaldoctor2022
+v O.u1Ab6GAqESAQnS datatype
+v ..u1Ab6GAqESAQnW datatype
+v B.u1Ab6GAqESAQnb datatype
+v Vi2dAb6GAqESAQ_l kind
+v vLedAb6GAqESAQ_0 subkind
+v pDw9Ab6GAqESARD1 role
+v wx49Ab6GAqESARD9 role
+v yLU9Ab6GAqESAREC subkind
+v MjC9Ab6GAqESAREM phase
+v ZA69Ab6GAqESARER phase
+v IhR9Ab6GAqESAREd collective
+v Tr59Ab6GAqESAREi relator
+v yH19Ab6GAqESAREn subkind
+v Q1D9Ab6GAqESAREw subkind
+v IhL9Ab6GAqESARE1 subkind
+v yw39Ab6GAqESARE6 subkind
+v KdADAb6GAqESARE_ subkind
+v g6IDAb6GAqESARFE kind
+v xGmDAb6GAqESARFJ kind
+v aOGLAb6GAqESARKZ category
+v tsVvAb6GAqESARd. kind
+v 0ekSWb6GAqESAQ4u datatype
+v QC8yWb6GAqESAQ6h datatype
+v 1DdYJb6GAqESAQ3u datatype
+v zYOvnb6GAqESAQ2o datatype
+v QeLvnb6GAqESAQ3r datatype
+v XTYTu76GAqESAQ.x relator
+v GIuo2X6GAqESAQ0g mixin
+v __fo2X6GAqESAQ3A subkind
+v 1FoY2X6GAqESAQ3F subkind
+v pvsY2X6GAqESAQ3K kind
+v h.m82X6GAqESARFZ role
+v Wsl22X6GAqESARTA role
+v TFl.2X6GAqESARdf relator
+v 9tWn2X6GAqESAR2. enumeration
+v C72X2X6GAqESAR4l enumeration
+v 4INX2X6GAqESAR6w mode
+v xQMQOX6GAqESASGS subkind
+v k18QOX6GAqESASGX subkind
+v 5VjkOX6GAqESASgA role
+v hlHSOX6GAqESASp5 phase
+v afvSOX6GAqESASp. phase
+v 0.JKOX6GAqESASuy quality
+v tEbKOX6GAqESASvS subkind
+v .1PKOX6GAqESASvu kind
+v 5K8RDX6GAqESARTH enumeration
+v jRz_DX6GAqESARlb enumeration
+v pA_ijX6GAqESARsH role
+v GmUSjX6GAqESARsM role
+v s4hTLX6GAqESARH0 role
+v kKNTLX6GAqESARJS role
+v 8lqXrX6GAqESAR1B generalization
+v A8xXrX6GAqESAR1n generalization
+v NDFXrX6GAqESAR11 generalization
+v mbRdAb6GAqESARAG generalization
+v mJLDAb6GAqESARIi generalization
+v AqbDAb6GAqESARIs generalization
+v BrarAb6GAqESARNa generalization
+v 5rWrAb6GAqESARNq generalization
+v keAbAb6GAqESARPG generalization
+v zVDXAb6GAqESARaI generalization
+v .TTXAb6GAqESARaS generalization
+v f0O3Ab6GAqESARbe generalization
+v Fhh3Ab6GAqESARbw generalization
+v 8ufcWb6GAqESAQyv generalization
+v CR.bAb6GAqESARR7 generalization
+v PJGTu76GAqESARAy generalization
+v Aazo2X6GAqESAQ1n generalization
+v 3qE42X6GAqESAQ4g generalization
+v h4x42X6GAqESAQ5D generalization
+v rWC52X6GAqESARss generalization
+v dqi52X6GAqESARsy generalization
+v 1cBl2X6GAqESARys generalization
+v k3Bl2X6GAqESARyy generalization
+v ZQ0IOX6GAqESASOo generalization
+v rQMIOX6GAqESASOu generalization
+v pTMIOX6GAqESASO0 generalization
+v oJsIOX6GAqESASO6 generalization
+v pRcIOX6GAqESASPA generalization
+v 6KJIOX6GAqESASP9 generalization
+v oOpIOX6GAqESASQD generalization
+v M57IOX6GAqESASRP generalization
+v _BHIOX6GAqESASRV generalization
+v SY7UOX6GAqESASgl generalization
+v g9GyOX6GAqESASsb generalization
+v lZmyOX6GAqESASsh generalization
+v 9BkKOX6GAqESASuf generalization
+v S_v6OX6GAqESASzG generalization
+v lG.MBX6GAqESARCU generalization
+v 8oZyjX6GAqESARv4 generalization
+v UtuKjX6GAqESARxm generalization
+v NqwlTX6GAqESASnP generalization
+v 4ITlTX6GAqESASpJ generalization
+v aGvTLX6GAqESARKo generalization
+v eN4zLX6GAqESARLW generalization
+v X9JIgb6GAqESARpS association
+v HLzIgb6GAqESARqH association
+v km.ogb6GAqESARrr association
+v N1TJWb6GAqESART6 association
+v VWy5Jb6GAqESARHw association
+v c57Tu76GAqESARCm association
+v er1zu76GAqESAREz association
+v Zjtzu76GAqESARFB association
+v 2k8fu76GAqESARTP association
+v YDwcOX6GAqESASmU association
+v DNBVuX6GAqESATMQ association
+v UT41uX6GAqESATNf association
+v S8C1uX6GAqESATN_ association
+v chksBX6GAqESAREY association
+v HqgbDX6GAqESARcA association
+v R467DX6GAqESARdZ association
+v 240VLX6GAqESAQ_. association
+v V9eVLX6GAqESARDT association
+v h0VVLX6GAqESARD1 association
+v EIPVLX6GAqESAREp association
+v rHNnrX6GAqESARzs association
+v _Q4XrX6GAqESAR0g association
+v d0Jjxb6GAqESAQwr association
+e Vi2dAb6GAqESAQ_l vLedAb6GAqESAQ_0 generalization
+e vLedAb6GAqESAQ_0 pDw9Ab6GAqESARD1 generalization
+e vLedAb6GAqESAQ_0 wx49Ab6GAqESARD9 generalization
+e yLU9Ab6GAqESAREC MjC9Ab6GAqESAREM generalization
+e yLU9Ab6GAqESAREC ZA69Ab6GAqESARER generalization
+e aOGLAb6GAqESARKZ IhR9Ab6GAqESAREd generalization
+e aOGLAb6GAqESARKZ g6IDAb6GAqESARFE generalization
+e aOGLAb6GAqESARKZ xGmDAb6GAqESARFJ generalization
+e aOGLAb6GAqESARKZ TFl.2X6GAqESARdf generalization
+e aOGLAb6GAqESARKZ Vi2dAb6GAqESAQ_l generalization
+e aOGLAb6GAqESARKZ Tr59Ab6GAqESAREi generalization
+e Tr59Ab6GAqESAREi KdADAb6GAqESARE_ generalization
+e aOGLAb6GAqESARKZ XTYTu76GAqESAQ.x generalization
+e GIuo2X6GAqESAQ0g ZA69Ab6GAqESARER generalization
+e GIuo2X6GAqESAQ0g __fo2X6GAqESAQ3A generalization
+e GIuo2X6GAqESAQ0g 1FoY2X6GAqESAQ3F generalization
+e TFl.2X6GAqESARdf __fo2X6GAqESAQ3A generalization
+e TFl.2X6GAqESARdf yLU9Ab6GAqESAREC generalization
+e wx49Ab6GAqESARD9 h.m82X6GAqESARFZ generalization
+e wx49Ab6GAqESARD9 Wsl22X6GAqESARTA generalization
+e k18QOX6GAqESASGX KdADAb6GAqESARE_ generalization
+e k18QOX6GAqESASGX Q1D9Ab6GAqESAREw generalization
+e k18QOX6GAqESASGX yH19Ab6GAqESAREn generalization
+e k18QOX6GAqESASGX IhL9Ab6GAqESARE1 generalization
+e k18QOX6GAqESASGX yw39Ab6GAqESARE6 generalization
+e xQMQOX6GAqESASGS KdADAb6GAqESARE_ generalization
+e xQMQOX6GAqESASGS yH19Ab6GAqESAREn generalization
+e Tr59Ab6GAqESAREi k18QOX6GAqESASGX generalization
+e Tr59Ab6GAqESAREi xQMQOX6GAqESASGS generalization
+e k18QOX6GAqESASGX 5VjkOX6GAqESASgA generalization
+e pvsY2X6GAqESAQ3K hlHSOX6GAqESASp5 generalization
+e pvsY2X6GAqESAQ3K afvSOX6GAqESASp. generalization
+e GIuo2X6GAqESAQ0g hlHSOX6GAqESASp5 generalization
+e .1PKOX6GAqESASvu 1FoY2X6GAqESAQ3F generalization
+e pvsY2X6GAqESAQ3K tEbKOX6GAqESASvS generalization
+e pDw9Ab6GAqESARD1 pA_ijX6GAqESARsH generalization
+e pA_ijX6GAqESARsH GmUSjX6GAqESARsM generalization
+e aOGLAb6GAqESARKZ pvsY2X6GAqESAQ3K generalization
+e aOGLAb6GAqESARKZ .1PKOX6GAqESASvu generalization
+e xGmDAb6GAqESARFJ s4hTLX6GAqESARH0 generalization
+e g6IDAb6GAqESARFE kKNTLX6GAqESARJS generalization
+e X9JIgb6GAqESARpS rHNnrX6GAqESARzs generalization
+e HLzIgb6GAqESARqH _Q4XrX6GAqESAR0g generalization
+e km.ogb6GAqESARrr R467DX6GAqESARdZ generalization
+e wx49Ab6GAqESARD9 Tr59Ab6GAqESAREi mediation
+e GmUSjX6GAqESARsM Tr59Ab6GAqESAREi mediation
+e wx49Ab6GAqESARD9 GmUSjX6GAqESARsM material
+e GIuo2X6GAqESAQ0g Tr59Ab6GAqESAREi material
+e IhR9Ab6GAqESAREd pDw9Ab6GAqESARD1 material
+e s4hTLX6GAqESARH0 kKNTLX6GAqESARJS material
+e s4hTLX6GAqESARH0 XTYTu76GAqESAQ.x mediation
+e kKNTLX6GAqESARJS XTYTu76GAqESAQ.x mediation
+e yH19Ab6GAqESAREn XTYTu76GAqESAQ.x componentof
+e pvsY2X6GAqESAQ3K Tr59Ab6GAqESAREi material
+e Wsl22X6GAqESARTA pA_ijX6GAqESARsH material
+e pA_ijX6GAqESARsH TFl.2X6GAqESARdf mediation
+e Wsl22X6GAqESARTA TFl.2X6GAqESARdf mediation
+e .1PKOX6GAqESASvu tEbKOX6GAqESASvS material
+e Wsl22X6GAqESARTA GmUSjX6GAqESARsM material
+e h.m82X6GAqESARFZ GmUSjX6GAqESARsM material
+e IhR9Ab6GAqESAREd pvsY2X6GAqESAQ3K componentof
+e IhR9Ab6GAqESAREd Tr59Ab6GAqESAREi componentof
+e IhR9Ab6GAqESAREd 1FoY2X6GAqESAQ3F componentof
+e IhR9Ab6GAqESAREd TFl.2X6GAqESARdf componentof
+e h.m82X6GAqESARFZ 5VjkOX6GAqESASgA mediation
+e GmUSjX6GAqESARsM 5VjkOX6GAqESASgA mediation
+e Tr59Ab6GAqESAREi km.ogb6GAqESARrr derivation
+t # 2 abel2015petroleum-system
+v h6Ki8f6AUBAClQW3 kind
+v h_ji8f6AUBAClQZZ quality
+v Bczi8f6AUBAClQZk quality
+v noDS8f6AUBAClQaS quantity
+v 6ljS8f6AUBAClQad quantity
+v ANTS8f6AUBAClQao situation
+v uEyy8f6AUBAClQbG event
+v DJKy8f6AUBAClQbR situation
+v L4ry8f6AUBAClQbq event
+v hV7y8f6AUBAClQcB situation
+v lbny8f6AUBAClQcM event
+v AX3y8f6AUBAClQcX situation
+v ukoK8f6AUBAClQc6 role
+v 6KYK8f6AUBAClQdF role
+v 7M4K8f6AUBAClQdQ role
+v HGEK8f6AUBAClQdb mixin
+v gK8K8f6AUBAClQd6 quantity
+v ZhCK8f6AUBAClQeF quantity
+v cviK8f6AUBAClQeQ kind
+v LJaK8f6AUBAClQep kind
+v u0WK8f6AUBAClQe6 quantity
+v dFuK8f6AUBAClQfH quantity
+v PXBK8f6AUBAClQfU kind
+v AuzqKf6AUBgIzwrJ enumeration
+v ENJaKf6AUBgIzwsM enumeration
+v 4Zw6Kf6AUBgIzws. enumeration
+v COF6Kf6AUBgIzwu_ enumeration
+v _uOmKf6AUBgIzwye enumeration
+v feu9Df6AUB1CSgv5 datatype
+v EMLG8f6AUBAClQhh generalization
+v byUW8f6AUBAClQlS generalization
+v S80W8f6AUBAClQlc generalization
+v 0uMW8f6AUBAClQlm generalization
+v 2bRW8f6AUBAClQm7 generalization
+v V5JW8f6AUBAClQnF generalization
+v Qg5W8f6AUBAClQnR generalization
+v 1clW8f6AUBAClQni generalization
+v TSVW8f6AUBAClQns generalization
+v qXVG8f6AUBAClQgq association
+v 9_1G8f6AUBAClQg2 association
+v eWtG8f6AUBAClQhA association
+v Yk9G8f6AUBAClQhK association
+v ..rG8f6AUBAClQhp association
+v fPrG8f6AUBAClQhz association
+v eWbG8f6AUBAClQh9 association
+v f_bG8f6AUBAClQiH association
+v c6HG8f6AUBAClQiT association
+v ZrHG8f6AUBAClQid association
+v gMam8f6AUBAClQjj association
+v H82m8f6AUBAClQj9 association
+v 1f2m8f6AUBAClQkI association
+v 0dpm8f6AUBAClQkk association
+v 2CFm8f6AUBAClQks association
+v ET1m8f6AUBAClQk8 association
+v GH8W8f6AUBAClQlu association
+v wF6W8f6AUBAClQmI association
+v kGWW8f6AUBAClQmT association
+v ZX.W8f6AUBAClQml association
+v 8uBW8f6AUBAClQmv association
+e noDS8f6AUBAClQaS 6ljS8f6AUBAClQad generalization
+e cviK8f6AUBAClQeQ ukoK8f6AUBAClQc6 generalization
+e cviK8f6AUBAClQeQ 6KYK8f6AUBAClQdF generalization
+e LJaK8f6AUBAClQep 7M4K8f6AUBAClQdQ generalization
+e PXBK8f6AUBAClQfU cviK8f6AUBAClQeQ generalization
+e PXBK8f6AUBAClQfU LJaK8f6AUBAClQep generalization
+e u0WK8f6AUBAClQe6 gK8K8f6AUBAClQd6 generalization
+e u0WK8f6AUBAClQe6 ZhCK8f6AUBAClQeF generalization
+e dFuK8f6AUBAClQfH u0WK8f6AUBAClQe6 generalization
+e PXBK8f6AUBAClQfU h6Ki8f6AUBAClQW3 characterization
+e u0WK8f6AUBAClQe6 h_ji8f6AUBAClQZZ characterization
+e dFuK8f6AUBAClQfH PXBK8f6AUBAClQfU constitute
+e u0WK8f6AUBAClQe6 Bczi8f6AUBAClQZk characterization
+e uEyy8f6AUBAClQbG ANTS8f6AUBAClQao pre-state
+e DJKy8f6AUBAClQbR uEyy8f6AUBAClQbG pos-state
+e L4ry8f6AUBAClQbq DJKy8f6AUBAClQbR pre-state
+e hV7y8f6AUBAClQcB L4ry8f6AUBAClQbq pos-state
+e lbny8f6AUBAClQcM hV7y8f6AUBAClQcB pre-state
+e AX3y8f6AUBAClQcX lbny8f6AUBAClQcM pos-state
+e HGEK8f6AUBAClQdb AX3y8f6AUBAClQcX none
+e 7M4K8f6AUBAClQdQ HGEK8f6AUBAClQdb none
+e 6KYK8f6AUBAClQdF HGEK8f6AUBAClQdb none
+e 6ljS8f6AUBAClQad hV7y8f6AUBAClQcB none
+e 6ljS8f6AUBAClQad AX3y8f6AUBAClQcX none
+e 6ljS8f6AUBAClQad DJKy8f6AUBAClQbR none
+e LJaK8f6AUBAClQep hV7y8f6AUBAClQcB none
+e LJaK8f6AUBAClQep DJKy8f6AUBAClQbR none
+e cviK8f6AUBAClQeQ DJKy8f6AUBAClQbR none
+e gK8K8f6AUBAClQd6 cviK8f6AUBAClQeQ constitute
+e ZhCK8f6AUBAClQeF LJaK8f6AUBAClQep constitute
+t # -1

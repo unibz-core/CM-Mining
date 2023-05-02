@@ -1,0 +1,27 @@
+t # 0
+v 0 gen
+v 1 kind
+v 2 gen
+e 0 1 general
+e 1 2 general
+
+Support: 3
+
+-----------------
+
+t # 1
+v 0 gen
+v 1 kind
+v 2 gen
+v 3 subkind
+e 0 1 general
+e 1 2 general
+e 2 3 specific
+
+Support: 2
+
+-----------------
+
+Read:	0.0 s
+Mine:	28.61 s
+Total:	28.61 s
