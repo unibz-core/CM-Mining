@@ -1,0 +1,4504 @@
+t # 0 amaral2020rome.json
+v 1 1*_1
+v 2 1*_1*
+v 3 1*_0*
+v 4 0*_2*
+v 5 2*_0*
+v 6 1*_01
+v 7 1_0*
+v 8 1_1
+v 9 0*_1
+v 10 1_01
+v 11 0*_1*
+v 12 1_1*
+v 13 01_1
+v 14 True
+v 15 False
+v 16 mode
+v 17 category
+v 18 type
+v 19 category
+v 20 category
+v 21 category
+v 22 roleMixin
+v 23 type
+v 24 category
+v 25 roleMixin
+v 26 roleMixin
+v 27 phaseMixin
+v 28 phaseMixin
+v 29 kind
+v 30 kind
+v 31 datatype
+v 32 kind
+v 33 relator
+v 34 relator
+v 35 quality
+v 36 quality
+v 37 roleMixin
+v 38 subkind
+v 39 subkind
+v 40 relator
+v 41 quality
+v 42 quality
+v 43 roleMixin
+v 44 relator
+v 45 quality
+v 46 mode
+v 47 mode
+v 48 mode
+v 49 roleMixin
+v 50 type
+v 51 category
+v 52 kind
+v 53 datatype
+v 54 kind
+v 55 kind
+v 56 roleMixin
+v 57 roleMixin
+v 58 roleMixin
+v 59 roleMixin
+v 60 relator
+v 61 mode
+v 62 subkind
+v 63 mode
+v 64 gen
+v 65 gen
+v 66 gen
+v 67 gen
+v 68 gen
+v 69 gen
+v 70 gen
+v 71 gen
+v 72 gen
+v 73 gen
+v 74 gen
+v 75 gen
+v 76 gen
+v 77 gen
+v 78 gen
+v 79 gen
+v 80 gen
+v 81 gen
+v 82 gen
+v 83 gen
+v 84 gen
+v 85 gen
+v 86 gen
+v 87 gen
+v 88 gen
+v 89 characterization
+v 90 externalDependence
+v 91 externalDependence
+v 92 instantiation
+v 93 relation
+v 94 relation
+v 95 relation
+v 96 characterization
+v 97 relation
+v 98 relation
+v 99 characterization
+v 100 instantiation
+v 101 relation
+v 102 relation
+v 103 relation
+v 104 relation
+v 105 relation
+v 106 relation
+v 107 mediation
+v 108 mediation
+v 109 componentOf
+v 110 componentOf
+v 111 characterization
+v 112 characterization
+v 113 mediation
+v 114 mediation
+v 115 characterization
+v 116 mediation
+v 117 componentOf
+v 118 componentOf
+v 119 mediation
+v 120 mediation
+v 121 characterization
+v 122 characterization
+v 123 mediation
+v 124 relation
+v 125 characterization
+v 126 externalDependence
+v 127 characterization
+v 128 externalDependence
+v 129 externalDependence
+v 130 externalDependence
+v 131 characterization
+v 132 componentOf
+v 133 instantiation
+v 134 relation
+v 135 relation
+v 136 relation
+v 137 relation
+v 138 relation
+v 139 relation
+v 140 mediation
+v 141 mediation
+v 142 relation
+v 143 characterization
+v 144 mediation
+v 145 mediation
+v 146 relation
+v 147 gen-set
+v 148 gen-set
+v 149 gen-set
+v 150 gen-set
+v 151 gen-set
+e 16 89 source
+e 16 90 source
+e 16 91 source
+e 17 64 general
+e 17 66 general
+e 17 74 general
+e 17 92 target
+e 17 123 target
+e 18 65 general
+e 18 73 general
+e 18 92 source
+e 19 71 general
+e 19 72 general
+e 19 94 source
+e 19 96 source
+e 19 98 source
+e 19 99 source
+e 19 89 target
+e 19 93 target
+e 19 112 target
+e 19 114 target
+e 19 115 target
+e 19 119 target
+e 19 122 target
+e 19 124 target
+e 19 127 target
+e 19 131 target
+e 19 141 target
+e 19 143 target
+e 19 145 target
+e 20 68 general
+e 20 75 general
+e 20 67 specific
+e 20 93 source
+e 20 95 source
+e 20 97 source
+e 21 67 general
+e 21 69 general
+e 21 70 general
+e 21 76 general
+e 21 77 general
+e 21 66 specific
+e 22 78 general
+e 22 79 general
+e 22 64 specific
+e 22 100 target
+e 23 65 specific
+e 23 100 source
+e 23 102 source
+e 23 101 target
+e 24 68 specific
+e 24 101 source
+e 24 103 source
+e 24 105 source
+e 25 80 general
+e 25 81 general
+e 25 78 specific
+e 26 79 specific
+e 26 107 target
+e 27 81 specific
+e 27 108 target
+e 28 80 specific
+e 29 69 specific
+e 29 102 target
+e 29 104 target
+e 29 105 target
+e 30 70 specific
+e 30 104 source
+e 30 106 source
+e 30 103 target
+e 31 106 target
+e 32 90 target
+e 32 94 target
+e 32 95 target
+e 33 107 source
+e 33 108 source
+e 33 115 source
+e 33 116 source
+e 34 82 general
+e 34 83 general
+e 34 113 source
+e 34 114 source
+e 34 109 target
+e 34 110 target
+e 34 128 target
+e 35 109 source
+e 35 112 source
+e 36 110 source
+e 36 111 source
+e 37 71 specific
+e 37 111 target
+e 37 113 target
+e 38 82 specific
+e 38 116 target
+e 39 83 specific
+e 40 119 source
+e 40 120 source
+e 40 117 target
+e 40 118 target
+e 40 129 target
+e 41 117 source
+e 41 122 source
+e 42 118 source
+e 42 121 source
+e 43 72 specific
+e 43 120 target
+e 43 121 target
+e 44 123 source
+e 44 124 source
+e 44 125 target
+e 45 125 source
+e 45 126 target
+e 46 126 source
+e 46 127 source
+e 46 130 target
+e 47 128 source
+e 47 129 source
+e 47 132 source
+e 47 96 target
+e 48 130 source
+e 48 131 source
+e 48 132 target
+e 49 84 general
+e 49 85 general
+e 49 74 specific
+e 49 140 source
+e 49 133 target
+e 50 73 specific
+e 50 133 source
+e 50 139 source
+e 50 137 target
+e 51 75 specific
+e 51 135 source
+e 51 136 source
+e 51 137 source
+e 52 76 specific
+e 52 134 source
+e 52 138 source
+e 52 135 target
+e 53 134 target
+e 54 77 specific
+e 54 136 target
+e 54 138 target
+e 54 139 target
+e 55 91 target
+e 55 97 target
+e 55 98 target
+e 56 86 general
+e 56 87 general
+e 56 84 specific
+e 57 85 specific
+e 58 86 specific
+e 59 87 specific
+e 59 144 source
+e 60 88 general
+e 60 141 source
+e 60 140 target
+e 60 142 target
+e 61 142 source
+e 61 143 source
+e 62 88 specific
+e 62 145 source
+e 62 144 target
+e 62 146 target
+e 63 146 source
+e 63 99 target
+t # 1 aguiar2019ooco.json
+v 1 0*_1*
+v 2 01_1*
+v 3 0*_1
+v 4 1*_1
+v 5 1_1
+v 6 0*_01
+v 7 01_1
+v 8 1_0*
+v 9 1*_1*
+v 10 True
+v 11 False
+v 12 kind
+v 13 kind
+v 14 kind
+v 15 subkind
+v 16 kind
+v 17 subkind
+v 18 category
+v 19 category
+v 20 subkind
+v 21 subkind
+v 22 subkind
+v 23 subkind
+v 24 subkind
+v 25 subkind
+v 26 subkind
+v 27 subkind
+v 28 subkind
+v 29 subkind
+v 30 subkind
+v 31 subkind
+v 32 kind
+v 33 kind
+v 34 subkind
+v 35 subkind
+v 36 subkind
+v 37 subkind
+v 38 subkind
+v 39 kind
+v 40 quality
+v 41 category
+v 42 quality
+v 43 kind
+v 44 category
+v 45 kind
+v 46 quality
+v 47 subkind
+v 48 subkind
+v 49 category
+v 50 quality
+v 51 subkind
+v 52 kind
+v 53 subkind
+v 54 quality
+v 55 subkind
+v 56 kind
+v 57 subkind
+v 58 subkind
+v 59 subkind
+v 60 subkind
+v 61 subkind
+v 62 role
+v 63 role
+v 64 relator
+v 65 relator
+v 66 role
+v 67 quality
+v 68 gen
+v 69 gen
+v 70 gen
+v 71 gen
+v 72 gen
+v 73 gen
+v 74 gen
+v 75 gen
+v 76 gen
+v 77 gen
+v 78 gen
+v 79 gen
+v 80 gen
+v 81 gen
+v 82 gen
+v 83 gen
+v 84 gen
+v 85 gen
+v 86 gen
+v 87 gen
+v 88 gen
+v 89 gen
+v 90 gen
+v 91 gen
+v 92 gen
+v 93 gen
+v 94 gen
+v 95 gen
+v 96 gen
+v 97 gen
+v 98 gen
+v 99 gen
+v 100 gen
+v 101 gen
+v 102 gen
+v 103 gen
+v 104 gen
+v 105 gen
+v 106 gen
+v 107 gen
+v 108 gen
+v 109 gen
+v 110 gen
+v 111 gen
+v 112 gen
+v 113 gen
+v 114 relation
+v 115 relation
+v 116 relation
+v 117 relation
+v 118 relation
+v 119 componentOf
+v 120 componentOf
+v 121 componentOf
+v 122 componentOf
+v 123 componentOf
+v 124 componentOf
+v 125 componentOf
+v 126 relation
+v 127 componentOf
+v 128 characterization
+v 129 relation
+v 130 characterization
+v 131 componentOf
+v 132 componentOf
+v 133 relation
+v 134 characterization
+v 135 characterization
+v 136 relation
+v 137 relation
+v 138 characterization
+v 139 relation
+v 140 componentOf
+v 141 relation
+v 142 relation
+v 143 relation
+v 144 characterization
+v 145 gen-set
+v 146 gen-set
+v 147 gen-set
+v 148 gen-set
+v 149 gen-set
+v 150 gen-set
+v 151 gen-set
+v 152 gen-set
+v 153 gen-set
+v 154 gen-set
+v 155 gen-set
+v 156 gen-set
+v 157 gen-set
+e 12 72 specific
+e 12 114 source
+e 13 73 specific
+e 13 115 source
+e 13 114 target
+e 14 68 general
+e 14 74 specific
+e 14 115 target
+e 15 69 general
+e 15 68 specific
+e 15 116 source
+e 16 70 general
+e 16 117 target
+e 17 75 general
+e 17 70 specific
+e 17 116 target
+e 17 118 target
+e 18 71 general
+e 18 117 source
+e 19 72 general
+e 19 73 general
+e 19 74 general
+e 19 71 specific
+e 19 118 source
+e 20 76 general
+e 20 77 general
+e 20 103 specific
+e 21 78 general
+e 21 106 specific
+e 21 120 source
+e 22 79 general
+e 22 82 general
+e 22 107 specific
+e 23 79 specific
+e 23 81 specific
+e 24 83 general
+e 24 84 general
+e 24 85 general
+e 24 80 specific
+e 25 78 specific
+e 25 108 specific
+e 25 119 source
+e 26 80 general
+e 26 81 general
+e 26 109 specific
+e 26 124 target
+e 27 110 specific
+e 27 122 target
+e 28 105 specific
+e 29 104 specific
+e 30 76 specific
+e 30 121 source
+e 31 77 specific
+e 31 123 source
+e 32 122 source
+e 33 124 source
+e 33 125 target
+e 33 123 target
+e 34 82 specific
+e 34 83 specific
+e 35 84 specific
+e 36 85 specific
+e 37 75 specific
+e 37 126 target
+e 38 69 specific
+e 38 126 source
+e 38 129 source
+e 39 86 general
+e 39 87 general
+e 39 127 target
+e 40 128 source
+e 41 88 general
+e 41 89 general
+e 41 93 general
+e 41 128 target
+e 41 130 target
+e 42 130 source
+e 43 96 general
+e 43 97 general
+e 43 98 general
+e 43 99 general
+e 43 100 general
+e 43 101 general
+e 43 102 general
+e 43 88 specific
+e 43 91 specific
+e 43 132 source
+e 43 133 source
+e 43 139 source
+e 43 131 target
+e 44 92 general
+e 44 94 general
+e 44 131 source
+e 45 95 general
+e 45 103 general
+e 45 89 specific
+e 45 134 target
+e 45 135 target
+e 46 134 source
+e 47 90 specific
+e 48 86 specific
+e 48 129 target
+e 48 132 target
+e 49 90 general
+e 49 91 general
+e 49 136 target
+e 49 137 target
+e 50 136 source
+e 50 138 source
+e 51 87 specific
+e 51 133 target
+e 52 106 general
+e 52 107 general
+e 52 108 general
+e 52 109 general
+e 52 110 general
+e 52 92 specific
+e 52 93 specific
+e 52 121 target
+e 52 138 target
+e 53 104 general
+e 53 105 general
+e 53 94 specific
+e 53 95 specific
+e 54 135 source
+e 54 137 source
+e 55 96 specific
+e 55 140 target
+e 56 140 source
+e 57 97 specific
+e 58 98 specific
+e 58 111 specific
+e 58 119 target
+e 59 99 specific
+e 60 111 general
+e 60 112 general
+e 60 113 general
+e 60 100 specific
+e 60 120 target
+e 61 112 specific
+e 62 113 specific
+e 62 142 source
+e 63 101 specific
+e 63 141 source
+e 64 139 target
+e 64 143 target
+e 65 141 target
+e 65 142 target
+e 65 144 target
+e 66 102 specific
+e 66 143 source
+e 67 144 source
+t # 2 aristotle-ontology2019.json
+v 1 1_1
+v 2 1*_1
+v 3 1_2
+v 4 2_2
+v 5 2_1
+v 6 1_1*
+v 7 1*_1*
+v 8 1_01
+v 9 01_01
+v 10 01_1
+v 11 1__*_1
+v 12 1*_2*
+v 13 0*_1
+v 14 1_0*
+v 15 0*_*
+v 16 1_*
+v 17 False
+v 18 subkind
+v 19 subkind
+v 20 subkind
+v 21 quality
+v 22 quality
+v 23 quality
+v 24 quality
+v 25 subkind
+v 26 subkind
+v 27 subkind
+v 28 kind
+v 29 kind
+v 30 kind
+v 31 kind
+v 32 kind
+v 33 mode
+v 34 relator
+v 35 relator
+v 36 subkind
+v 37 subkind
+v 38 subkind
+v 39 subkind
+v 40 kind
+v 41 phase
+v 42 kind
+v 43 mode
+v 44 relator
+v 45 role
+v 46 subkind
+v 47 role
+v 48 subkind
+v 49 kind
+v 50 kind
+v 51 subkind
+v 52 subkind
+v 53 role
+v 54 role
+v 55 relator
+v 56 collective
+v 57 kind
+v 58 relator
+v 59 kind
+v 60 kind
+v 61 role
+v 62 collective
+v 63 kind
+v 64 role
+v 65 kind
+v 66 role
+v 67 role
+v 68 role
+v 69 kind
+v 70 subkind
+v 71 subkind
+v 72 subkind
+v 73 subkind
+v 74 subkind
+v 75 subkind
+v 76 mode
+v 77 subkind
+v 78 subkind
+v 79 kind
+v 80 kind
+v 81 subkind
+v 82 subkind
+v 83 kind
+v 84 relator
+v 85 kind
+v 86 kind
+v 87 quantity
+v 88 role
+v 89 role
+v 90 role
+v 91 role
+v 92 event
+v 93 event
+v 94 kind
+v 95 mode
+v 96 mode
+v 97 mode
+v 98 mode
+v 99 kind
+v 100 role
+v 101 role
+v 102 kind
+v 103 subkind
+v 104 mode
+v 105 subkind
+v 106 event
+v 107 event
+v 108 event
+v 109 event
+v 110 event
+v 111 kind
+v 112 role
+v 113 mixin
+v 114 kind
+v 115 kind
+v 116 subkind
+v 117 mode
+v 118 subkind
+v 119 kind
+v 120 subkind
+v 121 subkind
+v 122 subkind
+v 123 subkind
+v 124 subkind
+v 125 subkind
+v 126 subkind
+v 127 subkind
+v 128 subkind
+v 129 subkind
+v 130 subkind
+v 131 subkind
+v 132 subkind
+v 133 subkind
+v 134 subkind
+v 135 subkind
+v 136 subkind
+v 137 kind
+v 138 kind
+v 139 kind
+v 140 category
+v 141 kind
+v 142 subkind
+v 143 subkind
+v 144 subkind
+v 145 subkind
+v 146 subkind
+v 147 subkind
+v 148 subkind
+v 149 subkind
+v 150 subkind
+v 151 subkind
+v 152 subkind
+v 153 mode
+v 154 mode
+v 155 kind
+v 156 subkind
+v 157 subkind
+v 158 kind
+v 159 subkind
+v 160 subkind
+v 161 subkind
+v 162 subkind
+v 163 subkind
+v 164 subkind
+v 165 kind
+v 166 kind
+v 167 kind
+v 168 kind
+v 169 kind
+v 170 relator
+v 171 kind
+v 172 kind
+v 173 relator
+v 174 role
+v 175 role
+v 176 kind
+v 177 kind
+v 178 kind
+v 179 subkind
+v 180 kind
+v 181 datatype
+v 182 datatype
+v 183 subkind
+v 184 phase
+v 185 phase
+v 186 quantity
+v 187 phase
+v 188 subkind
+v 189 kind
+v 190 kind
+v 191 kind
+v 192 kind
+v 193 kind
+v 194 kind
+v 195 kind
+v 196 subkind
+v 197 subkind
+v 198 kind
+v 199 kind
+v 200 gen
+v 201 gen
+v 202 gen
+v 203 gen
+v 204 gen
+v 205 gen
+v 206 gen
+v 207 gen
+v 208 gen
+v 209 gen
+v 210 gen
+v 211 gen
+v 212 gen
+v 213 gen
+v 214 gen
+v 215 gen
+v 216 gen
+v 217 gen
+v 218 gen
+v 219 gen
+v 220 gen
+v 221 gen
+v 222 gen
+v 223 gen
+v 224 gen
+v 225 gen
+v 226 gen
+v 227 gen
+v 228 gen
+v 229 gen
+v 230 gen
+v 231 gen
+v 232 gen
+v 233 gen
+v 234 gen
+v 235 gen
+v 236 gen
+v 237 gen
+v 238 gen
+v 239 gen
+v 240 gen
+v 241 gen
+v 242 gen
+v 243 gen
+v 244 gen
+v 245 gen
+v 246 gen
+v 247 gen
+v 248 gen
+v 249 gen
+v 250 gen
+v 251 gen
+v 252 gen
+v 253 gen
+v 254 gen
+v 255 gen
+v 256 gen
+v 257 gen
+v 258 gen
+v 259 gen
+v 260 gen
+v 261 gen
+v 262 gen
+v 263 gen
+v 264 gen
+v 265 gen
+v 266 gen
+v 267 gen
+v 268 gen
+v 269 gen
+v 270 gen
+v 271 gen
+v 272 gen
+v 273 gen
+v 274 gen
+v 275 gen
+v 276 gen
+v 277 gen
+v 278 gen
+v 279 gen
+v 280 gen
+v 281 gen
+v 282 gen
+v 283 gen
+v 284 gen
+v 285 gen
+v 286 gen
+v 287 gen
+v 288 gen
+v 289 gen
+v 290 gen
+v 291 gen
+v 292 gen
+v 293 gen
+v 294 gen
+v 295 gen
+v 296 gen
+v 297 gen
+v 298 gen
+v 299 gen
+v 300 gen
+v 301 gen
+v 302 gen
+v 303 gen
+v 304 gen
+v 305 characterization
+v 306 characterization
+v 307 characterization
+v 308 characterization
+v 309 characterization
+v 310 characterization
+v 311 characterization
+v 312 characterization
+v 313 mediation
+v 314 relation
+v 315 relation
+v 316 characterization
+v 317 relation
+v 318 relation
+v 319 mediation
+v 320 mediation
+v 321 relation
+v 322 subQuantityOf
+v 323 relation
+v 324 mediation
+v 325 mediation
+v 326 relation
+v 327 relation
+v 328 relation
+v 329 material
+v 330 relation
+v 331 mediation
+v 332 mediation
+v 333 characterization
+v 334 relation
+v 335 relation
+v 336 relation
+v 337 relation
+v 338 relation
+v 339 relation
+v 340 relation
+v 341 natural
+v 342 relation
+v 343 relation
+v 344 relation
+v 345 relation
+v 346 relation
+v 347 relation
+v 348 relation
+v 349 relation
+v 350 characterization
+v 351 characterization
+v 352 characterization
+v 353 componentOf
+v 354 componentOf
+v 355 subQuantityOf
+v 356 mediation
+v 357 relation
+v 358 relation
+v 359 relation
+v 360 relation
+v 361 material
+v 362 characterization
+v 363 characterization
+v 364 componentOf
+v 365 material
+v 366 relation
+v 367 relation
+v 368 relation
+v 369 characterization
+v 370 relation
+v 371 material
+v 372 relation
+v 373 relation
+v 374 relation
+v 375 mediation
+v 376 relation
+v 377 mediation
+v 378 mediation
+v 379 mediation
+v 380 mediation
+v 381 mediation
+v 382 mediation
+v 383 material
+v 384 mediation
+v 385 mediation
+v 386 mediation
+v 387 mediation
+v 388 mediation
+v 389 material
+v 390 relation
+v 391 componentOf
+v 392 mediation
+v 393 mediation
+v 394 characterization
+v 395 characterization
+v 396 componentOf
+v 397 componentOf
+v 398 componentOf
+v 399 componentOf
+v 400 memberOf
+v 401 memberOf
+v 402 mediation
+v 403 mediation
+v 404 characterization
+v 405 characterization
+v 406 characterization
+v 407 mediation
+v 408 mediation
+v 409 mediation
+v 410 componentOf
+v 411 mediation
+v 412 mediation
+v 413 subQuantityOf
+v 414 subQuantityOf
+v 415 mediation
+v 416 mediation
+v 417 mediation
+v 418 componentOf
+v 419 componentOf
+v 420 componentOf
+v 421 material
+v 422 relation
+v 423 subQuantityOf
+v 424 subQuantityOf
+v 425 subQuantityOf
+v 426 subQuantityOf
+v 427 subQuantityOf
+v 428 componentOf
+v 429 relation
+v 430 characterization
+v 431 participation
+v 432 relation
+v 433 relation
+v 434 relation
+v 435 subQuantityOf
+v 436 componentOf
+v 437 componentOf
+v 438 componentOf
+v 439 relation
+v 440 derivation
+v 441 derivation
+v 442 characterization
+v 443 participation
+v 444 componentOf
+v 445 componentOf
+v 446 componentOf
+v 447 componentOf
+v 448 componentOf
+v 449 gen-set
+e 18 299 specific
+e 18 367 source
+e 18 427 source
+e 18 368 target
+e 19 214 general
+e 19 215 general
+e 19 280 specific
+e 19 314 source
+e 19 413 source
+e 19 426 source
+e 19 435 source
+e 19 392 target
+e 20 215 specific
+e 20 423 source
+e 20 424 source
+e 20 425 source
+e 20 414 target
+e 21 309 target
+e 21 312 target
+e 22 311 source
+e 22 310 target
+e 23 308 source
+e 23 306 target
+e 24 305 source
+e 24 307 source
+e 25 208 specific
+e 25 312 source
+e 25 311 target
+e 25 425 target
+e 26 209 specific
+e 26 306 source
+e 26 305 target
+e 26 424 target
+e 27 207 specific
+e 27 309 source
+e 27 414 source
+e 27 308 target
+e 28 206 general
+e 28 207 general
+e 28 208 general
+e 28 209 general
+e 28 279 general
+e 28 367 target
+e 28 413 target
+e 29 391 target
+e 30 281 general
+e 30 282 general
+e 30 315 target
+e 30 370 target
+e 30 390 target
+e 31 317 target
+e 31 321 target
+e 32 238 general
+e 32 239 general
+e 32 276 general
+e 32 277 general
+e 32 278 general
+e 32 316 source
+e 32 321 source
+e 32 322 source
+e 32 355 source
+e 32 360 target
+e 32 390 source
+e 32 410 source
+e 32 431 source
+e 32 319 target
+e 32 320 target
+e 32 359 target
+e 32 435 target
+e 33 323 source
+e 33 313 target
+e 33 316 target
+e 33 318 target
+e 34 313 source
+e 34 320 source
+e 34 379 source
+e 34 382 source
+e 34 387 source
+e 34 388 source
+e 34 415 source
+e 34 416 target
+e 35 240 general
+e 35 241 general
+e 35 319 source
+e 35 356 source
+e 35 375 source
+e 35 380 source
+e 35 381 source
+e 35 386 source
+e 35 392 source
+e 35 393 source
+e 35 417 source
+e 36 213 specific
+e 36 318 source
+e 36 334 target
+e 37 212 specific
+e 37 315 source
+e 37 339 target
+e 38 211 specific
+e 38 317 source
+e 38 335 target
+e 39 210 specific
+e 39 314 target
+e 39 337 target
+e 39 338 target
+e 40 210 general
+e 40 211 general
+e 40 212 general
+e 40 213 general
+e 40 391 source
+e 40 357 target
+e 40 358 target
+e 41 214 specific
+e 41 322 target
+e 41 323 target
+e 42 330 source
+e 43 333 source
+e 43 330 target
+e 43 422 target
+e 44 331 source
+e 44 332 source
+e 44 422 source
+e 45 221 specific
+e 45 328 target
+e 45 331 target
+e 46 223 specific
+e 47 220 specific
+e 47 327 target
+e 47 332 target
+e 48 222 specific
+e 49 218 general
+e 49 219 general
+e 49 222 general
+e 49 223 general
+e 49 326 source
+e 49 396 target
+e 50 216 general
+e 50 217 general
+e 50 220 general
+e 50 221 general
+e 51 217 specific
+e 51 326 target
+e 52 216 specific
+e 52 396 source
+e 53 218 specific
+e 53 327 source
+e 53 328 source
+e 53 329 source
+e 53 325 target
+e 54 219 specific
+e 54 324 target
+e 54 329 target
+e 55 324 source
+e 55 325 source
+e 55 440 source
+e 55 333 target
+e 56 401 target
+e 57 339 source
+e 57 340 target
+e 58 402 source
+e 58 403 source
+e 59 341 source
+e 59 344 target
+e 59 403 target
+e 60 337 source
+e 60 398 source
+e 61 227 specific
+e 61 335 source
+e 61 336 target
+e 62 400 source
+e 63 334 source
+e 63 342 source
+e 63 343 source
+e 63 397 source
+e 63 406 target
+e 64 226 specific
+e 65 226 general
+e 65 297 general
+e 65 401 source
+e 65 343 target
+e 65 400 target
+e 66 224 specific
+e 66 342 target
+e 67 225 general
+e 67 297 specific
+e 67 338 source
+e 67 399 source
+e 67 341 target
+e 67 402 target
+e 68 224 general
+e 68 227 general
+e 68 225 specific
+e 68 344 source
+e 69 336 source
+e 69 340 source
+e 69 397 target
+e 69 398 target
+e 69 399 target
+e 70 228 specific
+e 71 229 specific
+e 72 230 specific
+e 73 231 specific
+e 74 232 specific
+e 75 233 specific
+e 76 234 general
+e 76 235 general
+e 76 406 source
+e 77 228 general
+e 77 229 general
+e 77 230 general
+e 77 234 specific
+e 78 231 general
+e 78 232 general
+e 78 233 general
+e 78 235 specific
+e 79 236 general
+e 79 237 general
+e 79 421 source
+e 80 420 source
+e 81 236 specific
+e 81 408 target
+e 82 237 specific
+e 82 409 source
+e 83 345 source
+e 83 407 target
+e 83 420 target
+e 83 421 target
+e 84 407 source
+e 84 408 source
+e 84 409 target
+e 85 345 target
+e 86 359 source
+e 86 368 source
+e 87 280 general
+e 87 299 general
+e 87 355 target
+e 87 356 target
+e 88 238 specific
+e 88 354 source
+e 88 358 source
+e 89 239 specific
+e 89 353 source
+e 90 240 specific
+e 90 346 source
+e 90 348 source
+e 90 353 target
+e 91 241 specific
+e 91 347 source
+e 91 346 target
+e 91 354 target
+e 92 304 specific
+e 92 347 target
+e 92 348 target
+e 93 303 specific
+e 93 349 target
+e 94 349 source
+e 94 357 source
+e 94 410 target
+e 95 352 source
+e 96 430 source
+e 97 351 source
+e 98 350 source
+e 99 361 target
+e 99 412 target
+e 100 242 specific
+e 101 243 specific
+e 101 361 source
+e 101 411 target
+e 102 242 general
+e 102 243 general
+e 102 439 source
+e 103 250 specific
+e 103 363 source
+e 104 248 general
+e 104 249 general
+e 105 250 general
+e 105 249 specific
+e 105 362 source
+e 106 247 specific
+e 106 363 target
+e 107 246 specific
+e 108 245 specific
+e 109 244 specific
+e 110 244 general
+e 110 245 general
+e 110 246 general
+e 110 247 general
+e 110 303 general
+e 110 304 general
+e 110 350 target
+e 110 351 target
+e 110 352 target
+e 110 362 target
+e 110 430 target
+e 110 431 target
+e 110 443 target
+e 111 294 general
+e 111 253 specific
+e 112 293 specific
+e 112 294 specific
+e 112 365 target
+e 113 251 general
+e 113 252 general
+e 113 253 general
+e 113 293 general
+e 114 251 specific
+e 114 364 target
+e 115 252 specific
+e 115 364 source
+e 115 365 source
+e 116 254 general
+e 116 255 specific
+e 116 366 target
+e 116 394 target
+e 117 295 general
+e 117 296 general
+e 118 298 general
+e 118 254 specific
+e 118 395 target
+e 119 255 general
+e 120 273 general
+e 120 274 general
+e 120 275 general
+e 120 272 specific
+e 121 271 specific
+e 122 270 specific
+e 123 269 specific
+e 124 269 general
+e 124 270 general
+e 124 271 general
+e 124 268 specific
+e 125 266 specific
+e 126 267 specific
+e 127 265 specific
+e 128 264 specific
+e 129 263 specific
+e 130 275 specific
+e 131 273 specific
+e 132 274 specific
+e 133 262 specific
+e 134 262 general
+e 134 272 general
+e 134 261 specific
+e 135 260 specific
+e 136 259 specific
+e 137 265 general
+e 137 266 general
+e 137 267 general
+e 137 268 general
+e 137 258 specific
+e 138 263 general
+e 138 264 general
+e 138 257 specific
+e 139 259 general
+e 139 260 general
+e 139 261 general
+e 139 256 specific
+e 140 256 general
+e 140 257 general
+e 140 258 general
+e 141 429 target
+e 142 206 specific
+e 142 279 specific
+e 142 310 source
+e 142 307 target
+e 142 423 target
+e 143 277 specific
+e 143 426 target
+e 144 278 specific
+e 144 428 target
+e 145 276 specific
+e 145 428 source
+e 145 429 source
+e 145 427 target
+e 146 286 specific
+e 147 285 specific
+e 148 284 specific
+e 149 302 specific
+e 150 285 general
+e 150 286 general
+e 150 283 specific
+e 151 301 specific
+e 152 300 specific
+e 153 405 source
+e 154 283 general
+e 154 284 general
+e 154 369 source
+e 154 404 target
+e 154 405 target
+e 155 369 target
+e 155 371 target
+e 155 372 target
+e 155 373 target
+e 155 374 target
+e 155 434 target
+e 156 300 general
+e 156 301 general
+e 156 302 general
+e 156 281 specific
+e 156 433 source
+e 157 282 specific
+e 157 432 source
+e 158 287 general
+e 158 288 general
+e 158 289 general
+e 158 290 general
+e 158 370 source
+e 158 371 source
+e 159 292 specific
+e 160 291 specific
+e 161 290 specific
+e 162 287 specific
+e 162 373 source
+e 162 404 source
+e 163 291 general
+e 163 292 general
+e 163 289 specific
+e 163 374 source
+e 164 288 specific
+e 164 372 source
+e 165 416 source
+e 165 418 source
+e 165 376 target
+e 166 376 source
+e 166 419 source
+e 166 417 target
+e 167 375 target
+e 167 415 target
+e 167 418 target
+e 167 419 target
+e 168 378 target
+e 168 379 target
+e 168 383 target
+e 169 383 source
+e 169 377 target
+e 169 380 target
+e 170 377 source
+e 170 378 source
+e 170 381 target
+e 170 382 target
+e 171 389 source
+e 171 385 target
+e 171 387 target
+e 172 384 target
+e 172 386 target
+e 172 389 target
+e 173 384 source
+e 173 385 source
+e 173 411 source
+e 173 412 source
+e 173 441 source
+e 173 388 target
+e 173 393 target
+e 174 295 specific
+e 174 394 source
+e 175 296 specific
+e 175 395 source
+e 176 436 source
+e 177 437 source
+e 178 438 source
+e 179 298 specific
+e 180 434 source
+e 180 432 target
+e 180 433 target
+e 183 248 specific
+e 183 442 source
+e 184 203 specific
+e 185 201 specific
+e 186 200 general
+e 187 202 specific
+e 188 201 general
+e 188 202 general
+e 188 203 general
+e 188 200 specific
+e 188 443 source
+e 188 439 target
+e 188 442 target
+e 189 436 target
+e 189 437 target
+e 189 444 target
+e 189 445 target
+e 189 446 target
+e 189 447 target
+e 189 448 target
+e 190 444 source
+e 191 445 source
+e 192 446 source
+e 193 447 source
+e 194 448 source
+e 195 204 general
+e 195 205 general
+e 196 204 specific
+e 197 205 specific
+e 197 438 target
+e 329 440 target
+e 389 441 target
+t # 3 andrade2023integracao.json
+v 1 1*_1
+v 2 1_1
+v 3 1_01
+v 4 1_0*
+v 5 1_1*
+v 6 0*_1
+v 7 2*_0*
+v 8 1*_1*
+v 9 True
+v 10 False
+v 11 kind
+v 12 role
+v 13 role
+v 14 role
+v 15 kind
+v 16 relator
+v 17 role
+v 18 relator
+v 19 roleMixin
+v 20 kind
+v 21 role
+v 22 role
+v 23 subkind
+v 24 subkind
+v 25 category
+v 26 kind
+v 27 kind
+v 28 kind
+v 29 subkind
+v 30 kind
+v 31 role
+v 32 role
+v 33 roleMixin
+v 34 role
+v 35 relator
+v 36 role
+v 37 collective
+v 38 category
+v 39 subkind
+v 40 subkind
+v 41 subkind
+v 42 mixin
+v 43 quality
+v 44 quality
+v 45 quality
+v 46 quality
+v 47 class
+v 48 kind
+v 49 subkind
+v 50 relator
+v 51 kind
+v 52 role
+v 53 role
+v 54 role
+v 55 gen
+v 56 gen
+v 57 gen
+v 58 gen
+v 59 gen
+v 60 gen
+v 61 gen
+v 62 gen
+v 63 gen
+v 64 gen
+v 65 gen
+v 66 gen
+v 67 gen
+v 68 gen
+v 69 gen
+v 70 gen
+v 71 gen
+v 72 gen
+v 73 gen
+v 74 gen
+v 75 gen
+v 76 gen
+v 77 gen
+v 78 gen
+v 79 gen
+v 80 gen
+v 81 gen
+v 82 gen
+v 83 gen
+v 84 gen
+v 85 gen
+v 86 mediation
+v 87 mediation
+v 88 mediation
+v 89 mediation
+v 90 material
+v 91 material
+v 92 material
+v 93 material
+v 94 material
+v 95 material
+v 96 mediation
+v 97 mediation
+v 98 mediation
+v 99 memberOf
+v 100 memberOf
+v 101 memberOf
+v 102 characterization
+v 103 characterization
+v 104 material
+v 105 characterization
+v 106 memberOf
+v 107 memberOf
+v 108 memberOf
+v 109 memberOf
+v 110 characterization
+v 111 mediation
+v 112 mediation
+v 113 material
+v 114 gen-set
+v 115 gen-set
+v 116 gen-set
+v 117 gen-set
+v 118 gen-set
+v 119 gen-set
+v 120 gen-set
+v 121 gen-set
+e 11 63 general
+e 11 70 general
+e 11 71 general
+e 11 99 source
+e 11 86 target
+e 12 70 specific
+e 12 107 source
+e 13 55 general
+e 13 56 general
+e 13 71 specific
+e 14 72 specific
+e 14 109 source
+e 15 95 source
+e 16 86 source
+e 16 87 source
+e 17 83 general
+e 17 84 general
+e 17 59 specific
+e 17 78 specific
+e 17 102 source
+e 17 87 target
+e 17 113 target
+e 18 88 source
+e 18 89 source
+e 18 98 source
+e 19 88 target
+e 19 92 target
+e 20 104 source
+e 20 91 target
+e 21 55 specific
+e 21 108 source
+e 22 56 specific
+e 22 106 source
+e 23 61 specific
+e 23 90 target
+e 23 106 target
+e 23 107 target
+e 24 60 specific
+e 24 104 target
+e 24 108 target
+e 25 57 general
+e 25 58 general
+e 25 77 specific
+e 25 92 source
+e 25 93 target
+e 25 98 target
+e 25 103 target
+e 26 57 specific
+e 26 94 source
+e 27 58 specific
+e 27 91 source
+e 28 59 general
+e 28 82 general
+e 29 62 specific
+e 29 95 target
+e 29 109 target
+e 30 90 source
+e 30 94 target
+e 31 64 general
+e 31 66 specific
+e 31 96 source
+e 31 101 target
+e 32 65 general
+e 32 63 specific
+e 32 101 source
+e 33 97 target
+e 34 64 specific
+e 34 93 source
+e 34 89 target
+e 34 100 target
+e 35 97 source
+e 35 96 target
+e 36 72 general
+e 36 65 specific
+e 36 79 specific
+e 36 100 source
+e 36 105 target
+e 37 60 general
+e 37 61 general
+e 37 62 general
+e 37 66 general
+e 37 99 target
+e 38 67 general
+e 38 68 general
+e 38 69 general
+e 38 110 target
+e 39 75 general
+e 39 76 general
+e 39 67 specific
+e 39 102 target
+e 40 73 general
+e 40 74 general
+e 40 68 specific
+e 40 103 source
+e 41 80 general
+e 41 69 specific
+e 41 105 source
+e 42 77 general
+e 42 78 general
+e 42 79 general
+e 42 110 source
+e 43 73 specific
+e 44 74 specific
+e 45 75 specific
+e 46 76 specific
+e 47 80 specific
+e 48 81 general
+e 49 81 specific
+e 49 111 source
+e 50 111 target
+e 50 112 target
+e 51 113 source
+e 52 85 general
+e 52 82 specific
+e 52 112 source
+e 53 83 specific
+e 54 84 specific
+e 54 85 specific
+t # 4 amaral2020game-theory.json
+v 1 2*_1*
+v 2 0*_1*
+v 3 1*_1*
+v 4 1*_0*
+v 5 0*_1
+v 6 1*_1
+v 7 1_0*
+v 8 1_1
+v 9 1*_2*
+v 10 1_1*
+v 11 2*_1
+v 12 False
+v 13 True
+v 14 event
+v 15 roleMixin
+v 16 event
+v 17 event
+v 18 relator
+v 19 mode
+v 20 mode
+v 21 quality
+v 22 datatype
+v 23 situation
+v 24 event
+v 25 event
+v 26 situation
+v 27 situation
+v 28 event
+v 29 event
+v 30 event
+v 31 event
+v 32 event
+v 33 event
+v 34 mode
+v 35 category
+v 36 gen
+v 37 gen
+v 38 gen
+v 39 gen
+v 40 gen
+v 41 gen
+v 42 gen
+v 43 gen
+v 44 gen
+v 45 gen
+v 46 gen
+v 47 gen
+v 48 gen
+v 49 relation
+v 50 participation
+v 51 characterization
+v 52 relation
+v 53 characterization
+v 54 relation
+v 55 characterization
+v 56 mediation
+v 57 externalDependence
+v 58 relation
+v 59 participational
+v 60 relation
+v 61 relation
+v 62 relation
+v 63 relation
+v 64 historicalDependence
+v 65 historicalDependence
+v 66 triggers
+v 67 bringsAbout
+v 68 characterization
+v 69 gen-set
+v 70 gen-set
+e 14 49 source
+e 14 59 source
+e 14 50 target
+e 15 48 specific
+e 15 50 source
+e 15 51 target
+e 15 55 target
+e 15 56 target
+e 16 36 specific
+e 16 58 source
+e 16 59 target
+e 17 37 specific
+e 17 57 target
+e 17 58 target
+e 17 60 target
+e 18 56 source
+e 18 60 source
+e 19 54 source
+e 19 55 source
+e 19 57 source
+e 19 53 target
+e 20 51 source
+e 20 54 target
+e 21 53 source
+e 21 52 target
+e 22 52 source
+e 23 46 specific
+e 24 36 general
+e 24 40 general
+e 24 41 general
+e 24 42 general
+e 24 61 source
+e 24 67 source
+e 25 37 general
+e 25 61 target
+e 26 46 general
+e 26 47 general
+e 26 67 target
+e 27 47 specific
+e 27 66 source
+e 28 43 specific
+e 28 45 specific
+e 28 65 source
+e 28 66 target
+e 29 43 general
+e 29 41 specific
+e 29 64 source
+e 30 44 general
+e 30 45 general
+e 30 42 specific
+e 31 38 general
+e 31 39 general
+e 31 40 specific
+e 31 64 target
+e 32 38 specific
+e 32 62 source
+e 33 39 specific
+e 33 44 specific
+e 33 63 source
+e 33 65 target
+e 34 68 source
+e 34 49 target
+e 34 62 target
+e 34 63 target
+e 35 48 general
+e 35 68 target
+t # 5 amaral2022ethical-requirements.json
+v 1 0*_1
+v 2 1_1*
+v 3 1*_1*
+v 4 0*_0*
+v 5 1*_1
+v 6 0*_1*
+v 7 category
+v 8 category
+v 9 type
+v 10 mode
+v 11 category
+v 12 category
+v 13 category
+v 14 category
+v 15 category
+v 16 category
+v 17 category
+v 18 category
+v 19 category
+v 20 category
+v 21 category
+v 22 category
+v 23 category
+v 24 category
+v 25 mode
+v 26 category
+v 27 event
+v 28 event
+v 29 role
+v 30 role
+v 31 gen
+v 32 gen
+v 33 gen
+v 34 gen
+v 35 gen
+v 36 gen
+v 37 gen
+v 38 gen
+v 39 gen
+v 40 gen
+v 41 gen
+v 42 gen
+v 43 gen
+v 44 gen
+v 45 relation
+v 46 relation
+v 47 relation
+v 48 relation
+v 49 relation
+v 50 relation
+v 51 relation
+v 52 relation
+v 53 relation
+v 54 characterization
+v 55 relation
+v 56 relation
+v 57 relation
+v 58 relation
+v 59 relation
+v 60 externalDependence
+v 61 externalDependence
+e 7 31 general
+e 7 32 specific
+e 8 33 general
+e 8 34 general
+e 8 35 general
+e 8 36 general
+e 8 37 general
+e 8 38 general
+e 8 31 specific
+e 8 45 source
+e 9 46 source
+e 9 45 target
+e 10 48 source
+e 10 46 target
+e 11 47 source
+e 11 48 target
+e 12 47 target
+e 13 32 general
+e 14 33 specific
+e 14 49 source
+e 15 34 specific
+e 15 52 source
+e 16 35 specific
+e 16 50 source
+e 17 36 specific
+e 17 51 source
+e 18 37 specific
+e 18 49 target
+e 18 50 target
+e 18 51 target
+e 18 52 target
+e 18 53 target
+e 19 38 specific
+e 19 53 source
+e 20 39 general
+e 20 40 specific
+e 21 41 general
+e 21 42 general
+e 21 39 specific
+e 22 40 general
+e 22 55 target
+e 23 41 specific
+e 23 56 target
+e 24 42 specific
+e 24 57 target
+e 25 43 general
+e 25 44 general
+e 25 54 source
+e 25 55 source
+e 25 58 target
+e 25 59 target
+e 26 54 target
+e 27 58 source
+e 27 60 target
+e 28 59 source
+e 28 61 target
+e 29 43 specific
+e 29 56 source
+e 29 60 source
+e 30 44 specific
+e 30 57 source
+e 30 61 source
+t # 6 abrahao2018agriculture-operations.json
+v 1 *_1
+v 2 1_1
+v 3 1*_1*
+v 4 1*_1
+v 5 1_1*
+v 6 1*_01
+v 7 2*_1
+v 8 1*_*
+v 9 *_*
+v 10 True
+v 11 False
+v 12 stringNominalStructure
+v 13 kind
+v 14 category
+v 15 relator
+v 16 kind
+v 17 nonPerceivableQuality
+v 18 category
+v 19 kind
+v 20 subkind
+v 21 subkind
+v 22 kind
+v 23 kind
+v 24 category
+v 25 relator
+v 26 kind
+v 27 relator
+v 28 relator
+v 29 kind
+v 30 kind
+v 31 relator
+v 32 relator
+v 33 kind
+v 34 gen
+v 35 gen
+v 36 gen
+v 37 gen
+v 38 gen
+v 39 gen
+v 40 gen
+v 41 gen
+v 42 gen
+v 43 gen
+v 44 gen
+v 45 gen
+v 46 gen
+v 47 gen
+v 48 derivation
+v 49 derivation
+v 50 derivation
+v 51 relation
+v 52 structuration
+v 53 relation
+v 54 material
+v 55 mediation
+v 56 mediation
+v 57 relation
+v 58 characterization
+v 59 componentOf
+v 60 relation
+v 61 relation
+v 62 relation
+v 63 componentOf
+v 64 relation
+v 65 relation
+v 66 componentOf
+v 67 relation
+v 68 relation
+v 69 relation
+v 70 material
+v 71 material
+v 72 material
+v 73 material
+v 74 material
+v 75 relation
+v 76 relation
+v 77 relation
+v 78 relation
+v 79 relation
+v 80 material
+v 81 relation
+v 82 relation
+v 83 relation
+v 84 relation
+v 85 material
+v 86 material
+v 87 relation
+v 88 material
+v 89 relation
+v 90 relation
+v 91 relation
+v 92 relation
+v 93 material
+v 94 relation
+v 95 relation
+v 96 relation
+v 97 relation
+v 98 derivation
+v 99 derivation
+v 100 derivation
+v 101 gen-set
+v 102 gen-set
+v 103 gen-set
+e 12 51 source
+e 12 52 target
+e 13 34 specific
+e 13 74 source
+e 13 93 source
+e 13 51 target
+e 13 53 target
+e 13 54 target
+e 13 56 target
+e 13 94 target
+e 13 95 target
+e 14 34 general
+e 14 45 general
+e 14 46 general
+e 14 57 source
+e 14 67 source
+e 15 55 source
+e 15 56 source
+e 15 98 source
+e 16 54 source
+e 16 55 target
+e 16 59 target
+e 16 63 target
+e 17 52 source
+e 17 53 source
+e 17 58 source
+e 18 40 general
+e 18 41 general
+e 18 42 general
+e 18 43 general
+e 18 44 general
+e 18 62 source
+e 18 68 source
+e 18 57 target
+e 19 35 general
+e 19 36 general
+e 19 39 specific
+e 19 59 source
+e 19 58 target
+e 19 64 target
+e 19 79 target
+e 20 35 specific
+e 20 60 target
+e 21 36 specific
+e 21 61 target
+e 21 65 target
+e 22 37 specific
+e 22 61 source
+e 22 63 source
+e 22 64 source
+e 22 77 source
+e 22 66 target
+e 22 72 target
+e 22 73 target
+e 22 74 target
+e 22 76 target
+e 23 38 specific
+e 23 60 source
+e 23 65 source
+e 23 66 source
+e 23 79 source
+e 23 81 source
+e 23 70 target
+e 23 71 target
+e 23 75 target
+e 23 80 target
+e 24 37 general
+e 24 38 general
+e 24 39 general
+e 24 47 general
+e 24 69 source
+e 24 62 target
+e 25 42 specific
+e 25 75 source
+e 25 76 source
+e 25 78 source
+e 25 99 source
+e 26 45 specific
+e 26 70 source
+e 26 71 source
+e 26 72 source
+e 26 73 source
+e 26 86 source
+e 26 88 source
+e 26 97 source
+e 26 78 target
+e 26 87 target
+e 26 89 target
+e 26 91 target
+e 27 40 specific
+e 27 82 source
+e 27 87 source
+e 27 96 source
+e 27 48 target
+e 27 81 target
+e 28 44 specific
+e 28 83 source
+e 28 50 target
+e 28 84 target
+e 28 96 target
+e 28 97 target
+e 29 46 specific
+e 29 80 source
+e 29 85 source
+e 29 82 target
+e 29 83 target
+e 30 47 specific
+e 30 84 source
+e 30 92 source
+e 30 85 target
+e 30 86 target
+e 30 88 target
+e 30 93 target
+e 31 43 specific
+e 31 89 source
+e 31 95 source
+e 31 100 source
+e 31 90 target
+e 31 92 target
+e 32 41 specific
+e 32 90 source
+e 32 91 source
+e 32 94 source
+e 32 49 target
+e 32 77 target
+e 33 67 target
+e 33 68 target
+e 33 69 target
+e 48 71 source
+e 49 73 source
+e 50 86 source
+e 54 98 target
+e 70 99 target
+e 88 100 target
+t # 7 alpinebits2022.json
+v 1 1*_1*
+v 2 1*_*
+v 3 *_2*
+v 4 1*_1
+v 5 *_*
+v 6 *_01
+v 7 *_0*
+v 8 *_1
+v 9 *_1*
+v 10 1*_01
+v 11 1_1
+v 12 2*_01
+v 13 0*_0*
+v 14 True
+v 15 False
+v 16 datatype
+v 17 datatype
+v 18 datatype
+v 19 datatype
+v 20 relator
+v 21 phase
+v 22 category
+v 23 roleMixin
+v 24 kind
+v 25 kind
+v 26 roleMixin
+v 27 subkind
+v 28 subkind
+v 29 roleMixin
+v 30 roleMixin
+v 31 category
+v 32 kind
+v 33 kind
+v 34 category
+v 35 subkind
+v 36 roleMixin
+v 37 quality
+v 38 subkind
+v 39 subkind
+v 40 subkind
+v 41 category
+v 42 subkind
+v 43 datatype
+v 44 datatype
+v 45 kind
+v 46 kind
+v 47 category
+v 48 subkind
+v 49 kind
+v 50 subkind
+v 51 subkind
+v 52 subkind
+v 53 enumeration
+v 54 enumeration
+v 55 datatype
+v 56 relator
+v 57 type
+v 58 phaseMixin
+v 59 phaseMixin
+v 60 phaseMixin
+v 61 enumeration
+v 62 roleMixin
+v 63 subkind
+v 64 subkind
+v 65 subkind
+v 66 kind
+v 67 type
+v 68 roleMixin
+v 69 subkind
+v 70 datatype
+v 71 datatype
+v 72 datatype
+v 73 datatype
+v 74 datatype
+v 75 subkind
+v 76 subkind
+v 77 subkind
+v 78 enumeration
+v 79 datatype
+v 80 phase
+v 81 subkind
+v 82 quality
+v 83 type
+v 84 type
+v 85 roleMixin
+v 86 subkind
+v 87 subkind
+v 88 subkind
+v 89 phase
+v 90 phase
+v 91 phase
+v 92 kind
+v 93 collective
+v 94 gen
+v 95 gen
+v 96 gen
+v 97 gen
+v 98 gen
+v 99 gen
+v 100 gen
+v 101 gen
+v 102 gen
+v 103 gen
+v 104 gen
+v 105 gen
+v 106 gen
+v 107 gen
+v 108 gen
+v 109 gen
+v 110 gen
+v 111 gen
+v 112 gen
+v 113 gen
+v 114 gen
+v 115 gen
+v 116 gen
+v 117 gen
+v 118 gen
+v 119 gen
+v 120 gen
+v 121 gen
+v 122 gen
+v 123 gen
+v 124 gen
+v 125 gen
+v 126 gen
+v 127 gen
+v 128 gen
+v 129 gen
+v 130 gen
+v 131 gen
+v 132 gen
+v 133 gen
+v 134 gen
+v 135 gen
+v 136 gen
+v 137 gen
+v 138 gen
+v 139 gen
+v 140 gen
+v 141 gen
+v 142 gen
+v 143 gen
+v 144 gen
+v 145 gen
+v 146 gen
+v 147 gen
+v 148 gen
+v 149 gen
+v 150 gen
+v 151 gen
+v 152 gen
+v 153 mediation
+v 154 material
+v 155 relation
+v 156 material
+v 157 material
+v 158 historicalDependence
+v 159 material
+v 160 instantiation
+v 161 componentOf
+v 162 componentOf
+v 163 instantiation
+v 164 instantiation
+v 165 mediation
+v 166 mediation
+v 167 mediation
+v 168 mediation
+v 169 material
+v 170 material
+v 171 instantiation
+v 172 characterization
+v 173 material
+v 174 material
+v 175 instantiation
+v 176 characterization
+v 177 instantiation
+v 178 componentOf
+v 179 instantiation
+v 180 material
+v 181 material
+v 182 relation
+v 183 relation
+v 184 material
+v 185 instantiation
+v 186 instantiation
+v 187 instantiation
+v 188 material
+v 189 mediation
+v 190 gen-set
+v 191 gen-set
+v 192 gen-set
+v 193 gen-set
+v 194 gen-set
+v 195 gen-set
+v 196 gen-set
+v 197 gen-set
+v 198 gen-set
+v 199 gen-set
+e 20 94 general
+e 20 99 general
+e 20 100 general
+e 20 132 general
+e 20 150 general
+e 20 151 general
+e 20 152 general
+e 20 123 specific
+e 20 153 source
+e 20 154 source
+e 20 156 source
+e 20 157 source
+e 20 159 source
+e 20 160 source
+e 20 177 source
+e 20 188 source
+e 20 189 source
+e 20 155 target
+e 21 94 specific
+e 22 95 general
+e 22 96 general
+e 22 97 general
+e 22 98 general
+e 22 101 general
+e 22 102 general
+e 22 114 general
+e 22 120 general
+e 22 143 general
+e 22 122 specific
+e 22 165 target
+e 23 95 specific
+e 23 153 target
+e 24 96 specific
+e 25 97 specific
+e 26 98 specific
+e 26 154 target
+e 27 100 specific
+e 27 155 source
+e 28 99 specific
+e 29 101 specific
+e 29 156 target
+e 30 102 specific
+e 30 157 target
+e 31 106 general
+e 31 118 general
+e 31 172 target
+e 32 103 specific
+e 33 104 specific
+e 34 103 general
+e 34 104 general
+e 34 119 general
+e 34 121 specific
+e 34 158 source
+e 34 171 source
+e 34 173 source
+e 34 174 source
+e 34 184 source
+e 35 131 general
+e 35 136 specific
+e 35 177 target
+e 36 105 specific
+e 36 159 target
+e 37 125 general
+e 37 126 general
+e 37 127 general
+e 37 128 general
+e 37 129 general
+e 37 130 general
+e 37 172 source
+e 38 129 specific
+e 39 127 specific
+e 40 125 specific
+e 41 105 general
+e 41 107 general
+e 41 108 general
+e 41 110 general
+e 41 111 general
+e 41 112 general
+e 41 124 general
+e 41 106 specific
+e 41 113 specific
+e 41 169 target
+e 41 166 target
+e 42 131 specific
+e 42 149 specific
+e 42 187 source
+e 42 160 target
+e 45 108 specific
+e 45 140 specific
+e 45 161 source
+e 45 163 source
+e 46 109 general
+e 46 117 general
+e 46 124 specific
+e 46 162 source
+e 46 164 source
+e 46 176 target
+e 47 113 general
+e 47 121 general
+e 47 122 general
+e 47 123 general
+e 47 133 general
+e 47 134 general
+e 47 140 general
+e 47 141 general
+e 47 147 general
+e 47 148 general
+e 47 149 general
+e 47 179 source
+e 47 181 source
+e 47 158 target
+e 48 109 specific
+e 48 147 specific
+e 48 180 source
+e 48 186 source
+e 49 115 general
+e 49 116 general
+e 49 107 specific
+e 49 141 specific
+e 49 170 source
+e 49 175 source
+e 49 178 source
+e 49 161 target
+e 49 162 target
+e 50 138 specific
+e 50 163 target
+e 51 139 specific
+e 51 164 target
+e 52 142 specific
+e 52 180 target
+e 56 118 specific
+e 56 165 source
+e 56 166 source
+e 56 167 source
+e 56 168 source
+e 57 167 target
+e 57 168 target
+e 58 110 specific
+e 59 111 specific
+e 60 112 specific
+e 62 114 specific
+e 62 170 target
+e 63 115 specific
+e 63 178 target
+e 64 116 specific
+e 65 117 specific
+e 65 148 specific
+e 65 185 source
+e 66 119 specific
+e 67 173 target
+e 68 120 specific
+e 68 174 target
+e 69 135 specific
+e 69 171 target
+e 75 126 specific
+e 76 128 specific
+e 77 130 specific
+e 80 132 specific
+e 81 137 specific
+e 81 175 target
+e 82 176 source
+e 83 135 general
+e 83 136 general
+e 83 137 general
+e 83 138 general
+e 83 139 general
+e 83 144 general
+e 83 145 general
+e 83 146 general
+e 83 133 specific
+e 83 182 target
+e 83 179 target
+e 84 142 general
+e 84 134 specific
+e 84 183 target
+e 84 181 target
+e 85 143 specific
+e 85 184 target
+e 86 144 specific
+e 86 185 target
+e 87 145 specific
+e 87 186 target
+e 88 146 specific
+e 88 187 target
+e 89 150 specific
+e 90 151 specific
+e 91 152 specific
+e 92 188 target
+e 93 189 target
+t # 8 aires2022valuenetworks-geo.json
+v 1 *_1
+v 2 1_1
+v 3 1*_1*
+v 4 1*_1
+v 5 1_1*
+v 6 1*_01
+v 7 2*_1
+v 8 1*_*
+v 9 *_*
+v 10 True
+v 11 False
+v 12 stringNominalStructure
+v 13 kind
+v 14 category
+v 15 relator
+v 16 kind
+v 17 nonPerceivableQuality
+v 18 category
+v 19 kind
+v 20 subkind
+v 21 subkind
+v 22 kind
+v 23 kind
+v 24 category
+v 25 relator
+v 26 kind
+v 27 relator
+v 28 relator
+v 29 kind
+v 30 kind
+v 31 relator
+v 32 relator
+v 33 kind
+v 34 gen
+v 35 gen
+v 36 gen
+v 37 gen
+v 38 gen
+v 39 gen
+v 40 gen
+v 41 gen
+v 42 gen
+v 43 gen
+v 44 gen
+v 45 gen
+v 46 gen
+v 47 gen
+v 48 derivation
+v 49 derivation
+v 50 derivation
+v 51 relation
+v 52 structuration
+v 53 relation
+v 54 material
+v 55 mediation
+v 56 mediation
+v 57 relation
+v 58 characterization
+v 59 componentOf
+v 60 relation
+v 61 relation
+v 62 relation
+v 63 componentOf
+v 64 relation
+v 65 relation
+v 66 componentOf
+v 67 relation
+v 68 relation
+v 69 relation
+v 70 material
+v 71 material
+v 72 material
+v 73 material
+v 74 material
+v 75 relation
+v 76 relation
+v 77 relation
+v 78 relation
+v 79 relation
+v 80 material
+v 81 relation
+v 82 relation
+v 83 relation
+v 84 relation
+v 85 material
+v 86 material
+v 87 relation
+v 88 material
+v 89 relation
+v 90 relation
+v 91 relation
+v 92 relation
+v 93 material
+v 94 relation
+v 95 relation
+v 96 relation
+v 97 relation
+v 98 derivation
+v 99 derivation
+v 100 derivation
+v 101 gen-set
+v 102 gen-set
+v 103 gen-set
+e 12 51 source
+e 12 52 target
+e 13 34 specific
+e 13 74 source
+e 13 93 source
+e 13 51 target
+e 13 53 target
+e 13 54 target
+e 13 56 target
+e 13 94 target
+e 13 95 target
+e 14 34 general
+e 14 45 general
+e 14 46 general
+e 14 57 source
+e 14 67 source
+e 15 55 source
+e 15 56 source
+e 15 98 source
+e 16 54 source
+e 16 55 target
+e 16 59 target
+e 16 63 target
+e 17 52 source
+e 17 53 source
+e 17 58 source
+e 18 40 general
+e 18 41 general
+e 18 42 general
+e 18 43 general
+e 18 44 general
+e 18 62 source
+e 18 68 source
+e 18 57 target
+e 19 35 general
+e 19 36 general
+e 19 39 specific
+e 19 59 source
+e 19 58 target
+e 19 64 target
+e 19 79 target
+e 20 35 specific
+e 20 60 target
+e 21 36 specific
+e 21 61 target
+e 21 65 target
+e 22 37 specific
+e 22 61 source
+e 22 63 source
+e 22 64 source
+e 22 77 source
+e 22 66 target
+e 22 72 target
+e 22 73 target
+e 22 74 target
+e 22 76 target
+e 23 38 specific
+e 23 60 source
+e 23 65 source
+e 23 66 source
+e 23 79 source
+e 23 81 source
+e 23 70 target
+e 23 71 target
+e 23 75 target
+e 23 80 target
+e 24 37 general
+e 24 38 general
+e 24 39 general
+e 24 47 general
+e 24 69 source
+e 24 62 target
+e 25 42 specific
+e 25 75 source
+e 25 76 source
+e 25 78 source
+e 25 99 source
+e 26 45 specific
+e 26 70 source
+e 26 71 source
+e 26 72 source
+e 26 73 source
+e 26 86 source
+e 26 88 source
+e 26 97 source
+e 26 78 target
+e 26 87 target
+e 26 89 target
+e 26 91 target
+e 27 40 specific
+e 27 82 source
+e 27 87 source
+e 27 96 source
+e 27 48 target
+e 27 81 target
+e 28 44 specific
+e 28 83 source
+e 28 50 target
+e 28 84 target
+e 28 96 target
+e 28 97 target
+e 29 46 specific
+e 29 80 source
+e 29 85 source
+e 29 82 target
+e 29 83 target
+e 30 47 specific
+e 30 84 source
+e 30 92 source
+e 30 85 target
+e 30 86 target
+e 30 88 target
+e 30 93 target
+e 31 43 specific
+e 31 89 source
+e 31 95 source
+e 31 100 source
+e 31 90 target
+e 31 92 target
+e 32 41 specific
+e 32 90 source
+e 32 91 source
+e 32 94 source
+e 32 49 target
+e 32 77 target
+e 33 67 target
+e 33 68 target
+e 33 69 target
+e 48 71 source
+e 49 73 source
+e 50 86 source
+e 54 98 target
+e 70 99 target
+e 88 100 target
+t # 9 andersson2018value-ascription.json
+v 1 1*_0*
+v 2 0*_1
+v 3 0*_0*
+v 4 *_*
+v 5 1*_1
+v 6 0*_1*
+v 7 1_1*
+v 8 category
+v 9 event
+v 10 event
+v 11 event
+v 12 quale
+v 13 abstract-individual
+v 14 set
+v 15 set
+v 16 quality-structure
+v 17 endurant
+v 18 situation
+v 19 quality-dimension
+v 20 situation
+v 21 gen
+v 22 gen
+v 23 relation
+v 24 relation
+v 25 relation
+v 26 relation
+v 27 relation
+v 28 relation
+v 29 relation
+v 30 relation
+v 31 relation
+v 32 memberOf
+v 33 memberOf
+v 34 memberOf
+v 35 relation
+v 36 relation
+v 37 relation
+v 38 relation
+v 39 relation
+e 8 24 target
+e 8 25 target
+e 9 21 general
+e 9 22 general
+e 9 24 source
+e 9 25 source
+e 9 26 source
+e 9 27 target
+e 9 28 source
+e 10 21 specific
+e 10 23 source
+e 10 39 source
+e 11 22 specific
+e 11 38 source
+e 11 23 target
+e 12 32 source
+e 12 26 target
+e 13 29 source
+e 13 30 source
+e 13 31 source
+e 13 28 target
+e 14 33 source
+e 14 29 target
+e 15 34 source
+e 15 30 target
+e 16 35 source
+e 16 31 target
+e 16 32 target
+e 17 33 target
+e 17 37 target
+e 17 38 target
+e 18 34 target
+e 18 36 target
+e 19 35 target
+e 20 36 source
+e 20 37 source
+e 20 39 target
+t # 10 ahmad2018aviation.json
+v 1 *_*
+v 2 class
+v 3 class
+v 4 class
+v 5 class
+v 6 class
+v 7 class
+v 8 class
+v 9 class
+v 10 class
+v 11 class
+v 12 class
+v 13 class
+v 14 class
+v 15 class
+v 16 class
+v 17 class
+v 18 class
+v 19 class
+v 20 class
+v 21 class
+v 22 class
+v 23 gen
+v 24 gen
+v 25 gen
+v 26 gen
+v 27 gen
+v 28 gen
+v 29 gen
+v 30 gen
+v 31 gen
+v 32 gen
+v 33 gen
+v 34 gen
+v 35 gen
+v 36 gen
+v 37 gen
+v 38 gen
+v 39 gen
+v 40 gen
+v 41 gen
+v 42 relation
+v 43 relation
+v 44 relation
+v 45 relation
+v 46 relation
+v 47 relation
+v 48 relation
+v 49 relation
+v 50 relation
+v 51 relation
+e 2 35 specific
+e 3 36 specific
+e 4 39 specific
+e 4 42 source
+e 5 38 specific
+e 6 32 specific
+e 7 23 general
+e 7 24 general
+e 7 34 specific
+e 7 47 target
+e 8 27 general
+e 8 23 specific
+e 9 28 general
+e 9 29 general
+e 9 30 general
+e 9 24 specific
+e 9 41 specific
+e 10 25 specific
+e 10 28 specific
+e 10 44 source
+e 11 29 specific
+e 11 43 source
+e 11 45 target
+e 12 30 specific
+e 13 25 general
+e 13 26 general
+e 13 27 specific
+e 14 26 specific
+e 14 44 target
+e 15 31 specific
+e 15 40 specific
+e 16 31 general
+e 16 51 target
+e 17 45 source
+e 18 47 source
+e 19 32 general
+e 19 33 general
+e 19 34 general
+e 19 41 general
+e 19 48 target
+e 19 50 source
+e 19 43 target
+e 20 35 general
+e 20 36 general
+e 20 37 general
+e 20 46 source
+e 20 50 target
+e 21 38 general
+e 21 39 general
+e 21 37 specific
+e 21 49 source
+e 21 51 source
+e 22 40 general
+e 22 33 specific
+e 22 42 target
+e 22 46 target
+e 22 49 target
+t # 11 albuquerque2011ontobio.json
+v 1 1_1*
+v 2 1*_1
+v 3 1_1
+v 4 1*_1*
+v 5 *_*
+v 6 *_1
+v 7 2*_1
+v 8 0*_1
+v 9 *_1*
+v 10 *_2*
+v 11 True
+v 12 False
+v 13 kind
+v 14 role
+v 15 role
+v 16 role
+v 17 role
+v 18 role
+v 19 role
+v 20 category
+v 21 role
+v 22 relator
+v 23 type
+v 24 role
+v 25 role
+v 26 role
+v 27 category
+v 28 relator
+v 29 relator
+v 30 kind
+v 31 role
+v 32 relator
+v 33 relator
+v 34 relator
+v 35 relator
+v 36 role
+v 37 kind
+v 38 relator
+v 39 relator
+v 40 relator
+v 41 kind
+v 42 type
+v 43 category
+v 44 subkind
+v 45 subkind
+v 46 subkind
+v 47 subkind
+v 48 type
+v 49 subkind
+v 50 subkind
+v 51 subkind
+v 52 subkind
+v 53 subkind
+v 54 subkind
+v 55 mode
+v 56 mode
+v 57 mode
+v 58 mode
+v 59 mode
+v 60 mode
+v 61 mode
+v 62 mode
+v 63 mode
+v 64 mode
+v 65 mode
+v 66 mode
+v 67 mode
+v 68 mode
+v 69 mode
+v 70 mode
+v 71 category
+v 72 type
+v 73 type
+v 74 type
+v 75 category
+v 76 category
+v 77 collective
+v 78 category
+v 79 collective
+v 80 collective
+v 81 kind
+v 82 category
+v 83 subkind
+v 84 subkind
+v 85 subkind
+v 86 subkind
+v 87 subkind
+v 88 subkind
+v 89 category
+v 90 category
+v 91 category
+v 92 category
+v 93 category
+v 94 category
+v 95 category
+v 96 category
+v 97 mixin
+v 98 mixin
+v 99 mixin
+v 100 mixin
+v 101 mixin
+v 102 mixin
+v 103 mixin
+v 104 mixin
+v 105 quantity
+v 106 quantity
+v 107 quantity
+v 108 subkind
+v 109 subkind
+v 110 subkind
+v 111 subkind
+v 112 subkind
+v 113 subkind
+v 114 subkind
+v 115 subkind
+v 116 subkind
+v 117 subkind
+v 118 subkind
+v 119 subkind
+v 120 category
+v 121 datatype
+v 122 type
+v 123 category
+v 124 category
+v 125 category
+v 126 type
+v 127 type
+v 128 category
+v 129 category
+v 130 category
+v 131 category
+v 132 category
+v 133 category
+v 134 kind
+v 135 kind
+v 136 kind
+v 137 kind
+v 138 subkind
+v 139 subkind
+v 140 subkind
+v 141 subkind
+v 142 subkind
+v 143 subkind
+v 144 subkind
+v 145 subkind
+v 146 subkind
+v 147 subkind
+v 148 subkind
+v 149 subkind
+v 150 subkind
+v 151 category
+v 152 category
+v 153 category
+v 154 category
+v 155 category
+v 156 category
+v 157 category
+v 158 category
+v 159 category
+v 160 gen
+v 161 gen
+v 162 gen
+v 163 gen
+v 164 gen
+v 165 gen
+v 166 gen
+v 167 gen
+v 168 gen
+v 169 gen
+v 170 gen
+v 171 gen
+v 172 gen
+v 173 gen
+v 174 gen
+v 175 gen
+v 176 gen
+v 177 gen
+v 178 gen
+v 179 gen
+v 180 gen
+v 181 gen
+v 182 gen
+v 183 gen
+v 184 gen
+v 185 gen
+v 186 gen
+v 187 gen
+v 188 gen
+v 189 gen
+v 190 gen
+v 191 gen
+v 192 gen
+v 193 gen
+v 194 gen
+v 195 gen
+v 196 gen
+v 197 gen
+v 198 gen
+v 199 gen
+v 200 gen
+v 201 gen
+v 202 gen
+v 203 gen
+v 204 gen
+v 205 gen
+v 206 gen
+v 207 gen
+v 208 gen
+v 209 gen
+v 210 gen
+v 211 gen
+v 212 gen
+v 213 gen
+v 214 gen
+v 215 gen
+v 216 gen
+v 217 gen
+v 218 gen
+v 219 gen
+v 220 gen
+v 221 gen
+v 222 gen
+v 223 gen
+v 224 gen
+v 225 gen
+v 226 gen
+v 227 gen
+v 228 gen
+v 229 gen
+v 230 gen
+v 231 gen
+v 232 gen
+v 233 gen
+v 234 gen
+v 235 gen
+v 236 gen
+v 237 gen
+v 238 gen
+v 239 gen
+v 240 gen
+v 241 gen
+v 242 gen
+v 243 gen
+v 244 gen
+v 245 gen
+v 246 gen
+v 247 gen
+v 248 gen
+v 249 gen
+v 250 gen
+v 251 gen
+v 252 gen
+v 253 gen
+v 254 gen
+v 255 gen
+v 256 gen
+v 257 gen
+v 258 gen
+v 259 gen
+v 260 gen
+v 261 gen
+v 262 gen
+v 263 gen
+v 264 gen
+v 265 gen
+v 266 gen
+v 267 gen
+v 268 gen
+v 269 gen
+v 270 gen
+v 271 gen
+v 272 gen
+v 273 gen
+v 274 gen
+v 275 gen
+v 276 gen
+v 277 gen
+v 278 gen
+v 279 gen
+v 280 gen
+v 281 gen
+v 282 gen
+v 283 gen
+v 284 gen
+v 285 gen
+v 286 mediation
+v 287 mediation
+v 288 mediation
+v 289 mediation
+v 290 mediation
+v 291 mediation
+v 292 mediation
+v 293 mediation
+v 294 mediation
+v 295 material
+v 296 mediation
+v 297 mediation
+v 298 componentOf
+v 299 componentOf
+v 300 componentOf
+v 301 comparative
+v 302 comparative
+v 303 componentOf
+v 304 componentOf
+v 305 comparative
+v 306 characterization
+v 307 characterization
+v 308 characterization
+v 309 comparative
+v 310 comparative
+v 311 comparative
+v 312 relation
+v 313 memberOf
+v 314 memberOf
+v 315 memberOf
+v 316 comparative
+v 317 relation
+v 318 comparative
+v 319 comparative
+v 320 relation
+v 321 relation
+v 322 relation
+v 323 comparative
+v 324 comparative
+v 325 comparative
+v 326 comparative
+v 327 comparative
+v 328 comparative
+v 329 gen-set
+v 330 gen-set
+v 331 gen-set
+v 332 gen-set
+v 333 gen-set
+v 334 gen-set
+v 335 gen-set
+v 336 gen-set
+v 337 gen-set
+v 338 gen-set
+v 339 gen-set
+v 340 gen-set
+v 341 gen-set
+v 342 gen-set
+v 343 gen-set
+v 344 gen-set
+v 345 gen-set
+v 346 gen-set
+v 347 gen-set
+v 348 gen-set
+v 349 gen-set
+v 350 gen-set
+e 13 160 general
+e 13 161 general
+e 13 162 general
+e 13 211 specific
+e 14 160 specific
+e 14 286 source
+e 15 163 general
+e 15 164 general
+e 15 161 specific
+e 15 289 source
+e 16 165 general
+e 16 162 specific
+e 16 293 source
+e 16 295 source
+e 17 163 specific
+e 18 166 general
+e 18 164 specific
+e 18 165 specific
+e 19 166 specific
+e 19 290 target
+e 20 167 general
+e 20 249 general
+e 20 250 general
+e 20 320 source
+e 20 302 target
+e 21 167 specific
+e 21 291 source
+e 22 287 source
+e 22 288 source
+e 22 286 target
+e 23 207 specific
+e 23 311 target
+e 23 287 target
+e 23 310 target
+e 24 168 specific
+e 24 288 target
+e 25 169 specific
+e 25 292 target
+e 26 168 general
+e 26 169 general
+e 26 170 specific
+e 27 170 general
+e 27 208 general
+e 27 209 general
+e 27 210 general
+e 27 204 specific
+e 27 300 source
+e 27 312 source
+e 27 319 source
+e 27 318 target
+e 28 172 general
+e 28 173 general
+e 28 174 general
+e 28 175 general
+e 28 290 source
+e 28 292 source
+e 28 289 target
+e 28 291 target
+e 28 296 target
+e 29 294 source
+e 29 293 target
+e 30 171 general
+e 30 294 target
+e 30 295 target
+e 31 171 specific
+e 31 296 source
+e 32 172 specific
+e 33 173 specific
+e 34 174 specific
+e 35 175 specific
+e 35 297 target
+e 36 177 general
+e 36 178 general
+e 36 179 general
+e 36 176 specific
+e 36 297 source
+e 37 176 general
+e 38 177 specific
+e 39 178 specific
+e 40 179 specific
+e 41 180 general
+e 41 181 general
+e 41 182 general
+e 41 203 specific
+e 41 299 target
+e 41 301 source
+e 41 302 source
+e 41 298 target
+e 41 300 target
+e 42 301 target
+e 43 234 general
+e 43 235 general
+e 43 236 general
+e 43 202 specific
+e 43 298 source
+e 44 181 specific
+e 44 303 source
+e 44 304 target
+e 45 183 general
+e 45 180 specific
+e 45 303 target
+e 46 182 specific
+e 46 304 source
+e 47 184 general
+e 47 185 general
+e 47 186 general
+e 47 187 general
+e 47 188 general
+e 47 189 general
+e 47 183 specific
+e 47 305 source
+e 48 305 target
+e 49 184 specific
+e 50 185 specific
+e 50 214 specific
+e 51 186 specific
+e 51 213 specific
+e 52 187 specific
+e 53 188 specific
+e 54 189 specific
+e 55 190 general
+e 55 191 general
+e 55 192 general
+e 55 306 target
+e 56 193 general
+e 56 194 general
+e 56 195 general
+e 56 196 general
+e 56 308 target
+e 57 190 specific
+e 58 191 specific
+e 59 192 specific
+e 60 193 specific
+e 61 194 specific
+e 62 195 specific
+e 63 196 specific
+e 64 200 general
+e 64 201 general
+e 64 306 source
+e 64 307 source
+e 64 308 source
+e 65 197 general
+e 65 198 general
+e 65 199 general
+e 65 307 target
+e 66 197 specific
+e 67 198 specific
+e 68 199 specific
+e 69 200 specific
+e 70 201 specific
+e 71 202 general
+e 71 203 general
+e 71 204 general
+e 72 205 general
+e 72 206 general
+e 72 207 general
+e 72 312 target
+e 73 205 specific
+e 73 309 target
+e 74 206 specific
+e 74 309 source
+e 74 310 source
+e 75 208 specific
+e 75 315 source
+e 76 210 specific
+e 76 313 source
+e 77 314 target
+e 78 211 general
+e 78 209 specific
+e 78 314 source
+e 79 313 target
+e 80 316 source
+e 80 315 target
+e 81 212 general
+e 81 213 general
+e 81 214 general
+e 81 215 general
+e 81 216 general
+e 81 217 general
+e 81 218 general
+e 81 219 general
+e 81 317 source
+e 81 316 target
+e 82 251 general
+e 82 252 general
+e 82 253 general
+e 82 250 specific
+e 82 322 source
+e 82 317 target
+e 83 212 specific
+e 84 216 specific
+e 85 215 specific
+e 86 217 specific
+e 87 218 specific
+e 88 219 specific
+e 89 220 general
+e 89 221 general
+e 89 222 general
+e 89 223 general
+e 89 224 general
+e 89 225 general
+e 89 226 general
+e 89 318 source
+e 90 220 specific
+e 91 221 specific
+e 92 222 specific
+e 93 223 specific
+e 94 224 specific
+e 95 225 specific
+e 96 226 specific
+e 97 227 general
+e 97 228 general
+e 97 229 general
+e 97 230 general
+e 97 231 general
+e 97 232 general
+e 97 233 general
+e 97 319 target
+e 98 227 specific
+e 99 228 specific
+e 100 229 specific
+e 101 230 specific
+e 102 231 specific
+e 103 232 specific
+e 104 233 specific
+e 105 243 general
+e 105 244 general
+e 105 245 general
+e 105 246 general
+e 105 247 general
+e 105 248 general
+e 105 234 specific
+e 106 235 specific
+e 107 237 general
+e 107 238 general
+e 107 239 general
+e 107 236 specific
+e 108 237 specific
+e 109 240 general
+e 109 241 general
+e 109 242 general
+e 109 238 specific
+e 110 239 specific
+e 111 240 specific
+e 112 241 specific
+e 113 242 specific
+e 114 243 specific
+e 115 246 specific
+e 116 244 specific
+e 117 247 specific
+e 118 245 specific
+e 119 248 specific
+e 120 249 specific
+e 120 321 source
+e 121 320 target
+e 121 321 target
+e 121 322 target
+e 122 323 target
+e 123 254 general
+e 123 255 general
+e 123 256 general
+e 123 257 general
+e 123 258 general
+e 123 259 general
+e 123 251 specific
+e 123 323 source
+e 124 260 general
+e 124 261 general
+e 124 262 general
+e 124 263 general
+e 124 253 specific
+e 124 324 source
+e 125 277 general
+e 125 278 general
+e 125 279 general
+e 125 280 general
+e 125 281 general
+e 125 282 general
+e 125 283 general
+e 125 284 general
+e 125 285 general
+e 125 252 specific
+e 125 325 source
+e 126 324 target
+e 127 325 target
+e 128 254 specific
+e 129 255 specific
+e 130 256 specific
+e 131 257 specific
+e 132 258 specific
+e 133 259 specific
+e 134 260 specific
+e 134 326 target
+e 135 261 specific
+e 135 326 source
+e 135 327 target
+e 136 262 specific
+e 136 327 source
+e 136 328 target
+e 137 270 general
+e 137 271 general
+e 137 272 general
+e 137 273 general
+e 137 274 general
+e 137 275 general
+e 137 276 general
+e 137 263 specific
+e 137 328 source
+e 138 270 specific
+e 139 266 general
+e 139 267 general
+e 139 268 general
+e 139 269 general
+e 139 271 specific
+e 140 272 specific
+e 141 273 specific
+e 142 274 specific
+e 143 275 specific
+e 144 276 specific
+e 145 264 general
+e 145 265 general
+e 145 266 specific
+e 146 267 specific
+e 147 268 specific
+e 148 269 specific
+e 149 264 specific
+e 150 265 specific
+e 151 277 specific
+e 152 278 specific
+e 153 282 specific
+e 154 283 specific
+e 155 279 specific
+e 156 284 specific
+e 157 280 specific
+e 158 285 specific
+e 159 281 specific
+t # 12 amaral2019rot.json
+v 1 0*_1
+v 2 2*_0*
+v 3 1_0*
+v 4 1*_01
+v 5 1*_0*
+v 6 0*_0*
+v 7 1*_1*
+v 8 0*_01
+v 9 1*_1
+v 10 1_1
+v 11 0*_1*
+v 12 True
+v 13 False
+v 14 datatype
+v 15 category
+v 16 category
+v 17 category
+v 18 category
+v 19 category
+v 20 category
+v 21 category
+v 22 category
+v 23 category
+v 24 category
+v 25 category
+v 26 situation
+v 27 event
+v 28 event
+v 29 situation
+v 30 mode
+v 31 subkind
+v 32 subkind
+v 33 role
+v 34 role
+v 35 roleMixin
+v 36 roleMixin
+v 37 roleMixin
+v 38 roleMixin
+v 39 mode
+v 40 quality
+v 41 quality
+v 42 quality
+v 43 quality
+v 44 category
+v 45 category
+v 46 category
+v 47 kind
+v 48 role
+v 49 subkind
+v 50 roleMixin
+v 51 subkind
+v 52 event
+v 53 roleMixin
+v 54 roleMixin
+v 55 roleMixin
+v 56 event
+v 57 relator
+v 58 subkind
+v 59 subkind
+v 60 subkind
+v 61 subkind
+v 62 gen
+v 63 gen
+v 64 gen
+v 65 gen
+v 66 gen
+v 67 gen
+v 68 gen
+v 69 gen
+v 70 gen
+v 71 gen
+v 72 gen
+v 73 gen
+v 74 gen
+v 75 gen
+v 76 gen
+v 77 gen
+v 78 gen
+v 79 gen
+v 80 gen
+v 81 gen
+v 82 gen
+v 83 gen
+v 84 gen
+v 85 gen
+v 86 gen
+v 87 gen
+v 88 gen
+v 89 gen
+v 90 gen
+v 91 gen
+v 92 gen
+v 93 gen
+v 94 gen
+v 95 gen
+v 96 gen
+v 97 characterization
+v 98 relation
+v 99 relation
+v 100 characterization
+v 101 relation
+v 102 relation
+v 103 characterization
+v 104 characterization
+v 105 triggers
+v 106 historicalDependence
+v 107 bringsAbout
+v 108 externalDependence
+v 109 externalDependence
+v 110 externalDependence
+v 111 externalDependence
+v 112 externalDependence
+v 113 material
+v 114 characterization
+v 115 externalDependence
+v 116 characterization
+v 117 relation
+v 118 characterization
+v 119 relation
+v 120 relation
+v 121 externalDependence
+v 122 externalDependence
+v 123 relation
+v 124 relation
+v 125 relation
+v 126 relation
+v 127 bringsAbout
+v 128 characterization
+v 129 characterization
+v 130 characterization
+v 131 relation
+v 132 relation
+v 133 relation
+v 134 relation
+v 135 bringsAbout
+v 136 mediation
+v 137 mediation
+v 138 mediation
+v 139 mediation
+v 140 mediation
+v 141 derivation
+v 142 gen-set
+v 143 gen-set
+v 144 gen-set
+v 145 gen-set
+v 146 gen-set
+e 15 62 general
+e 15 63 general
+e 15 68 general
+e 15 69 general
+e 16 64 general
+e 16 65 general
+e 16 67 general
+e 16 62 specific
+e 16 104 target
+e 16 109 target
+e 17 66 general
+e 17 63 specific
+e 18 78 general
+e 18 64 specific
+e 19 75 general
+e 19 79 general
+e 19 65 specific
+e 19 97 target
+e 20 70 general
+e 20 71 general
+e 20 72 general
+e 20 73 general
+e 20 66 specific
+e 20 97 source
+e 20 138 target
+e 21 76 general
+e 21 77 general
+e 21 70 specific
+e 21 98 source
+e 21 99 source
+e 21 100 source
+e 21 101 source
+e 21 102 source
+e 21 108 target
+e 21 126 target
+e 22 74 general
+e 22 71 specific
+e 23 72 specific
+e 24 73 specific
+e 25 80 general
+e 25 81 general
+e 25 103 source
+e 25 104 source
+e 25 110 target
+e 25 120 target
+e 25 132 target
+e 26 105 source
+e 26 127 target
+e 26 135 target
+e 27 106 source
+e 27 105 target
+e 28 107 source
+e 28 102 target
+e 28 106 target
+e 29 101 target
+e 29 107 target
+e 30 82 general
+e 30 83 general
+e 30 74 specific
+e 30 109 source
+e 30 117 source
+e 30 118 source
+e 30 128 target
+e 30 136 target
+e 31 82 specific
+e 31 108 source
+e 31 123 source
+e 32 84 general
+e 32 85 general
+e 32 83 specific
+e 32 110 source
+e 32 129 target
+e 32 130 target
+e 33 84 specific
+e 33 112 source
+e 34 85 specific
+e 34 111 source
+e 35 80 specific
+e 35 111 target
+e 36 81 specific
+e 36 112 target
+e 37 75 specific
+e 37 113 source
+e 37 125 source
+e 37 100 target
+e 37 114 target
+e 37 118 target
+e 38 86 general
+e 38 89 general
+e 38 67 specific
+e 38 131 source
+e 38 133 source
+e 38 103 target
+e 38 113 target
+e 38 115 target
+e 38 119 target
+e 39 88 general
+e 39 90 general
+e 39 114 source
+e 39 115 source
+e 39 141 source
+e 39 99 target
+e 39 116 target
+e 39 117 target
+e 39 124 target
+e 39 134 target
+e 39 137 target
+e 40 116 source
+e 41 128 source
+e 42 130 source
+e 43 129 source
+e 44 76 specific
+e 44 98 target
+e 45 77 specific
+e 46 68 specific
+e 46 119 source
+e 46 120 source
+e 46 139 target
+e 47 87 general
+e 47 78 specific
+e 48 86 specific
+e 48 87 specific
+e 48 121 target
+e 49 88 specific
+e 49 121 source
+e 50 79 specific
+e 50 89 specific
+e 50 122 target
+e 51 90 specific
+e 51 122 source
+e 51 123 target
+e 52 124 source
+e 52 126 source
+e 52 127 source
+e 52 125 target
+e 53 91 general
+e 53 92 general
+e 53 69 specific
+e 53 132 source
+e 53 131 target
+e 53 140 target
+e 54 91 specific
+e 55 92 specific
+e 56 134 source
+e 56 135 source
+e 56 133 target
+e 57 93 general
+e 57 94 general
+e 57 95 general
+e 57 96 general
+e 57 136 source
+e 58 93 specific
+e 58 137 source
+e 59 94 specific
+e 59 138 source
+e 60 95 specific
+e 60 139 source
+e 61 96 specific
+e 61 140 source
+e 113 141 target
+t # 13 abel2015petroleum-system.json
+v 1 1_1
+v 2 *_*
+v 3 kind
+v 4 quality
+v 5 quality
+v 6 quantity
+v 7 quantity
+v 8 situation
+v 9 event
+v 10 situation
+v 11 event
+v 12 situation
+v 13 event
+v 14 situation
+v 15 role
+v 16 role
+v 17 role
+v 18 mixin
+v 19 quantity
+v 20 quantity
+v 21 kind
+v 22 kind
+v 23 quantity
+v 24 quantity
+v 25 kind
+v 26 enumeration
+v 27 enumeration
+v 28 enumeration
+v 29 enumeration
+v 30 enumeration
+v 31 datatype
+v 32 gen
+v 33 gen
+v 34 gen
+v 35 gen
+v 36 gen
+v 37 gen
+v 38 gen
+v 39 gen
+v 40 gen
+v 41 characterization
+v 42 characterization
+v 43 constitute
+v 44 characterization
+v 45 pre-state
+v 46 pos-state
+v 47 pre-state
+v 48 pos-state
+v 49 pre-state
+v 50 pos-state
+v 51 relation
+v 52 relation
+v 53 relation
+v 54 relation
+v 55 relation
+v 56 relation
+v 57 relation
+v 58 relation
+v 59 relation
+v 60 constitute
+v 61 constitute
+e 3 41 source
+e 4 42 source
+e 5 44 source
+e 6 32 general
+e 7 32 specific
+e 7 54 source
+e 7 55 source
+e 7 56 source
+e 8 45 source
+e 9 46 source
+e 9 45 target
+e 10 47 source
+e 10 46 target
+e 10 56 target
+e 10 58 target
+e 10 59 target
+e 11 48 source
+e 11 47 target
+e 12 49 source
+e 12 48 target
+e 12 54 target
+e 12 57 target
+e 13 50 source
+e 13 49 target
+e 14 50 target
+e 14 51 target
+e 14 55 target
+e 15 33 specific
+e 16 34 specific
+e 16 53 source
+e 17 35 specific
+e 17 52 source
+e 18 51 source
+e 18 52 target
+e 18 53 target
+e 19 38 specific
+e 19 60 target
+e 20 39 specific
+e 20 61 target
+e 21 33 general
+e 21 34 general
+e 21 36 specific
+e 21 59 source
+e 21 60 source
+e 22 35 general
+e 22 37 specific
+e 22 57 source
+e 22 58 source
+e 22 61 source
+e 23 38 general
+e 23 39 general
+e 23 40 specific
+e 23 42 target
+e 23 44 target
+e 24 40 general
+e 24 43 target
+e 25 36 general
+e 25 37 general
+e 25 43 source
+e 25 41 target
+t # 14 aguiar2018rdbs-o.json
+v 1 1*_0*
+v 2 1*_1
+v 3 1_*
+v 4 0*_1
+v 5 1_1*
+v 6 0*_1*
+v 7 1_1
+v 8 1*_1*
+v 9 1_0*
+v 10 True
+v 11 False
+v 12 kind
+v 13 kind
+v 14 category
+v 15 subkind
+v 16 subkind
+v 17 subkind
+v 18 mode
+v 19 subkind
+v 20 kind
+v 21 subkind
+v 22 subkind
+v 23 kind
+v 24 kind
+v 25 kind
+v 26 role
+v 27 role
+v 28 kind
+v 29 subkind
+v 30 subkind
+v 31 subkind
+v 32 subkind
+v 33 subkind
+v 34 subkind
+v 35 kind
+v 36 subkind
+v 37 subkind
+v 38 subkind
+v 39 subkind
+v 40 mode
+v 41 kind
+v 42 category
+v 43 category
+v 44 category
+v 45 subkind
+v 46 collective
+v 47 subkind
+v 48 kind
+v 49 subkind
+v 50 kind
+v 51 kind
+v 52 subkind
+v 53 mode
+v 54 subkind
+v 55 gen
+v 56 gen
+v 57 gen
+v 58 gen
+v 59 gen
+v 60 gen
+v 61 gen
+v 62 gen
+v 63 gen
+v 64 gen
+v 65 gen
+v 66 gen
+v 67 gen
+v 68 gen
+v 69 gen
+v 70 gen
+v 71 gen
+v 72 gen
+v 73 gen
+v 74 gen
+v 75 gen
+v 76 gen
+v 77 gen
+v 78 gen
+v 79 gen
+v 80 gen
+v 81 gen
+v 82 gen
+v 83 gen
+v 84 gen
+v 85 gen
+v 86 gen
+v 87 gen
+v 88 gen
+v 89 gen
+v 90 gen
+v 91 gen
+v 92 relation
+v 93 relation
+v 94 relation
+v 95 relation
+v 96 relation
+v 97 relation
+v 98 relation
+v 99 relation
+v 100 relation
+v 101 relation
+v 102 relation
+v 103 relation
+v 104 relation
+v 105 relation
+v 106 relation
+v 107 relation
+v 108 material
+v 109 relation
+v 110 material
+v 111 relation
+v 112 relation
+v 113 relation
+v 114 relation
+v 115 relation
+v 116 relation
+v 117 relation
+v 118 relation
+v 119 relation
+v 120 relation
+v 121 relation
+v 122 relation
+v 123 gen-set
+v 124 gen-set
+v 125 gen-set
+e 12 55 general
+e 12 92 source
+e 13 76 specific
+e 13 93 target
+e 13 113 target
+e 14 56 general
+e 14 57 general
+e 14 70 general
+e 14 71 general
+e 14 85 specific
+e 14 95 target
+e 14 99 target
+e 15 70 specific
+e 15 86 specific
+e 15 94 target
+e 16 71 specific
+e 16 88 specific
+e 16 94 source
+e 17 91 specific
+e 17 96 source
+e 17 98 target
+e 18 89 specific
+e 18 95 source
+e 18 98 source
+e 18 97 target
+e 19 87 specific
+e 19 96 target
+e 20 58 general
+e 20 59 general
+e 20 56 specific
+e 20 93 source
+e 20 102 source
+e 21 58 specific
+e 21 100 target
+e 22 59 specific
+e 22 100 source
+e 23 101 source
+e 24 103 source
+e 24 101 target
+e 24 102 target
+e 25 60 general
+e 25 61 general
+e 25 103 target
+e 25 107 target
+e 26 61 specific
+e 26 110 target
+e 27 60 specific
+e 27 108 target
+e 27 109 target
+e 28 62 general
+e 28 63 general
+e 28 104 target
+e 28 105 target
+e 28 106 target
+e 29 62 specific
+e 29 104 source
+e 30 63 specific
+e 31 67 specific
+e 31 108 source
+e 32 65 specific
+e 32 106 source
+e 33 66 specific
+e 33 109 source
+e 33 110 source
+e 34 64 specific
+e 35 68 general
+e 35 69 general
+e 35 57 specific
+e 36 68 specific
+e 36 105 source
+e 37 64 general
+e 37 65 general
+e 37 66 general
+e 37 67 general
+e 37 69 specific
+e 37 107 source
+e 38 90 specific
+e 38 97 source
+e 38 99 source
+e 39 72 general
+e 39 77 specific
+e 39 111 target
+e 40 73 general
+e 40 111 source
+e 40 112 target
+e 41 74 general
+e 41 112 source
+e 42 75 general
+e 42 92 target
+e 43 76 general
+e 43 77 general
+e 43 78 general
+e 43 75 specific
+e 44 79 general
+e 44 82 general
+e 44 83 general
+e 44 84 general
+e 44 85 general
+e 44 78 specific
+e 44 119 target
+e 44 120 target
+e 45 87 general
+e 45 55 specific
+e 45 118 target
+e 46 86 general
+e 46 79 specific
+e 46 113 source
+e 46 114 target
+e 47 80 specific
+e 47 115 target
+e 48 80 general
+e 48 81 general
+e 48 88 general
+e 48 83 specific
+e 48 114 source
+e 48 116 target
+e 49 81 specific
+e 49 115 source
+e 50 82 specific
+e 50 116 source
+e 50 117 source
+e 51 84 specific
+e 51 117 target
+e 52 91 general
+e 52 72 specific
+e 52 118 source
+e 52 122 target
+e 53 89 general
+e 53 73 specific
+e 53 119 source
+e 53 122 source
+e 53 121 target
+e 54 90 general
+e 54 74 specific
+e 54 120 source
+e 54 121 source
