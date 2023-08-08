@@ -1,20 +1,12 @@
 # import os
 import json
+from itertools import tee
 
 import jsonpath_rw_ext as jp
 import networkx as nx
 
 directory_path = './models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
-
-
-# # loop through the directory and get file names with the desired extension
-# file_names = []
-# for filename in os.listdir(directory_path):
-#     if filename.endswith(extension):
-#         file_names.append(filename)
-
-# %%
 
 def get_classes(x):
     class_output = []
@@ -107,9 +99,6 @@ def get_restrictedTo(x):
         gen_set_output.append(output_list)
 
     return gen_set_output
-
-
-from itertools import tee
 
 
 def pairwise(iterable):

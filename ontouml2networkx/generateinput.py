@@ -1,6 +1,5 @@
-# from ontoumlimport import generateFullUndirected#,generateFullDirected
-
 import os
+import pickle
 
 directory_path = './models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
@@ -11,8 +10,6 @@ for filename in os.listdir(directory_path):
     if filename.endswith(extension):
         file_names.append(filename)
 
-
-# undirectedgraphs = generateFullUndirected(file_names)
 
 def remove_nodes_with_label(graph, label):
     nodes_to_remove = [node for node, data in graph.nodes(data=True) if data.get('label') == label]
@@ -100,9 +97,6 @@ def replace_labels_with_default(class_labels, relation_labels, edge_labels, grap
             remove_edges_with_label(graph, edge_label)
 
     return graphs
-
-
-import pickle
 
 
 def save_graphs_to_pickle(graphs, filename):
