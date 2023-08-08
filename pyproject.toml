@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ontouml2networkx"
+version = "1.0.0b0"
+description = "OntoUML2NetworkX"
+license = "Apache-2.0"
+author = ["Mattia Fumagalli <mattia.fumagalli@unibz.it>"]
+contributor = ["Pedro Paulo F. Barcelos <p.p.favatobarcelos@utwente.nl>"]
+readme = "README.md"
+homepage = "https://w3id.org/ontouml/json2graph"
+repository = "https://w3id.org/ontouml/json2graph"
+documentation = "https://w3id.org/ontouml/json2graph/docs"
+packages = [{ include = "ontouml2networkx" }]
+exclude = ["ontouml2networkx/tests"]
+
+[tool.poetry.urls]
+"PyPi Project" = "https://pypi.org/project/ontouml-json2graph/"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
