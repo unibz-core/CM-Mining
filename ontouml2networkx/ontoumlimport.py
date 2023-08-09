@@ -12,15 +12,16 @@ from itertools import tee
 import jsonpath_rw_ext as jp
 import networkx as nx
 
-directory_path = './models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
 
-def get_classes(x):
+def get_classes(x, directory_path):
     """
     Retrieve class information from JSON files.
 
     :param x: List of JSON file names.
     :type x: list
+    :param directory_path: Path to the directory containing the OntoUML models in JSON format to be converted.
+    :type directory_path: str
 
     :return: List of tuples containing class data.
     :rtype: list
@@ -40,12 +41,14 @@ def get_classes(x):
     return class_output
 
 
-def get_generalizations(x):
+def get_generalizations(x,directory_path):
     """
     Retrieve generalization relationships from JSON files.
 
     :param x: List of JSON file names.
     :type x: list
+    :param directory_path: Path to the directory containing the OntoUML models in JSON format to be converted.
+    :type directory_path: str
 
     :return: List of tuples containing generalization data.
     :rtype: list
@@ -62,12 +65,14 @@ def get_generalizations(x):
     return gen_output
 
 
-def get_associations(x):
+def get_associations(x,directory_path):
     """
     Retrieve association details from JSON files.
 
     :param x: List of JSON file names.
     :type x: list
+    :param directory_path: Path to the directory containing the OntoUML models in JSON format to be converted.
+    :type directory_path: str
 
     :return: List of tuples containing association data.
     :rtype: list
@@ -96,12 +101,14 @@ def get_associations(x):
     return association_output
 
 
-def get_genset(x):
+def get_genset(x,directory_path):
     """
     Retrieve generalization set information from JSON files.
 
     :param x: List of JSON file names.
     :type x: list
+    :param directory_path: Path to the directory containing the OntoUML models in JSON format to be converted.
+    :type directory_path: str
 
     :return: List of tuples containing generalization set data.
     :rtype: list
@@ -122,12 +129,14 @@ def get_genset(x):
     return gen_set_output
 
 
-def get_restrictedTo(x):
+def get_restrictedTo(x,directory_path):
     """
     Retrieve "restricted to" information for classes from JSON files.
 
     :param x: List of JSON file names.
     :type x: list
+    :param directory_path: Path to the directory containing the OntoUML models in JSON format to be converted.
+    :type directory_path: str
 
     :return: List of tuples containing restrictedTo data.
     :rtype: list
