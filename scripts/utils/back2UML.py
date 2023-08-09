@@ -1,6 +1,18 @@
+"""
+This module provides functions for processing and converting network graphs using the NetworkX library. 
+Network graphs are represented as graph-pattern pairs, and the module includes two main functions: 
+process_genset_cardinalities and convert_graphs_new.
+"""
+
 import networkx as nx
 
 def get_unique_id(input_string):
+    """
+    Generate a unique identifier based on the input string.
+
+    :param input_string: Input string to generate the unique identifier.
+    :return: Unique identifier.
+    """
     unique_id = hash(input_string)
     unique_id = abs(unique_id) % 100  # Limit the ID to a maximum of two digits
     letter = chr(ord('A') + (unique_id % 26))  # Map the ID to a letter (A-Z)
@@ -9,6 +21,12 @@ def get_unique_id(input_string):
 import networkx as nx
 
 def process_genset_cardinalities(graphs):
+    """
+    Process graphs by copying edge labels to gen-set nodes and adding index to gen-set node labels.
+
+    :param graphs: List of graph-pattern pairs.
+    :return: List of processed graph-pattern pairs.
+    """
     processed_graphs = []
 
     for [index_dict, G] in graphs:
@@ -85,6 +103,12 @@ def process_genset_cardinalities(graphs):
 
 
 def convert_graphs_new(graphs):
+    """
+    Convert graphs by modifying single edges and adding new nodes.
+
+    :param graphs: List of graph-pattern pairs.
+    :return: List of converted graph-pattern pairs.
+    """
     converted_graphs = []
     for [index_dict,G] in graphs:
         # create a new directed graph

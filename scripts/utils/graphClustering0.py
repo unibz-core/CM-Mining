@@ -1,8 +1,27 @@
+"""
+This Python module provides functions for processing and analyzing patterns represented as NetworkX graphs. 
+It includes functionality for converting patterns from a file into NetworkX graph format,
+extracting features from graph patterns, transforming data for analysis, calculating pairwise 
+cosine similarity between graphs, grouping similar items based on similarity, 
+and merging data with additional information
+"""
+
 import networkx as nx
+import pandas as pd
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
+import pandas as pd
+from sklearn.cluster import KMeans
 
 patternspath = "./input/outputpatterns.txt"
 
 def convertPatterns(path):
+    """
+    Convert patterns from a file to NetworkX graph format.
+
+    :param path: Path to the file containing patterns.
+    :return: List of NetworkX graphs representing the patterns.
+    """
     fd = open(path, "r+")
     # sys.stdout = sys.__stdout__
     data = fd.read()
@@ -49,6 +68,12 @@ def convertPatterns(path):
     return pattern_graphs
 
 def extract_features(graph_set):
+    """
+    Extract features from a set of graphs.
+
+    :param graph_set: List of graph-pattern pairs.
+    :return: List of feature dictionaries for each graph.
+    """
     features = []
     
     for [index_dict,graph] in graph_set:
@@ -68,9 +93,13 @@ def extract_features(graph_set):
     
     return features
 
-import pandas as pd
-
 def transform_graph_data(data):
+    """
+    Transform graph data into a DataFrame suitable for analysis.
+
+    :param data: List of feature dictionaries for each graph.
+    :return: Transformed DataFrame.
+    """
     # Create an empty set to store all unique labels
     node_label_set = set()
     edge_label_set = set()
@@ -113,10 +142,13 @@ def transform_graph_data(data):
 
     return df
 
-import pandas as pd
-from sklearn.metrics.pairwise import cosine_similarity
-
 def calculate_similarity(df):
+    """
+    Calculate pairwise cosine similarity between graphs.
+
+    :param df: Transformed DataFrame of graph features.
+    :return: DataFrame containing cosine similarity scores.
+    """
     # Compute the cosine similarity matrix
     similarity_matrix = cosine_similarity(df.values)
 
@@ -125,11 +157,14 @@ def calculate_similarity(df):
 
     return similarity_df
 
-
-import pandas as pd
-from sklearn.cluster import KMeans
-
 def group_similar_items(similarity_matrix, threshold):
+    """
+    Group similar items based on cosine similarity and a threshold.
+
+    :param similarity_matrix: DataFrame of cosine similarity scores.
+    :param threshold: Similarity threshold for grouping.
+    :return: List of grouped items.
+    """
     groups = []
     visited = set()
 
@@ -160,6 +195,13 @@ def group_similar_items(similarity_matrix, threshold):
     return result
 
 def merge_lists(list0, list1):
+    """
+    Merge two lists of data with additional information.
+
+    :param list0: List of pattern-cluster pairs.
+    :param list1: List of graph-pattern pairs.
+    :return: Merged list with pattern-cluster information.
+    """
     return [
         [{**item1[0], 'pattern_cluster': item0[1][len('cluster_'): ]}, item1[1]]
         for item0, item1 in zip(list0, list1)

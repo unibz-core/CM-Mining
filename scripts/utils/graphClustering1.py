@@ -1,9 +1,23 @@
+"""
+This Python module is an alternative option of graphCLustering0.py and provides functions for processing 
+and analyzing patterns represented as NetworkX graphs. It includes functionality for converting patterns from a file into NetworkX graph format,
+extracting features from graph patterns, transforming data for analysis, calculating pairwise cosine similarity between graphs, grouping similar items based on similarity, 
+and merging data with additional information
+"""
+
 import pandas as pd
 import networkx as nx
+from sklearn.metrics.pairwise import cosine_similarity
 
 patternspath = "./input/outputpatterns.txt"
 
 def convertPatterns(path):
+    """
+    Convert patterns from a file to a list of NetworkX graphs.
+
+    :param path: Path to the file containing patterns.
+    :return: List of NetworkX graphs representing the patterns.
+    """
     fd = open(path, "r+")
     # sys.stdout = sys.__stdout__
     data = fd.read()
@@ -50,6 +64,12 @@ def convertPatterns(path):
     return pattern_graphs
 
 def graph2dataframe(G):
+    """
+    Convert a NetworkX graph to a DataFrame representing node connections, labels, and edges.
+
+    :param G: NetworkX graph to be converted.
+    :return: DataFrame representation of the graph.
+    """
     # Get a list of all nodes and node labels in the graph
     nodes = list(G.nodes())
     node_labels = {node: G.nodes[node].get("label", 0) for node in nodes}
@@ -81,18 +101,14 @@ def graph2dataframe(G):
             
     return df
 
-G = nx.Graph()
-G.add_edge("n1", "n0", label="specific")
-G.add_edge("n2", "n0", label="general")
-G.add_node("n0", label="gen")
-G.add_node("n1", label="subkind")
-G.add_node("n2", label="kind")
-G.add_edge("n1", "n3", label="source")
-G.add_edge("n3", "n4", label="target")
-G.add_node("n3", label="material")
-G.add_node("n4", label="role")
 
 def dataframe2vector(df):
+    """
+    Convert a DataFrame representation of a graph to a vector format.
+
+    :param df: DataFrame representing a graph.
+    :return: Vectorized representation of the graph.
+    """
     vector = []
     for index, row in df.iterrows():
         for column, value in row.items():  # Replace iteritems() with items()
@@ -100,6 +116,12 @@ def dataframe2vector(df):
     return vector
 
 def graphs2dataframes2vectors(graph_list):
+    """
+    Convert a list of graph-pattern pairs to a list of vectorized data.
+
+    :param graph_list: List of graph-pattern pairs.
+    :return: List of vectorized data.
+    """
     # Convert each graph in the list to a DataFrame
     vectors = []
     for index_dict,G in graph_list:
@@ -111,6 +133,12 @@ def graphs2dataframes2vectors(graph_list):
 
 
 def transform2singledataframe(input_list):
+    """
+    Transform a list of data into a single DataFrame.
+
+    :param input_list: List of tuples containing pattern data and tuple lists.
+    :return: Transformed DataFrame.
+    """
     # Initialize an empty list to store dictionaries containing data for each row
     data_list = []
     
@@ -147,9 +175,13 @@ def transform2singledataframe(input_list):
 
     return df
 
-from sklearn.metrics.pairwise import cosine_similarity
-
 def calculate_similarity(df):
+    """
+    Calculate cosine similarity between vectors in a DataFrame.
+
+    :param df: DataFrame containing vectors.
+    :return: DataFrame of cosine similarity scores.
+    """
     # Compute the cosine similarity matrix
     similarity_matrix = cosine_similarity(df.values)
 
@@ -159,6 +191,13 @@ def calculate_similarity(df):
     return similarity_df
 
 def group_similar_items(similarity_matrix, threshold):
+    """
+    Group similar items based on cosine similarity and a threshold.
+
+    :param similarity_matrix: DataFrame of cosine similarity scores.
+    :param threshold: Similarity threshold for grouping.
+    :return: List of grouped items.
+    """
     groups = []
     visited = set()
 
@@ -189,19 +228,17 @@ def group_similar_items(similarity_matrix, threshold):
     return result
 
 def merge_lists(list0, list1):
+    """
+    Merge two lists of data with additional information.
+
+    :param list0: List of pattern-cluster pairs.
+    :param list1: List of graph-pattern pairs.
+    :return: Merged list with pattern-cluster information.
+    """
     return [
         [{**item1[0], 'pattern_cluster': item0[1][len('cluster_'): ]}, item1[1]]
         for item0, item1 in zip(list0, list1)
     ]
-
-# pattern_graphs = convertPatterns(patternspath)
-# list_of_vectors = graphs2dataframes2vectors(pattern_graphs)
-# singledtaframe = transform2singledataframe(list_of_vectors)
-# patterns_similarity_matrix = calculate_similarity(singledtaframe)
-# grouped_items = group_similar_items(patterns_similarity_matrix,0.4)
-# print(singledtaframe)
-# print(patterns_similarity_matrix)
-# print(grouped_items)
 
 
 

@@ -1,8 +1,21 @@
+"""
+This Python module provides functions for converting a list of 
+NetworkX graphs into PlantUML diagrams for different purposes
+"""
+
 import os
 import networkx as nx
 import glob
 
 def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_patterns"):
+    """
+    Convert a list of network graphs into PlantUML diagrams for individual domains.
+
+    :param graphs: List of graph-pattern pairs.
+    :param title: Title of the PlantUML diagram. (default: "Caption")
+    :param output_folder: Output folder path for saving the diagrams. (default: "domain_patterns")
+    :return: List of folder paths where the diagrams are saved.
+    """
     os.makedirs(output_folder, exist_ok=True)
     folder_paths = []
     pattern_counts = {}
@@ -28,15 +41,6 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
                 lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
             elif label:
                 lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
-            # if label == "class":
-            #     lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
-            # elif label in ["collective", "functionalcomplex", "quantity", "intrinsicmode", "extrinsicmode",
-            #                "quality", "relator", "abstract", "event", "situation", "type"] :
-            #     lines.append(f"class \"{label}\" as {label_with_id} #line.dotted:blue")
-            # elif label:
-            #     lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
-
-            #lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
 
         for edge in G.edges:
             source = G.nodes[edge[0]].get("label", str(edge[0]))
@@ -54,16 +58,6 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
                 lines.append(f"{source_with_id} <-- {target_with_id}: <<{label}>>: {label0}")
             else:
                 lines.append(f"{source_with_id} <|-down- {target_with_id}")
-            # if label == "gen":
-            #     lines.append(f"{target_with_id} <|-down- {source_with_id}: {label} {label0}")
-            # elif label == "relation":
-            #     lines.append(f"{source_with_id} <-- {target_with_id}: {label}: {label0}")
-            # elif label == "restrictedto":
-            #     lines.append(f"{source_with_id} .[#blue,dotted,thickness=2]. {target_with_id}: {label}: {label0}")
-            # elif label:
-            #     lines.append(f"{source_with_id} <-- {target_with_id}: <<{label}>>: {label0}")
-            # else:
-            #     lines.append(f"{source_with_id} <|-down- {target_with_id}")
 
         lines.append("hide circle")
         lines.append("hide members")
@@ -94,6 +88,14 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
     return folder_paths
 
 def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="patterns"):
+    """
+    Convert a list of network graphs into PlantUML diagrams for patterns within clusters.
+
+    :param graphs: List of graph-pattern pairs.
+    :param title: Title of the PlantUML diagram. (default: "Caption")
+    :param output_folder: Output folder path for saving the diagrams. (default: "patterns")
+    :return: List of folder paths where the diagrams are saved.
+    """
     os.makedirs(output_folder, exist_ok=True)
     folder_paths = []
     pattern_counts = {}

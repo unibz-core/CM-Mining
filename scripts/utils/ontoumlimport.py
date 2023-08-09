@@ -1,5 +1,11 @@
 
-#import os
+"""
+This module provides a comprehensive set of functions for generating NetworkX graphs from JSON data files that describe
+various aspects of a system's structure and relationships. These functions enable users to extract class information,
+associations, generalizations, generalization sets, and other essential components from JSON files and represent them
+as interconnected graphs using the NetworkX library.
+"""
+
 import json
 import jsonpath_rw_ext as jp
 import networkx as nx
@@ -8,15 +14,18 @@ import networkx as nx
 directory_path = './models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
 
-# # loop through the directory and get file names with the desired extension
-# file_names = []
-# for filename in os.listdir(directory_path):
-#     if filename.endswith(extension):
-#         file_names.append(filename)
-
 # %%
 
 def get_classes(x):
+    """
+    Retrieve class information from JSON files.
+
+    :param x: List of JSON file names.
+    :type x: list
+
+    :return: List of tuples containing class data.
+    :rtype: list
+    """
     class_output = []
     for file_name in x:
         file = open(directory_path+"/"+file_name, encoding="ISO-8859-1", mode="r")
@@ -31,6 +40,15 @@ def get_classes(x):
     return class_output
 
 def get_generalizations(x):
+    """
+    Retrieve generalization relationships from JSON files.
+
+    :param x: List of JSON file names.
+    :type x: list
+
+    :return: List of tuples containing generalization data.
+    :rtype: list
+    """
     gen_output = []
     for file_name in x:
         file = open(directory_path+"/"+file_name, encoding="ISO-8859-1", mode="r")
@@ -43,6 +61,15 @@ def get_generalizations(x):
     return gen_output
 
 def get_associations(x):
+    """
+    Retrieve association details from JSON files.
+
+    :param x: List of JSON file names.
+    :type x: list
+
+    :return: List of tuples containing association data.
+    :rtype: list
+    """
     association_output = []
     for file_name in x:
         file = open(directory_path+"/"+file_name, encoding="ISO-8859-1", mode="r")
@@ -62,6 +89,15 @@ def get_associations(x):
     return association_output
 
 def get_genset(x):
+    """
+    Retrieve generalization set information from JSON files.
+
+    :param x: List of JSON file names.
+    :type x: list
+
+    :return: List of tuples containing generalization set data.
+    :rtype: list
+    """
     gen_set_output = []
     for file_name in x:
         file = open(directory_path+"/"+file_name, encoding="ISO-8859-1", mode="r")
@@ -77,6 +113,15 @@ def get_genset(x):
     return gen_set_output
 
 def get_restrictedTo(x):
+    """
+    Retrieve "restricted to" information for classes from JSON files.
+
+    :param x: List of JSON file names.
+    :type x: list
+
+    :return: List of tuples containing restrictedTo data.
+    :rtype: list
+    """
     gen_set_output = []
     for file_name in x:
         file = open(directory_path + "/" + file_name, encoding="ISO-8859-1", mode="r")
@@ -100,11 +145,29 @@ def get_restrictedTo(x):
 from itertools import tee
 
 def pairwise(iterable):
+    """
+    Iterate through pairs of items in an iterable.
+
+    :param iterable: Iterable to be paired.
+    :type iterable: iterable
+
+    :return: A zip object containing pairs of items.
+    :rtype: zip
+    """
     a, b = tee(iterable)
     next(b, None)
     return zip(a, b)
 
 def get_genset_rel(x):
+    """
+    Generate relationships for generalization sets and their components.
+
+    :param x: List of generalization set data.
+    :type x: list
+
+    :return: List of lists containing relationships.
+    :rtype: list
+    """
     list_ = []
     for i in x:
         gens = [(a,*e) for a,b,c,d,e in i]
@@ -115,7 +178,16 @@ def get_genset_rel(x):
 # %%
 
 def create_FullUndirectedGraphs(file_names, nodesA, nodesB, nodesC, nodesD, nodesE, nodesF, nodesG, nodesH, edgesA, edgesB, edgesC, edgesD, edgesE, edgesF, edgesG, edgesH, edgesI, edgesY):
+    """
+    Create NetworkX graphs from data.
 
+    :param file_names: List of file names.
+    :type file_names: list
+    :param nodesA, nodesB, ..., edgesY: Data lists for nodes and edges.
+
+    :return: List of tuples containing file names and NetworkX graphs.
+    :rtype: list
+    """
     graphs = []
 
     for file_name, node_list_A, node_list_B, node_list_C, node_list_D, node_list_E, node_list_F, node_list_G, node_list_H, edge_list_A, edge_list_B, edge_list_C, edge_list_D, edge_list_E, edge_list_F, edge_list_G, edge_list_H, edge_list_I, edge_list_Y in zip(file_names, nodesA, nodesB, nodesC, nodesD, nodesE, nodesF, nodesG, nodesH, edgesA, edgesB, edgesC, edgesD, edgesE, edgesF, edgesG, edgesH, edgesI, edgesY):
@@ -206,6 +278,15 @@ def create_FullUndirectedGraphs(file_names, nodesA, nodesB, nodesC, nodesD, node
 # %%
 
 def generateFullUndirected(file_names):
+    """
+    Generate full undirected graphs from data.
+
+    :param file_names: List of file names.
+    :type file_names: list
+
+    :return: List of tuples containing file names and NetworkX graphs.
+    :rtype: list
+    """
     classes = get_classes(file_names)
     generalizations = get_generalizations(file_names)
     associations = get_associations(file_names)

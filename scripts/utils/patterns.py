@@ -1,7 +1,12 @@
+"""
+This Python module provides functions related to working with NetworkX graphs and performing graph mining operations. 
+The module includes functions for loading and converting graphs, finding subgraph isomorphisms, removing duplicate graphs, 
+and performing various operations on lists of graphs
+"""
+
 import networkx as nx
-
-
 import pickle
+
 def load_graphs_from_pickle(filename):
     """
     Load a list of NetworkX graphs from a pickle file.
@@ -17,6 +22,12 @@ def load_graphs_from_pickle(filename):
     return graphs
 
 def convertPatterns(path):
+    """
+    Convert patterns from a file into NetworkX graphs.
+
+    :param path: Path to the file containing patterns.
+    :return: List of converted pattern graphs.
+    """
     fd = open(path, "r+")
     # sys.stdout = sys.__stdout__
     data = fd.read()
@@ -65,6 +76,12 @@ def convertPatterns(path):
 # pattern_graphs = convertPatterns(patternspath)
 
 def return_all_domain_info(graphs):
+    """
+    Return domain information for each graph.
+
+    :param graphs: List of pattern graphs.
+    :return: List of processed pattern graphs with domain information.
+    """
     processed_graphs = []
     
     for [index_dict,graph] in graphs:
@@ -98,7 +115,13 @@ def return_all_domain_info(graphs):
 from grandiso import find_motifs
 
 def count_subgraph_isomorphisms(source_graphs, target_graphs):
-    # Initialize a list to store the matched graphs for each match
+    """
+    Count subgraph isomorphisms between source and target graphs.
+
+    :param source_graphs: List of source graphs.
+    :param target_graphs: List of target graphs.
+    :return: List of matched subgraph isomorphisms.
+    """
     matches_list = []
     # Loop through each source graph and target graph
     for i, [index_dict,source_graph] in enumerate(source_graphs):
@@ -130,6 +153,12 @@ import networkx as nx
 from grandiso import find_motifs
 
 def remove_duplicate_graphs(graphs):
+    """
+    Remove duplicate graphs from a list of graphs.
+
+    :param graphs: List of graphs.
+    :return: List of unique graphs after removing duplicates.
+    """
     unique_graphs = []
     graph_hashes = {}
 
@@ -185,6 +214,13 @@ def remove_duplicate_graphs(graphs):
     return unique_graphs
 
 def select_sublists(lst, pattern_indices):
+    """
+    Select specific sublists from a list based on pattern indices.
+
+    :param lst: List of sublists.
+    :param pattern_indices: List of pattern indices to select.
+    :return: List of selected sublists.
+    """
     selected_sublists = []
     for sublist in lst:
         if sublist[0]['pattern_index'] in pattern_indices:
@@ -195,6 +231,12 @@ def select_sublists(lst, pattern_indices):
 
 
 def split_list_of_lists(input_list):
+    """
+    Split a list of lists into two separate lists.
+
+    :param input_list: List of lists.
+    :return: Two separate lists.
+    """
     list_a = []
     list_b = []
     for sublist in input_list:
@@ -203,6 +245,13 @@ def split_list_of_lists(input_list):
     return list_a, list_b
 
 def check_and_clean_graphs(list0, list1):
+    """
+    Check and clean graphs based on a reference list.
+
+    :param list0: Reference list of graphs.
+    :param list1: List of graphs to check and clean.
+    :return: List of cleaned graphs.
+    """
     cleaned_list = []
     for item1 in list1:
         index_dict1, graph1 = item1

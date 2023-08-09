@@ -1,3 +1,9 @@
+"""
+This Python module is a script that interacts with the user through command-line prompts 
+to perform various operations related to UML diagrams and patterns. It imports necessary 
+libraries and utility modules, then defines functions to guide the 
+user through different steps of the process
+"""
 from examples import custom_style_2
 from PyInquirer import prompt, Separator
 import os
@@ -16,6 +22,11 @@ patternspath = "../input/outputpatterns.txt" # replace with patterns file name
 
 
 def filterClasses():
+    """
+    Prompt the user to select classes to filter out and return the selected strings.
+
+    :return: List of selected class strings to filter out.
+    """
     strings = ["class", "gen-set","kind", "subkind", "phase", "role", 
                "collective", "quantity", "relator", 
                "category", "phaseMixin", "roleMixin", 
@@ -43,6 +54,11 @@ def filterClasses():
     return selected_strings
 
 def filterRelations():
+    """
+    Prompt the user to select relations to filter out and return the selected strings.
+
+    :return: List of selected relation strings to filter out.
+    """
     strings = ["relation", "gen","characterization", "comparative", "externalDependence", 
                "material", "mediation", "componentOf", "memberOf", 
                "subCollectionOf", "subQuantityOf", "bringsAbout", 
@@ -70,6 +86,11 @@ def filterRelations():
     return selected_strings
 
 def filterEdges():
+    """
+    Prompt the user to select edges to filter out and return the selected strings.
+
+    :return: List of selected edge strings to filter out.
+    """
     strings = ["cardinalities", "isComplete", "isDisjoint", "source", "target", "specific", "general", "generalization", "restrictedTo"]
     questions = [
         {
@@ -98,14 +119,28 @@ def filterEdges():
 
 
 def count_files_in_folder(folder_path):
+    """
+    Count the number of files in a specified folder.
+
+    :param folder_path: Path to the folder.
+    :return: Number of files in the folder.
+    """
     file_count = 0
     for _, _, files in os.walk(folder_path):
         file_count += len(files)
     return file_count
 
 class NumberValidator(Validator):
-
+    """
+    Validator for validating numeric inputs.
+    """
     def validate(self, document):
+        """
+        Validate the input document.
+
+        :param document: Input document.
+        :raise ValidationError: If validation fails.
+        """
         try:
             int(document.text)
         except ValueError:
@@ -113,6 +148,11 @@ class NumberValidator(Validator):
                                   cursor_position=len(document.text))
 
 def parameters():
+    """
+    Prompt the user to enter parameters and return the selected values.
+
+    :return: List of selected parameter values.
+    """
     questions = [
         {
             'type': "input",
@@ -150,9 +190,17 @@ def parameters():
     return values
 
 def timeout_handler():
+    """
+    Handle timeout and move to the next function.
+    """
     print("Moving to the next function.")
 
 def delete_files_in_folders(folders):
+    """
+    Delete files in specified folders.
+
+    :param folders: List of folders to delete files from.
+    """
     for folder in folders:
         if os.path.exists(folder):
             # Delete all files within the folder
@@ -171,6 +219,9 @@ def delete_files_in_folders(folders):
 
 import sys
 def firststop():
+    """
+    Prompt the user to stop the process or proceed to the next function.
+    """
     # List of folders to delete files from
     folders = ["input","domaindots"]
 
@@ -202,12 +253,11 @@ def firststop():
         else:
             print("Process completed without deleting files.")
         sys.exit(0)  # Terminate the script execution
-    # else:
-    #     # Call the next function here
-    #     print("Baking the output... (check the domaindots foleder)")
 
 def secondstop():
-    # List of folders to delete files from
+    """
+    Prompt the user to stop the process or proceed to the next function.
+    """
     folders = ["input","domaindots","patterns"]
 
     # Prompt to ask if the process is finished
@@ -246,6 +296,9 @@ import sys
 from PyInquirer import prompt, Validator, ValidationError
 
 class FloatValidator(Validator):
+    """
+    Validator for validating float inputs.
+    """
     def validate(self, document):
         try:
             value = float(document.text)
@@ -259,6 +312,11 @@ class FloatValidator(Validator):
                 cursor_position=len(document.text))
 
 def ask_similarity_threshold():
+    """
+    Prompt the user to enter a similarity threshold.
+
+    :return: The entered similarity threshold.
+    """
     questions = [
         {
             'type': 'input',
@@ -271,6 +329,12 @@ def ask_similarity_threshold():
     return float(answers['threshold'])
 
 def viz_uml_diagrams(uml_folder, plantuml_jar_path):
+    """
+    Visualize UML diagrams using PlantUML.
+
+    :param uml_folder: Path to the folder containing UML files.
+    :param plantuml_jar_path: Path to the PlantUML JAR file.
+    """
     # Iterate over subfolders in the uml folder
     for root, dirs, files in os.walk(uml_folder):
         for dir in dirs:
@@ -281,7 +345,9 @@ def viz_uml_diagrams(uml_folder, plantuml_jar_path):
             subprocess.run(cmd, shell=True, check=True)
 
 def laststop():
-    # List of folders to delete files from
+    """
+    Prompt the user to delete files or proceed to the next function.
+    """
     folders = ["input","domaindots","patterns","domain_patterns"]
 
     # Prompt to ask if the user wants to delete all files
@@ -306,6 +372,13 @@ def laststop():
 
 
 def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
+    """
+    Process patterns and perform various operations.
+
+    :param pattern_graphs: List of pattern graphs.
+    :param host_graphs: List of host graphs.
+    :param converted_patterns_filtered: List of filtered converted patterns.
+    """
     stored_integers = set()
 
     while True:
