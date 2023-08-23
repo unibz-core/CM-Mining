@@ -119,8 +119,8 @@ def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="pattern
             
             if label == "class":
                 lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
-            elif label in ["collective", "functionalcomplex", "quantity", "intrinsicmode", "extrinsicmode",
-                           "quality", "relator", "abstract", "event", "situation", "type"] :
+            elif label in ["collective0", "functionalcomplex0", "quantity0", "intrinsicmode0", "extrinsicmode0",
+                           "quality0", "relator0", "abstract0", "event0", "situation0", "type0"] :
                 lines.append(f"class \"{label}\" as {label_with_id} #line.dotted:blue")
             elif label:
                 lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")

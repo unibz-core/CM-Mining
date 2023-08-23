@@ -134,7 +134,7 @@ def get_restrictedTo(x):
             current_id = id_list[i]
             if restrictionList[i] is not None:
                 for item in restrictionList[i]:
-                    output_list.append((current_id, item))
+                    output_list.append((current_id, item+"0"))
             else:
                 output_list.append((current_id, 'None'))
         

@@ -20,6 +20,7 @@ git clone https://github.com/unibz-core/CM-Mining
 - create the following folders, `domain_patterns`, `patterns`, `input`.
 - install the dependencies you find in the `requirements.txt` file.
 - run the `main.py` file from the root `script` folder. 
+- (!) Note that this application requires `Python==3.9`
 
 ## Modules
 
