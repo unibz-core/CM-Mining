@@ -43,7 +43,8 @@ def process_genset_cardinalities(graphs):
                         G.nodes[v]['label0'] = f"{edge_data['label']}{G.nodes[u]['label']}"
                     else:
                         G.nodes[v]['label0'] += f"_{edge_data['label']}{G.nodes[u]['label']}"
-
+        
+        nodes_to_remove = []
         for u, v, edge_data in list(G.edges(data=True)):
             if edge_data['label'] == 'cardinalities':
                 if G.nodes[u]['label'] in ["characterization", "comparative", "externalDependence", "material",
@@ -53,10 +54,10 @@ def process_genset_cardinalities(graphs):
                                            "instantiation", "relation"]:
                     if 'label0' not in G.nodes[u]:
                         G.nodes[u]['label0'] = f"{G.nodes[v]['label']}"
-                        G.remove_node(v)
+                        nodes_to_remove.append(v)
                     else:
                         G.nodes[u]['label0'] += f"{G.nodes[v]['label']}"
-                        G.remove_node(v)
+                        nodes_to_remove.append(v)
                 elif G.nodes[v]['label'] in ["characterization", "comparative", "externalDependence", "material",
                                              "mediation", "componentOf", "memberOf", "subCollectionOf",
                                              "subQuantityOf", "bringsAbout", "creation", "historicalDependence",
@@ -64,11 +65,12 @@ def process_genset_cardinalities(graphs):
                                              "triggers", "instantiation", "relation"]:
                     if 'label0' not in G.nodes[v]:
                         G.nodes[v]['label0'] = f"{G.nodes[u]['label']}"
-                        G.remove_node(u)
+                        nodes_to_remove.append(u)
                     else:
                         G.nodes[v]['label0'] += f"{G.nodes[u]['label']}"
-                        G.remove_node(u)
-
+                        nodes_to_remove.append(u)
+        G.remove_nodes_from(nodes_to_remove)
+        
         # Step 2: Add index to gen-set node labels
         gen_set_count = 0
         for node, node_data in G.nodes(data=True):
