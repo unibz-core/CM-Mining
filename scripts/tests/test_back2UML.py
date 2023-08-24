@@ -153,13 +153,14 @@ def convert_graphs_new(graphs):
             H.add_node(n, label=label, label0=label0)
         
         for n0, n1 in list(H.edges):
-            for n2 in list(H.neighbors(n1)):
-                if n0 in H and n1 in H and n2 in H:
-                    if (H.has_edge(n0, n1) and H.has_edge(n1, n2) and H.nodes[n1]['label'] == "class"):
-                        label_n0_n1 = H.edges[(n0, n1)]['label']
-                        label0_n0_n1 = H.edges[(n0, n1)].get('label0', '')
-                        H.add_edge(n0, n2, label=label_n0_n1, label0=label0_n0_n1)
-                        H.remove_node(n1)
+            if H.has_node(n1):
+                for n2 in list(H.neighbors(n1)):
+                    if n0 in H and n1 in H and n2 in H:
+                        if (H.has_edge(n0, n1) and H.has_edge(n1, n2) and H.nodes[n1]['label'] == "class"):
+                            label_n0_n1 = H.edges[(n0, n1)]['label']
+                            label0_n0_n1 = H.edges[(n0, n1)].get('label0', '')
+                            H.add_edge(n0, n2, label=label_n0_n1, label0=label0_n0_n1)
+                            H.remove_node(n1)
 
         converted_graphs.append([index_dict,H])
 
