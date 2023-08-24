@@ -28,7 +28,7 @@ plantuml_jar_path = "utils/plantumlGenerator.jar"
 node_labels0 = ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
                 "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
                 "creation", "historicalDependence", "manifestation", "participation",
-                "participational", "termination", "triggers", "instantiation", "relation"] 
+                "participational", "termination", "triggers", "instantiation", "relation", "derivation"] 
 edge_labels0 = ["target", "specific", "general","source", "generalization"]
 
 file_names = []

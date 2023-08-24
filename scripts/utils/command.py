@@ -412,7 +412,7 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         node_labels = ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
                     "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
                     "creation", "historicalDependence", "manifestation", "participation",
-                    "participational", "termination", "triggers", "instantiation", "relation"] 
+                    "participational", "termination", "triggers", "instantiation", "relation", "derivation"] 
         edge_labels = ["target", "specific", "general","source"]
         #find_patterns_clean = process_genset_cardinalities(find_patterns_clean_)
         converted_domain_patterns = utils.back2UML.convert_graphs_new(find_patterns_clean_)

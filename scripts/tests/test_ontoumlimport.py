@@ -248,8 +248,8 @@ def generateFullUndirected(file_names):
     restrictedTo = get_restrictedTo(file_names)
     genset_rel = [sum(i, []) for i in get_genset_rel(genset)]
     associations_cardinalities_v = [[("0"+str(d).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_", str(d).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')) for a,b,c,d,e,f in i] for i in associations]
-    geneset_disjoint_v = [[("0"+str(b).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(b)) for a,b,c,d,e in i] for i in genset]
-    geneset_complete_v = [[("0"+str(c).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(c)) for a,b,c,d,e in i] for i in genset]
+    genset_disjoint_v = [[("0"+str(b).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(b)) for a,b,c,d,e in i] for i in genset]
+    genset_complete_v = [[("0"+str(c).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(c)) for a,b,c,d,e in i] for i in genset]
     classes_v = [[(str(a),str(c).replace(" ", "-").replace(":", "-"),str(b).replace(" ", "-").replace(":", "-")) for a,b,c,d in i] for i in classes]
     generalizations_v = [[(a, "gen") for a,b,c in i] for i in generalizations]
     associations_v = [[(a, str(c).replace(" ", "-").replace(":", "-"), str(b).replace(" ", "-").replace(":", "-")) for a,b,c,d,e,f in i] for i in associations]
@@ -260,17 +260,16 @@ def generateFullUndirected(file_names):
     generalizations_specific_e = [[(c, a, "specific") for a,b,c in i] for i in generalizations]
     associations_source_e = [[(str(e),str(a),"source") for a,b,c,d,e,f in i] for i in associations]
     associations_target_e = [[(str(f),str(a),"target") for a,b,c,d,e,f in i] for i in associations]
-    associations_cardinalities_e = [[(str(x),str(a),"cardinalities") 
-                                    for x,y in k for a,b,c,d,e,f in i] for i,k in zip(associations, associations_cardinalities_v)]
-    geneset_disjoint_e = [[(str(x),str(a),"isDisjoint") 
-                        for x,y in k for a,b,c,d,e in i] for i,k in zip(genset, geneset_disjoint_v)]
-    geneset_complete_e = [[(str(x),str(a),"isComplete") 
-                        for x,y in k for a,b,c,d,e in i] for i,k in zip(genset, geneset_complete_v)]
+    associations_cardinalities_e = [[("id"+str(d).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(a),"cardinalities") for a,b,c,d,e,f in i] for i in associations]
+
+    geneset_disjoint_e = [[("0"+str(b).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(a),"isDisjoint") for a,b,c,d,e in i] for i in genset]
+    geneset_complete_e = [[("0"+str(c).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_",str(a),"isComplete") for a,b,c,d,e in i] for i in genset]
+
     genset_e = [[(str(b),str(a),"generalization") for a,b in i] for i in genset_rel]
     restrictedTo_e = [[(a,"0"+str(b).replace(" ", "").replace("'", "").replace(",", "_").replace('[', '').replace(']', '').replace('.', '')+"_","restrictedTo") for a,b in i] for i in restrictedTo]
 
-    graphs = create_FullUndirectedGraphs(file_names, associations_cardinalities_v,geneset_disjoint_v,
-                                        geneset_complete_v,classes_v,generalizations_v,associations_v,geneset_v,restrictedTo_v,
+    graphs = create_FullUndirectedGraphs(file_names, associations_cardinalities_v,genset_disjoint_v,
+                                        genset_complete_v,classes_v,generalizations_v,associations_v,geneset_v,restrictedTo_v,
                                         generalizations_general_e,generalizations_specific_e,associations_source_e,
                                         associations_target_e,associations_target_e,associations_cardinalities_e,
                                         geneset_disjoint_e,geneset_complete_e,genset_e,restrictedTo_e)
