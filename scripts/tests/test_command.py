@@ -67,6 +67,8 @@ def filterRelations():
     selected_strings = answers['selected_strings']
 
     print("Deleted nodes (relations):", selected_strings)
+    derivation = "derivation"
+    selected_strings.append(derivation)
     return selected_strings
 
 def filterEdges():
@@ -172,7 +174,7 @@ def delete_files_in_folders(folders):
 import sys
 def firststop():
     # List of folders to delete files from
-    folders = ["input","domaindots"]
+    folders = ["input"]
 
     # Prompt to ask if the process is finished
     questions = [
@@ -208,7 +210,7 @@ def firststop():
 
 def secondstop():
     # List of folders to delete files from
-    folders = ["input","domaindots","patterns"]
+    folders = ["input","patterns"]
 
     # Prompt to ask if the process is finished
     questions = [
@@ -282,7 +284,7 @@ def viz_uml_diagrams(uml_folder, plantuml_jar_path):
 
 def laststop():
     # List of folders to delete files from
-    folders = ["input","domaindots","patterns","domain_patterns"]
+    folders = ["input","patterns","domain_patterns"]
 
     # Prompt to ask if the user wants to delete all files
     questions = [

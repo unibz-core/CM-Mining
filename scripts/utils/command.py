@@ -81,6 +81,8 @@ def filterRelations():
     ]
     answers = prompt(questions,style=custom_style_2)
     selected_strings = answers['selected_strings']
+    derivation = "derivation"
+    selected_strings.append(derivation)
 
     print("Deleted nodes (relations):", selected_strings)
     return selected_strings
@@ -223,7 +225,7 @@ def firststop():
     Prompt the user to stop the process or proceed to the next function.
     """
     # List of folders to delete files from
-    folders = ["input","domaindots"]
+    folders = ["input"]
 
     # Prompt to ask if the process is finished
     questions = [
@@ -258,7 +260,7 @@ def secondstop():
     """
     Prompt the user to stop the process or proceed to the next function.
     """
-    folders = ["input","domaindots","patterns"]
+    folders = ["input","patterns"]
 
     # Prompt to ask if the process is finished
     questions = [
@@ -348,7 +350,7 @@ def laststop():
     """
     Prompt the user to delete files or proceed to the next function.
     """
-    folders = ["input","domaindots","patterns","domain_patterns"]
+    folders = ["input","patterns","domain_patterns"]
 
     # Prompt to ask if the user wants to delete all files
     questions = [
