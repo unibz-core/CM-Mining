@@ -268,3 +268,26 @@ def check_and_clean_graphs(list0, list1):
 
     return cleaned_list
 
+
+from networkx.algorithms.isomorphism import GraphMatcher
+def node_match(n1, n2):
+    return n1.get('label') == n2.get('label')
+
+def edge_match(e1, e2):
+    return e1.get('label') == e2.get('label')
+
+def remove_graphs_from_list(graph_list, graphs_to_remove):
+    """
+    Remove known patterns
+
+    :graph_list: the complete list of patterns.
+    :graphs_to_remove: the input known patterns.
+    """
+    new_graph_list = []
+    for [index_dict,target_graph] in graph_list:
+        isomorphic = any(GraphMatcher(target_graph, G,
+            node_match=node_match,
+            edge_match=edge_match).is_isomorphic() for G in graphs_to_remove)
+        if not isomorphic:
+            new_graph_list.append([index_dict,target_graph])
+    return new_graph_list

@@ -437,3 +437,25 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
 
         if not answers['continue']:
             laststop()
+
+def known_patterns():
+    """
+    Asking if the known pattern must be removed.
+    """
+    questions = [
+        {
+            'type': 'input',
+            'name': 'filter_patterns',
+            'message': 'Do you want to filter out known patterns? (yes/no)',
+            'validate': lambda answer: 'You must enter either "yes" or "no"' if answer.lower() not in ['yes', 'no', 'y', 'n'] else True
+        }
+    ]
+
+    answers = prompt(questions)
+
+    if answers['filter_patterns'].lower() in ['yes', 'y']:
+        patterns = 'yes'
+    else:
+        patterns = 'no'
+    
+    return patterns
