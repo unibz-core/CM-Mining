@@ -39,6 +39,9 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
             
             if label == "class":
                 lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
+            elif label in ["_collective_", "_functionalcomplex_", "_quantity_", "_intrinsicmode_", "_extrinsicmode_",
+                "_quality_", "_relator_", "_abstract_", "_event_", "_situation_", "_type_"]:
+                lines.append(f"class \"{label}\" as {label_with_id} #line.dotted:blue")
             elif label:
                 lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
 
@@ -54,6 +57,8 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
                 lines.append(f"{target_with_id} <|-down- {source_with_id}: {label} {label0}")
             elif label == "relation":
                 lines.append(f"{source_with_id} <-- {target_with_id}: {label}: {label0}")
+            elif label == "restrictedto":
+                lines.append(f"{source_with_id} .[#blue,dotted,thickness=2]. {target_with_id}: {label}: {label0}")
             elif label:
                 lines.append(f"{source_with_id} <-- {target_with_id}: <<{label}>>: {label0}")
             else:
@@ -119,8 +124,8 @@ def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="pattern
             
             if label == "class":
                 lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
-            elif label in ["collective0", "functionalcomplex0", "quantity0", "intrinsicmode0", "extrinsicmode0",
-                           "quality0", "relator0", "abstract0", "event0", "situation0", "type0"] :
+            elif label in ["_collective_", "_functionalcomplex_", "_quantity_", "_intrinsicmode_", "_extrinsicmode_",
+                           "_quality_", "_relator_", "_abstract_", "_event_", "_situation_", "_type_"] :
                 lines.append(f"class \"{label}\" as {label_with_id} #line.dotted:blue")
             elif label:
                 lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
@@ -153,7 +158,8 @@ def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="pattern
         pattern_cluster = index_dict['pattern_cluster']
         folder_path = os.path.join(output_folder, f"{pattern_cluster}")
         os.makedirs(folder_path, exist_ok=True)
-        file_path = os.path.join(folder_path, f"{pattern_index}_{pattern_support}_uml.txt")
+        #file_path = os.path.join(folder_path, f"{pattern_index}_{pattern_support}_uml.txt")
+        file_path = os.path.join(folder_path, f"{pattern_support}_{pattern_index}_uml.txt")
 
         with open(file_path, "w") as f:
             f.write("\n".join(lines))
