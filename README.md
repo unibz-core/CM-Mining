@@ -1,6 +1,6 @@
-# OntoUML2NetworkX
+# Conceptual Models Pattern Mining and Analysis Toolkit
 
-The Graph Pattern Analysis Toolkit toolkit provides a collection of Python modules for processing, analyzing, and visualizing graph patterns from OntoUML data. It's designed to help you to analyze OntoUML models, extract patterns, calculate frequencies, find subgraph isomorphisms, and generate visual representations of your mining output.
+The Conceptual Models Pattern Mining and Analysis Toolkit provides a collection of Python modules for processing, analyzing, and visualizing graph patterns from OntoUML data. It's designed to help you to analyze OntoUML models, extract patterns, calculate frequencies, find subgraph isomorphisms, and generate visual representations of your mining output.
 
 ## Table of Contents
 
