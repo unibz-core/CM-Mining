@@ -13,6 +13,7 @@ import utils.patterns
 import utils.back2UML
 import utils.graphClustering0
 import utils.graphClustering1
+import func_timeout
 import utils.UMLviz
 import utils.command
 import signal
@@ -69,18 +70,12 @@ if __name__ == "__main__":
     inputs = utils.gspanMiner.gsparameters(gsParameters)
     
     # Define timeout handler and run gSpan Miner
-    def timeout_handler(signum, frame):
-        raise TimeoutError("Function execution timed out")
-    
-    signal.signal(signal.SIGALRM, timeout_handler)
-    signal.alarm(900)  # seconds
     try:
-        patterns = utils.gspanMiner.run_gspan(inputs)
-    except TimeoutError:
+        patterns = func_timeout.func_timeout(10, utils.gspanMiner.run_gspan, args=(inputs,))
+    except func_timeout.FunctionTimedOut:
         print("Function execution timed out")
     finally:
-        signal.alarm(0)
-    utils.command.firststop()
+        utils.command.firststop()
 
     # Load and process pattern graphs
     uploadgraphs = utils.patterns.load_graphs_from_pickle('./input/graphs.pickle')
