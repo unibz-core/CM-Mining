@@ -71,7 +71,7 @@ if __name__ == "__main__":
     
     # Define timeout handler and run gSpan Miner
     try:
-        patterns = func_timeout.func_timeout(10, utils.gspanMiner.run_gspan, args=(inputs,))
+        patterns = func_timeout.func_timeout(900, utils.gspanMiner.run_gspan, args=(inputs,))
     except func_timeout.FunctionTimedOut:
         print("Function execution timed out")
     finally:
