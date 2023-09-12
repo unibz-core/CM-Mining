@@ -37,13 +37,74 @@ for filename in os.listdir(directory_path):
     if filename.endswith(extension):
         file_names.append(filename)
 
-#subkind pattern 0 - example
-Gnodes = [('0', {'label': 'category'}),('1', {'label': 'functionalcomplex'}),('2', {'label': 'kind'}),('3', {'label': 'kind'}),('4', {'label': 'kind'})]
-Gedges = [('0', '1', {'label': 'restrictedTo'}),('1', '2', {'label': 'restrictedTo'}),('1', '3', {'label': 'restrictedTo'}),('1', '4', {'label': 'restrictedTo'})]
-G = nx.Graph()
-G.add_nodes_from(Gnodes)
-G.add_edges_from(Gedges)
-subkind = [G]
+#subkind pattern "A"
+sAnodes = [('0', {'label': 'kind'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'subkind'}),('4', {'label': 'subkind'})]
+sAedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('1', '3', {'label': 'specific'}),('2', '4', {'label': 'specific'})]
+sA = nx.Graph()
+sA.add_nodes_from(sAnodes)
+sA.add_edges_from(sAedges)
+
+#subkind pattern "B"
+sBnodes = [('0', {'label': 'kind'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'gen'}),('4', {'label': 'subkind'}),('5', {'label': 'subkind'}),('6', {'label': 'subkind'})]
+sBedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('0', '3', {'label': 'general'}),('1', '4', {'label': 'specific'}),('2', '5', {'label': 'specific'}),('3', '6', {'label': 'specific'})]
+sB = nx.Graph()
+sB.add_nodes_from(sBnodes)
+sB.add_edges_from(sBedges)
+
+#category pattern "A"
+cAnodes = [('0', {'label': 'category'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'kind'}),('4', {'label': 'kind'})]
+cAedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('1', '3', {'label': 'specific'}),('2', '4', {'label': 'specific'})]
+cA = nx.Graph()
+cA.add_nodes_from(cAnodes)
+cA.add_edges_from(cAedges)
+
+#category pattern "B"
+cBnodes = [('0', {'label': 'category'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'gen'}),('4', {'label': 'subkind'}),('5', {'label': 'subkind'}),('6', {'label': 'subkind'})]
+cBedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('0', '3', {'label': 'general'}),('1', '4', {'label': 'specific'}),('2', '5', {'label': 'specific'}),('3', '6', {'label': 'specific'})]
+cB = nx.Graph()
+cB.add_nodes_from(cBnodes)
+cB.add_edges_from(cBedges)
+
+#phase pattern "A"
+pAnodes = [('0', {'label': 'kind'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'phase'}),('4', {'label': 'phase'})]
+pAedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('1', '3', {'label': 'specific'}),('2', '4', {'label': 'specific'})]
+pA = nx.Graph()
+pA.add_nodes_from(pAnodes)
+pA.add_edges_from(pAedges)
+
+#phase pattern "B"
+pBnodes = [('0', {'label': 'kind'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'gen'}),('4', {'label': 'phase'}),('5', {'label': 'phase'}),('6', {'label': 'phase'})]
+pBedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('0', '3', {'label': 'general'}),('1', '4', {'label': 'specific'}),('2', '5', {'label': 'specific'}),('3', '6', {'label': 'specific'})]
+pB = nx.Graph()
+pB.add_nodes_from(pBnodes)
+pB.add_edges_from(pBedges)
+
+#relator pattern "A"
+rAnodes = [('0', {'label': 'relator'}),('1', {'label': 'role'}),('2', {'label': 'role'}),('3', {'label': 'mediation'}),('4', {'label': 'mediation'})]
+rAedges = [('0', '3', {'label': 'source'}),('3', '1', {'label': 'target'}),('0', '4', {'label': 'source'}),('4', '2', {'label': 'target'})]
+rA = nx.Graph()
+rA.add_nodes_from(rAnodes)
+rA.add_edges_from(rAedges)
+
+#roleMixin pattern "A"
+rmAnodes = [('0', {'label': 'rolemixin'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),('3', {'label': 'role'}),('4', {'label': 'role'})]
+rmAedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),('1', '3', {'label': 'specific'}),('2', '4', {'label': 'specific'})]
+rmA = nx.Graph()
+rmA.add_nodes_from(rmAnodes)
+rmA.add_edges_from(rmAedges)
+
+#roleMixin pattern "B"
+rmBnodes = [('0', {'label': 'rolemixin'}),('1', {'label': 'gen'}),('2', {'label': 'gen'}),
+            ('3', {'label': 'role'}),('4', {'label': 'role'}),('5', {'label': 'gen'}),
+            ('6', {'label': 'gen'}),('7', {'label': 'kind'}),('8', {'label': 'kind'})]
+rmBedges = [('0', '1', {'label': 'general'}),('0', '2', {'label': 'general'}),
+            ('1', '3', {'label': 'specific'}),('2', '4', {'label': 'specific'}),('7', '5', {'label': 'general'}),('5', '3', {'label': 'specific'}),('8', '6', {'label': 'general'}),('6', '4', {'label': 'specific'})]
+rmB = nx.Graph()
+rmB.add_nodes_from(rmAnodes)
+rmB.add_edges_from(rmAedges)
+
+
+kpattenrs = [sA,sB,cA,cB,pA,pB,rA,rmA,rmB]
 
 if __name__ == "__main__":
 
@@ -58,12 +119,15 @@ if __name__ == "__main__":
     
     # Process graphs
     newgraphs = utils.generateinput.process_graphs(node_labels, edge_labels, graphs)
+    #newgraphs = utils.generateinput.replace_labels_with_default(class_labels, relation_labels, edge_labels, graphs)
     newgraphs_with_names = utils.generateinput.process_graphs_with_names(node_labels, edge_labels, graphs)
-    
+    #newgraphs_with_names = utils.generateinput.replace_labels_with_default(class_labels, relation_labels, edge_labels, graphs)
+
     # Save and process graphs
     downloadgraphs = utils.generateinput.save_graphs_to_pickle(newgraphs, './input/graphs.pickle')
     data = utils.generateinput.graphs_to_data_file(newgraphs_with_names, 'graphs')
-    
+
+
     # Set parameters and run gSpan Miner
     gsParameters = utils.command.parameters()
     inputs = utils.gspanMiner.gsparameters(gsParameters)
@@ -73,7 +137,9 @@ if __name__ == "__main__":
         raise TimeoutError("Function execution timed out")
     
     signal.signal(signal.SIGALRM, timeout_handler)
-    signal.alarm(900)  # seconds
+    #signal.alarm(900)  # seconds
+    #signal.alarm(1800)  # seconds
+    signal.alarm(3600)  # seconds
     try:
         patterns = utils.gspanMiner.run_gspan(inputs)
     except TimeoutError:
@@ -90,12 +156,15 @@ if __name__ == "__main__":
     
     if known_patterns == "yes":
         pattern_graphs0 = utils.patterns.convertPatterns(patternspath)
-        pattern_graphs = utils.patterns.remove_graphs_from_list(pattern_graphs0,subkind)
+        pattern_graphs = utils.patterns.remove_graphs_from_list(pattern_graphs0,kpattenrs)
         pro_pattern_graphs = utils.patterns.return_all_domain_info(pattern_graphs)
     else:
         pattern_graphs = utils.patterns.convertPatterns(patternspath)
         pro_pattern_graphs = utils.patterns.return_all_domain_info(pattern_graphs)
-    
+        
+    #print(pattern_graphs0)
+    #print(pattern_graphs)
+
     # Process pattern graphs for clustering
     patterns_features = utils.graphClustering1.graphs2dataframes2vectors(pattern_graphs)
     patterns_dataframe = utils.graphClustering1.transform2singledataframe(patterns_features)
