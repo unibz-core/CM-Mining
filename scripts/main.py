@@ -70,11 +70,12 @@ if __name__ == "__main__":
     inputs = utils.gspanMiner.gsparameters(gsParameters)
     
     # Define timeout handler and run gSpan Miner
+    patterns = False
     try:
         patterns = func_timeout.func_timeout(900, utils.gspanMiner.run_gspan, args=(inputs,))
     except func_timeout.FunctionTimedOut:
         print("Function execution timed out")
-    finally:
+    if not patterns:
         utils.command.firststop()
 
     # Load and process pattern graphs
