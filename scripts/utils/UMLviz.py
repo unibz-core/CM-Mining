@@ -38,7 +38,8 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
                 label0 = str(label_counts[label])  # Assign the index as label0
             
             if label == "class":
-                lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
+                #lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
+                lines.append(f"class \"{label}_{label0}\" as {label_with_id} #line.dotted:blue" )
             elif label in ["_collective_", "_functionalcomplex_", "_quantity_", "_intrinsicmode_", "_extrinsicmode_",
                 "_quality_", "_relator_", "_abstract_", "_event_", "_situation_", "_type_"]:
                 lines.append(f"class \"{label}\" as {label_with_id} #line.dotted:blue")
@@ -54,7 +55,8 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
             label0 = G.edges[edge].get("label0", "")
 
             if label == "gen":
-                lines.append(f"{target_with_id} <|-down- {source_with_id}: {label} {label0}")
+                #lines.append(f"{target_with_id} <|-down- {source_with_id}: {label} {label0}")
+                lines.append(f"{target_with_id} <|-down- {source_with_id}: Generalization {label0}")
             elif label == "relation":
                 lines.append(f"{source_with_id} <-- {target_with_id}: {label}: {label0}")
             elif label == "restrictedto":
@@ -92,6 +94,27 @@ def convert_to_plantuml_domain(graphs, title="Caption", output_folder="domain_pa
 
     return folder_paths
 
+
+def extract_strings(input_string):
+    """
+    Used to split cardinalities and show them correctly in the final plantuml diagram.
+    """
+
+    if not input_string:
+        #return '".."', '".."'
+        return '', ''
+    
+    left, right = input_string.split('_')
+    
+    if '*' in left:
+        left = '"' + left.replace('*', '') + '*"'
+    else:
+        left = '"' + left + '"'
+    
+    right = '"' + right + '"'
+    
+    return left, right
+
 def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="patterns"):
     """
     Convert a list of network graphs into PlantUML diagrams for patterns within clusters.
@@ -123,14 +146,13 @@ def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="pattern
                 label0 = str(label_counts[label])  # Assign the index as label0
             
             if label == "class":
-                lines.append(f"class \"{label}_{label0}\" as {label_with_id}")
+                #lines.append(f"class \"{label}_{label0}\" as {label_with_id}" )
+                lines.append(f"class \"{label}_{label0}\" as {label_with_id} #line.dotted:blue" )
             elif label in ["_collective_", "_functionalcomplex_", "_quantity_", "_intrinsicmode_", "_extrinsicmode_",
                            "_quality_", "_relator_", "_abstract_", "_event_", "_situation_", "_type_"] :
                 lines.append(f"class \"{label}\" as {label_with_id} #line.dotted:blue")
             elif label:
                 lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
-
-            #lines.append(f"class \"{label0}\" as {label_with_id} <<{label}>>")
 
         for edge in G.edges:
             source = G.nodes[edge[0]].get("label", str(edge[0]))
@@ -139,15 +161,19 @@ def convert_to_plantuml_clusters(graphs, title="Caption", output_folder="pattern
             target_with_id = f"{target}{edge[1]}".replace(".", "")
             label = G.edges[edge].get("label", "")
             label0 = G.edges[edge].get("label0", "")
+            left_str, right_str = extract_strings(label0)
 
             if label == "gen":
-                lines.append(f"{target_with_id} <|-down- {source_with_id}: {label} {label0}")
+                #lines.append(f"{target_with_id} <|-down- {source_with_id}: {label} {label0}")
+                lines.append(f"{target_with_id} <|-down- {source_with_id}: Generalization {label0}")
             elif label == "relation":
-                lines.append(f"{source_with_id} <-- {target_with_id}: {label}: {label0}")
+                #lines.append(f"{source_with_id} <-- {target_with_id}: {label}: {label0}")
+                lines.append(f"{source_with_id} {right_str} <-- {left_str} {target_with_id}: {label}")
             elif label == "restrictedto":
                 lines.append(f"{source_with_id} .[#blue,dotted,thickness=2]. {target_with_id}: {label}: {label0}")
             elif label:
-                lines.append(f"{source_with_id} <-- {target_with_id}: <<{label}>>: {label0}")
+                #lines.append(f"{source_with_id} <-- {target_with_id}: <<{label}>>: {label0}")
+                lines.append(f"{source_with_id} {right_str} <-- {left_str} {target_with_id}: <<{label}>>: ")
             else:
                 lines.append(f"{source_with_id} <|-down- {target_with_id}")
         lines.append("hide circle")

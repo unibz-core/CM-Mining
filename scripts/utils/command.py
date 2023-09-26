@@ -15,6 +15,7 @@ import utils.patterns
 import shutil
 import utils.UMLviz
 from prompt_toolkit.validation import Validator, ValidationError
+import networkx as nx
 
 directory_path = '../models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
@@ -372,6 +373,41 @@ def laststop():
         print("Bye!")
         sys.exit(0)  
 
+def remove_cardinalities_edges(graph_list):
+    updated_graphs_list = []
+    for item in graph_list:
+        original_graph = item[1]
+        new_graph = nx.Graph()
+        
+        # Copy nodes with attributes
+        for node, attr in original_graph.nodes(data=True):
+            new_graph.add_node(node, **attr)
+        
+        # Copy edges with attributes, excluding edges with 'cardinalities' label
+        for u, v, data in original_graph.edges(data=True):
+            if 'label' not in data or (data['label'] != 'cardinalities' and data['label'] != 'generalization'):
+            #if (data['label'] != 'cardinalities' and data['label'] != 'generalization'):
+                new_graph.add_edge(u, v, **data)
+    
+        updated_graphs_list.append([item[0], new_graph])
+
+    return updated_graphs_list
+
+
+def remove_unconnected_nodes(graphs_list):
+    updated_graphs_list = []
+    for item in graphs_list:
+        pattern_info, graph = item
+        # Ensure the second item is a NetworkX graph
+        if not isinstance(graph, nx.Graph):
+            raise ValueError("The second item in the list should be a NetworkX graph.")
+
+        # Remove unconnected nodes
+        connected_nodes = [node for node in graph.nodes if graph.degree(node) > 0]
+        updated_graph = graph.subgraph(connected_nodes)
+        updated_graphs_list.append([pattern_info, updated_graph])
+    
+    return updated_graphs_list
 
 def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
     """
@@ -408,9 +444,15 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         print(f"Stored pattern: {integer}")
         input = [str(integer)]
         selected_pattern = utils.patterns.select_sublists(pattern_graphs,input)
-        #print(selected_pattern)
+        # for i,g in selected_pattern:
+        #     print(g.nodes(data=True))
         find_patterns = utils.patterns.count_subgraph_isomorphisms(selected_pattern,host_graphs)
-        find_patterns_clean_ = utils.patterns.remove_duplicate_graphs(find_patterns)
+        # for i,g in find_patterns:
+        #     print(g.nodes(data=True))
+        find_patterns_clean_ = remove_unconnected_nodes(remove_cardinalities_edges(utils.patterns.remove_duplicate_graphs(find_patterns)))
+        # for i,g in find_patterns_clean_:
+        #     print(g.nodes(data=True))
+        print("########")
         node_labels = ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
                     "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
                     "creation", "historicalDependence", "manifestation", "participation",
@@ -418,6 +460,8 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         edge_labels = ["target", "specific", "general","source"]
         #find_patterns_clean = process_genset_cardinalities(find_patterns_clean_)
         converted_domain_patterns = utils.back2UML.convert_graphs_new(find_patterns_clean_)
+        # for i,g in converted_domain_patterns:
+        #     print(g.nodes(data=True))
         converted_domain_patterns_filtered = utils.generateinput.process_graphs__(node_labels, edge_labels, converted_domain_patterns)
         converted_domain_patterns_filtered_0 = utils.patterns.check_and_clean_graphs(converted_patterns_filtered, converted_domain_patterns_filtered)
         utils.UMLviz.convert_to_plantuml_domain(converted_domain_patterns_filtered_0)
@@ -438,10 +482,8 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         if not answers['continue']:
             laststop()
 
+
 def known_patterns():
-    """
-    Asking if the known pattern must be removed.
-    """
     questions = [
         {
             'type': 'input',
@@ -459,3 +501,4 @@ def known_patterns():
         patterns = 'no'
     
     return patterns
+

@@ -75,6 +75,45 @@ def convertPatterns(path):
 
 # pattern_graphs = convertPatterns(patternspath)
 
+# def return_all_domain_info(graphs):
+#     """
+#     Return domain information for each graph.
+
+#     :param graphs: List of pattern graphs.
+#     :return: List of processed pattern graphs with domain information.
+#     """
+#     processed_graphs = []
+    
+#     for [index_dict,graph] in graphs:
+#         new_graph = graph.copy()  # Create a copy of the input graph
+        
+#         for u, v, label in graph.edges(data='label'):
+#             if label in ["source", "target", "general", "specific"]:
+#                 if graph.degree(u) == 1:  # Check if u is a leaf node
+#                     leaf_node_label = graph.nodes[u].get('label')
+#                     if leaf_node_label in ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
+#                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
+#                                            "creation", "historicalDependence", "manifestation", "participation",
+#                                            "participational", "termination", "triggers", "instantiation", "relation"]:
+#                         new_node = "n" + str(len(new_graph) + 1)
+#                         new_graph.add_edge(u, new_node)  # Add edge between the leaf node and the new node
+#                         #new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
+#                 elif graph.degree(v) == 1:  # Check if v is a leaf node
+#                     leaf_node_label = graph.nodes[v].get('label')
+#                     if leaf_node_label in ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
+#                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
+#                                            "creation", "historicalDependence", "manifestation", "participation",
+#                                            "participational", "termination", "triggers", "instantiation", "relation"]:
+#                         new_node = "n" + str(len(new_graph) + 1)
+#                         new_graph.add_edge(v, new_node)  # Add edge between the leaf node and the new node
+#                         #new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
+        
+#         processed_graphs.append([index_dict,new_graph])
+    
+#     return processed_graphs
+
+#new development!!! here we have to add the exact vicino
+
 def return_all_domain_info(graphs):
     """
     Return domain information for each graph.
@@ -83,10 +122,10 @@ def return_all_domain_info(graphs):
     :return: List of processed pattern graphs with domain information.
     """
     processed_graphs = []
-    
-    for [index_dict,graph] in graphs:
+
+    for index_dict, graph in graphs:
         new_graph = graph.copy()  # Create a copy of the input graph
-        
+
         for u, v, label in graph.edges(data='label'):
             if label in ["source", "target", "general", "specific"]:
                 if graph.degree(u) == 1:  # Check if u is a leaf node
@@ -97,8 +136,14 @@ def return_all_domain_info(graphs):
                                            "participational", "termination", "triggers", "instantiation", "relation"]:
                         new_node = "n" + str(len(new_graph) + 1)
                         new_graph.add_edge(u, new_node)  # Add edge between the leaf node and the new node
-                        #new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
-                elif graph.degree(v) == 1:  # Check if v is a leaf node
+                        # new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
+
+                elif graph.degree(u) == 2 and any(graph.get_edge_data(u, neighbor).get('label') in ["cardinalities", "generalization"] for neighbor in graph.neighbors(u)):
+                    # Check if u is connected to another node with 'cardinalities' or 'generalization'
+                    new_node = "n" + str(len(new_graph) + 1)
+                    new_graph.add_edge(u, new_node)
+
+                if graph.degree(v) == 1:  # Check if v is a leaf node
                     leaf_node_label = graph.nodes[v].get('label')
                     if leaf_node_label in ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
@@ -106,11 +151,18 @@ def return_all_domain_info(graphs):
                                            "participational", "termination", "triggers", "instantiation", "relation"]:
                         new_node = "n" + str(len(new_graph) + 1)
                         new_graph.add_edge(v, new_node)  # Add edge between the leaf node and the new node
-                        #new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
-        
-        processed_graphs.append([index_dict,new_graph])
-    
+                        # new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
+
+                elif graph.degree(v) == 2 and any(graph.get_edge_data(v, neighbor).get('label') in ["cardinalities", "generalization"] for neighbor in graph.neighbors(v)):
+                    # Check if v is connected to another node with 'cardinalities' or 'generalization'
+                    new_node = "n" + str(len(new_graph) + 1)
+                    new_graph.add_edge(v, new_node)
+
+        processed_graphs.append([index_dict, new_graph])
+
     return processed_graphs
+
+
 
 from grandiso import find_motifs
 
@@ -268,7 +320,6 @@ def check_and_clean_graphs(list0, list1):
 
     return cleaned_list
 
-
 from networkx.algorithms.isomorphism import GraphMatcher
 def node_match(n1, n2):
     return n1.get('label') == n2.get('label')
@@ -277,12 +328,6 @@ def edge_match(e1, e2):
     return e1.get('label') == e2.get('label')
 
 def remove_graphs_from_list(graph_list, graphs_to_remove):
-    """
-    Remove known patterns
-
-    :graph_list: the complete list of patterns.
-    :graphs_to_remove: the input known patterns.
-    """
     new_graph_list = []
     for [index_dict,target_graph] in graph_list:
         isomorphic = any(GraphMatcher(target_graph, G,
@@ -291,3 +336,4 @@ def remove_graphs_from_list(graph_list, graphs_to_remove):
         if not isomorphic:
             new_graph_list.append([index_dict,target_graph])
     return new_graph_list
+
