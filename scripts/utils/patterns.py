@@ -73,47 +73,6 @@ def convertPatterns(path):
     
     return pattern_graphs
 
-# pattern_graphs = convertPatterns(patternspath)
-
-# def return_all_domain_info(graphs):
-#     """
-#     Return domain information for each graph.
-
-#     :param graphs: List of pattern graphs.
-#     :return: List of processed pattern graphs with domain information.
-#     """
-#     processed_graphs = []
-    
-#     for [index_dict,graph] in graphs:
-#         new_graph = graph.copy()  # Create a copy of the input graph
-        
-#         for u, v, label in graph.edges(data='label'):
-#             if label in ["source", "target", "general", "specific"]:
-#                 if graph.degree(u) == 1:  # Check if u is a leaf node
-#                     leaf_node_label = graph.nodes[u].get('label')
-#                     if leaf_node_label in ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
-#                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
-#                                            "creation", "historicalDependence", "manifestation", "participation",
-#                                            "participational", "termination", "triggers", "instantiation", "relation"]:
-#                         new_node = "n" + str(len(new_graph) + 1)
-#                         new_graph.add_edge(u, new_node)  # Add edge between the leaf node and the new node
-#                         #new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
-#                 elif graph.degree(v) == 1:  # Check if v is a leaf node
-#                     leaf_node_label = graph.nodes[v].get('label')
-#                     if leaf_node_label in ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
-#                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
-#                                            "creation", "historicalDependence", "manifestation", "participation",
-#                                            "participational", "termination", "triggers", "instantiation", "relation"]:
-#                         new_node = "n" + str(len(new_graph) + 1)
-#                         new_graph.add_edge(v, new_node)  # Add edge between the leaf node and the new node
-#                         #new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
-        
-#         processed_graphs.append([index_dict,new_graph])
-    
-#     return processed_graphs
-
-#new development!!! here we have to add the exact vicino
-
 def return_all_domain_info(graphs):
     """
     Return domain information for each graph.
@@ -134,10 +93,24 @@ def return_all_domain_info(graphs):
                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
                                            "creation", "historicalDependence", "manifestation", "participation",
                                            "participational", "termination", "triggers", "instantiation", "relation"]:
-                        new_node = "n" + str(len(new_graph) + 1)
-                        new_graph.add_edge(u, new_node)  # Add edge between the leaf node and the new node
+                        
+                        if label == 'source':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(u, new_node, label='target') 
+                        elif label == 'target':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(u, new_node, label='source') 
+                        elif label == 'general':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(u, new_node, label='specific') 
+                        elif label == 'specific':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(u, new_node, label='general') 
+                      
+                        # new_node = "n" + str(len(new_graph) + 1)
+                        # new_graph.add_edge(u, new_node)  # Add edge between the leaf node and the new node
                         # new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
-
+                
                 elif graph.degree(u) == 2 and any(graph.get_edge_data(u, neighbor).get('label') in ["cardinalities", "generalization"] for neighbor in graph.neighbors(u)):
                     # Check if u is connected to another node with 'cardinalities' or 'generalization'
                     new_node = "n" + str(len(new_graph) + 1)
@@ -149,19 +122,31 @@ def return_all_domain_info(graphs):
                                            "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",
                                            "creation", "historicalDependence", "manifestation", "participation",
                                            "participational", "termination", "triggers", "instantiation", "relation"]:
-                        new_node = "n" + str(len(new_graph) + 1)
-                        new_graph.add_edge(v, new_node)  # Add edge between the leaf node and the new node
+                        if label == 'source':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(v, new_node, label='target') 
+                        elif label == 'target':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(v, new_node, label='source') 
+                        elif label == 'general':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(v, new_node, label='specific') 
+                        elif label == 'specific':
+                            new_node = "n" + str(len(new_graph) + 1)
+                            new_graph.add_edge(v, new_node, label='general') 
+                        
+                        # new_node = "n" + str(len(new_graph) + 1)
+                        # new_graph.add_edge(v, new_node)  # Add edge between the leaf node and the new node
                         # new_graph.nodes[new_node]['label'] = ''  # Add a new label to the new node
 
                 elif graph.degree(v) == 2 and any(graph.get_edge_data(v, neighbor).get('label') in ["cardinalities", "generalization"] for neighbor in graph.neighbors(v)):
                     # Check if v is connected to another node with 'cardinalities' or 'generalization'
                     new_node = "n" + str(len(new_graph) + 1)
-                    new_graph.add_edge(v, new_node)
+                    new_graph.add_edge(v, new_node)               
 
         processed_graphs.append([index_dict, new_graph])
 
     return processed_graphs
-
 
 
 from grandiso import find_motifs
@@ -182,6 +167,7 @@ def count_subgraph_isomorphisms(source_graphs, target_graphs):
         for j, target_graph in enumerate(target_graphs):
             # Use find_motifs to find matches
             matches = find_motifs(source_graph, target_graph,isomorphisms_only=False) #directed=True)
+            print(matches)
             for match in matches:
                 # Extract the matched nodes and labels from the target graph
                 matched_nodes = list(match.values())
