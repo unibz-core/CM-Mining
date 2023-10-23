@@ -33,7 +33,7 @@ def extract_files_randomly(input_folder, output_folder, n_partitions, n_files_pe
 # Example usage
 input_folder = "input_folder"
 output_folder = "output_folder"
-n_partitions = 4
+n_partitions = 5
 n_files_per_partition = 2
 
 extract_files_randomly(input_folder, output_folder, n_partitions, n_files_per_partition)

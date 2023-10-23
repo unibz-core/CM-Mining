@@ -60,7 +60,7 @@ def filterRelations():
 
     :return: List of selected relation strings to filter out.
     """
-    strings = ["relation", "gen","characterization", "comparative", "externalDependence", 
+    strings = ["relation", "gen", "characterization", "comparative", "externalDependence", 
                "material", "mediation", "componentOf", "memberOf", 
                "subCollectionOf", "subQuantityOf", "bringsAbout", 
                "creation", "historicalDependence", "manifestation", 
@@ -444,14 +444,8 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         print(f"Stored pattern: {integer}")
         input = [str(integer)]
         selected_pattern = utils.patterns.select_sublists(pattern_graphs,input)
-        # for i,g in selected_pattern:
-        #     print(g.nodes(data=True))
         find_patterns = utils.patterns.count_subgraph_isomorphisms(selected_pattern,host_graphs)
-        # for i,g in find_patterns:
-        #     print(g.nodes(data=True))
         find_patterns_clean_ = remove_unconnected_nodes(remove_cardinalities_edges(utils.patterns.remove_duplicate_graphs(find_patterns)))
-        # for i,g in find_patterns_clean_:
-        #     print(g.nodes(data=True))
         print("########")
         node_labels = ["gen", "characterization", "comparative", "externalDependence", "material", "mediation",
                     "componentOf", "memberOf", "subCollectionOf", "subQuantityOf", "bringsAbout",

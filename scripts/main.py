@@ -15,7 +15,7 @@ import utils.graphClustering0
 import utils.graphClustering1
 import utils.UMLviz
 import utils.command
-import signal
+import func_timeout
 import subprocess
 import os
 import warnings
@@ -109,6 +109,7 @@ kpattenrs = [sA,sB,cA,cB,pA,pB,rA,rmA,rmB]
 if __name__ == "__main__":
 
     # Generate graphs from imported data
+    print("Importing models...")
     graphs = utils.ontoumlimport.generateFullUndirected(file_names)
     
     # Filter class and relation labels
@@ -117,12 +118,11 @@ if __name__ == "__main__":
     node_labels = class_labels + relation_labels
     edge_labels = utils.command.filterEdges()
     
+
     # Process graphs
     newgraphs = utils.generateinput.process_graphs(node_labels, edge_labels, graphs)
-    #newgraphs = utils.generateinput.replace_labels_with_default(class_labels, relation_labels, edge_labels, graphs)
     newgraphs_with_names = utils.generateinput.process_graphs_with_names(node_labels, edge_labels, graphs)
-    #newgraphs_with_names = utils.generateinput.replace_labels_with_default(class_labels, relation_labels, edge_labels, graphs)
-
+    
     # Save and process graphs
     downloadgraphs = utils.generateinput.save_graphs_to_pickle(newgraphs, './input/graphs.pickle')
     data = utils.generateinput.graphs_to_data_file(newgraphs_with_names, 'graphs')
@@ -133,26 +133,17 @@ if __name__ == "__main__":
     inputs = utils.gspanMiner.gsparameters(gsParameters)
     
     # Define timeout handler and run gSpan Miner
-    def timeout_handler(signum, frame):
-        raise TimeoutError("Function execution timed out")
-    
-    signal.signal(signal.SIGALRM, timeout_handler)
-    #signal.alarm(900)  # seconds
-    #signal.alarm(1800)  # seconds
-    signal.alarm(3600)  # seconds
+    patterns = ""
     try:
-        patterns = utils.gspanMiner.run_gspan(inputs)
-    except TimeoutError:
+        patterns = func_timeout.func_timeout(900, utils.gspanMiner.run_gspan, args=(inputs,))
+    except func_timeout.FunctionTimedOut:
         print("Function execution timed out")
-    finally:
-        signal.alarm(0)
-    utils.command.firststop()
+    if patterns is not None:
+        utils.command.firststop()
 
     # Load and process pattern graphs
     uploadgraphs = utils.patterns.load_graphs_from_pickle('./input/graphs.pickle')
     known_patterns = utils.command.known_patterns()
-    # pattern_graphs = utils.patterns.convertPatterns(patternspath)
-    # pro_pattern_graphs = utils.patterns.return_all_domain_info(pattern_graphs)
     
     if known_patterns == "yes":
         pattern_graphs0 = utils.patterns.convertPatterns(patternspath)
@@ -160,8 +151,7 @@ if __name__ == "__main__":
         pro_pattern_graphs = utils.patterns.return_all_domain_info(pattern_graphs)
     else:
         pattern_graphs = utils.patterns.convertPatterns(patternspath)
-        pro_pattern_graphs = utils.patterns.return_all_domain_info(pattern_graphs)
-        
+        pro_pattern_graphs = utils.patterns.return_all_domain_info(pattern_graphs) 
     #print(pattern_graphs0)
     #print(pattern_graphs)
 

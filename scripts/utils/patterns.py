@@ -167,7 +167,7 @@ def count_subgraph_isomorphisms(source_graphs, target_graphs):
         for j, target_graph in enumerate(target_graphs):
             # Use find_motifs to find matches
             matches = find_motifs(source_graph, target_graph,isomorphisms_only=False) #directed=True)
-            print(matches)
+            #print(matches)
             for match in matches:
                 # Extract the matched nodes and labels from the target graph
                 matched_nodes = list(match.values())

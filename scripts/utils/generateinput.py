@@ -145,7 +145,7 @@ def replace_labels_with_default(class_labels, relation_labels, edge_labels, grap
     relation_mapping = {label: "relation" for label in relation_labels}
 
     # Process each graph
-    for graph in graphs:
+    for [i,graph] in graphs:
         # Replace labels
         for node in graph.nodes():
             graph.nodes[node]['label'] = class_mapping.get(graph.nodes[node]['label'], graph.nodes[node]['label'])
@@ -155,6 +155,32 @@ def replace_labels_with_default(class_labels, relation_labels, edge_labels, grap
             remove_edges_with_label(graph, edge_label)
 
     return graphs
+
+def replace_labels_with_default_name(class_labels, relation_labels, edge_labels, graphs):
+    """
+    Replace specified labels in nodes with default labels and remove edges with specified labels.
+
+    :param class_labels: List of labels to be replaced with "class" label.
+    :param relation_labels: List of labels to be replaced with "relation" label.
+    :param edge_labels: List of labels for edges to be removed.
+    :param graphs: List of graphs to be processed.
+    :return: List of processed graphs.
+    """
+    # Create a mapping for node and edge labels
+    class_mapping = {label: "class" for label in class_labels}
+    relation_mapping = {label: "relation" for label in relation_labels}
+
+    # Process each graph
+    for [i,graph] in graphs:
+        # Replace labels
+        for node in graph.nodes():
+            graph.nodes[node]['label'] = class_mapping.get(graph.nodes[node]['label'], graph.nodes[node]['label'])
+            graph.nodes[node]['label'] = relation_mapping.get(graph.nodes[node]['label'], graph.nodes[node]['label'])
+        # Remove edges
+        for edge_label in edge_labels:
+            remove_edges_with_label(graph, edge_label)
+
+    return [i,graph]
 
 def save_graphs_to_pickle(graphs, filename):
     """

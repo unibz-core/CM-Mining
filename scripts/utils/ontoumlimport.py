@@ -290,11 +290,15 @@ def check_stereotypes(input_list):
     for sublist in input_list:
         modified_sublist = []
         for item in sublist:
-            if item[1] == 'involves':
+            if item[1] in ['involves', 'involves >']:
                 modified_sublist.append((item[0], item[1], 'mediation', item[3], item[4], item[5], item[6]))
             elif item[1] in ['inheres in', 'inheres_in', '< inheres in', 'inheres in >', 'inheresIn']:
                 modified_sublist.append((item[0], item[1], 'characterization', item[3], item[4], item[5], item[6]))
-            elif item[1] in ['participates', 'participation of', 'participated', 'participatedIn', 'hasParticipant']:
+            elif item[1] in ['participates', 'participation of', 'participated', 'participatedIn', 
+                             'hasParticipant', 'participa em', 'participa', 'participant_of', 
+                             'participate', 'participatedin', 'participates in', 'participates of', 
+                             'participates to events of type', 'participates', 'participation of', 
+                             'participation', 'participationof']:
                 modified_sublist.append((item[0], item[1], 'participation', item[3], item[4], item[5], item[6]))
             elif item[1] in ['externaly dependent in', 'ext. dep. on']:
                 modified_sublist.append((item[0], item[1], 'externalDependence', item[3], item[4], item[5], item[6]))
@@ -307,9 +311,9 @@ def check_stereotypes(input_list):
 
 def generateFullUndirected(file_names):
     classes = get_classes(file_names)
+    #print(classes)
     generalizations = get_generalizations(file_names)
     associations = check_stereotypes(get_associations(file_names))
-    #print(associations)
     genset = get_genset(file_names)
     restrictedTo = get_restrictedTo(file_names)
     genset_rel = [sum(i, []) for i in get_genset_rel(genset)]
