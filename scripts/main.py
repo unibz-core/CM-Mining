@@ -13,6 +13,7 @@ import utils.patterns
 import utils.back2UML
 import utils.graphClustering0
 import utils.graphClustering1
+import func_timeout
 import utils.UMLviz
 import utils.command
 import func_timeout
