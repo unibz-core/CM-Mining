@@ -1,1 +1,7 @@
-env
+input
+domain_patterns
+patterns
+
+# Python
+.venv
+__pycache__

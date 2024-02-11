@@ -21,6 +21,19 @@ directory_path = '../models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
 patternspath = "../input/outputpatterns.txt" # replace with patterns file name
 
+def selectLanguage():
+    question = [
+        {
+            'type': 'list',
+            'name': 'language',
+            'message': 'Select modeling language:',
+            'choices': ['ArchiMate', 'OntoUML']
+        }
+    ]
+    answers = prompt(question, style=custom_style_2)
+    selected_language = answers['language']
+    print(f"Selected language: {selected_language}")
+    return selected_language
 
 def filterClasses():
     """

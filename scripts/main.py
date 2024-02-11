@@ -21,6 +21,8 @@ import subprocess
 import os
 import warnings
 import networkx as nx
+import sys
+import archimate.pipeline
 
 directory_path = './models'  # replace with the path to your directory
 extension = '.json'  # replace with the desired file extension
@@ -108,7 +110,12 @@ rmB.add_edges_from(rmAedges)
 kpattenrs = [sA,sB,cA,cB,pA,pB,rA,rmA,rmB]
 
 if __name__ == "__main__":
-
+    # Select Modeling Language
+    language = utils.command.selectLanguage()
+    if language == 'ArchiMate':
+        archimate.pipeline.start()
+        sys.exit()
+    
     # Generate graphs from imported data
     print("Importing models...")
     graphs = utils.ontoumlimport.generateFullUndirected(file_names)
