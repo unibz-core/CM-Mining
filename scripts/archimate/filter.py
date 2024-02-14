@@ -19,22 +19,22 @@ business_types = {
     'BusinessObject',
     'Contract',
     'Representation',
-    'Product',
+    'Product'
 }
 application_types = {
     'ApplicationComponent',
     'ApplicationCollaboration',
-    'ApplicationInterface'
+    'ApplicationInterface',
     'ApplicationProcess',
     'ApplicationFunction',
     'ApplicationInteraction',
     'ApplicationService',
     'ApplicationEvent',
-    'DataObject',
+    'DataObject'
 }
 technology_types = {
     'Facility',
-    'Equipment'
+    'Equipment',
     'Material',
     'Node',
     'Device',
@@ -49,7 +49,7 @@ technology_types = {
     'Artifact',
     'CommunicationNetwork',
     'Path',
-    'DistributionNetwork',
+    'DistributionNetwork'
 }
 motivation_types = {
     'Stakeholder',
@@ -72,7 +72,7 @@ strategy_types = {
 implementation_migration_types = {
     'WorkPackage',
     'ImplementationEvent',
-    'Deliverable',       
+    'Deliverable',
     'Plateau',
     'Gap'
 }
@@ -94,8 +94,7 @@ relationship_types = {
     'Triggering',
     'Assignment',
     'Specialization',
-    'Access' 
-    # 'UsedBy', (equivalent to `Serving` relationship type, used in older ArchiMate models) -> needs to be normalized in dataset
+    'Access'
 }
 
 def filter_element_types():

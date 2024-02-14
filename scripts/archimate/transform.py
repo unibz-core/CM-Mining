@@ -4,8 +4,7 @@ from pathlib import Path
 
 def create_graphs(models: list[dict], output_dir: Path) -> list[list]:
     graphs = []
-    file_names = []     # TODO: use actual file name (currently using model name)
-    
+    file_names = []
     gspan_output_file = os.path.join(output_dir, 'graphs.data')
     with open(gspan_output_file, 'w'):
         # create empty file
@@ -15,7 +14,7 @@ def create_graphs(models: list[dict], output_dir: Path) -> list[list]:
         # create a new subgraph for each model
         SG = nx.Graph()
         with open(gspan_output_file, 'a') as outfile:
-            outfile.write(f"t # {i} {m['name']}\n")
+            outfile.write(f"t # {i} {m['archimateId']}\n")
             
             id_to_idx = {}
             count = 0
@@ -46,7 +45,7 @@ def create_graphs(models: list[dict], output_dir: Path) -> list[list]:
                 outfile.write(f"e {id_to_idx[u]} {id_to_idx[v]} {data['label']}\n")
 
         graphs.append(SG)
-        file_names.append(m['name'])
+        file_names.append(f"{m['archimateId']}.json")
 
     with open(os.path.join(output_dir, 'graphs.pickle'), 'wb') as f:
         pickle.dump(graphs, f)
