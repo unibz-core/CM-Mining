@@ -14,7 +14,6 @@ def create_graph(models: list[dict], output_dir: Path) -> list:
         SG = nx.Graph(directed=True)
         with open(gspan_output_file, 'a') as outfile:
             outfile.write(f"t # {i} {m['name']}\n")
-
             
             id_to_idx = {}
             count = 0
@@ -22,7 +21,8 @@ def create_graph(models: list[dict], output_dir: Path) -> list:
             # map elements to nodes
             for idx, e in enumerate(m['elements'], 1):
                 id_to_idx[e['id']] = idx
-                SG.add_node(e['id'], label=e['type'], label0=e['name'])
+                label0 = e['name'] if e['name'] != '' else 'empty'
+                SG.add_node(e['id'], label=e['type'], label0=label0)
                 outfile.write(f"v {idx} {e['type']}\n")
                 count = idx
 
@@ -30,8 +30,14 @@ def create_graph(models: list[dict], output_dir: Path) -> list:
             for idx, r in enumerate(m['relationships'], count):
                 id_to_idx[r['id']] = idx
                 SG.add_node(r['id'], label=r['type'])
-                SG.add_edge(r['id'], r['sourceId'], label='source')
-                SG.add_edge(r['id'], r['targetId'], label='target')
+                
+                if r['type'] == 'Specialization':
+                    SG.add_edge(r['id'], r['sourceId'], label='specific')
+                    SG.add_edge(r['id'], r['targetId'], label='general')
+                else:
+                    SG.add_edge(r['id'], r['sourceId'], label='source')
+                    SG.add_edge(r['id'], r['targetId'], label='target')
+
                 outfile.write(f"v {idx} {r['type']}\n")
 
             for u, v, data in SG.edges(data=True):
