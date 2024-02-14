@@ -2,8 +2,10 @@ import os, pickle
 import networkx as nx
 from pathlib import Path
 
-def create_graph(models: list[dict], output_dir: Path) -> list:
+def create_graphs(models: list[dict], output_dir: Path) -> list[list]:
     graphs = []
+    file_names = []     # TODO: use actual file name (currently using model name)
+    
     gspan_output_file = os.path.join(output_dir, 'graphs.data')
     with open(gspan_output_file, 'w'):
         # create empty file
@@ -11,7 +13,7 @@ def create_graph(models: list[dict], output_dir: Path) -> list:
     
     for i, m in enumerate(models):
         # create a new subgraph for each model
-        SG = nx.Graph(directed=True)
+        SG = nx.Graph()
         with open(gspan_output_file, 'a') as outfile:
             outfile.write(f"t # {i} {m['name']}\n")
             
@@ -44,9 +46,10 @@ def create_graph(models: list[dict], output_dir: Path) -> list:
                 outfile.write(f"e {id_to_idx[u]} {id_to_idx[v]} {data['label']}\n")
 
         graphs.append(SG)
+        file_names.append(m['name'])
 
     with open(os.path.join(output_dir, 'graphs.pickle'), 'wb') as f:
         pickle.dump(graphs, f)
 
-    return graphs
+    return [[i, graph] for i, graph in zip(file_names, graphs)]
         
