@@ -3,6 +3,9 @@ import archimate.transform
 import archimate.filter
 import utils.generateinput
 from pathlib import Path
+import timeout_decorator
+import utils.command
+import utils.gspanMiner
 
 MODELS_DIR = './archimate/models/'
 INPUT_DIR = './input/'
@@ -27,27 +30,48 @@ def print_graphs(graphs: list):
             print(f"Edge {edge}: {graph.edges[edge]}")
 
 def start():
-    # model import
-    print(f"Importing models from directory '{MODELS_DIR}'...")
-    models = import_models(MODELS_DIR)
-    print(f"{len(models)} models imported.")
+    try:
+        # model import
+        print(f"Importing models from directory '{MODELS_DIR}'...")
+        models = import_models(MODELS_DIR)
+        print(f"{len(models)} models imported.")
 
-    # create and store graphs
-    graphs = archimate.transform.create_graphs(models, INPUT_DIR)
-    # print_graphs(graphs)
+        # create and store graphs
+        graphs = archimate.transform.create_graphs(models, INPUT_DIR)
+        # print_graphs(graphs)
 
-    # filters
-    element_labels = archimate.filter.filter_element_types()
-    relationship_labels = archimate.filter.filter_relationship_types()
-    node_labels = element_labels + relationship_labels
-    edge_labels = archimate.filter.filter_edge_labels()
+        # filters
+        element_labels = archimate.filter.filter_element_types()
+        relationship_labels = archimate.filter.filter_relationship_types()
+        node_labels = element_labels + relationship_labels
+        edge_labels = archimate.filter.filter_edge_labels()
 
-    # re-create filtered graphs
-    new_graphs = utils.generateinput.process_graphs(node_labels, edge_labels, graphs)
-    new_graphs_with_names = utils.generateinput.process_graphs_with_names(node_labels, edge_labels, graphs)
+        # re-create filtered graphs
+        new_graphs = utils.generateinput.process_graphs(node_labels, edge_labels, graphs)
+        new_graphs_with_names = utils.generateinput.process_graphs_with_names(node_labels, edge_labels, graphs)
 
-    # store re-created filtered graphs
-    download_graphs = utils.generateinput.save_graphs_to_pickle(new_graphs, './input/archimate-graphs.pickle')
-    data = utils.generateinput.graphs_to_data_file(new_graphs_with_names, 'archimate-graphs')
+        # store re-created filtered graphs
+        download_graphs = utils.generateinput.save_graphs_to_pickle(new_graphs, './input/graphs.pickle')
+        data = utils.generateinput.graphs_to_data_file(new_graphs_with_names, 'graphs')
 
+        # set parameters and run gSpan Miner
+        gsParameters = utils.command.parameters()
+        inputs = utils.gspanMiner.gsparameters(gsParameters)
+
+        # Use timeout_decorator.timeout to handle function timeout
+        @timeout_decorator.timeout(60)
+        def run_gspan_with_timeout(inputs):
+            return utils.gspanMiner.run_gspan(inputs)
+
+        patterns = run_gspan_with_timeout(inputs)
+        
+    except timeout_decorator.timeout_decorator.TimeoutError:
+        print("gSpan Miner execution timed out.")
+        # handle the timeout error appropriately (e.g., logging, fallback, etc.)
+    except Exception as e:
+        print(f"Error: {e}")
+        # handle other exceptions as needed
+
+    # delete files
+    utils.command.firststop()
     # TODO: PlantUML visualization
