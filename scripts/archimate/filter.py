@@ -64,7 +64,7 @@ motivation_types = {
     'Meaning'
 }
 strategy_types = {
-    'Resource',
+    'Resource', # structure element, but neither active nor passive
     'Capability',
     'ValueStream',
     'CourseOfAction'
@@ -96,6 +96,140 @@ relationship_types = {
     'Specialization',
     'Access'
 }
+layer_to_types = {
+    "Business": business_types,
+    "Application": application_types,
+    "Technology": technology_types,
+    "Motivation": motivation_types,
+    "Strategy": strategy_types,
+    "Implementation & Migration": implementation_migration_types,
+    "Other": other_types
+}
+aspects = {
+    'Active Structure': {
+        'BusinessActor', 
+        'BusinessRole', 
+        'BusinessCollaboration',
+        'BusinessInterface',
+        'ApplicationComponent',
+        'ApplicationCollaboration',
+        'ApplicationInterface',
+        'Node',
+        'Device',
+        'SystemSoftware',
+        'TechnologyCollaboration',
+        'TechnologyInterface',
+        'CommunicationNetwork',
+        'Path',
+        'Facility',
+        'Equipment',
+        'DistributionNetwork',
+    },
+    'Behavior': {
+        'BusinessProcess',
+        'BusinessFunction',
+        'BusinessInteraction',
+        'BusinessService',
+        'BusinessEvent',
+        'ApplicationProcess',
+        'ApplicationFunction',
+        'ApplicationInteraction',
+        'ApplicationService',
+        'ApplicationEvent',
+        'TechnologyProcess',
+        'TechnologyFunction',
+        'TechnologyInteraction',
+        'TechnologyService',
+        'TechnologyEvent',
+        'Capability',
+        'ValueStream',
+        'CourseOfAction',
+        'WorkPackage',
+        'ImplementationEvent',
+    },
+    'Passive Structure': {
+        'BusinessObject',
+        'Contract',
+        'Representation',
+        'DataObject'
+        'Artifact',
+        'Material',
+        'Deliverable',
+        'Gap'
+    },
+    'Other': {
+        'Product'  # composite
+        'Plateau', # composite
+        'Location',
+        'Grouping',
+        'Junction',
+        'OrJunction',
+        'AndJunction'
+    },
+    'Motivation': motivation_types
+}
+
+def select_element_filter_kind():
+    choices = ["Layers", "Aspects", "Specific Types"]
+    question = [
+        {
+            'type': 'list',
+            'message': 'Filter elements by:',
+            'name': 'selected_kind',
+            'choices': [
+                {
+                    'name': string
+                }
+                for string in choices
+            ]     
+        }
+    ]
+    answer = prompt(question, style=custom_style_2)
+    selected_choice = answer['selected_kind']
+    print("Selected element filter kind:", selected_choice)
+    return selected_choice
+
+def filter_layers():
+    layers = sorted(layer_to_types.keys())
+    choices = [{'name': layer} for layer in layers]
+    question = [
+        {
+            'type': 'checkbox',
+            'message': 'Select element types to filter out:',
+            'name': 'selected_layers',
+            'choices': choices
+        }
+    ]
+    answers = prompt(question, style=custom_style_2)
+    selected_choices = answers['selected_layers']
+    print("Selected layers to filter:", selected_choices)
+
+    filtered_types = [t for choice in selected_choices for t in layer_to_types[choice]]
+    print("Filtered element types:", filtered_types)
+    return filtered_types
+
+def filter_aspects():
+    strings = ["Active Structure", "Passive Structure", "Behavior", "Other", "Motivation"]
+    question = [
+        {
+            'type': 'checkbox',
+            'message': 'Select edges to filter-out:',
+            'name': 'selected_strings',
+            'choices': [
+                {
+                    'name': string
+                }
+                for string in strings
+            ]
+        }
+    ]
+    answers = prompt(question, style=custom_style_2)
+    selected_choices = answers['selected_strings']
+    print("Selected aspect filters:", selected_choices)
+    filtered_types = [t for choice in selected_choices for t in aspects[choice]]
+    print("Filtered element types:", filtered_types)
+    return filtered_types
+
 
 def filter_element_types():
     all_element_types = list(business_types.union(
@@ -117,6 +251,7 @@ def filter_element_types():
     ]
     answers = prompt(question, style=custom_style_2)
     selected_choices = answers['selected_types']
+    print(selected_choices)
     print("Selected element type filters:", selected_choices)
     return selected_choices
 

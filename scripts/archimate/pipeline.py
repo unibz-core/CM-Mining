@@ -1,4 +1,5 @@
 import os, json
+import sys
 import archimate.transform
 import archimate.filter
 import utils.generateinput
@@ -41,7 +42,19 @@ def start():
         # print_graphs(graphs)
 
         # filters
-        element_labels = archimate.filter.filter_element_types()
+        element_filter_kind = archimate.filter.select_element_filter_kind()
+        element_labels = []
+        if element_filter_kind == 'Specific Types':
+            element_labels = archimate.filter.filter_element_types()
+        elif element_filter_kind == 'Layers':
+            element_labels = archimate.filter.filter_layers()
+        elif element_filter_kind == 'Aspects':
+            element_labels = archimate.filter.filter_aspects()
+        else:
+            # should not happen
+            print("Error: Unsupported filter kind")
+            sys.exit()
+            
         relationship_labels = archimate.filter.filter_relationship_types()
         node_labels = element_labels + relationship_labels
         edge_labels = archimate.filter.filter_edge_labels()
