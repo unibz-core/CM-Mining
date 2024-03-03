@@ -12,10 +12,6 @@ def clean_graphs(graphs: list[nx.Graph]) -> list[nx.Graph]:
 
     for graph in graphs:
         new_graph = nx.Graph()
-        intermediate_edges = []
-        # id: 1 
-        # type: Composition
-        # source 
 
         for node, data in graph.nodes(data=True):
             if data['label'] not in rel_types:
