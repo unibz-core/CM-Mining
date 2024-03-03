@@ -1,7 +1,6 @@
 import os
-import sys
+from pathlib import Path
 import networkx as nx
-import archimate.filter
 import archimate.types
 
 
@@ -56,9 +55,9 @@ def get_relationship_text(edge: tuple) -> str:
     ```
     '''
     source, target, data = edge
-    edge_label = data.get('relation')
+    edge_label = data.get('label')
 
-    if edge_label in archimate.filter.relationship_types:
+    if edge_label in archimate.types.relationship_types:
         return f"Rel_{edge_label}({source}, {target})\n"
     else:
         print(f"[ERROR] Edge label unknown: '{edge_label}'")
@@ -66,19 +65,6 @@ def get_relationship_text(edge: tuple) -> str:
 
 
 def generate_diagram_text(graph: nx.Graph) -> str: 
-    '''
-    Example diagram:
-    ```
-    @startuml
-    !include <archimate/Archimate>
-    
-    Motivation_Stakeholder(1, "Stakeholder")
-    Business_Service(2, "Business Service")
-
-    Rel_Composition(1, 2, "Label")
-    @enduml
-    ```
-    '''
     plantuml_text = "@startuml\n!include <archimate/Archimate>\n\n"
     
     # Category_ElementName(ID, Label)
@@ -95,6 +81,25 @@ def generate_diagram_text(graph: nx.Graph) -> str:
     return plantuml_text
 
 
+def generate_diagram(graph: nx.Graph, output_path: Path):
+    '''
+    Example diagram:
+    ```
+    @startuml
+    !include <archimate/Archimate>
+    
+    Motivation_Stakeholder(1, "Stakeholder")
+    Business_Service(2, "Business Service")
+
+    Rel_Composition(1, 2, "Label")
+    @enduml
+    ```
+    '''
+    plantuml_text = generate_diagram_text(graph)
+    with open(output_path, 'w+') as f:
+        f.write(plantuml_text)
+
+
 def generate_diagrams(output_dir: str, graphs: list[nx.Graph]):
     '''
     Generates plantUML diagrams as .txt files out of the given list of networkX graphs
@@ -105,11 +110,7 @@ def generate_diagrams(output_dir: str, graphs: list[nx.Graph]):
         return
     
     print("Generating plantUML diagrams...")
-
     for idx, graph in enumerate(graphs):
-        plantuml_text = generate_diagram_text(graph)
         filename = os.path.join(output_dir, f"graph_{idx}.txt")
-        with open(filename, 'w+') as file:
-            file.write(plantuml_text)
-
+        generate_diagram(graph, filename)
     print(f"Finished generating diagrams. See: {output_dir}")

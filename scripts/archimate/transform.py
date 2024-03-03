@@ -4,41 +4,53 @@ from pathlib import Path
 import archimate.types
 
 
-def clean_graphs(graphs: list[nx.Graph]) -> list[nx.Graph]:
+def clean_graph(graph: nx.Graph) -> nx.Graph:
     rel_types = archimate.types.relationship_types
+    new_graph = nx.Graph()
+
+    # process all nodes and store nodes corresponding to elements in the new graph (without any changes)
+    for node, data in graph.nodes(data=True):
+        if data['label'] not in rel_types:
+            new_graph.add_node(node, **data)
+
     special_source_types = ['source', 'specific']
     special_target_types = ['target', 'general']
-    cleaned_graphs = []
 
-    for graph in graphs:
-        new_graph = nx.Graph()
-
-        for node, data in graph.nodes(data=True):
-            if data['label'] not in rel_types:
-                new_graph.add_node(node, **data)
-
-        for node, data in graph.nodes(data=True):
-            if data['label'] in rel_types:
-                source_target_edges = graph.edges(node, data=True)
-                if len(source_target_edges) != 2:
-                    continue
-                
-                source = None
-                target = None
+    # process nodes again and handle relationship nodes
+    for node, data in graph.nodes(data=True):
+        if data['label'] in rel_types:
+            # get edges of node
+            source_target_edges = graph.edges(node, data=True)
+            if len(source_target_edges) != 2:
+                print("[WARNING] Node should have exactly 1 source edge and 1 target edge")
+                edges_txt = ""
                 for u, v, data2 in source_target_edges:
-                    if data2['relation'] in special_source_types:
-                        source = v
-                    if data2['relation'] in special_target_types:
-                        target = v
-                
-                if source is None or target is None:
-                    continue
-                
-                new_graph.add_edge(source, target, **data)
-
-        cleaned_graphs.append(new_graph)
+                    edges_txt += f"<{u}, {v}, {data2}>"
+                print(f"Node: <{node}, {data}>\nEdges ({len(source_target_edges)}): {edges_txt}")
+                continue
+            
+            source = None
+            target = None
+            # set source and target depending on `relation` label
+            for u, v, data2 in source_target_edges:
+                if data2['label'] in special_source_types:
+                    source = v
+                if data2['label'] in special_target_types:
+                    target = v
+            
+            if source is None or target is None:
+                print(f"[WARNING] Node <{node}> is missing source or target")
+                continue
+            
+            new_graph.add_edge(source, target, **data)
     
-    return cleaned_graphs
+    return new_graph
+
+
+def clean_graphs(graphs: list[nx.Graph]) -> list[nx.Graph]:
+    new_graphs = []
+    for graph in graphs: new_graphs.append(clean_graph(graph))
+    return new_graphs
 
 
 def convert_to_graph(patterns_file: Path) -> list[nx.Graph]:
