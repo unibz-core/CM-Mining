@@ -1,0 +1,12 @@
+@startuml
+!include <archimate/Archimate>
+
+Strategy_Capability(0, "Capability")
+Strategy_CourseOfAction(1, "CourseOfAction")
+Strategy_Resource(2, "Resource")
+Strategy_ValueStream(3, "ValueStream")
+Rel_Specialization(0, 1)
+Rel_Triggering(0, 3)
+Rel_Aggregation(1, 2)
+Rel_Serving(2, 3)
+@enduml

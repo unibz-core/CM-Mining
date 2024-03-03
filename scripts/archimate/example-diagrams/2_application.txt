@@ -1,0 +1,22 @@
+@startuml
+!include <archimate/Archimate>
+
+Application_Interface(0, "ApplicationInterface")
+Application_Component(1, "ApplicationComponent")
+Application_DataObject(2, "DataObject")
+Application_Collaboration(3, "ApplicationCollaboration")
+Application_Service(4, "ApplicationService")
+Application_Function(5, "ApplicationFunction")
+Application_Event(6, "ApplicationEvent")
+Application_Interaction(7, "ApplicationInteraction")
+Application_Process(8, "ApplicationProcess")
+Rel_Aggregation(0, 1)
+Rel_Specialization(0, 8)
+Rel_Serving(1, 2)
+Rel_Access(2, 3)
+Rel_Flow(3, 4)
+Rel_Assignment(4, 5)
+Rel_Association(5, 6)
+Rel_Realization(6, 7)
+Rel_Triggering(7, 8)
+@enduml
