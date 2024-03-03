@@ -6,8 +6,8 @@ import archimate.types
 
 def clean_graphs(graphs: list[nx.Graph]) -> list[nx.Graph]:
     rel_types = archimate.types.relationship_types
-    special_source_types = ['source', ] # add general/specific
-    special_target_types = ['target', ] # add general/specific
+    special_source_types = ['source', 'specific']
+    special_target_types = ['target', 'general']
     cleaned_graphs = []
 
     for graph in graphs:
