@@ -64,7 +64,7 @@ def get_relationship_text(edge: tuple) -> str:
         return ""
 
 
-def generate_diagram_text(graph: nx.Graph) -> str: 
+def generate_diagram_text(graph: nx.Graph, truncated_edges: list) -> str: 
     plantuml_text = "@startuml\n!include <archimate/Archimate>\n\n"
     
     # Category_ElementName(ID, Label)
@@ -77,11 +77,25 @@ def generate_diagram_text(graph: nx.Graph) -> str:
         relationship_text = get_relationship_text(edge)
         plantuml_text += relationship_text
 
+    special_source_types = ['source', 'specific']
+    special_target_types = ['target', 'general']
+
+    # handle truncated relationships
+    for edge in truncated_edges:
+        plantuml_text += f'rectangle "Element" as {edge[0]} #line.dashed\n'
+
+        if edge[2][0][2]['label'] in special_source_types:
+            plantuml_text += f'Rel_{edge[1]}({edge[2][0][1]}, {edge[2][0][0]})\n'
+        elif edge[2][0][2]['label'] in special_target_types:
+            plantuml_text += f'Rel_{edge[1]}({edge[2][0][0]}, {edge[2][0][1]})\n'
+        else:
+            print(f"[ERROR] Unknown label in edge: {edge}")
+
     plantuml_text += "@enduml"
     return plantuml_text
 
 
-def generate_diagram(graph: nx.Graph, output_path: Path):
+def generate_diagram(graph: nx.Graph, truncated_edges: list, output_path: Path):
     '''
     Example diagram:
     ```
@@ -95,7 +109,7 @@ def generate_diagram(graph: nx.Graph, output_path: Path):
     @enduml
     ```
     '''
-    plantuml_text = generate_diagram_text(graph)
+    plantuml_text = generate_diagram_text(graph, truncated_edges)
     with open(output_path, 'w+') as f:
         f.write(plantuml_text)
 

@@ -116,7 +116,7 @@ def start():
         
         # bring pattern graph into standard graph structure 
         cleaned_pattern_graph = archimate.transform.clean_graph(pattern[1])
-        archimate.visualization.generate_diagram(cleaned_pattern_graph, pattern_file)
+        archimate.visualization.generate_diagram(cleaned_pattern_graph[0], cleaned_pattern_graph[1], pattern_file)
 
     generated_files = Path(PATTERNS_DIR).glob('**/*.txt')
 

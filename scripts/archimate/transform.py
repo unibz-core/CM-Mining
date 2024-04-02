@@ -4,11 +4,12 @@ from pathlib import Path
 import archimate.types
 
 
-def clean_graph(graph: nx.Graph) -> nx.Graph:
+def clean_graph(graph: nx.Graph) -> tuple[nx.Graph, list]:
     rel_types = archimate.types.relationship_types
     new_graph = nx.Graph()
+    truncated_edges = []
 
-    # process all nodes and store nodes corresponding to elements in the new graph (without any changes)
+    # Process all nodes and store nodes corresponding to elements in the new graph (without any changes)
     for node, data in graph.nodes(data=True):
         if data['label'] not in rel_types:
             new_graph.add_node(node, **data)
@@ -16,21 +17,20 @@ def clean_graph(graph: nx.Graph) -> nx.Graph:
     special_source_types = ['source', 'specific']
     special_target_types = ['target', 'general']
 
-    # process nodes again and handle relationship nodes
+    # Process nodes again and handle relationship nodes
     for node, data in graph.nodes(data=True):
         if data['label'] in rel_types:
-            # get edges of node
             source_target_edges = graph.edges(node, data=True)
+
+            # handle truncated edges
             if len(source_target_edges) != 2:
-                print("[WARNING] Node should have exactly 1 source edge and 1 target edge")
-                edges_txt = ""
-                for u, v, data2 in source_target_edges:
-                    edges_txt += f"<{u}, {v}, {data2}>"
-                print(f"Node: <{node}, {data}>\nEdges ({len(source_target_edges)}): {edges_txt}")
+                if len(source_target_edges) != 1:
+                    print(f"[WARNING] Node with {len(source_target_edges)} source/target edges.")
+                else:
+                    truncated_edges.append((node, data['label'], list(source_target_edges)))
                 continue
             
-            source = None
-            target = None
+            source, target = None, None
             # set source and target depending on `relation` label
             for u, v, data2 in source_target_edges:
                 if data2['label'] in special_source_types:
@@ -44,7 +44,7 @@ def clean_graph(graph: nx.Graph) -> nx.Graph:
             
             new_graph.add_edge(source, target, **data)
     
-    return new_graph
+    return new_graph, truncated_edges
 
 
 def clean_graphs(graphs: list[nx.Graph]) -> list[nx.Graph]:
