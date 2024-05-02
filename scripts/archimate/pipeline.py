@@ -177,7 +177,7 @@ def step2_diagrams(max_diagram_amount: int = None):
 def step3():
     '''
     - Get domain information
-    - Generate plantUML *.txt files for domain information
+    - Generate plantUML *.txt and *.png files for domain information
     '''
     # TODO: fully visualize truncated relationship element
     # TODO: add pattern support and index to diagrams
