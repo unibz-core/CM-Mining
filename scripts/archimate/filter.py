@@ -151,7 +151,6 @@ def input_max_diagram_amount():
     return max_amount
 
 
-
 def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
     stored_integers = set()
     DOMAIN_PATTERNS_DIR = './domain-patterns/'
@@ -191,9 +190,28 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
             file_path = os.path.join(dir_path, f"{idx}.txt")
             title = f"{{ pattern_support: {pattern[0]['pattern_support']}, pattern_index: {pattern[0]['pattern_index']}, model_index: {pattern[0]['model_index']} }}"
 
+            host_graph = host_graphs[pattern[0]['model_index']]
+            host_edges = list(host_graph.edges(data=True))
+            host_nodes = list(host_graph.nodes(data=True))
+            truncated_edges = cleaned_pattern_graph[1]
+
+            for edge in truncated_edges:
+                edge_id = edge[0]
+                found_edges = [e for e in host_edges if e[0] == edge_id or e[1] == edge_id]
+                
+                source_node = found_edges[0][0]
+                target_node = found_edges[1][0]
+                
+                existing_node = source_node if source_node in cleaned_pattern_graph[0] else target_node
+                node_to_add = target_node if existing_node == source_node else source_node
+
+                node_data = next(node[1] for node in host_nodes if node[0] == node_to_add)
+                cleaned_pattern_graph[0].add_node(node_to_add, **node_data)
+                cleaned_pattern_graph[0].add_edge(source_node, target_node, label=edge[1])
+
             archimate.visualization.generate_diagram(
                 cleaned_pattern_graph[0], 
-                cleaned_pattern_graph[1], 
+                [],
                 file_path,
                 title
             )
