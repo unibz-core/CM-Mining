@@ -1,7 +1,12 @@
+import os
+import subprocess
 from examples import custom_style_2
 from PyInquirer import prompt, Separator
+import archimate.pipeline
 import archimate.types
 from utils.command import NumberValidator
+from rich import print
+import utils.patterns
 
 def select_element_filter_kind():
     choices = ["Layers", "Aspects", "Specific Types"]
@@ -144,4 +149,78 @@ def input_max_diagram_amount():
     max_amount = answer['max_amount']
     print(f"Maximum amount of diagram to generate as images: {max_amount}")
     return max_amount
+
+
+
+def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
+    stored_integers = set()
+    DOMAIN_PATTERNS_DIR = './domain-patterns/'
     
+    while True:
+        questions = [
+            {
+                'type': 'input',
+                'name': 'patterns',
+                'message': 'Enter a pattern index:',
+                'validate': lambda val: val.isdigit() or 'Please enter a valid pattern'
+            }
+        ]
+        answers = prompt(questions)
+        integer = int(answers['patterns'])
+        if integer in stored_integers:
+            print("This patterns has already been entered. Please enter a different pattern.")
+            continue
+        stored_integers.add(integer)
+        print(f"Selected pattern_index: {integer}")
+
+        selected_pattern = utils.patterns.select_sublists(pattern_graphs, [str(integer)])
+        find_patterns = utils.patterns.count_subgraph_isomorphisms(selected_pattern, host_graphs)
+        find_patterns_cleaned = utils.patterns.remove_duplicate_graphs(find_patterns)
+
+        generated_files = []
+        if not os.path.exists(DOMAIN_PATTERNS_DIR):
+            os.mkdir(DOMAIN_PATTERNS_DIR)
+
+        for idx, pattern in enumerate(find_patterns_cleaned, start=0):
+            cleaned_pattern_graph = archimate.transform.clean_graph(pattern[1])
+
+            # file path: ./domain-patterns/<pattern_index>_<pattern_support>
+            dir_path = os.path.join(DOMAIN_PATTERNS_DIR, f"{pattern[0]['pattern_index']}_{pattern[0]['pattern_support']}/")
+            if not os.path.exists(dir_path):
+                os.mkdir(dir_path)
+            file_path = os.path.join(dir_path, f"{idx}.txt")
+            title = f"{{ pattern_support: {pattern[0]['pattern_support']}, pattern_index: {pattern[0]['pattern_index']}, model_index: {pattern[0]['model_index']} }}"
+
+            archimate.visualization.generate_diagram(
+                cleaned_pattern_graph[0], 
+                cleaned_pattern_graph[1], 
+                file_path,
+                title
+            )
+            generated_files.append(file_path)
+
+        print("Generating plantUML diagrams...")
+        for idx, txt_file in enumerate(generated_files, start=0):
+            cmd = f"java -jar {archimate.pipeline.PLANTUML_JAR_PATH} {txt_file}"
+            try:
+                subprocess.run(cmd, shell=True, check=True)
+                print(f"Generated diagram for: {txt_file}")
+            except subprocess.CalledProcessError as e:
+                print(f"[ERROR] Could not generate diagram for {txt_file.name}: {e}")
+    
+        print(f"[bold green]Done![/bold green]\n")
+
+        # Ask if user wants to continue
+        questions = [
+            {
+                'type': 'confirm',
+                'name': 'continue',
+                'message': 'Do you want to continue?',
+                'default': False
+            }
+        ]
+        answers = prompt(questions)
+        if not answers['continue']:
+            break
+
+    utils.command.laststop()      

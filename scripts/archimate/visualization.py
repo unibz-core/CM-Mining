@@ -3,6 +3,9 @@ from pathlib import Path
 import networkx as nx
 import archimate.types
 
+def clean_str(s: str) -> str:
+    s = ''.join(filter(str.isalnum, s))
+    return s
 
 def get_node_name(node: tuple) -> str:
     '''
@@ -27,11 +30,11 @@ def get_node_name(node: tuple) -> str:
 
     # handle specific cases
     if node_label in ['Junction', 'AndJunction']:
-        return f"Junction_And({node_id}, \"{node_label}\")\n"
+        return f"Junction_And(\"{clean_str(node_id)}\", \"{node_label}\")\n"
     elif node_label == 'OrJunction':
-        return f"Junction_Or({node_id}, \"{node_label}\")\n"
+        return f"Junction_Or(\"{clean_str(node_id)}\", \"{node_label}\")\n"
     elif node_label == 'Grouping':
-        return f"Grouping({node_id}, \"{node_label}\")\n"
+        return f"Grouping(\"{clean_str(node_id)}\", \"{node_label}\")\n"
 
     category = category_mapping.get(node_label)
     if not category:
@@ -44,7 +47,13 @@ def get_node_name(node: tuple) -> str:
     else:
         element_name = node_label
 
-    return f"{category}_{element_name}({node_id}, \"{node_label}\")\n"
+    label0 = attributes.get('label0')
+    if label0:
+        if label0 == 'empty':
+            label0 = ' '
+        return f"{category}_{element_name}(\"{clean_str(node_id)}\", \"<size:10>//«{node_label}»//</size>\\n{label0}\")\n"
+    else:
+        return f"{category}_{element_name}(\"{clean_str(node_id)}\", \"{node_label}\")\n"
 
 
 def get_relationship_text(edge: tuple) -> str:
@@ -58,15 +67,17 @@ def get_relationship_text(edge: tuple) -> str:
     edge_label = data.get('label')
 
     if edge_label in archimate.types.relationship_types:
-        return f"Rel_{edge_label}({source}, {target})\n"
+        return f"Rel_{edge_label}(\"{clean_str(source)}\", \"{clean_str(target)}\")\n"
     else:
         print(f"[ERROR] Edge label unknown: '{edge_label}'")
         return ""
 
 
-def generate_diagram_text(graph: nx.Graph, truncated_edges: list) -> str: 
+def generate_diagram_text(graph: nx.Graph, truncated_edges: list, title: str = None) -> str: 
     plantuml_text = "@startuml\n!include <archimate/Archimate>\n\n"
-    
+    if title:
+        plantuml_text += f"title {title}\n\n"
+
     # Category_ElementName(ID, Label)
     for node in graph.nodes(data=True):
         element_text = get_node_name(node)
@@ -82,12 +93,12 @@ def generate_diagram_text(graph: nx.Graph, truncated_edges: list) -> str:
 
     # handle truncated relationships
     for edge in truncated_edges:
-        plantuml_text += f'rectangle "Element" as {edge[0]} #line.dashed\n'
+        plantuml_text += f'rectangle "Element" as {clean_str(edge[0])} #line.dashed\n'
 
         if edge[2][0][2]['label'] in special_source_types:
-            plantuml_text += f'Rel_{edge[1]}({edge[2][0][1]}, {edge[2][0][0]})\n'
+            plantuml_text += f'Rel_{edge[1]}(\"{clean_str(edge[2][0][1])}\", \"{clean_str(edge[2][0][0])}\")\n'
         elif edge[2][0][2]['label'] in special_target_types:
-            plantuml_text += f'Rel_{edge[1]}({edge[2][0][0]}, {edge[2][0][1]})\n'
+            plantuml_text += f'Rel_{edge[1]}(\"{clean_str(edge[2][0][0])}\", \"{clean_str(edge[2][0][1])}\")\n'
         else:
             print(f"[ERROR] Unknown label in edge: {edge}")
 
@@ -95,7 +106,7 @@ def generate_diagram_text(graph: nx.Graph, truncated_edges: list) -> str:
     return plantuml_text
 
 
-def generate_diagram(graph: nx.Graph, truncated_edges: list, output_path: Path):
+def generate_diagram(graph: nx.Graph, truncated_edges: list, output_path: Path, title: str = None):
     '''
     Example diagram:
     ```
@@ -109,7 +120,7 @@ def generate_diagram(graph: nx.Graph, truncated_edges: list, output_path: Path):
     @enduml
     ```
     '''
-    plantuml_text = generate_diagram_text(graph, truncated_edges)
+    plantuml_text = generate_diagram_text(graph, truncated_edges, title)
     with open(output_path, 'w+') as f:
         f.write(plantuml_text)
 
