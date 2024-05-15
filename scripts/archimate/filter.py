@@ -151,6 +151,25 @@ def input_max_diagram_amount():
     return max_amount
 
 
+def fix_graphs(pattern_graph, host_graph):
+    host_edges = {(u, v, d['label']) for u, v, d in host_graph.edges(data=True)}
+    edges_to_reverse = []
+
+    for u, v, d in pattern_graph.edges(data=True):
+        edge_label = d['label']
+        if (u, v, edge_label) not in host_edges and (v, u, edge_label) in host_edges:
+            # if the edge is inverted, add to the list of edges to reverse
+            edges_to_reverse.append((u, v))
+
+    # reverse the edges in the pattern_graph
+    for u, v in edges_to_reverse:
+        edge_data = pattern_graph[u][v]
+        pattern_graph.remove_edge(u, v)
+        pattern_graph.add_edge(v, u, **edge_data)
+
+    return pattern_graph
+
+
 def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
     stored_integers = set()
     DOMAIN_PATTERNS_DIR = './domain-patterns/'
@@ -180,15 +199,9 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         if not os.path.exists(DOMAIN_PATTERNS_DIR):
             os.mkdir(DOMAIN_PATTERNS_DIR)
 
+
         for idx, pattern in enumerate(find_patterns_cleaned, start=0):
             cleaned_pattern_graph = archimate.transform.clean_graph(pattern[1])
-
-            # file path: ./domain-patterns/<pattern_index>_<pattern_support>
-            dir_path = os.path.join(DOMAIN_PATTERNS_DIR, f"{pattern[0]['pattern_index']}_{pattern[0]['pattern_support']}/")
-            if not os.path.exists(dir_path):
-                os.mkdir(dir_path)
-            file_path = os.path.join(dir_path, f"{idx}.txt")
-            title = f"{{ pattern_support: {pattern[0]['pattern_support']}, pattern_index: {pattern[0]['pattern_index']}, model_index: {pattern[0]['model_index']} }}"
 
             host_graph = host_graphs[pattern[0]['model_index']]
             host_edges = list(host_graph.edges(data=True))
@@ -198,19 +211,33 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
             for edge in truncated_edges:
                 edge_id = edge[0]
                 found_edges = [e for e in host_edges if e[0] == edge_id or e[1] == edge_id]
-                
+
                 source_node = found_edges[0][0]
                 target_node = found_edges[1][0]
+
                 
                 existing_node = source_node if source_node in cleaned_pattern_graph[0] else target_node
                 node_to_add = target_node if existing_node == source_node else source_node
 
                 node_data = next(node[1] for node in host_nodes if node[0] == node_to_add)
                 cleaned_pattern_graph[0].add_node(node_to_add, **node_data)
-                cleaned_pattern_graph[0].add_edge(source_node, target_node, label=edge[1])
+
+                if (source_node, target_node) in host_graph.edges:
+                    cleaned_pattern_graph[0].add_edge(source_node, target_node, label=edge[1])
+                else:
+                    cleaned_pattern_graph[0].add_edge(target_node, source_node, label=edge[1])
+
+            # file path: ./domain-patterns/<pattern_index>_<pattern_support>
+            dir_path = os.path.join(DOMAIN_PATTERNS_DIR, f"{pattern[0]['pattern_index']}_{pattern[0]['pattern_support']}/")
+            if not os.path.exists(dir_path):
+                os.mkdir(dir_path)
+            file_path = os.path.join(dir_path, f"{idx}.txt")
+            title = f"{{ pattern_support: {pattern[0]['pattern_support']}, pattern_index: {pattern[0]['pattern_index']}, model_index: {pattern[0]['model_index']} }}"
+
+            fixed_pattern_graph = fix_graphs(cleaned_pattern_graph[0], host_graph)
 
             archimate.visualization.generate_diagram(
-                cleaned_pattern_graph[0], 
+                fixed_pattern_graph, 
                 [],
                 file_path,
                 title
@@ -218,6 +245,7 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
             generated_files.append(file_path)
 
         print("Generating plantUML diagrams...")
+        
         for idx, txt_file in enumerate(generated_files, start=0):
             cmd = f"java -jar {archimate.pipeline.PLANTUML_JAR_PATH} {txt_file}"
             try:
@@ -225,7 +253,7 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
                 print(f"Generated diagram for: {txt_file}")
             except subprocess.CalledProcessError as e:
                 print(f"[ERROR] Could not generate diagram for {txt_file.name}: {e}")
-    
+        
         print(f"[bold green]Done![/bold green]\n")
 
         # Ask if user wants to continue
