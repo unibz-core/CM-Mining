@@ -1,0 +1,4130 @@
+t # 0
+v 0 Node
+v 1 Serving
+v 2 Serving
+v 3 Serving
+e 0 1 source
+e 0 2 source
+e 0 3 source
+
+Support: 8
+where: [10, 268, 146, 88, 154, 283, 285, 190]
+
+-----------------
+
+t # 1
+v 0 Node
+v 1 Serving
+v 2 Serving
+v 3 Serving
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 9
+where: [132, 10, 268, 175, 88, 154, 283, 285, 190]
+
+-----------------
+
+t # 2
+v 0 Serving
+v 1 SystemSoftware
+v 2 Serving
+v 3 Serving
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 8
+where: [0, 161, 132, 249, 175, 273, 88, 25]
+
+-----------------
+
+t # 3
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Realization
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 27
+where: [128, 130, 136, 149, 280, 30, 42, 298, 172, 55, 188, 194, 68, 69, 199, 73, 201, 76, 77, 210, 218, 92, 232, 112, 113, 121, 251]
+
+-----------------
+
+t # 4
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Realization
+v 4 TechnologyService
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+
+Support: 26
+where: [128, 130, 136, 149, 280, 30, 42, 298, 172, 55, 188, 194, 68, 69, 199, 73, 201, 76, 77, 210, 92, 232, 112, 113, 121, 251]
+
+-----------------
+
+t # 5
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Realization
+v 4 Realization
+e 0 1 source
+e 0 3 source
+e 0 4 source
+e 1 2 target
+
+Support: 8
+where: [69, 73, 112, 113, 55, 218, 188, 30]
+
+-----------------
+
+t # 6
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 31
+where: [128, 256, 130, 136, 144, 149, 280, 30, 42, 298, 172, 175, 55, 56, 194, 68, 70, 73, 201, 76, 77, 207, 210, 86, 92, 223, 101, 232, 243, 121, 251]
+
+-----------------
+
+t # 7
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Realization
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+
+Support: 21
+where: [128, 130, 136, 149, 280, 30, 42, 298, 172, 55, 194, 68, 73, 201, 76, 77, 210, 92, 232, 121, 251]
+
+-----------------
+
+t # 8
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Realization
+v 5 TechnologyService
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 21
+where: [128, 130, 136, 149, 280, 30, 42, 298, 172, 55, 194, 68, 73, 201, 76, 77, 210, 92, 232, 121, 251]
+
+-----------------
+
+t # 9
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Realization
+v 5 TechnologyService
+v 6 Serving
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 5 6 source
+
+Support: 15
+where: [130, 194, 136, 73, 232, 298, 172, 77, 210, 149, 280, 121, 251, 92, 30]
+
+-----------------
+
+t # 10
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 24
+where: [256, 130, 136, 144, 149, 280, 42, 298, 172, 175, 55, 194, 68, 70, 201, 76, 77, 207, 210, 86, 92, 101, 232, 251]
+
+-----------------
+
+t # 11
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Serving
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 10
+where: [256, 130, 136, 298, 172, 77, 175, 210, 280, 251]
+
+-----------------
+
+t # 12
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Serving
+v 6 Node
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 5 6 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 13
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Serving
+v 6 Node
+v 7 Realization
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 5 6 source
+e 6 7 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 14
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Serving
+v 6 Node
+v 7 Realization
+v 8 TechnologyService
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 5 6 source
+e 6 7 source
+e 7 8 target
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 15
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Serving
+v 6 Node
+v 7 Realization
+v 8 TechnologyService
+v 9 Serving
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 5 6 source
+e 6 7 source
+e 7 8 target
+e 8 9 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 16
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+
+Support: 11
+where: [128, 130, 136, 298, 172, 77, 175, 210, 280, 121, 251]
+
+-----------------
+
+t # 17
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 9
+where: [130, 136, 298, 172, 77, 210, 280, 121, 251]
+
+-----------------
+
+t # 18
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+v 6 Realization
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 5 6 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 19
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+v 6 Realization
+v 7 TechnologyService
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 5 6 source
+e 6 7 target
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 20
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+v 6 Realization
+v 7 TechnologyService
+v 8 Serving
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 5 6 source
+e 6 7 target
+e 7 8 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 21
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 12
+where: [256, 130, 136, 298, 172, 77, 175, 210, 149, 280, 251, 92]
+
+-----------------
+
+t # 22
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+
+Support: 10
+where: [130, 136, 298, 172, 77, 210, 149, 280, 251, 92]
+
+-----------------
+
+t # 23
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+v 6 Realization
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 24
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Serving
+v 5 Node
+v 6 Realization
+v 7 TechnologyService
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+e 6 7 target
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 25
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 9
+where: [256, 260, 69, 232, 112, 144, 115, 188, 30]
+
+-----------------
+
+t # 26
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 12
+where: [128, 256, 69, 70, 199, 112, 243, 86, 55, 218, 188, 30]
+
+-----------------
+
+t # 27
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 13
+where: [128, 130, 199, 136, 298, 172, 77, 175, 210, 280, 121, 251, 30]
+
+-----------------
+
+t # 28
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Node
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+
+Support: 9
+where: [130, 136, 298, 172, 77, 210, 280, 121, 251]
+
+-----------------
+
+t # 29
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Node
+v 5 Realization
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+e 4 5 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 30
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Node
+v 5 Realization
+v 6 TechnologyService
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+e 4 5 source
+e 5 6 target
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 31
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 12
+where: [256, 130, 136, 298, 172, 77, 175, 210, 149, 280, 251, 92]
+
+-----------------
+
+t # 32
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Node
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 10
+where: [130, 136, 298, 172, 77, 210, 149, 280, 251, 92]
+
+-----------------
+
+t # 33
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+v 4 Node
+v 5 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+
+Support: 8
+where: [130, 136, 298, 172, 77, 210, 280, 251]
+
+-----------------
+
+t # 34
+v 0 Node
+v 1 Realization
+v 2 Realization
+v 3 Realization
+e 0 1 source
+e 0 2 source
+e 0 3 source
+
+Support: 12
+where: [65, 69, 73, 203, 207, 112, 113, 55, 185, 218, 188, 30]
+
+-----------------
+
+t # 35
+v 0 Node
+v 1 Realization
+v 2 Serving
+v 3 Node
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 14
+where: [130, 136, 10, 298, 172, 77, 268, 210, 149, 280, 154, 251, 92, 285]
+
+-----------------
+
+t # 36
+v 0 Node
+v 1 Realization
+v 2 Serving
+v 3 Node
+e 0 1 source
+e 0 2 source
+e 2 3 target
+
+Support: 13
+where: [130, 136, 10, 298, 172, 77, 268, 210, 280, 121, 154, 251, 285]
+
+-----------------
+
+t # 37
+v 0 Node
+v 1 Realization
+v 2 Serving
+v 3 Node
+v 4 Realization
+e 0 1 source
+e 0 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 11
+where: [130, 136, 10, 298, 172, 77, 268, 210, 280, 154, 251]
+
+-----------------
+
+t # 38
+v 0 Aggregation
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 8
+where: [2, 154, 267, 204, 268, 81, 122, 285]
+
+-----------------
+
+t # 39
+v 0 Assignment
+v 1 SystemSoftware
+v 2 Realization
+v 3 TechnologyService
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 8
+where: [128, 2, 292, 70, 278, 24, 56, 189]
+
+-----------------
+
+t # 40
+v 0 Assignment
+v 1 SystemSoftware
+v 2 Realization
+v 3 TechnologyService
+v 4 Serving
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 8
+where: [128, 2, 292, 70, 278, 24, 56, 189]
+
+-----------------
+
+t # 41
+v 0 Assignment
+v 1 Device
+v 2 Composition
+v 3 Node
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 9
+where: [128, 145, 247, 56, 249, 282, 28, 285, 63]
+
+-----------------
+
+t # 42
+v 0 Assignment
+v 1 Device
+v 2 Assignment
+v 3 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 11
+where: [194, 292, 249, 70, 60, 174, 56, 57, 285, 28, 189]
+
+-----------------
+
+t # 43
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 10
+where: [2, 101, 199, 9, 137, 76, 213, 57, 218, 159]
+
+-----------------
+
+t # 44
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 Node
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 9
+where: [3, 101, 199, 200, 9, 188, 115, 156, 159]
+
+-----------------
+
+t # 45
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 17
+where: [256, 4, 68, 101, 196, 200, 201, 42, 292, 76, 268, 213, 56, 57, 154, 156, 31]
+
+-----------------
+
+t # 46
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 target
+
+Support: 10
+where: [256, 292, 101, 200, 201, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 47
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Node
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 target
+e 4 5 source
+
+Support: 9
+where: [256, 292, 101, 200, 201, 76, 268, 213, 154]
+
+-----------------
+
+t # 48
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 19
+where: [256, 2, 9, 10, 268, 144, 154, 28, 56, 188, 69, 70, 73, 204, 101, 112, 243, 246, 249]
+
+-----------------
+
+t # 49
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 14
+where: [256, 2, 69, 70, 101, 9, 10, 73, 204, 112, 188, 56, 249, 28]
+
+-----------------
+
+t # 50
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 4 5 target
+
+Support: 11
+where: [2, 69, 70, 9, 10, 204, 112, 188, 56, 249, 28]
+
+-----------------
+
+t # 51
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 Realization
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 source
+e 2 3 target
+
+Support: 8
+where: [256, 101, 69, 70, 73, 10, 204, 112]
+
+-----------------
+
+t # 52
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 CommunicationNetwork
+e 0 1 source
+e 0 5 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 9
+where: [256, 101, 69, 70, 204, 112, 56, 249, 28]
+
+-----------------
+
+t # 53
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 CommunicationNetwork
+v 6 Association
+e 0 1 source
+e 0 5 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 5 6 target
+
+Support: 8
+where: [256, 101, 69, 70, 204, 112, 56, 28]
+
+-----------------
+
+t # 54
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Realization
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 10
+where: [256, 101, 69, 70, 73, 10, 204, 268, 112, 154]
+
+-----------------
+
+t # 55
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Realization
+v 5 CommunicationNetwork
+e 0 1 source
+e 0 5 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 8
+where: [256, 101, 69, 70, 204, 268, 112, 154]
+
+-----------------
+
+t # 56
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Realization
+v 5 CommunicationNetwork
+v 6 Association
+e 0 1 source
+e 0 5 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 5 6 target
+
+Support: 8
+where: [256, 101, 69, 70, 204, 268, 112, 154]
+
+-----------------
+
+t # 57
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 13
+where: [256, 101, 69, 70, 204, 268, 112, 144, 243, 56, 249, 154, 28]
+
+-----------------
+
+t # 58
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 CommunicationNetwork
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 target
+
+Support: 12
+where: [256, 101, 69, 70, 204, 268, 112, 144, 243, 56, 154, 28]
+
+-----------------
+
+t # 59
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 CommunicationNetwork
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 target
+e 4 6 target
+
+Support: 8
+where: [256, 101, 69, 70, 268, 112, 154, 28]
+
+-----------------
+
+t # 60
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 CommunicationNetwork
+v 5 Association
+v 6 Node
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 target
+e 5 6 source
+
+Support: 8
+where: [256, 101, 69, 268, 112, 243, 56, 154]
+
+-----------------
+
+t # 61
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 9
+where: [256, 2, 292, 101, 154, 268, 246, 218, 188]
+
+-----------------
+
+t # 62
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Composition
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 14
+where: [256, 2, 69, 70, 101, 9, 10, 73, 204, 112, 188, 56, 249, 28]
+
+-----------------
+
+t # 63
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Composition
+v 4 Composition
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+
+Support: 8
+where: [2, 69, 73, 112, 188, 56, 249, 28]
+
+-----------------
+
+t # 64
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Composition
+v 4 Realization
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+
+Support: 8
+where: [256, 101, 69, 70, 73, 10, 204, 112]
+
+-----------------
+
+t # 65
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Composition
+v 4 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 1 3 source
+
+Support: 9
+where: [256, 101, 69, 70, 204, 112, 56, 249, 28]
+
+-----------------
+
+t # 66
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Composition
+v 4 CommunicationNetwork
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 1 3 source
+e 4 5 target
+
+Support: 8
+where: [256, 101, 69, 70, 204, 112, 56, 28]
+
+-----------------
+
+t # 67
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Realization
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 12
+where: [256, 101, 69, 70, 73, 10, 218, 204, 268, 112, 144, 154]
+
+-----------------
+
+t # 68
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Realization
+v 4 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 1 3 source
+
+Support: 8
+where: [256, 101, 69, 70, 204, 268, 112, 154]
+
+-----------------
+
+t # 69
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Realization
+v 4 CommunicationNetwork
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 1 3 source
+e 4 5 target
+
+Support: 8
+where: [256, 101, 69, 70, 204, 268, 112, 154]
+
+-----------------
+
+t # 70
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Device
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 8
+where: [256, 69, 73, 112, 188, 56, 249, 28]
+
+-----------------
+
+t # 71
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Device
+v 4 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 8
+where: [256, 69, 73, 112, 188, 56, 249, 28]
+
+-----------------
+
+t # 72
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 CommunicationNetwork
+e 0 1 source
+e 0 3 target
+e 1 2 source
+
+Support: 15
+where: [256, 292, 101, 69, 70, 108, 204, 268, 112, 144, 243, 56, 249, 154, 28]
+
+-----------------
+
+t # 73
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 CommunicationNetwork
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+
+Support: 13
+where: [256, 292, 101, 69, 70, 204, 268, 112, 144, 243, 56, 154, 28]
+
+-----------------
+
+t # 74
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+e 3 5 target
+
+Support: 9
+where: [256, 292, 101, 69, 70, 268, 112, 154, 28]
+
+-----------------
+
+t # 75
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Node
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+e 4 5 source
+
+Support: 9
+where: [256, 292, 101, 69, 268, 112, 243, 56, 154]
+
+-----------------
+
+t # 76
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Node
+v 6 Composition
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+
+Support: 8
+where: [256, 292, 101, 69, 268, 112, 56, 154]
+
+-----------------
+
+t # 77
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 17
+where: [256, 2, 68, 69, 70, 101, 199, 73, 42, 201, 76, 260, 112, 144, 115, 188, 30]
+
+-----------------
+
+t # 78
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 10
+where: [256, 2, 68, 101, 199, 201, 42, 76, 115, 188]
+
+-----------------
+
+t # 79
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 Realization
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 9
+where: [68, 69, 199, 73, 42, 201, 76, 112, 30]
+
+-----------------
+
+t # 80
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 Realization
+v 5 TechnologyService
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 4 5 target
+
+Support: 9
+where: [68, 69, 199, 73, 42, 201, 76, 112, 30]
+
+-----------------
+
+t # 81
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 Serving
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 10
+where: [256, 68, 101, 70, 73, 42, 201, 76, 144, 30]
+
+-----------------
+
+t # 82
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 Serving
+v 5 Serving
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 3 5 source
+
+Support: 8
+where: [256, 68, 101, 70, 201, 42, 76, 144]
+
+-----------------
+
+t # 83
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 9
+where: [256, 68, 69, 70, 101, 201, 42, 76, 112]
+
+-----------------
+
+t # 84
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 CommunicationNetwork
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 target
+
+Support: 9
+where: [256, 68, 69, 70, 101, 201, 42, 76, 112]
+
+-----------------
+
+t # 85
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+v 4 CommunicationNetwork
+v 5 Association
+v 6 Node
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 target
+e 5 6 source
+
+Support: 8
+where: [256, 68, 101, 69, 201, 42, 76, 112]
+
+-----------------
+
+t # 86
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 15
+where: [256, 2, 3, 68, 101, 199, 201, 42, 218, 76, 268, 115, 154, 188, 159]
+
+-----------------
+
+t # 87
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 Association
+v 4 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 1 3 target
+
+Support: 8
+where: [256, 68, 101, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 88
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 Node
+e 0 1 source
+e 0 3 target
+e 1 2 source
+
+Support: 9
+where: [3, 101, 199, 73, 203, 144, 115, 188, 30]
+
+-----------------
+
+t # 89
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 Realization
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 11
+where: [68, 69, 199, 73, 42, 201, 76, 203, 112, 218, 30]
+
+-----------------
+
+t # 90
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 CommunicationNetwork
+e 0 1 source
+e 0 3 target
+e 1 2 source
+
+Support: 12
+where: [256, 68, 69, 70, 101, 201, 42, 76, 204, 268, 112, 154]
+
+-----------------
+
+t # 91
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 CommunicationNetwork
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+
+Support: 12
+where: [256, 68, 69, 70, 101, 201, 42, 76, 204, 268, 112, 154]
+
+-----------------
+
+t # 92
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Node
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+e 4 5 source
+
+Support: 10
+where: [256, 68, 101, 69, 201, 42, 76, 268, 112, 154]
+
+-----------------
+
+t # 93
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+e 3 5 target
+
+Support: 8
+where: [256, 101, 69, 70, 76, 268, 112, 154]
+
+-----------------
+
+t # 94
+v 0 Association
+v 1 Node
+v 2 CommunicationNetwork
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 20
+where: [256, 268, 144, 154, 28, 292, 42, 56, 57, 68, 69, 70, 200, 201, 76, 204, 213, 101, 112, 243]
+
+-----------------
+
+t # 95
+v 0 Association
+v 1 Node
+v 2 CommunicationNetwork
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 12
+where: [256, 292, 69, 70, 101, 76, 268, 112, 213, 57, 154, 28]
+
+-----------------
+
+t # 96
+v 0 Association
+v 1 Node
+v 2 CommunicationNetwork
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 4 target
+e 2 5 target
+
+Support: 9
+where: [256, 101, 69, 268, 112, 213, 57, 154, 28]
+
+-----------------
+
+t # 97
+v 0 Association
+v 1 Node
+v 2 CommunicationNetwork
+v 3 Association
+v 4 Node
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 15
+where: [256, 68, 69, 101, 292, 200, 201, 42, 76, 268, 112, 243, 213, 56, 154]
+
+-----------------
+
+t # 98
+v 0 Association
+v 1 Node
+v 2 CommunicationNetwork
+v 3 Association
+v 4 Node
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 8
+where: [292, 101, 69, 76, 268, 112, 213, 154]
+
+-----------------
+
+t # 99
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 11
+where: [256, 196, 101, 200, 76, 268, 156, 213, 57, 154, 28]
+
+-----------------
+
+t # 100
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 target
+
+Support: 9
+where: [256, 101, 200, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 101
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 target
+e 3 5 target
+
+Support: 8
+where: [256, 101, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 102
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 CommunicationNetwork
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 8
+where: [256, 196, 101, 200, 76, 213, 57, 156]
+
+-----------------
+
+t # 103
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 11
+where: [256, 196, 101, 200, 76, 188, 213, 57, 218, 156, 31]
+
+-----------------
+
+t # 104
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 Realization
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 8
+where: [256, 101, 218, 203, 76, 268, 154, 188]
+
+-----------------
+
+t # 105
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 Association
+e 0 1 target
+e 1 2 target
+e 1 3 target
+
+Support: 9
+where: [2, 226, 101, 137, 9, 74, 203, 156, 159]
+
+-----------------
+
+t # 106
+v 0 Association
+v 1 Node
+v 2 Association
+v 3 Composition
+e 0 1 target
+e 1 2 target
+e 1 3 target
+
+Support: 14
+where: [226, 285, 164, 101, 290, 199, 218, 203, 239, 212, 86, 154, 188, 61]
+
+-----------------
+
+t # 107
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 14
+where: [256, 2, 101, 9, 10, 73, 268, 144, 113, 86, 246, 56, 249, 154]
+
+-----------------
+
+t # 108
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+e 0 1 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 8
+where: [256, 2, 101, 9, 10, 113, 56, 249]
+
+-----------------
+
+t # 109
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Realization
+e 0 1 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 8
+where: [256, 101, 10, 268, 144, 86, 56, 154]
+
+-----------------
+
+t # 110
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Composition
+e 0 1 target
+e 1 2 source
+e 1 3 source
+
+Support: 10
+where: [256, 2, 101, 9, 10, 204, 113, 56, 249, 188]
+
+-----------------
+
+t # 111
+v 0 Association
+v 1 Node
+v 2 Composition
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 1 3 source
+
+Support: 10
+where: [256, 101, 218, 10, 268, 144, 113, 86, 56, 154]
+
+-----------------
+
+t # 112
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 TechnologyService
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 16
+where: [256, 2, 68, 101, 199, 201, 42, 76, 144, 113, 115, 243, 86, 56, 188, 223]
+
+-----------------
+
+t # 113
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 Composition
+e 0 1 target
+e 1 2 source
+e 1 3 target
+
+Support: 8
+where: [101, 199, 10, 203, 144, 86, 218, 188]
+
+-----------------
+
+t # 114
+v 0 Association
+v 1 Node
+v 2 Realization
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 1 3 target
+
+Support: 14
+where: [288, 291, 101, 199, 168, 218, 74, 203, 76, 268, 86, 154, 188, 159]
+
+-----------------
+
+t # 115
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 18
+where: [2, 3, 68, 101, 249, 292, 201, 10, 42, 76, 268, 144, 113, 188, 213, 57, 154, 156]
+
+-----------------
+
+t # 116
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 13
+where: [2, 3, 68, 101, 292, 201, 42, 76, 268, 213, 57, 154, 188]
+
+-----------------
+
+t # 117
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Realization
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 3 5 source
+
+Support: 9
+where: [2, 3, 68, 201, 42, 76, 268, 154, 188]
+
+-----------------
+
+t # 118
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 10
+where: [68, 101, 292, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 119
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+
+Support: 9
+where: [68, 292, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 120
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Association
+e 0 1 source
+e 1 2 source
+e 1 7 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+
+Support: 8
+where: [68, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 121
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Association
+v 8 Node
+e 0 1 source
+e 1 2 source
+e 1 7 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+e 7 8 source
+
+Support: 8
+where: [68, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 122
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 6 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 9
+where: [68, 101, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 123
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Node
+e 0 1 source
+e 1 2 source
+e 1 6 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 6 7 source
+
+Support: 9
+where: [68, 101, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 124
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 5 target
+e 2 3 target
+e 3 4 source
+
+Support: 9
+where: [68, 101, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 125
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+v 6 Node
+e 0 1 source
+e 1 2 source
+e 1 5 target
+e 2 3 target
+e 3 4 source
+e 5 6 source
+
+Support: 9
+where: [68, 101, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 126
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 target
+
+Support: 9
+where: [2, 101, 76, 268, 188, 213, 57, 154, 156]
+
+-----------------
+
+t # 127
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 8
+where: [2, 3, 292, 249, 76, 268, 57, 154]
+
+-----------------
+
+t # 128
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Node
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 11
+where: [2, 3, 292, 101, 10, 268, 144, 113, 249, 154, 188]
+
+-----------------
+
+t # 129
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Realization
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 11
+where: [2, 3, 68, 201, 10, 42, 76, 268, 113, 154, 188]
+
+-----------------
+
+t # 130
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 11
+where: [68, 101, 201, 42, 76, 268, 144, 213, 57, 154, 156]
+
+-----------------
+
+t # 131
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+e 4 5 source
+
+Support: 11
+where: [68, 101, 201, 42, 76, 268, 144, 213, 57, 154, 156]
+
+-----------------
+
+t # 132
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 1 6 target
+e 2 3 target
+e 4 5 source
+
+Support: 10
+where: [68, 101, 201, 42, 76, 268, 144, 213, 57, 154]
+
+-----------------
+
+t # 133
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 1 5 target
+e 2 3 target
+
+Support: 10
+where: [68, 101, 201, 42, 76, 268, 144, 213, 57, 154]
+
+-----------------
+
+t # 134
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 14
+where: [2, 3, 196, 227, 70, 249, 292, 76, 268, 246, 279, 57, 154, 28]
+
+-----------------
+
+t # 135
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+
+Support: 9
+where: [2, 3, 196, 70, 76, 268, 246, 154, 28]
+
+-----------------
+
+t # 136
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 target
+
+Support: 9
+where: [227, 196, 70, 76, 268, 279, 57, 154, 28]
+
+-----------------
+
+t # 137
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [2, 3, 68, 249, 70, 201, 42, 76, 57, 28]
+
+-----------------
+
+t # 138
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+v 4 Node
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 8
+where: [2, 3, 68, 249, 201, 42, 76, 57]
+
+-----------------
+
+t # 139
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+v 4 Realization
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 8
+where: [3, 68, 249, 70, 201, 42, 76, 57]
+
+-----------------
+
+t # 140
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 20
+where: [256, 268, 14, 144, 279, 154, 156, 28, 42, 57, 68, 196, 70, 200, 201, 76, 213, 227, 101, 243]
+
+-----------------
+
+t # 141
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 4 target
+
+Support: 17
+where: [256, 227, 68, 101, 70, 200, 201, 42, 76, 268, 14, 144, 243, 213, 57, 154, 28]
+
+-----------------
+
+t # 142
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 4 target
+e 1 5 target
+
+Support: 10
+where: [256, 227, 70, 76, 268, 14, 213, 57, 154, 28]
+
+-----------------
+
+t # 143
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Device
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+
+Support: 8
+where: [256, 227, 101, 70, 144, 213, 57, 28]
+
+-----------------
+
+t # 144
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Device
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 5 target
+e 3 4 source
+
+Support: 8
+where: [256, 227, 101, 70, 144, 213, 57, 28]
+
+-----------------
+
+t # 145
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+
+Support: 16
+where: [256, 68, 101, 70, 200, 201, 42, 76, 268, 144, 156, 243, 213, 57, 154, 28]
+
+-----------------
+
+t # 146
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Composition
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 8
+where: [256, 101, 70, 268, 144, 243, 154, 28]
+
+-----------------
+
+t # 147
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Composition
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 6 target
+e 3 4 source
+e 4 5 source
+
+Support: 8
+where: [256, 101, 70, 268, 144, 243, 154, 28]
+
+-----------------
+
+t # 148
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Composition
+v 6 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 8
+where: [256, 101, 70, 268, 144, 243, 154, 28]
+
+-----------------
+
+t # 149
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Composition
+v 6 SystemSoftware
+v 7 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 7 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 8
+where: [256, 101, 70, 268, 144, 243, 154, 28]
+
+-----------------
+
+t # 150
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 10
+where: [256, 101, 200, 76, 268, 156, 213, 57, 154, 28]
+
+-----------------
+
+t # 151
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 6 target
+e 3 4 source
+e 4 5 source
+
+Support: 9
+where: [256, 101, 200, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 152
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 5 target
+e 3 4 source
+
+Support: 15
+where: [256, 68, 101, 70, 200, 201, 42, 76, 268, 144, 243, 213, 57, 154, 28]
+
+-----------------
+
+t # 153
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 5 target
+e 1 6 target
+e 3 4 source
+
+Support: 8
+where: [256, 70, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 154
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 Node
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 5 target
+e 3 4 source
+e 5 6 source
+
+Support: 9
+where: [68, 200, 201, 42, 76, 268, 243, 213, 154]
+
+-----------------
+
+t # 155
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Realization
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 8
+where: [256, 68, 70, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 156
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Realization
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 6 target
+e 3 4 source
+e 4 5 source
+
+Support: 8
+where: [256, 68, 70, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 157
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 11
+where: [68, 101, 200, 201, 42, 76, 268, 213, 57, 154, 156]
+
+-----------------
+
+t # 158
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 CommunicationNetwork
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+
+Support: 8
+where: [68, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 159
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 CommunicationNetwork
+v 7 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+e 6 7 target
+
+Support: 8
+where: [68, 201, 42, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 160
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 6 target
+e 3 4 source
+e 4 5 target
+
+Support: 8
+where: [101, 200, 201, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 161
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 17
+where: [2, 3, 68, 101, 196, 292, 201, 42, 218, 76, 268, 213, 56, 57, 154, 188, 31]
+
+-----------------
+
+t # 162
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Association
+v 4 Realization
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 10
+where: [2, 3, 68, 201, 42, 218, 76, 268, 154, 188]
+
+-----------------
+
+t # 163
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Association
+v 4 CommunicationNetwork
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 11
+where: [68, 101, 292, 201, 42, 76, 268, 213, 56, 57, 154]
+
+-----------------
+
+t # 164
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Realization
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 13
+where: [2, 3, 68, 201, 10, 42, 76, 218, 268, 113, 56, 154, 188]
+
+-----------------
+
+t # 165
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Realization
+v 4 TechnologyService
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 8
+where: [2, 68, 201, 42, 76, 113, 56, 188]
+
+-----------------
+
+t # 166
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 10
+where: [2, 101, 218, 76, 268, 188, 213, 57, 154, 156]
+
+-----------------
+
+t # 167
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Node
+v 3 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 9
+where: [2, 292, 218, 10, 268, 113, 56, 249, 154]
+
+-----------------
+
+t # 168
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Device
+v 3 Realization
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 8
+where: [3, 68, 249, 70, 201, 42, 76, 57]
+
+-----------------
+
+t # 169
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 23
+where: [256, 268, 14, 144, 154, 28, 292, 42, 45, 56, 57, 68, 70, 200, 201, 74, 76, 85, 213, 227, 101, 243, 119]
+
+-----------------
+
+t # 170
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+e 1 4 target
+
+Support: 14
+where: [256, 227, 292, 101, 70, 76, 268, 14, 85, 213, 119, 57, 154, 28]
+
+-----------------
+
+t # 171
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+e 1 4 target
+e 1 5 target
+
+Support: 8
+where: [256, 227, 101, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 172
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Device
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+
+Support: 8
+where: [256, 68, 70, 201, 42, 76, 57, 28]
+
+-----------------
+
+t # 173
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+
+Support: 12
+where: [68, 101, 292, 201, 42, 76, 268, 144, 213, 56, 57, 154]
+
+-----------------
+
+t # 174
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+e 4 5 source
+
+Support: 9
+where: [68, 101, 292, 201, 42, 76, 213, 56, 57]
+
+-----------------
+
+t # 175
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Association
+v 4 Node
+v 5 Association
+v 6 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+e 4 5 source
+e 5 6 target
+
+Support: 9
+where: [68, 101, 292, 201, 42, 76, 213, 56, 57]
+
+-----------------
+
+t # 176
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 10
+where: [256, 227, 101, 70, 144, 241, 213, 57, 218, 28]
+
+-----------------
+
+t # 177
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 8
+where: [256, 227, 101, 70, 241, 57, 218, 28]
+
+-----------------
+
+t # 178
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 8
+where: [256, 227, 101, 70, 144, 213, 57, 28]
+
+-----------------
+
+t # 179
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Device
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 11
+where: [256, 227, 68, 249, 70, 201, 42, 76, 156, 57, 28]
+
+-----------------
+
+t # 180
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 22
+where: [256, 268, 144, 154, 156, 28, 31, 292, 42, 56, 57, 68, 196, 70, 200, 201, 76, 213, 218, 101, 243, 249]
+
+-----------------
+
+t # 181
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Composition
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 11
+where: [256, 292, 101, 70, 268, 144, 243, 56, 249, 154, 28]
+
+-----------------
+
+t # 182
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Composition
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 source
+
+Support: 10
+where: [256, 292, 101, 70, 268, 144, 243, 56, 154, 28]
+
+-----------------
+
+t # 183
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Composition
+v 5 SystemSoftware
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+
+Support: 10
+where: [256, 101, 70, 268, 144, 243, 56, 249, 154, 28]
+
+-----------------
+
+t # 184
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Composition
+v 5 SystemSoftware
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 1 6 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+
+Support: 9
+where: [256, 101, 70, 268, 144, 243, 56, 154, 28]
+
+-----------------
+
+t # 185
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 11
+where: [256, 196, 101, 200, 76, 268, 156, 213, 57, 154, 28]
+
+-----------------
+
+t # 186
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 source
+
+Support: 9
+where: [256, 101, 200, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 187
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 1 6 target
+e 2 3 source
+e 3 4 source
+
+Support: 8
+where: [256, 101, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 188
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 target
+
+Support: 8
+where: [256, 196, 101, 200, 76, 213, 57, 156]
+
+-----------------
+
+t # 189
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 17
+where: [256, 68, 101, 70, 292, 200, 201, 42, 76, 268, 144, 243, 213, 56, 57, 154, 28]
+
+-----------------
+
+t # 190
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 1 5 target
+e 2 3 source
+
+Support: 10
+where: [256, 292, 101, 70, 76, 268, 213, 57, 154, 28]
+
+-----------------
+
+t # 191
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Device
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 8
+where: [256, 68, 70, 201, 42, 76, 57, 28]
+
+-----------------
+
+t # 192
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+e 4 5 source
+
+Support: 13
+where: [256, 68, 101, 292, 200, 201, 42, 76, 268, 243, 213, 56, 154]
+
+-----------------
+
+t # 193
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Node
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+e 4 5 source
+
+Support: 10
+where: [68, 101, 292, 201, 42, 76, 268, 213, 56, 154]
+
+-----------------
+
+t # 194
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Node
+v 7 Association
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+e 4 5 source
+e 6 7 source
+
+Support: 8
+where: [68, 101, 292, 201, 42, 76, 213, 56]
+
+-----------------
+
+t # 195
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Node
+v 7 Association
+v 8 CommunicationNetwork
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+e 4 5 source
+e 6 7 source
+e 7 8 target
+
+Support: 8
+where: [68, 101, 292, 201, 42, 76, 213, 56]
+
+-----------------
+
+t # 196
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 12
+where: [68, 101, 292, 201, 42, 76, 268, 144, 213, 56, 57, 154]
+
+-----------------
+
+t # 197
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+e 5 6 source
+
+Support: 9
+where: [68, 101, 292, 201, 42, 76, 213, 56, 57]
+
+-----------------
+
+t # 198
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Association
+v 7 CommunicationNetwork
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 1 4 target
+e 2 3 source
+e 5 6 source
+e 6 7 target
+
+Support: 9
+where: [68, 101, 292, 201, 42, 76, 213, 56, 57]
+
+-----------------
+
+t # 199
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Device
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 10
+where: [256, 68, 249, 70, 201, 42, 76, 156, 57, 28]
+
+-----------------
+
+t # 200
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 16
+where: [256, 68, 101, 196, 292, 200, 201, 42, 76, 268, 213, 56, 57, 154, 156, 31]
+
+-----------------
+
+t # 201
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 12
+where: [68, 101, 292, 201, 42, 268, 213, 56, 57, 154, 156, 31]
+
+-----------------
+
+t # 202
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Node
+v 6 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 5 6 source
+
+Support: 8
+where: [68, 101, 292, 201, 42, 213, 57, 31]
+
+-----------------
+
+t # 203
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 10
+where: [68, 292, 201, 42, 76, 268, 213, 56, 57, 154]
+
+-----------------
+
+t # 204
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+
+Support: 10
+where: [68, 292, 201, 42, 76, 268, 213, 56, 57, 154]
+
+-----------------
+
+t # 205
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Node
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 10
+where: [68, 292, 201, 42, 76, 268, 213, 56, 57, 154]
+
+-----------------
+
+t # 206
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Node
+v 8 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+e 5 8 target
+e 6 7 source
+
+Support: 8
+where: [68, 292, 201, 42, 76, 213, 56, 57]
+
+-----------------
+
+t # 207
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Node
+v 8 Node
+e 0 1 source
+e 0 8 target
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 8
+where: [68, 292, 201, 42, 268, 213, 56, 154]
+
+-----------------
+
+t # 208
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+e 5 7 target
+
+Support: 8
+where: [68, 292, 201, 42, 76, 213, 56, 57]
+
+-----------------
+
+t # 209
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Association
+v 7 Node
+e 0 1 source
+e 0 7 target
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+
+Support: 8
+where: [68, 292, 201, 42, 268, 213, 56, 154]
+
+-----------------
+
+t # 210
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+v 6 Node
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 8
+where: [68, 292, 201, 42, 268, 213, 56, 154]
+
+-----------------
+
+t # 211
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 target
+
+Support: 10
+where: [256, 292, 101, 200, 201, 76, 268, 213, 57, 154]
+
+-----------------
+
+t # 212
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 Association
+v 6 Node
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 target
+e 5 6 source
+
+Support: 9
+where: [256, 292, 101, 200, 201, 76, 268, 213, 154]
+
+-----------------
+
+t # 213
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Node
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 15
+where: [68, 101, 292, 201, 42, 218, 76, 268, 144, 213, 56, 57, 154, 156, 31]
+
+-----------------
+
+t # 214
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Node
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+
+Support: 13
+where: [68, 101, 292, 201, 42, 218, 76, 268, 213, 56, 57, 154, 31]
+
+-----------------
+
+t # 215
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Node
+v 5 Association
+v 6 CommunicationNetwork
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 target
+
+Support: 11
+where: [68, 101, 292, 201, 42, 76, 268, 213, 56, 57, 154]
+
+-----------------
+
+t # 216
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Node
+v 5 Realization
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+
+Support: 8
+where: [68, 201, 42, 218, 76, 268, 56, 154]
+
+-----------------
+
+t # 217
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Node
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 8
+where: [101, 218, 76, 268, 213, 57, 154, 156]
+
+-----------------
+
+t # 218
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 9
+where: [256, 68, 101, 70, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 219
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Realization
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 source
+
+Support: 9
+where: [256, 68, 101, 70, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 220
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Realization
+v 5 Association
+v 6 Node
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 source
+e 5 6 source
+
+Support: 8
+where: [256, 68, 101, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 221
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Realization
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 target
+
+Support: 8
+where: [256, 68, 101, 201, 42, 76, 268, 154]
+
+-----------------
+
+t # 222
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 17
+where: [68, 101, 196, 292, 201, 42, 218, 76, 268, 144, 241, 213, 56, 57, 154, 156, 31]
+
+-----------------
+
+t # 223
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 14
+where: [68, 101, 196, 292, 201, 42, 218, 76, 268, 213, 56, 57, 154, 31]
+
+-----------------
+
+t # 224
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+v 5 CommunicationNetwork
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+
+Support: 11
+where: [68, 101, 292, 201, 42, 76, 268, 213, 56, 57, 154]
+
+-----------------
+
+t # 225
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 8
+where: [68, 201, 42, 218, 76, 268, 56, 154]
+
+-----------------
+
+t # 226
+v 0 Association
+v 1 CommunicationNetwork
+v 2 Association
+v 3 Node
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 target
+
+Support: 8
+where: [101, 218, 76, 268, 213, 57, 154, 156]
+
+-----------------
+
+t # 227
+v 0 Association
+v 1 Device
+v 2 Realization
+v 3 TechnologyService
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 8
+where: [4, 68, 70, 101, 201, 42, 76, 269]
+
+-----------------
+
+t # 228
+v 0 Association
+v 1 Device
+v 2 Realization
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 1 3 source
+
+Support: 8
+where: [4, 68, 70, 201, 42, 76, 146, 57]
+
+-----------------
+
+t # 229
+v 0 Association
+v 1 SystemSoftware
+v 2 Composition
+v 3 Node
+e 0 1 target
+e 1 2 target
+e 2 3 source
+
+Support: 9
+where: [256, 257, 162, 2, 73, 267, 246, 119, 279]
+
+-----------------
+
+t # 230
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 25
+where: [256, 257, 2, 9, 10, 273, 28, 285, 162, 56, 188, 66, 69, 70, 73, 204, 81, 214, 222, 101, 249, 112, 113, 247, 121]
+
+-----------------
+
+t # 231
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 16
+where: [2, 66, 69, 249, 73, 10, 112, 81, 113, 273, 247, 56, 121, 28, 285, 222]
+
+-----------------
+
+t # 232
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 4 5 target
+
+Support: 15
+where: [2, 66, 69, 249, 73, 10, 112, 81, 113, 273, 56, 121, 28, 285, 222]
+
+-----------------
+
+t # 233
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 SystemSoftware
+v 6 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 6 source
+e 2 3 target
+e 4 5 target
+
+Support: 11
+where: [2, 66, 69, 73, 112, 81, 273, 56, 249, 28, 285]
+
+-----------------
+
+t # 234
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 SystemSoftware
+v 6 Composition
+v 7 SystemSoftware
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 6 source
+e 2 3 target
+e 4 5 target
+e 6 7 target
+
+Support: 8
+where: [2, 69, 112, 81, 273, 56, 249, 285]
+
+-----------------
+
+t # 235
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 SystemSoftware
+v 6 Composition
+v 7 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 6 source
+e 1 7 source
+e 2 3 target
+e 4 5 target
+
+Support: 8
+where: [66, 69, 112, 81, 273, 56, 28, 285]
+
+-----------------
+
+t # 236
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 SystemSoftware
+v 6 SystemSoftware
+e 0 1 source
+e 0 6 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 4 5 target
+
+Support: 10
+where: [2, 69, 249, 10, 112, 81, 273, 56, 121, 285]
+
+-----------------
+
+t # 237
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 source
+e 2 3 target
+
+Support: 13
+where: [2, 66, 69, 73, 10, 112, 81, 273, 247, 56, 249, 28, 285]
+
+-----------------
+
+t # 238
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 Composition
+v 6 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 source
+e 1 6 source
+e 2 3 target
+
+Support: 9
+where: [66, 69, 10, 112, 81, 273, 56, 28, 285]
+
+-----------------
+
+t # 239
+v 0 Composition
+v 1 Node
+v 2 Composition
+v 3 SystemSoftware
+v 4 Composition
+v 5 Composition
+v 6 Composition
+v 7 Composition
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 source
+e 1 6 source
+e 1 7 source
+e 2 3 target
+
+Support: 8
+where: [66, 69, 10, 112, 81, 56, 28, 285]
+
+-----------------
+

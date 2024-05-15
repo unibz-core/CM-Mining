@@ -1,0 +1,147 @@
+### all_layers
+
+trial_0
+all_layers
+900_s
+Selected values: [10, 8]
+100 models 50_200
+
+trial_1 
+all_layers
+900_s
+Selected values: [20, 8]
+200 models 50_200
+
+trial_2 
+all_layers
+900_s
+Selected values: [30, 8]
+300 models 50_200
+
+trial_3 
+all_layers
+900_s
+Selected values: [40, 8]
+400 models 50_200
+
+### single_layers
+
+trial_0
+application_layer
+900_s
+Selected values: [20, 8]
+300 models 50_200
+
+trial_1
+business_layer
+900_s
+Selected values: [20, 8]
+300 models 50_200
+
+<Implementation & Mitigation> (no patterns with support "10" and nodes "4", over 300)
+
+trial_2
+motivation_layer
+900_s
+Selected values: [10, 4]
+300 models 50_200
+
+<Other> (crashes most of the times, with 200 models, support 20 and 8 nodes. It found 6 patterns only with 100 models, 10 support and 4 nodes)
+
+<Physical> (no patterns with support "8" and nodes "4", over 300)
+
+trial_3
+strategy_layer
+900_s
+Selected values: [8, 4]
+300 models 50_200
+
+trial_4
+technology_layer
+900_s
+Selected values: [8, 4]
+300 models 50_200
+
+trial_5
+technology_layer
+900_s
+Selected values: [20, 4]
+300 models 50_200
+
+### Combined Layers
+
+trial_0_0
+business + application
+900_s
+Selected values: [10, 8]
+300 models 50_200
+
+trial_0_1
+business + application
+900_s
+Selected values: [10, 12]
+300 models 50_200
+
+trial_0_2
+business + strategy
+900_s
+Selected values: [20, 8]
+300 models 50_200
+
+trial_0_3
+business + motivation
+900_s
+Selected values: [10, 8]
+300 models 50_200
+
+trial_1_0
+application + technology
+900_s
+Selected values: [20, 8]
+300 models 50_200
+
+trial_1_1
+application + motivation
+900_s
+Selected values: [20, 8]
+300 models 50_200
+
+trial_1_2
+application + technology + physical
+900_s
+Selected values: [20, 8]
+300 models 50_200
+
+trial_1_3
+application + technology + physical
+900_s
+Selected values: [10, 8]
+300 models 50_200
+
+trial_2_0
+motivation + strategy
+900_s
+Selected values: [10, 6]
+300 models 50_200
+
+trial_3_0
+implementation & migration + physical + technology
+900_s
+Selected values: [10, 8]
+300 models 50_200
+
+trial_3_1
+implementation & migration + motivation + other + strategy
+900_s
+Selected values: [10, 8]
+300 models 50_200
+
+### notes 
+
+Models: 100, 200, 300, 400
+Min number of nodes: 8
+Min support: 10%
+
+> {8,10%} combination with all layers x 4 - ok
+> {8,10%} each layer x 3
+> {8,10%} per pair of layers x 3
