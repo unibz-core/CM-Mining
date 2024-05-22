@@ -1,0 +1,44 @@
+t # 213
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 26
+where: [128, 131, 132, 136, 141, 146, 23, 25, 28, 159, 31, 163, 48, 185, 57, 188, 201, 82, 210, 212, 217, 220, 227, 112, 114, 120]
+
+-----------------
+
+t # 133
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 20
+where: [0, 9, 144, 17, 23, 25, 31, 163, 43, 172, 47, 49, 53, 70, 207, 82, 211, 90, 237, 120]
+
+-----------------
+
+t # 216
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 19
+where: [131, 132, 136, 141, 23, 28, 159, 31, 163, 48, 185, 57, 82, 210, 217, 220, 227, 114, 120]
+
+-----------------
+

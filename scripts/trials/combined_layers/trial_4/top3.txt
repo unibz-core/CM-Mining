@@ -1,0 +1,68 @@
+t # 6
+v 0 ApplicationComponent
+v 1 Serving
+v 2 TechnologyService
+v 3 Realization
+v 4 Node
+v 5 Realization
+v 6 TechnologyService
+v 7 Serving
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 17
+where: [129, 226, 165, 134, 197, 74, 175, 81, 113, 177, 20, 84, 180, 121, 58, 91, 95]
+
+-----------------
+
+t # 7
+v 0 ApplicationComponent
+v 1 Serving
+v 2 TechnologyService
+v 3 Realization
+v 4 Node
+v 5 Realization
+v 6 TechnologyService
+v 7 Serving
+v 8 ApplicationComponent
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+e 7 8 target
+
+Support: 14
+where: [129, 165, 134, 197, 74, 175, 81, 177, 20, 84, 180, 58, 91, 95]
+
+-----------------
+
+t # 3
+v 0 ApplicationComponent
+v 1 Serving
+v 2 TechnologyService
+v 3 Realization
+v 4 Node
+v 5 Serving
+v 6 TechnologyService
+v 7 Realization
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 5 6 source
+e 6 7 target
+
+Support: 13
+where: [0, 226, 99, 5, 197, 103, 75, 109, 113, 20, 121, 91, 60]
+
+-----------------
+

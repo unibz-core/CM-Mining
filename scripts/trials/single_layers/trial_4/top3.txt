@@ -1,0 +1,44 @@
+t # 6
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Serving
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 31
+where: [128, 256, 130, 136, 144, 149, 280, 30, 42, 298, 172, 175, 55, 56, 194, 68, 70, 73, 201, 76, 77, 207, 210, 86, 92, 223, 101, 232, 243, 121, 251]
+
+-----------------
+
+t # 3
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Realization
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 27
+where: [128, 130, 136, 149, 280, 30, 42, 298, 172, 55, 188, 194, 68, 69, 199, 73, 201, 76, 77, 210, 218, 92, 232, 112, 113, 121, 251]
+
+-----------------
+
+t # 4
+v 0 Node
+v 1 Realization
+v 2 TechnologyService
+v 3 Realization
+v 4 TechnologyService
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+
+Support: 26
+where: [128, 130, 136, 149, 280, 30, 42, 298, 172, 55, 188, 194, 68, 69, 199, 73, 201, 76, 77, 210, 92, 232, 112, 113, 121, 251]
+
+-----------------
+

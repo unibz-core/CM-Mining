@@ -1,0 +1,68 @@
+t # 112
+v 0 BusinessProcess
+v 1 Composition
+v 2 BusinessProcess
+v 3 Triggering
+v 4 BusinessProcess
+v 5 Composition
+v 6 Composition
+v 7 BusinessProcess
+e 0 1 source
+e 0 6 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 target
+e 6 7 target
+
+Support: 46
+where: [1, 2, 4, 5, 260, 10, 139, 140, 268, 269, 15, 277, 154, 27, 28, 292, 294, 44, 181, 56, 60, 66, 194, 195, 69, 71, 79, 80, 84, 86, 216, 218, 223, 100, 249, 103, 105, 107, 238, 111, 112, 246, 248, 121, 122, 123]
+
+-----------------
+
+t # 6
+v 0 BusinessProcess
+v 1 Composition
+v 2 BusinessProcess
+v 3 Triggering
+v 4 BusinessProcess
+v 5 Composition
+v 6 Triggering
+v 7 Composition
+e 0 1 source
+e 0 5 source
+e 0 7 source
+e 1 2 target
+e 2 3 source
+e 2 6 target
+e 3 4 target
+e 4 5 target
+
+Support: 45
+where: [1, 2, 4, 5, 260, 10, 139, 140, 268, 269, 15, 277, 154, 27, 28, 292, 294, 44, 181, 56, 60, 66, 194, 195, 69, 71, 79, 80, 84, 86, 216, 218, 223, 100, 249, 103, 105, 107, 238, 111, 112, 246, 248, 121, 123]
+
+-----------------
+
+t # 37
+v 0 BusinessProcess
+v 1 Composition
+v 2 BusinessProcess
+v 3 Triggering
+v 4 BusinessProcess
+v 5 Composition
+v 6 Composition
+v 7 BusinessProcess
+e 0 1 source
+e 0 5 source
+e 0 6 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 target
+e 6 7 target
+
+Support: 45
+where: [1, 2, 4, 5, 260, 10, 139, 140, 268, 269, 15, 277, 154, 27, 28, 292, 294, 44, 181, 56, 60, 66, 194, 195, 69, 71, 79, 80, 84, 86, 216, 218, 223, 100, 103, 105, 107, 238, 111, 112, 246, 248, 121, 122, 123]
+
+-----------------
+

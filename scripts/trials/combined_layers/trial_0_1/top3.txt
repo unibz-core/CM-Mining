@@ -1,0 +1,92 @@
+t # 3
+v 0 BusinessService
+v 1 Composition
+v 2 Product
+v 3 Composition
+v 4 BusinessService
+v 5 Composition
+v 6 BusinessService
+v 7 Composition
+v 8 BusinessService
+v 9 Composition
+v 10 BusinessService
+v 11 Composition
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 source
+e 2 7 source
+e 2 9 source
+e 2 11 source
+e 3 4 target
+e 5 6 target
+e 7 8 target
+e 9 10 target
+
+Support: 15
+where: [32, 1, 65, 256, 295, 106, 75, 238, 79, 276, 181, 87, 89, 124, 223]
+
+-----------------
+
+t # 4
+v 0 BusinessService
+v 1 Composition
+v 2 Product
+v 3 Composition
+v 4 BusinessService
+v 5 Composition
+v 6 BusinessService
+v 7 Composition
+v 8 BusinessService
+v 9 Composition
+v 10 BusinessService
+v 11 Composition
+v 12 BusinessService
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 source
+e 2 7 source
+e 2 9 source
+e 2 11 source
+e 3 4 target
+e 5 6 target
+e 7 8 target
+e 9 10 target
+e 11 12 target
+
+Support: 12
+where: [65, 1, 295, 106, 75, 238, 276, 181, 87, 89, 124, 223]
+
+-----------------
+
+t # 0
+v 0 BusinessService
+v 1 Composition
+v 2 Product
+v 3 Composition
+v 4 BusinessService
+v 5 Realization
+v 6 Composition
+v 7 BusinessService
+v 8 Composition
+v 9 BusinessService
+v 10 Composition
+v 11 BusinessService
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 6 source
+e 2 8 source
+e 2 10 source
+e 3 4 target
+e 4 5 target
+e 6 7 target
+e 8 9 target
+e 10 11 target
+
+Support: 11
+where: [32, 1, 65, 295, 75, 238, 79, 181, 89, 124, 223]
+
+-----------------
+

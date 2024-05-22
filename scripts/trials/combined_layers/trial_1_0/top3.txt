@@ -1,0 +1,68 @@
+t # 8
+v 0 ApplicationComponent
+v 1 Assignment
+v 2 ApplicationFunction
+v 3 Assignment
+v 4 ApplicationFunction
+v 5 Assignment
+v 6 ApplicationFunction
+v 7 Assignment
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 7 source
+e 1 2 target
+e 3 4 target
+e 5 6 target
+
+Support: 25
+where: [128, 134, 262, 8, 263, 264, 11, 12, 13, 23, 26, 158, 163, 37, 170, 299, 71, 205, 82, 83, 102, 103, 230, 250, 126]
+
+-----------------
+
+t # 9
+v 0 ApplicationComponent
+v 1 Assignment
+v 2 ApplicationFunction
+v 3 Assignment
+v 4 ApplicationFunction
+v 5 Assignment
+v 6 ApplicationFunction
+v 7 Assignment
+v 8 ApplicationFunction
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 7 source
+e 1 2 target
+e 3 4 target
+e 5 6 target
+e 7 8 target
+
+Support: 23
+where: [128, 134, 262, 8, 263, 264, 11, 12, 13, 23, 26, 158, 163, 37, 170, 71, 205, 82, 83, 102, 230, 250, 126]
+
+-----------------
+
+t # 7
+v 0 ApplicationComponent
+v 1 Assignment
+v 2 ApplicationFunction
+v 3 Composition
+v 4 ApplicationProcess
+v 5 Flow
+v 6 Composition
+v 7 ApplicationProcess
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 6 source
+e 3 4 target
+e 4 5 source
+e 6 7 target
+
+Support: 22
+where: [128, 134, 11, 13, 23, 158, 286, 35, 163, 37, 38, 167, 180, 186, 197, 83, 93, 224, 230, 108, 250, 255]
+
+-----------------
+
