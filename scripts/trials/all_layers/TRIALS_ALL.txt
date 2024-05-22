@@ -4,31 +4,27 @@ all_layers
 Selected values: [10, 8]
 100 models 50_200
 5320
-15, 15, 14
 
-trial_1 
+trial_1
 all_layers
 900_s
 Selected values: [20, 8]
 200 models 50_200
 4349
-38, 36, 35
 
-trial_2 
+trial_2
 all_layers
 900_s
 Selected values: [30, 8]
 300 models 50_200
 485
-46, 45, 45
 
-trial_3 
+trial_3
 all_layers
 900_s
 Selected values: [40, 8]
 400 models 50_200
 7
-68, 67, 53
 
 trial_4
 all_layers
@@ -36,7 +32,6 @@ all_layers
 Selected values: [10, 4]
 229 models 100_500
 34
-31, 26, 23
 
 trial_5
 all_layers
@@ -44,7 +39,6 @@ all_layers
 Selected values: [8, 4]
 229 models 100_500
 57
-31, 26, 23
 
 trial_6
 all_layers
@@ -52,28 +46,24 @@ all_layers
 Selected values: [5, 4]
 292 models 100_500 + 200_500
 258
-25, 23, 18
 
-trial_7 
+trial_7
 all_layers
 300_s
 Selected values: [5, 4]
 245 models 100_1000
 221
-26, 20, 19
 
-trial_8 
+trial_8
 all_layers
 3600_s
 Selected values: [5, 4]
 245 models 100_1000
 330
-26, 20, 19
 
-trial_9 
+trial_9
 all_layers, no application layer
 3600_s
 Selected values: [5, 4]
 245 models 100_1000
 748
-41, 40, 34

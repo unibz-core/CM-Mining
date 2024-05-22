@@ -1,0 +1,13 @@
+@startuml
+!include <archimate/Archimate>
+
+Business_Process("0", "BusinessProcess")
+Business_Process("2", "BusinessProcess")
+Business_Process("4", "BusinessProcess")
+Business_Process("6", "BusinessProcess")
+Business_Process("8", "BusinessProcess")
+Rel_Composition("0", "2")
+Rel_Composition("0", "4")
+Rel_Composition("0", "6")
+Rel_Composition("0", "8")
+@enduml

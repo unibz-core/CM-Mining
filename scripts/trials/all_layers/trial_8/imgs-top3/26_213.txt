@@ -1,0 +1,11 @@
+@startuml
+!include <archimate/Archimate>
+
+Application_Component("0", "ApplicationComponent")
+rectangle "Element" as 1 #line.dashed
+Rel_Association("1", "0")
+rectangle "Element" as 2 #line.dashed
+Rel_Association("2", "0")
+rectangle "Element" as 3 #line.dashed
+Rel_Association("3", "0")
+@enduml

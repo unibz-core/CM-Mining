@@ -1,0 +1,9 @@
+@startuml
+!include <archimate/Archimate>
+
+Business_Role("0", "BusinessRole")
+Business_Service("2", "BusinessService")
+Rel_Serving("0", "2")
+rectangle "Element" as 3 #line.dashed
+Rel_Realization("3", "2")
+@enduml
