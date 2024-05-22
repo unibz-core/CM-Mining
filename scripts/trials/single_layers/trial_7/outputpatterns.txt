@@ -1,0 +1,7198 @@
+t # 0
+v 0 Driver
+v 1 Influence
+v 2 Influence
+v 3 Influence
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 14
+where: [226, 259, 287, 291, 230, 104, 201, 265, 75, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 1
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 2
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+v 4 Influence
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 3
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+v 4 Influence
+v 5 Goal
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 4
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+v 4 Influence
+v 5 Influence
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 5
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 6
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+v 4 Goal
+e 0 1 target
+e 0 3 target
+e 1 2 source
+e 3 4 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 7
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+v 4 Goal
+v 5 Influence
+e 0 1 target
+e 0 3 target
+e 0 5 target
+e 1 2 source
+e 3 4 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 8
+v 0 Driver
+v 1 Influence
+v 2 Goal
+v 3 Influence
+v 4 Influence
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 11
+where: [226, 259, 287, 291, 230, 265, 148, 184, 58, 158, 63]
+
+-----------------
+
+t # 9
+v 0 Assessment
+v 1 Influence
+v 2 Assessment
+v 3 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 11
+where: [32, 258, 200, 172, 142, 240, 113, 51, 213, 23, 185]
+
+-----------------
+
+t # 10
+v 0 Assessment
+v 1 Influence
+v 2 Assessment
+v 3 Influence
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 11
+where: [32, 258, 200, 142, 240, 113, 51, 84, 213, 23, 185]
+
+-----------------
+
+t # 11
+v 0 Assessment
+v 1 Influence
+v 2 Assessment
+v 3 Influence
+v 4 Assessment
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 11
+where: [32, 258, 200, 142, 240, 113, 51, 84, 213, 23, 185]
+
+-----------------
+
+t # 12
+v 0 Assessment
+v 1 Influence
+v 2 Association
+v 3 Driver
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 11
+where: [32, 193, 258, 200, 140, 172, 142, 240, 117, 23, 191]
+
+-----------------
+
+t # 13
+v 0 Goal
+v 1 Influence
+v 2 Influence
+v 3 Influence
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 15
+where: [193, 163, 4, 228, 7, 140, 117, 22, 55, 88, 281, 58, 221, 158, 191]
+
+-----------------
+
+t # 14
+v 0 Goal
+v 1 Influence
+v 2 Influence
+v 3 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 11
+where: [185, 4, 281, 172, 110, 117, 22, 213, 89, 58, 158]
+
+-----------------
+
+t # 15
+v 0 Goal
+v 1 Influence
+v 2 Realization
+v 3 Principle
+e 0 1 target
+e 0 2 target
+e 2 3 source
+
+Support: 13
+where: [185, 215, 133, 218, 110, 142, 212, 213, 22, 23, 89, 58, 158]
+
+-----------------
+
+t # 16
+v 0 Goal
+v 1 Influence
+v 2 Realization
+v 3 Principle
+v 4 Realization
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 13
+where: [185, 215, 133, 218, 110, 142, 212, 213, 22, 23, 89, 58, 158]
+
+-----------------
+
+t # 17
+v 0 Goal
+v 1 Influence
+v 2 Realization
+v 3 Principle
+v 4 Realization
+v 5 Requirement
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 11
+where: [215, 133, 218, 142, 212, 213, 22, 23, 185, 58, 158]
+
+-----------------
+
+t # 18
+v 0 Goal
+v 1 Influence
+v 2 Realization
+v 3 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 15
+where: [215, 291, 133, 249, 218, 172, 142, 148, 212, 22, 23, 213, 185, 58, 158]
+
+-----------------
+
+t # 19
+v 0 Goal
+v 1 Influence
+v 2 Realization
+v 3 Requirement
+e 0 1 target
+e 0 2 target
+e 2 3 source
+
+Support: 11
+where: [291, 133, 218, 172, 142, 148, 212, 213, 23, 185, 215]
+
+-----------------
+
+t # 20
+v 0 Goal
+v 1 Influence
+v 2 Realization
+v 3 Requirement
+v 4 Realization
+e 0 1 target
+e 0 2 target
+e 0 4 target
+e 2 3 source
+
+Support: 11
+where: [291, 133, 218, 172, 142, 148, 212, 213, 23, 185, 215]
+
+-----------------
+
+t # 21
+v 0 Goal
+v 1 Influence
+v 2 Outcome
+v 3 Influence
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 12
+where: [258, 291, 106, 48, 240, 148, 213, 55, 185, 58, 221, 158]
+
+-----------------
+
+t # 22
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Realization
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 13
+where: [258, 291, 164, 133, 218, 240, 148, 212, 22, 213, 277, 185, 215]
+
+-----------------
+
+t # 23
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Influence
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 14
+where: [291, 68, 70, 272, 148, 213, 22, 55, 88, 185, 58, 92, 221, 158]
+
+-----------------
+
+t # 24
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 12
+where: [164, 70, 272, 222, 275, 277, 22, 88, 58, 92, 93, 158]
+
+-----------------
+
+t # 25
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 14
+where: [291, 164, 70, 272, 222, 275, 148, 277, 55, 88, 58, 92, 221, 158]
+
+-----------------
+
+t # 26
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 10
+where: [291, 70, 272, 148, 55, 88, 58, 92, 221, 158]
+
+-----------------
+
+t # 27
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+v 5 Influence
+e 0 1 source
+e 1 2 target
+e 1 5 target
+e 2 3 source
+e 3 4 target
+
+Support: 10
+where: [291, 70, 272, 148, 55, 88, 58, 92, 221, 158]
+
+-----------------
+
+t # 28
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 10
+where: [291, 70, 272, 148, 55, 88, 58, 92, 221, 158]
+
+-----------------
+
+t # 29
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Goal
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 10
+where: [164, 70, 272, 275, 277, 88, 58, 92, 222, 158]
+
+-----------------
+
+t # 30
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 16
+where: [1, 68, 165, 70, 198, 169, 170, 272, 19, 275, 85, 276, 88, 219, 92, 222]
+
+-----------------
+
+t # 31
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+v 4 Requirement
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 14
+where: [1, 68, 165, 70, 169, 170, 272, 19, 275, 85, 276, 88, 92, 222]
+
+-----------------
+
+t # 32
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 15
+where: [68, 165, 70, 198, 169, 170, 272, 19, 275, 85, 276, 88, 219, 92, 222]
+
+-----------------
+
+t # 33
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+v 4 Association
+v 5 Requirement
+e 0 1 source
+e 0 5 target
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 13
+where: [68, 165, 70, 169, 170, 272, 19, 275, 85, 276, 88, 92, 222]
+
+-----------------
+
+t # 34
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 26
+where: [1, 272, 19, 275, 276, 151, 32, 165, 169, 170, 177, 183, 55, 187, 62, 68, 70, 200, 77, 85, 88, 92, 221, 222, 232, 123]
+
+-----------------
+
+t # 35
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+
+Support: 19
+where: [1, 272, 19, 275, 276, 151, 32, 169, 170, 177, 183, 68, 70, 200, 88, 92, 222, 232, 123]
+
+-----------------
+
+t # 36
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+e 1 5 target
+
+Support: 15
+where: [68, 70, 232, 169, 170, 272, 177, 19, 275, 276, 183, 88, 123, 92, 222]
+
+-----------------
+
+t # 37
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+e 1 5 target
+e 1 6 target
+
+Support: 14
+where: [68, 70, 169, 170, 272, 177, 19, 275, 276, 183, 88, 123, 92, 222]
+
+-----------------
+
+t # 38
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 target
+
+Support: 22
+where: [272, 19, 275, 276, 32, 165, 169, 170, 177, 183, 187, 62, 68, 70, 200, 77, 85, 88, 92, 222, 232, 123]
+
+-----------------
+
+t # 39
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 target
+e 1 5 target
+
+Support: 20
+where: [272, 19, 275, 276, 32, 165, 169, 170, 177, 183, 62, 68, 70, 200, 77, 85, 88, 92, 222, 123]
+
+-----------------
+
+t # 40
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 target
+e 1 5 target
+e 1 6 target
+
+Support: 14
+where: [165, 70, 170, 77, 272, 19, 275, 85, 276, 183, 88, 92, 222, 62]
+
+-----------------
+
+t # 41
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Principle
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [1, 198, 71, 169, 170, 77, 19, 276, 219, 62]
+
+-----------------
+
+t # 42
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 29
+where: [5, 272, 19, 275, 276, 32, 165, 169, 170, 177, 183, 185, 187, 62, 68, 70, 71, 198, 200, 77, 85, 213, 88, 219, 92, 222, 232, 250, 123]
+
+-----------------
+
+t # 43
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 4 target
+
+Support: 23
+where: [5, 272, 19, 275, 276, 32, 165, 169, 170, 177, 183, 62, 68, 70, 198, 200, 77, 85, 88, 92, 222, 250, 123]
+
+-----------------
+
+t # 44
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 4 target
+e 1 5 target
+
+Support: 17
+where: [5, 70, 165, 198, 170, 77, 272, 19, 275, 85, 276, 183, 88, 250, 92, 222, 62]
+
+-----------------
+
+t # 45
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 13
+where: [32, 165, 70, 200, 187, 272, 177, 275, 85, 88, 123, 92, 222]
+
+-----------------
+
+t # 46
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 11
+where: [165, 70, 187, 272, 177, 275, 85, 88, 123, 92, 222]
+
+-----------------
+
+t # 47
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 1 5 target
+e 2 3 target
+
+Support: 10
+where: [165, 70, 272, 177, 275, 85, 88, 123, 92, 222]
+
+-----------------
+
+t # 48
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 11
+where: [165, 70, 187, 272, 177, 275, 85, 88, 123, 92, 222]
+
+-----------------
+
+t # 49
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 target
+e 2 3 target
+
+Support: 11
+where: [165, 70, 187, 272, 177, 275, 85, 88, 123, 92, 222]
+
+-----------------
+
+t # 50
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 target
+e 1 6 target
+e 2 3 target
+
+Support: 10
+where: [165, 70, 272, 177, 275, 85, 88, 123, 92, 222]
+
+-----------------
+
+t # 51
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Stakeholder
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [32, 291, 200, 48, 148, 213, 183, 151, 185, 187]
+
+-----------------
+
+t # 52
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Realization
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 14
+where: [32, 97, 185, 71, 200, 48, 177, 84, 213, 119, 151, 183, 123, 252]
+
+-----------------
+
+t # 53
+v 0 Association
+v 1 Goal
+v 2 Requirement
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 11
+where: [1, 165, 70, 169, 170, 19, 275, 85, 276, 92, 222]
+
+-----------------
+
+t # 54
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 31
+where: [5, 8, 272, 19, 275, 276, 151, 30, 32, 165, 41, 169, 170, 177, 55, 183, 187, 62, 68, 70, 198, 200, 77, 85, 88, 219, 92, 221, 222, 250, 123]
+
+-----------------
+
+t # 55
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+e 1 4 target
+
+Support: 27
+where: [5, 8, 272, 19, 275, 276, 151, 30, 32, 165, 41, 170, 183, 55, 187, 62, 70, 198, 200, 77, 85, 88, 219, 92, 221, 222, 250]
+
+-----------------
+
+t # 56
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+e 1 4 target
+e 1 5 target
+
+Support: 13
+where: [32, 198, 200, 170, 77, 19, 276, 55, 30, 151, 219, 221, 62]
+
+-----------------
+
+t # 57
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Association
+v 4 Goal
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+
+Support: 11
+where: [165, 70, 272, 177, 275, 85, 88, 123, 92, 222, 30]
+
+-----------------
+
+t # 58
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Stakeholder
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 10
+where: [258, 8, 41, 240, 113, 51, 213, 55, 185, 221]
+
+-----------------
+
+t # 59
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Realization
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 21
+where: [258, 8, 136, 148, 22, 151, 32, 291, 167, 171, 177, 51, 183, 185, 71, 200, 213, 240, 113, 123, 127]
+
+-----------------
+
+t # 60
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Stakeholder
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 10
+where: [185, 291, 8, 148, 55, 213, 151, 183, 187, 221]
+
+-----------------
+
+t # 61
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 16
+where: [68, 165, 70, 198, 169, 170, 77, 272, 19, 275, 85, 276, 88, 219, 92, 222]
+
+-----------------
+
+t # 62
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 10
+where: [165, 70, 169, 170, 19, 275, 85, 276, 92, 222]
+
+-----------------
+
+t # 63
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Requirement
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 10
+where: [165, 198, 169, 170, 77, 19, 276, 85, 219, 62]
+
+-----------------
+
+t # 64
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 12
+where: [32, 165, 70, 200, 272, 275, 85, 22, 88, 187, 92, 222]
+
+-----------------
+
+t # 65
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 10
+where: [32, 165, 70, 200, 272, 275, 85, 187, 92, 222]
+
+-----------------
+
+t # 66
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 11
+where: [32, 165, 70, 200, 272, 275, 85, 88, 187, 92, 222]
+
+-----------------
+
+t # 67
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Influence
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 11
+where: [68, 70, 272, 275, 213, 22, 55, 185, 92, 221, 222]
+
+-----------------
+
+t # 68
+v 0 Association
+v 1 Goal
+v 2 Association
+v 3 Goal
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 15
+where: [32, 165, 70, 71, 200, 187, 272, 177, 275, 85, 88, 123, 92, 222, 30]
+
+-----------------
+
+t # 69
+v 0 Association
+v 1 Goal
+v 2 Stakeholder
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 10
+where: [291, 8, 48, 148, 213, 55, 185, 187, 221, 94]
+
+-----------------
+
+t # 70
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Principle
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 12
+where: [185, 133, 167, 218, 171, 172, 212, 213, 22, 151, 183, 215]
+
+-----------------
+
+t # 71
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Principle
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 10
+where: [133, 167, 171, 172, 212, 213, 22, 215, 185, 218]
+
+-----------------
+
+t # 72
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Principle
+v 4 Realization
+v 5 Requirement
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 10
+where: [133, 167, 171, 172, 212, 213, 22, 215, 185, 218]
+
+-----------------
+
+t # 73
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Principle
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 11
+where: [185, 133, 167, 218, 171, 212, 213, 22, 151, 183, 215]
+
+-----------------
+
+t # 74
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Realization
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 20
+where: [133, 136, 277, 22, 151, 164, 167, 171, 51, 183, 185, 71, 212, 213, 215, 218, 113, 119, 252, 127]
+
+-----------------
+
+t # 75
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Requirement
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 19
+where: [133, 136, 148, 151, 291, 48, 51, 183, 185, 71, 84, 212, 213, 215, 218, 113, 119, 252, 127]
+
+-----------------
+
+t # 76
+v 0 Association
+v 1 Goal
+v 2 Realization
+v 3 Requirement
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 1 4 target
+e 2 3 source
+
+Support: 14
+where: [185, 133, 136, 218, 113, 51, 212, 213, 119, 151, 183, 215, 252, 127]
+
+-----------------
+
+t # 77
+v 0 Association
+v 1 Goal
+v 2 Goal
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 19
+where: [272, 275, 277, 158, 30, 32, 164, 165, 177, 58, 187, 70, 71, 200, 85, 88, 92, 222, 123]
+
+-----------------
+
+t # 78
+v 0 Association
+v 1 Goal
+v 2 Goal
+v 3 Association
+v 4 Goal
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 11
+where: [32, 164, 70, 200, 272, 275, 277, 88, 92, 222, 30]
+
+-----------------
+
+t # 79
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Influence
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 13
+where: [291, 70, 272, 222, 275, 148, 22, 55, 88, 58, 92, 221, 158]
+
+-----------------
+
+t # 80
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Influence
+v 4 Goal
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 3 4 source
+
+Support: 12
+where: [291, 70, 272, 222, 275, 148, 55, 88, 58, 92, 221, 158]
+
+-----------------
+
+t # 81
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 14
+where: [291, 164, 70, 272, 275, 148, 55, 252, 119, 88, 277, 92, 221, 222]
+
+-----------------
+
+t # 82
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 target
+
+Support: 10
+where: [291, 70, 272, 275, 148, 55, 88, 92, 221, 222]
+
+-----------------
+
+t # 83
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+v 5 Influence
+e 0 1 source
+e 1 2 source
+e 1 5 target
+e 2 3 target
+e 3 4 target
+
+Support: 10
+where: [291, 70, 272, 275, 148, 55, 88, 92, 221, 222]
+
+-----------------
+
+t # 84
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 10
+where: [291, 70, 272, 275, 148, 55, 88, 92, 221, 222]
+
+-----------------
+
+t # 85
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+v 5 Influence
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 3 5 target
+
+Support: 10
+where: [291, 70, 272, 275, 148, 55, 88, 92, 221, 222]
+
+-----------------
+
+t # 86
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Influence
+e 0 1 source
+e 1 2 source
+e 1 4 target
+e 2 3 target
+
+Support: 10
+where: [291, 70, 272, 275, 148, 55, 88, 92, 221, 222]
+
+-----------------
+
+t # 87
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+e 0 1 source
+e 0 3 target
+e 1 2 source
+
+Support: 10
+where: [164, 70, 272, 275, 277, 88, 58, 92, 222, 158]
+
+-----------------
+
+t # 88
+v 0 Association
+v 1 Goal
+v 2 Influence
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 source
+e 3 4 target
+
+Support: 10
+where: [164, 70, 272, 275, 277, 88, 58, 92, 222, 158]
+
+-----------------
+
+t # 89
+v 0 Association
+v 1 Requirement
+v 2 Association
+v 3 Composition
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 10
+where: [133, 165, 19, 212, 85, 213, 215, 276, 185, 218]
+
+-----------------
+
+t # 90
+v 0 Association
+v 1 Requirement
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 11
+where: [34, 165, 198, 169, 170, 78, 19, 276, 85, 213, 185]
+
+-----------------
+
+t # 91
+v 0 Association
+v 1 Requirement
+v 2 Goal
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 13
+where: [291, 165, 198, 169, 170, 77, 19, 148, 85, 276, 30, 219, 62]
+
+-----------------
+
+t # 92
+v 0 Association
+v 1 Requirement
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 12
+where: [291, 165, 198, 170, 77, 19, 148, 85, 276, 30, 219, 62]
+
+-----------------
+
+t # 93
+v 0 Association
+v 1 Requirement
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 4 target
+e 2 5 target
+
+Support: 10
+where: [291, 165, 198, 170, 19, 148, 85, 276, 219, 62]
+
+-----------------
+
+t # 94
+v 0 Goal
+v 1 Realization
+v 2 Realization
+v 3 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 23
+where: [265, 142, 148, 277, 22, 23, 151, 286, 287, 291, 164, 172, 51, 183, 185, 63, 71, 201, 213, 98, 230, 113, 249]
+
+-----------------
+
+t # 95
+v 0 Goal
+v 1 Realization
+v 2 Realization
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 14
+where: [98, 291, 287, 249, 230, 201, 265, 142, 148, 22, 23, 151, 183, 63]
+
+-----------------
+
+t # 96
+v 0 Goal
+v 1 Realization
+v 2 Realization
+v 3 Realization
+v 4 Realization
+v 5 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+
+Support: 10
+where: [291, 287, 230, 201, 265, 148, 22, 151, 183, 63]
+
+-----------------
+
+t # 97
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 25
+where: [133, 265, 142, 22, 23, 158, 167, 41, 171, 172, 48, 184, 185, 58, 190, 63, 212, 213, 215, 89, 218, 226, 109, 110, 120]
+
+-----------------
+
+t # 98
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Requirement
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 20
+where: [133, 142, 22, 23, 158, 167, 41, 171, 172, 48, 184, 185, 58, 190, 212, 213, 215, 218, 226, 120]
+
+-----------------
+
+t # 99
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 16
+where: [226, 215, 133, 167, 41, 218, 171, 142, 212, 213, 22, 23, 184, 185, 58, 158]
+
+-----------------
+
+t # 100
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+v 6 Requirement
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 5 6 source
+
+Support: 10
+where: [226, 133, 218, 142, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 101
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 11
+where: [226, 133, 218, 172, 212, 213, 215, 184, 185, 58, 158]
+
+-----------------
+
+t # 102
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+v 6 Realization
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 10
+where: [226, 133, 218, 212, 213, 215, 184, 185, 58, 158]
+
+-----------------
+
+t # 103
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 18
+where: [226, 215, 133, 167, 41, 218, 171, 265, 142, 212, 213, 22, 23, 184, 185, 58, 158, 63]
+
+-----------------
+
+t # 104
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+
+Support: 10
+where: [226, 133, 218, 142, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 105
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 15
+where: [167, 41, 201, 171, 109, 142, 48, 183, 22, 23, 120, 151, 58, 190, 158]
+
+-----------------
+
+t # 106
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Goal
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+
+Support: 12
+where: [41, 201, 142, 48, 183, 22, 23, 120, 151, 58, 190, 158]
+
+-----------------
+
+t # 107
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+
+Support: 12
+where: [167, 41, 171, 109, 142, 48, 22, 23, 120, 58, 190, 158]
+
+-----------------
+
+t # 108
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+
+Support: 11
+where: [167, 41, 171, 142, 48, 22, 23, 120, 58, 190, 158]
+
+-----------------
+
+t # 109
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 11
+where: [167, 41, 201, 171, 142, 22, 23, 151, 183, 58, 158]
+
+-----------------
+
+t # 110
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 23
+where: [133, 265, 142, 22, 23, 151, 158, 167, 41, 171, 183, 184, 185, 58, 63, 71, 201, 212, 213, 215, 218, 98, 226]
+
+-----------------
+
+t # 111
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Realization
+v 4 Requirement
+e 0 1 target
+e 0 3 target
+e 1 2 source
+e 3 4 source
+
+Support: 14
+where: [98, 185, 226, 133, 201, 218, 142, 23, 212, 213, 151, 184, 183, 215]
+
+-----------------
+
+t # 112
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Influence
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [98, 41, 109, 110, 183, 22, 151, 89, 58, 158]
+
+-----------------
+
+t # 113
+v 0 Goal
+v 1 Realization
+v 2 Principle
+v 3 Influence
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 10
+where: [41, 201, 110, 22, 151, 120, 89, 58, 190, 158]
+
+-----------------
+
+t # 114
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Influence
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [133, 230, 201, 218, 172, 142, 212, 23, 215, 287]
+
+-----------------
+
+t # 115
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Influence
+v 4 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [133, 230, 201, 218, 172, 142, 212, 23, 215, 287]
+
+-----------------
+
+t # 116
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 31
+where: [133, 136, 142, 148, 277, 23, 151, 286, 287, 291, 164, 172, 48, 176, 51, 183, 184, 185, 201, 207, 212, 213, 215, 218, 98, 226, 230, 113, 119, 252, 127]
+
+-----------------
+
+t # 117
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Requirement
+e 0 1 target
+e 0 3 target
+e 1 2 source
+e 3 4 source
+
+Support: 21
+where: [142, 148, 277, 23, 151, 286, 287, 291, 164, 172, 48, 51, 183, 185, 201, 213, 98, 230, 113, 119, 252]
+
+-----------------
+
+t # 118
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+e 0 1 target
+e 0 3 target
+e 0 5 target
+e 1 2 source
+e 3 4 source
+
+Support: 18
+where: [98, 185, 164, 291, 230, 201, 172, 142, 113, 51, 148, 213, 277, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 119
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+v 6 Requirement
+e 0 1 target
+e 0 3 target
+e 0 5 target
+e 1 2 source
+e 3 4 source
+e 5 6 source
+
+Support: 14
+where: [98, 291, 164, 230, 201, 142, 113, 51, 148, 277, 23, 151, 183, 287]
+
+-----------------
+
+t # 120
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+v 6 Requirement
+v 7 Realization
+e 0 1 target
+e 0 3 target
+e 0 5 target
+e 0 7 target
+e 1 2 source
+e 3 4 source
+e 5 6 source
+
+Support: 10
+where: [98, 291, 230, 201, 142, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 121
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+v 6 Realization
+e 0 1 target
+e 0 3 target
+e 0 5 target
+e 0 6 target
+e 1 2 source
+e 3 4 source
+
+Support: 10
+where: [98, 291, 230, 201, 142, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 122
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 18
+where: [98, 185, 164, 291, 230, 201, 172, 142, 113, 51, 148, 213, 277, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 123
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Realization
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+
+Support: 10
+where: [98, 291, 230, 201, 142, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 124
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 15
+where: [185, 287, 230, 136, 172, 142, 207, 48, 176, 213, 23, 151, 183, 286, 127]
+
+-----------------
+
+t # 125
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 13
+where: [185, 287, 230, 136, 142, 207, 176, 23, 213, 151, 183, 286, 127]
+
+-----------------
+
+t # 126
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 17
+where: [185, 291, 230, 201, 172, 77, 142, 113, 51, 84, 148, 213, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 127
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Goal
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+
+Support: 12
+where: [291, 230, 201, 142, 113, 51, 84, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 128
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Goal
+v 5 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 11
+where: [291, 230, 201, 142, 113, 51, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 129
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Goal
+v 5 Realization
+v 6 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+e 4 6 target
+
+Support: 11
+where: [291, 230, 201, 142, 113, 51, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 130
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 15
+where: [185, 291, 230, 201, 172, 142, 113, 51, 148, 213, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 131
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+
+Support: 15
+where: [185, 291, 230, 201, 172, 142, 113, 51, 148, 213, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 132
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+v 6 Realization
+e 0 1 target
+e 0 4 target
+e 0 6 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+
+Support: 15
+where: [185, 291, 230, 201, 172, 142, 113, 51, 148, 213, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 133
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+v 6 Realization
+v 7 Requirement
+e 0 1 target
+e 0 4 target
+e 0 6 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+e 6 7 source
+
+Support: 11
+where: [291, 230, 201, 142, 113, 51, 148, 23, 151, 183, 287]
+
+-----------------
+
+t # 134
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+v 6 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+e 5 6 source
+
+Support: 11
+where: [291, 230, 201, 172, 113, 51, 148, 151, 183, 286, 287]
+
+-----------------
+
+t # 135
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Requirement
+v 6 Realization
+v 7 Realization
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+e 5 6 source
+
+Support: 11
+where: [291, 230, 201, 172, 113, 51, 148, 151, 183, 286, 287]
+
+-----------------
+
+t # 136
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+v 4 Realization
+v 5 Realization
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 source
+
+Support: 15
+where: [185, 291, 230, 201, 172, 142, 113, 51, 148, 213, 23, 151, 183, 286, 287]
+
+-----------------
+
+t # 137
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Specialization
+e 0 1 target
+e 1 2 source
+e 2 3 general
+
+Support: 13
+where: [226, 133, 218, 172, 142, 207, 176, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 138
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Specialization
+v 4 Requirement
+e 0 1 target
+e 1 2 source
+e 2 3 general
+e 3 4 specific
+
+Support: 13
+where: [226, 133, 218, 172, 142, 207, 176, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 139
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Specialization
+v 4 Requirement
+v 5 Realization
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 general
+e 3 4 specific
+
+Support: 13
+where: [226, 133, 218, 172, 142, 207, 176, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 140
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Specialization
+v 4 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 general
+
+Support: 13
+where: [226, 133, 218, 172, 142, 207, 176, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 141
+v 0 Goal
+v 1 Realization
+v 2 Requirement
+v 3 Influence
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 12
+where: [291, 230, 201, 172, 77, 142, 148, 213, 23, 185, 286, 287]
+
+-----------------
+
+t # 142
+v 0 Goal
+v 1 Realization
+v 2 Outcome
+v 3 Realization
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 12
+where: [291, 164, 71, 167, 171, 148, 277, 55, 249, 58, 221, 158]
+
+-----------------
+
+t # 143
+v 0 Goal
+v 1 Realization
+v 2 Outcome
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 11
+where: [259, 291, 167, 171, 109, 148, 120, 249, 58, 190, 158]
+
+-----------------
+
+t # 144
+v 0 Association
+v 1 Driver
+v 2 Association
+v 3 Association
+e 0 1 target
+e 1 2 target
+e 1 3 target
+
+Support: 24
+where: [258, 259, 19, 276, 22, 158, 159, 32, 286, 165, 51, 58, 190, 200, 77, 85, 238, 239, 240, 113, 117, 119, 120, 252]
+
+-----------------
+
+t # 145
+v 0 Association
+v 1 Driver
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 target
+e 1 2 target
+e 1 3 target
+e 1 4 target
+
+Support: 12
+where: [32, 165, 200, 77, 113, 51, 19, 85, 22, 117, 276, 286]
+
+-----------------
+
+t # 146
+v 0 Realization
+v 1 Requirement
+v 2 Specialization
+v 3 Requirement
+e 0 1 target
+e 1 2 specific
+e 2 3 general
+
+Support: 10
+where: [226, 133, 218, 142, 212, 213, 23, 184, 185, 215]
+
+-----------------
+
+t # 147
+v 0 Realization
+v 1 Requirement
+v 2 Realization
+v 3 Realization
+e 0 1 target
+e 1 2 target
+e 1 3 target
+
+Support: 11
+where: [98, 100, 197, 230, 107, 239, 213, 185, 155, 286, 287]
+
+-----------------
+
+t # 148
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 29
+where: [258, 5, 263, 136, 140, 19, 276, 30, 159, 32, 172, 48, 51, 185, 191, 193, 71, 200, 201, 77, 213, 215, 218, 219, 240, 113, 117, 250, 127]
+
+-----------------
+
+t # 149
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 20
+where: [258, 5, 263, 136, 19, 276, 30, 159, 32, 172, 48, 51, 71, 200, 77, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 150
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 14
+where: [32, 258, 5, 71, 136, 200, 77, 240, 113, 51, 19, 276, 250, 127]
+
+-----------------
+
+t # 151
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Stakeholder
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 5 target
+e 3 4 source
+e 5 6 source
+
+Support: 11
+where: [32, 258, 5, 200, 77, 240, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 152
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 15
+where: [32, 159, 258, 71, 136, 200, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 153
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 13
+where: [32, 258, 136, 200, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 154
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+v 7 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 11
+where: [258, 136, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 155
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+v 7 Association
+v 8 Assessment
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+e 7 8 target
+
+Support: 11
+where: [258, 136, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 156
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+v 7 Association
+v 8 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+e 6 8 source
+
+Support: 10
+where: [258, 136, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 157
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 6 target
+e 3 4 source
+e 4 5 source
+
+Support: 12
+where: [32, 258, 71, 136, 200, 77, 240, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 158
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Association
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 11
+where: [32, 159, 71, 136, 200, 48, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 159
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Association
+v 7 Driver
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 6 7 source
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 160
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 13
+where: [32, 159, 71, 136, 200, 172, 48, 113, 51, 19, 276, 219, 127]
+
+-----------------
+
+t # 161
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+e 5 6 source
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 162
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 16
+where: [32, 159, 258, 5, 71, 136, 200, 77, 240, 113, 51, 19, 117, 276, 250, 127]
+
+-----------------
+
+t # 163
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 164
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Driver
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 165
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 17
+where: [32, 159, 71, 136, 200, 172, 48, 113, 51, 19, 213, 276, 215, 185, 218, 219, 127]
+
+-----------------
+
+t # 166
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Driver
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 167
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Goal
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+
+Support: 11
+where: [32, 200, 172, 48, 113, 51, 213, 215, 185, 218, 219]
+
+-----------------
+
+t # 168
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+
+Support: 11
+where: [32, 71, 136, 200, 213, 215, 185, 218, 219, 127, 159]
+
+-----------------
+
+t # 169
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 29
+where: [258, 5, 263, 136, 140, 19, 276, 30, 159, 32, 170, 48, 51, 185, 62, 191, 193, 198, 71, 200, 201, 77, 84, 213, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 170
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+
+Support: 20
+where: [258, 5, 136, 19, 276, 30, 159, 32, 170, 51, 62, 198, 71, 200, 84, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 171
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 target
+e 3 4 target
+
+Support: 16
+where: [32, 159, 258, 5, 71, 136, 200, 240, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 172
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Stakeholder
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 target
+e 3 4 target
+e 5 6 source
+
+Support: 14
+where: [159, 258, 5, 71, 136, 240, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 173
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Stakeholder
+v 7 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 target
+e 3 4 target
+e 5 6 source
+e 6 7 source
+
+Support: 10
+where: [159, 258, 136, 240, 113, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 174
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 14
+where: [32, 159, 198, 71, 136, 200, 113, 51, 19, 84, 276, 219, 62, 127]
+
+-----------------
+
+t # 175
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 6 target
+e 3 4 target
+e 4 5 target
+
+Support: 11
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 219, 127]
+
+-----------------
+
+t # 176
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 6 source
+e 3 4 target
+e 4 5 target
+
+Support: 13
+where: [32, 159, 198, 71, 136, 200, 113, 51, 19, 84, 276, 62, 127]
+
+-----------------
+
+t # 177
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+v 7 Association
+e 0 1 target
+e 0 7 target
+e 1 2 source
+e 2 3 source
+e 2 6 source
+e 3 4 target
+e 4 5 target
+
+Support: 10
+where: [32, 159, 198, 71, 136, 200, 113, 51, 62, 127]
+
+-----------------
+
+t # 178
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 10
+where: [32, 159, 198, 71, 136, 200, 113, 51, 62, 127]
+
+-----------------
+
+t # 179
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 source
+e 3 4 target
+
+Support: 13
+where: [32, 159, 198, 71, 136, 200, 113, 51, 19, 84, 276, 62, 127]
+
+-----------------
+
+t # 180
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 5 source
+e 2 6 target
+e 3 4 target
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 181
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+
+Support: 24
+where: [258, 5, 263, 136, 140, 19, 276, 30, 159, 32, 48, 51, 185, 191, 71, 200, 201, 77, 213, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 182
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+
+Support: 19
+where: [258, 5, 263, 136, 19, 276, 30, 159, 32, 48, 51, 71, 200, 77, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 183
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+e 5 6 source
+
+Support: 14
+where: [32, 159, 258, 136, 200, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 184
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Driver
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+
+Support: 13
+where: [32, 258, 136, 200, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 185
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Driver
+v 8 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+e 7 8 source
+
+Support: 11
+where: [258, 136, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 186
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Driver
+v 8 Association
+v 9 Assessment
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+e 7 8 source
+e 8 9 target
+
+Support: 10
+where: [258, 136, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 187
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Association
+e 0 1 target
+e 0 7 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+e 5 6 source
+
+Support: 10
+where: [32, 159, 136, 200, 48, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 188
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+e 4 5 source
+
+Support: 12
+where: [32, 159, 71, 136, 200, 48, 113, 51, 19, 276, 219, 127]
+
+-----------------
+
+t # 189
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 source
+e 2 4 target
+
+Support: 14
+where: [32, 159, 71, 136, 200, 48, 113, 51, 19, 213, 276, 185, 219, 127]
+
+-----------------
+
+t # 190
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 source
+
+Support: 14
+where: [32, 159, 198, 71, 136, 200, 77, 113, 51, 19, 84, 276, 62, 127]
+
+-----------------
+
+t # 191
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 2 4 source
+e 2 5 target
+
+Support: 11
+where: [32, 159, 71, 136, 200, 77, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 192
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 source
+e 2 4 source
+
+Support: 13
+where: [32, 159, 198, 71, 136, 200, 113, 51, 19, 84, 276, 62, 127]
+
+-----------------
+
+t # 193
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 17
+where: [32, 159, 198, 71, 136, 200, 48, 113, 51, 19, 84, 213, 276, 185, 219, 62, 127]
+
+-----------------
+
+t # 194
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Driver
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+
+Support: 11
+where: [32, 159, 71, 136, 200, 113, 51, 19, 84, 276, 127]
+
+-----------------
+
+t # 195
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+e 5 6 target
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 196
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Stakeholder
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 197
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Stakeholder
+v 8 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+e 7 8 source
+
+Support: 10
+where: [32, 159, 71, 136, 200, 113, 51, 19, 276, 127]
+
+-----------------
+
+t # 198
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Goal
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+e 4 5 source
+
+Support: 10
+where: [32, 198, 200, 48, 113, 51, 213, 185, 219, 62]
+
+-----------------
+
+t # 199
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 source
+
+Support: 10
+where: [32, 198, 71, 136, 200, 213, 185, 219, 127, 159]
+
+-----------------
+
+t # 200
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 22
+where: [136, 140, 19, 276, 159, 32, 172, 48, 51, 185, 62, 191, 198, 71, 200, 84, 213, 215, 218, 219, 113, 127]
+
+-----------------
+
+t # 201
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Driver
+e 0 1 target
+e 0 3 target
+e 1 2 source
+e 3 4 source
+
+Support: 11
+where: [32, 159, 71, 136, 200, 113, 51, 19, 84, 276, 127]
+
+-----------------
+
+t # 202
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Goal
+e 0 1 target
+e 0 3 target
+e 1 2 source
+e 3 4 source
+
+Support: 13
+where: [32, 198, 200, 172, 48, 113, 51, 213, 215, 185, 218, 219, 62]
+
+-----------------
+
+t # 203
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 12
+where: [32, 198, 71, 136, 200, 213, 215, 185, 218, 219, 127, 159]
+
+-----------------
+
+t # 204
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Influence
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 12
+where: [32, 258, 200, 218, 172, 142, 240, 113, 51, 84, 23, 215]
+
+-----------------
+
+t # 205
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 12
+where: [32, 198, 71, 136, 200, 213, 215, 185, 218, 219, 127, 159]
+
+-----------------
+
+t # 206
+v 0 Assessment
+v 1 Association
+v 2 Influence
+v 3 Influence
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 11
+where: [32, 258, 133, 200, 240, 113, 51, 84, 212, 213, 185]
+
+-----------------
+
+t # 207
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 13
+where: [32, 198, 167, 200, 232, 171, 113, 51, 213, 183, 185, 219, 62]
+
+-----------------
+
+t # 208
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 10
+where: [32, 198, 200, 113, 51, 213, 183, 185, 219, 62]
+
+-----------------
+
+t # 209
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 17
+where: [32, 185, 133, 167, 200, 171, 172, 48, 113, 51, 84, 212, 213, 119, 151, 183, 252]
+
+-----------------
+
+t # 210
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 12
+where: [32, 185, 200, 172, 48, 113, 51, 84, 213, 119, 183, 252]
+
+-----------------
+
+t # 211
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Requirement
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 3 4 source
+
+Support: 12
+where: [185, 133, 48, 113, 51, 84, 212, 213, 119, 151, 183, 252]
+
+-----------------
+
+t # 212
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 10
+where: [185, 133, 113, 51, 119, 212, 213, 151, 183, 252]
+
+-----------------
+
+t # 213
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 12
+where: [185, 133, 167, 171, 113, 51, 119, 212, 213, 151, 183, 252]
+
+-----------------
+
+t # 214
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 12
+where: [32, 198, 200, 232, 48, 84, 119, 151, 183, 219, 252, 62]
+
+-----------------
+
+t # 215
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 10
+where: [32, 198, 200, 48, 84, 119, 183, 219, 252, 62]
+
+-----------------
+
+t # 216
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 17
+where: [32, 185, 198, 200, 218, 172, 48, 113, 51, 84, 213, 119, 183, 215, 219, 252, 62]
+
+-----------------
+
+t # 217
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 23
+where: [5, 19, 276, 151, 158, 30, 32, 286, 169, 170, 48, 51, 183, 58, 62, 71, 200, 77, 214, 219, 232, 113, 250]
+
+-----------------
+
+t # 218
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 16
+where: [32, 5, 200, 169, 170, 232, 113, 51, 19, 276, 214, 151, 183, 250, 30, 286]
+
+-----------------
+
+t # 219
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 13
+where: [32, 5, 200, 169, 170, 113, 51, 19, 276, 151, 183, 250, 30]
+
+-----------------
+
+t # 220
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Driver
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+
+Support: 11
+where: [32, 5, 200, 169, 170, 113, 51, 19, 276, 250, 30]
+
+-----------------
+
+t # 221
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Driver
+v 7 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+e 6 7 source
+
+Support: 10
+where: [32, 5, 200, 170, 113, 51, 19, 276, 250, 30]
+
+-----------------
+
+t # 222
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 10
+where: [32, 5, 200, 169, 170, 19, 276, 151, 250, 30]
+
+-----------------
+
+t # 223
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 11
+where: [32, 5, 200, 170, 19, 276, 151, 183, 250, 30, 286]
+
+-----------------
+
+t # 224
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 10
+where: [32, 5, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 225
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 10
+where: [32, 5, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 226
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Assessment
+v 5 Association
+v 6 Association
+v 7 Driver
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 6 7 source
+
+Support: 10
+where: [32, 5, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 227
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 15
+where: [32, 5, 200, 170, 250, 219, 19, 276, 151, 62, 183, 58, 158, 30, 286]
+
+-----------------
+
+t # 228
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 10
+where: [5, 170, 19, 276, 30, 151, 183, 250, 219, 62]
+
+-----------------
+
+t # 229
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 4 target
+e 2 5 target
+
+Support: 11
+where: [32, 200, 170, 219, 19, 276, 30, 151, 58, 158, 62]
+
+-----------------
+
+t # 230
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 18
+where: [32, 5, 71, 200, 169, 170, 77, 48, 113, 19, 51, 276, 151, 62, 183, 250, 219, 30]
+
+-----------------
+
+t # 231
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+
+Support: 16
+where: [32, 5, 71, 200, 169, 170, 77, 48, 113, 19, 51, 276, 62, 250, 219, 30]
+
+-----------------
+
+t # 232
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 target
+
+Support: 13
+where: [32, 5, 71, 200, 77, 48, 113, 19, 51, 276, 250, 219, 30]
+
+-----------------
+
+t # 233
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Stakeholder
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 13
+where: [32, 5, 71, 200, 77, 48, 113, 19, 51, 276, 250, 219, 30]
+
+-----------------
+
+t # 234
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 5 7 target
+
+Support: 10
+where: [32, 5, 71, 200, 77, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 235
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 source
+
+Support: 15
+where: [32, 5, 71, 200, 170, 77, 48, 113, 19, 51, 276, 62, 250, 219, 30]
+
+-----------------
+
+t # 236
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Assessment
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+
+Support: 11
+where: [32, 5, 71, 200, 170, 19, 276, 30, 250, 219, 62]
+
+-----------------
+
+t # 237
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Assessment
+v 8 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+e 7 8 source
+
+Support: 10
+where: [32, 5, 71, 200, 170, 19, 276, 250, 219, 30]
+
+-----------------
+
+t # 238
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 source
+e 5 7 target
+
+Support: 13
+where: [32, 5, 71, 200, 77, 48, 113, 19, 51, 276, 250, 219, 30]
+
+-----------------
+
+t # 239
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Association
+v 8 Stakeholder
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 source
+e 5 7 target
+e 7 8 source
+
+Support: 11
+where: [5, 71, 77, 48, 113, 51, 19, 276, 250, 219, 30]
+
+-----------------
+
+t # 240
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+
+Support: 10
+where: [32, 5, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 241
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 11
+where: [32, 71, 200, 48, 113, 51, 151, 183, 58, 158, 286]
+
+-----------------
+
+t # 242
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 23
+where: [5, 136, 19, 276, 151, 30, 32, 169, 170, 51, 183, 185, 62, 68, 71, 200, 77, 213, 219, 232, 113, 250, 127]
+
+-----------------
+
+t # 243
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 13
+where: [32, 5, 200, 169, 170, 19, 276, 30, 151, 183, 250, 219, 62]
+
+-----------------
+
+t # 244
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 2 5 target
+
+Support: 10
+where: [5, 170, 19, 276, 30, 151, 183, 250, 219, 62]
+
+-----------------
+
+t # 245
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 2 5 target
+
+Support: 10
+where: [5, 170, 19, 276, 30, 151, 183, 250, 219, 62]
+
+-----------------
+
+t # 246
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 13
+where: [32, 5, 200, 169, 170, 19, 276, 30, 151, 183, 250, 219, 62]
+
+-----------------
+
+t # 247
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Driver
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 5 6 source
+
+Support: 11
+where: [32, 5, 200, 169, 170, 19, 276, 30, 250, 219, 62]
+
+-----------------
+
+t # 248
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 15
+where: [32, 5, 71, 200, 169, 170, 232, 19, 276, 213, 183, 185, 250, 219, 62]
+
+-----------------
+
+t # 249
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 2 5 target
+
+Support: 10
+where: [32, 5, 200, 169, 170, 19, 276, 183, 250, 62]
+
+-----------------
+
+t # 250
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 12
+where: [5, 71, 169, 170, 19, 276, 213, 183, 185, 250, 219, 62]
+
+-----------------
+
+t # 251
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Driver
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 5 6 source
+
+Support: 11
+where: [5, 71, 169, 170, 19, 276, 213, 185, 250, 219, 62]
+
+-----------------
+
+t # 252
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 21
+where: [5, 136, 19, 276, 151, 30, 32, 169, 170, 51, 183, 185, 62, 71, 200, 77, 213, 219, 113, 250, 127]
+
+-----------------
+
+t # 253
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+
+Support: 17
+where: [32, 5, 71, 136, 169, 170, 200, 77, 19, 276, 213, 30, 185, 250, 219, 62, 127]
+
+-----------------
+
+t # 254
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 target
+
+Support: 14
+where: [32, 5, 71, 136, 200, 77, 19, 276, 213, 185, 250, 219, 30, 127]
+
+-----------------
+
+t # 255
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Stakeholder
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 12
+where: [32, 5, 71, 136, 200, 77, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 256
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+
+Support: 13
+where: [32, 5, 71, 136, 200, 170, 19, 276, 30, 250, 219, 62, 127]
+
+-----------------
+
+t # 257
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Assessment
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+e 6 7 target
+
+Support: 13
+where: [32, 5, 71, 136, 200, 170, 19, 276, 30, 250, 219, 62, 127]
+
+-----------------
+
+t # 258
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Assessment
+v 8 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+e 6 7 target
+e 7 8 source
+
+Support: 12
+where: [32, 5, 71, 136, 200, 170, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 259
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Assessment
+v 8 Association
+v 9 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+e 5 9 target
+e 6 7 target
+e 7 8 source
+
+Support: 11
+where: [32, 5, 71, 136, 200, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 260
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Assessment
+v 8 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+e 5 8 target
+e 6 7 target
+
+Support: 11
+where: [32, 5, 71, 136, 200, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 261
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Driver
+v 6 Association
+v 7 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 source
+e 5 7 target
+
+Support: 11
+where: [32, 5, 71, 136, 200, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 262
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+
+Support: 12
+where: [32, 68, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 263
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Goal
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 264
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Goal
+v 6 Association
+e 0 1 source
+e 0 4 source
+e 0 6 target
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 265
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Goal
+v 6 Association
+e 0 1 source
+e 0 4 source
+e 0 6 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 266
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 4 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 267
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 4 source
+e 0 5 source
+e 1 2 target
+e 2 3 source
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 268
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 11
+where: [32, 185, 71, 136, 200, 113, 51, 213, 151, 183, 127]
+
+-----------------
+
+t # 269
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Realization
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 11
+where: [32, 185, 71, 136, 200, 113, 51, 213, 151, 183, 127]
+
+-----------------
+
+t # 270
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 26
+where: [5, 136, 19, 276, 151, 30, 32, 169, 170, 172, 48, 51, 183, 185, 62, 71, 200, 77, 84, 213, 89, 219, 110, 113, 250, 127]
+
+-----------------
+
+t # 271
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 23
+where: [5, 136, 19, 276, 30, 32, 169, 170, 172, 48, 51, 185, 62, 71, 200, 77, 213, 89, 219, 110, 113, 250, 127]
+
+-----------------
+
+t # 272
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+
+Support: 18
+where: [32, 5, 71, 136, 200, 172, 77, 48, 113, 19, 51, 213, 276, 185, 250, 219, 30, 127]
+
+-----------------
+
+t # 273
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Stakeholder
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+
+Support: 16
+where: [32, 5, 71, 136, 200, 172, 77, 48, 113, 19, 51, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 274
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Stakeholder
+v 7 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+e 5 6 source
+e 6 7 source
+
+Support: 10
+where: [32, 71, 200, 77, 48, 113, 51, 19, 276, 30]
+
+-----------------
+
+t # 275
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+e 4 6 target
+
+Support: 10
+where: [32, 5, 71, 200, 77, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 276
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 3 target
+e 0 6 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+
+Support: 12
+where: [32, 71, 200, 172, 48, 113, 51, 19, 213, 276, 185, 219]
+
+-----------------
+
+t # 277
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+
+Support: 17
+where: [32, 5, 71, 136, 200, 170, 77, 48, 113, 19, 51, 276, 62, 250, 219, 30, 127]
+
+-----------------
+
+t # 278
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 15
+where: [32, 5, 71, 136, 200, 170, 113, 51, 19, 276, 62, 250, 219, 30, 127]
+
+-----------------
+
+t # 279
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 14
+where: [32, 5, 71, 136, 200, 170, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 280
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+v 8 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 8 target
+e 5 6 target
+e 6 7 source
+
+Support: 13
+where: [32, 5, 71, 136, 200, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 281
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+v 8 Association
+v 9 Stakeholder
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 8 target
+e 5 6 target
+e 6 7 source
+e 8 9 source
+
+Support: 11
+where: [5, 71, 136, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 282
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 7 target
+e 5 6 target
+
+Support: 13
+where: [32, 5, 71, 136, 200, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 283
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+v 8 Stakeholder
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 7 target
+e 5 6 target
+e 7 8 source
+
+Support: 11
+where: [5, 71, 136, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 284
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 target
+
+Support: 11
+where: [32, 71, 136, 200, 113, 51, 19, 276, 219, 62, 127]
+
+-----------------
+
+t # 285
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+v 8 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 5 6 target
+e 6 7 target
+
+Support: 10
+where: [32, 71, 136, 200, 113, 51, 19, 276, 62, 127]
+
+-----------------
+
+t # 286
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Assessment
+v 7 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 7 source
+e 5 6 target
+
+Support: 10
+where: [32, 71, 136, 200, 113, 51, 19, 276, 62, 127]
+
+-----------------
+
+t # 287
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 6 target
+
+Support: 15
+where: [32, 5, 71, 136, 200, 77, 48, 113, 19, 51, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 288
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Association
+v 7 Stakeholder
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 6 target
+e 6 7 source
+
+Support: 13
+where: [5, 71, 136, 77, 48, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 289
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 6 source
+
+Support: 11
+where: [32, 71, 136, 200, 77, 113, 51, 19, 276, 62, 127]
+
+-----------------
+
+t # 290
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Association
+e 0 1 source
+e 0 3 target
+e 0 6 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+
+Support: 10
+where: [32, 71, 200, 48, 113, 51, 19, 276, 219, 62]
+
+-----------------
+
+t # 291
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+e 0 1 source
+e 0 3 target
+e 0 5 target
+e 1 2 target
+e 3 4 source
+
+Support: 13
+where: [32, 71, 200, 172, 48, 113, 51, 19, 213, 276, 185, 219, 62]
+
+-----------------
+
+t # 292
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Driver
+v 5 Association
+v 6 Goal
+e 0 1 source
+e 0 3 target
+e 0 5 target
+e 1 2 target
+e 3 4 source
+e 5 6 source
+
+Support: 10
+where: [32, 200, 172, 48, 113, 51, 213, 185, 219, 62]
+
+-----------------
+
+t # 293
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 0 4 target
+e 1 2 target
+
+Support: 13
+where: [32, 71, 200, 172, 48, 113, 51, 19, 213, 276, 185, 219, 62]
+
+-----------------
+
+t # 294
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Goal
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 12
+where: [32, 185, 200, 172, 48, 113, 51, 213, 151, 183, 219, 62]
+
+-----------------
+
+t # 295
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Goal
+v 5 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 target
+
+Support: 10
+where: [32, 185, 200, 172, 48, 113, 51, 213, 151, 183]
+
+-----------------
+
+t # 296
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Goal
+v 5 Association
+e 0 1 source
+e 0 3 target
+e 0 5 target
+e 1 2 target
+e 3 4 source
+
+Support: 10
+where: [32, 200, 172, 48, 113, 51, 213, 185, 219, 62]
+
+-----------------
+
+t # 297
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 13
+where: [32, 68, 5, 71, 200, 169, 170, 113, 51, 19, 84, 276, 250]
+
+-----------------
+
+t # 298
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Goal
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 299
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Goal
+v 5 Association
+e 0 1 source
+e 0 3 source
+e 0 5 target
+e 1 2 target
+e 3 4 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 300
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Goal
+v 5 Association
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 1 2 target
+e 3 4 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 301
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 3 source
+e 0 4 target
+e 1 2 target
+
+Support: 12
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 84, 276, 250]
+
+-----------------
+
+t # 302
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 3 source
+e 0 4 source
+e 1 2 target
+
+Support: 11
+where: [32, 5, 71, 200, 169, 170, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 303
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 18
+where: [32, 226, 185, 71, 136, 200, 172, 48, 113, 51, 213, 151, 184, 183, 58, 286, 158, 127]
+
+-----------------
+
+t # 304
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 13
+where: [32, 185, 71, 136, 200, 172, 48, 113, 51, 213, 151, 183, 127]
+
+-----------------
+
+t # 305
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Association
+v 5 Driver
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+
+Support: 11
+where: [32, 71, 136, 200, 172, 48, 113, 51, 213, 185, 127]
+
+-----------------
+
+t # 306
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Association
+v 5 Driver
+v 6 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+e 4 5 source
+e 5 6 target
+
+Support: 11
+where: [32, 71, 136, 200, 172, 48, 113, 51, 213, 185, 127]
+
+-----------------
+
+t # 307
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Requirement
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 13
+where: [226, 185, 71, 136, 48, 113, 51, 213, 151, 184, 183, 286, 127]
+
+-----------------
+
+t # 308
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Requirement
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 10
+where: [185, 71, 136, 48, 113, 51, 213, 151, 183, 127]
+
+-----------------
+
+t # 309
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Requirement
+v 5 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 12
+where: [226, 185, 136, 48, 113, 51, 213, 151, 184, 183, 286, 127]
+
+-----------------
+
+t # 310
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Realization
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 15
+where: [226, 185, 71, 136, 48, 113, 51, 213, 151, 184, 183, 58, 286, 158, 127]
+
+-----------------
+
+t # 311
+v 0 Assessment
+v 1 Association
+v 2 Goal
+v 3 Realization
+v 4 Realization
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 10
+where: [185, 71, 136, 48, 113, 51, 213, 151, 183, 127]
+
+-----------------
+
+t # 312
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 25
+where: [258, 5, 136, 19, 276, 30, 32, 169, 170, 172, 48, 51, 185, 62, 71, 200, 77, 213, 89, 219, 110, 240, 113, 250, 127]
+
+-----------------
+
+t # 313
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 20
+where: [258, 5, 136, 19, 276, 30, 32, 172, 48, 51, 185, 71, 200, 77, 213, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 314
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Stakeholder
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 18
+where: [32, 258, 5, 71, 136, 200, 172, 77, 48, 113, 240, 19, 51, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 315
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+
+Support: 14
+where: [32, 258, 71, 136, 200, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 316
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Driver
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+
+Support: 11
+where: [258, 136, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 317
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Driver
+v 8 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+e 7 8 source
+
+Support: 11
+where: [258, 136, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 318
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+v 7 Driver
+v 8 Association
+v 9 Assessment
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+e 6 7 target
+e 7 8 source
+e 8 9 target
+
+Support: 11
+where: [258, 136, 77, 48, 113, 240, 51, 19, 276, 30, 127]
+
+-----------------
+
+t # 319
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 3 5 target
+
+Support: 10
+where: [32, 5, 71, 200, 77, 113, 51, 19, 276, 250]
+
+-----------------
+
+t # 320
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 0 5 target
+e 2 3 source
+e 3 4 target
+
+Support: 12
+where: [32, 71, 200, 172, 48, 113, 51, 19, 213, 276, 185, 219]
+
+-----------------
+
+t # 321
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 21
+where: [258, 5, 136, 19, 276, 30, 32, 170, 48, 51, 185, 62, 71, 200, 77, 213, 219, 240, 113, 250, 127]
+
+-----------------
+
+t # 322
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+
+Support: 17
+where: [32, 258, 5, 71, 136, 200, 170, 240, 113, 51, 19, 276, 62, 250, 219, 30, 127]
+
+-----------------
+
+t # 323
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+e 5 6 source
+
+Support: 14
+where: [32, 5, 71, 136, 200, 170, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 324
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+v 7 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 7 target
+e 4 5 target
+e 5 6 source
+
+Support: 13
+where: [32, 5, 71, 136, 200, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 325
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+v 7 Association
+v 8 Stakeholder
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 7 target
+e 4 5 target
+e 5 6 source
+e 7 8 source
+
+Support: 11
+where: [5, 71, 136, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 326
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 target
+e 4 5 target
+
+Support: 15
+where: [32, 258, 5, 71, 136, 200, 240, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 327
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+v 7 Stakeholder
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 target
+e 4 5 target
+e 6 7 source
+
+Support: 13
+where: [258, 5, 71, 136, 240, 113, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 328
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+e 5 6 target
+
+Support: 11
+where: [32, 71, 136, 200, 113, 51, 19, 276, 219, 62, 127]
+
+-----------------
+
+t # 329
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+v 7 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 7 source
+e 4 5 target
+e 5 6 target
+
+Support: 10
+where: [32, 71, 136, 200, 113, 51, 19, 276, 62, 127]
+
+-----------------
+
+t # 330
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Assessment
+v 6 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 source
+e 4 5 target
+
+Support: 10
+where: [32, 71, 136, 200, 113, 51, 19, 276, 62, 127]
+
+-----------------
+
+t # 331
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 target
+
+Support: 17
+where: [32, 258, 5, 71, 136, 200, 77, 48, 113, 240, 19, 51, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 332
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Association
+v 6 Stakeholder
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 target
+e 5 6 source
+
+Support: 15
+where: [258, 5, 71, 136, 77, 48, 113, 240, 51, 19, 276, 250, 219, 30, 127]
+
+-----------------
+
+t # 333
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 source
+
+Support: 11
+where: [32, 71, 136, 200, 77, 113, 51, 19, 276, 62, 127]
+
+-----------------
+
+t # 334
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 0 5 target
+e 2 3 source
+e 3 4 source
+
+Support: 12
+where: [32, 71, 200, 48, 113, 51, 19, 213, 276, 185, 219, 62]
+
+-----------------
+
+t # 335
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 0 4 target
+e 2 3 source
+
+Support: 13
+where: [32, 71, 200, 172, 48, 113, 51, 19, 213, 276, 185, 219, 62]
+
+-----------------
+
+t # 336
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Driver
+v 4 Association
+v 5 Goal
+e 0 1 source
+e 0 2 target
+e 0 4 target
+e 2 3 source
+e 4 5 source
+
+Support: 10
+where: [32, 200, 172, 48, 113, 51, 213, 185, 219, 62]
+
+-----------------
+
+t # 337
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 22
+where: [133, 140, 19, 276, 32, 172, 48, 51, 185, 62, 191, 71, 200, 84, 212, 213, 215, 218, 219, 113, 119, 252]
+
+-----------------
+
+t # 338
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Influence
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 11
+where: [32, 133, 200, 172, 113, 51, 212, 213, 215, 185, 218]
+
+-----------------
+
+t # 339
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 18
+where: [32, 185, 167, 200, 171, 172, 77, 48, 113, 51, 84, 213, 119, 151, 183, 219, 252, 62]
+
+-----------------
+
+t # 340
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 10
+where: [32, 200, 48, 84, 119, 151, 183, 219, 252, 62]
+
+-----------------
+
+t # 341
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+v 4 Realization
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 15
+where: [32, 185, 167, 200, 171, 172, 48, 113, 51, 84, 213, 119, 151, 183, 252]
+
+-----------------
+
+t # 342
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+v 4 Realization
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 0 5 target
+e 2 3 source
+e 3 4 target
+
+Support: 11
+where: [32, 200, 172, 48, 113, 51, 84, 213, 119, 185, 252]
+
+-----------------
+
+t # 343
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+v 4 Realization
+v 5 Requirement
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 10
+where: [185, 48, 113, 51, 84, 213, 119, 151, 183, 252]
+
+-----------------
+
+t # 344
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 0 4 target
+e 2 3 source
+
+Support: 13
+where: [32, 200, 172, 48, 113, 51, 84, 213, 119, 185, 219, 252, 62]
+
+-----------------
+
+t # 345
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 11
+where: [32, 167, 200, 171, 113, 51, 213, 183, 185, 219, 62]
+
+-----------------
+
+t # 346
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 23
+where: [5, 133, 140, 19, 276, 32, 169, 170, 51, 55, 185, 191, 193, 71, 200, 84, 212, 213, 215, 218, 221, 113, 250]
+
+-----------------
+
+t # 347
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+e 0 1 source
+e 0 2 source
+e 0 3 source
+
+Support: 23
+where: [5, 133, 140, 19, 276, 32, 169, 170, 51, 184, 185, 191, 193, 71, 200, 212, 213, 215, 218, 226, 113, 117, 250]
+
+-----------------
+
+t # 348
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 target
+
+Support: 16
+where: [32, 193, 5, 133, 71, 200, 169, 170, 250, 140, 19, 212, 276, 215, 218, 191]
+
+-----------------
+
+t # 349
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 source
+
+Support: 10
+where: [133, 71, 140, 19, 212, 117, 276, 215, 218, 191]
+
+-----------------
+
+t # 350
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Influence
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 target
+
+Support: 10
+where: [32, 226, 133, 200, 212, 213, 215, 184, 185, 218]
+
+-----------------
+
+t # 351
+v 0 Assessment
+v 1 Association
+v 2 Association
+v 3 Influence
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 12
+where: [32, 226, 133, 200, 113, 51, 212, 213, 215, 184, 185, 218]
+
+-----------------
+
+t # 352
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 24
+where: [258, 259, 142, 19, 276, 23, 158, 286, 32, 51, 58, 190, 68, 71, 200, 201, 77, 84, 240, 113, 117, 119, 120, 252]
+
+-----------------
+
+t # 353
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 17
+where: [32, 258, 68, 71, 200, 77, 240, 113, 51, 19, 252, 276, 119, 120, 58, 190, 158]
+
+-----------------
+
+t # 354
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 14
+where: [32, 258, 71, 200, 77, 240, 113, 51, 19, 276, 120, 58, 190, 158]
+
+-----------------
+
+t # 355
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 11
+where: [258, 77, 240, 113, 51, 19, 276, 120, 58, 190, 158]
+
+-----------------
+
+t # 356
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Driver
+v 7 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 11
+where: [258, 77, 240, 113, 51, 19, 276, 120, 58, 190, 158]
+
+-----------------
+
+t # 357
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 6 target
+e 3 4 source
+e 4 5 source
+
+Support: 12
+where: [32, 258, 200, 240, 113, 51, 19, 276, 120, 58, 190, 158]
+
+-----------------
+
+t # 358
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 4 6 source
+
+Support: 10
+where: [32, 258, 200, 240, 113, 51, 19, 276, 58, 158]
+
+-----------------
+
+t # 359
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 14
+where: [32, 258, 200, 240, 113, 51, 19, 252, 276, 119, 120, 58, 190, 158]
+
+-----------------
+
+t # 360
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 source
+e 0 5 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 10
+where: [32, 68, 71, 200, 113, 51, 19, 276, 58, 158]
+
+-----------------
+
+t # 361
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 16
+where: [32, 258, 259, 200, 240, 113, 51, 19, 252, 276, 119, 120, 58, 190, 158, 286]
+
+-----------------
+
+t # 362
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+
+Support: 12
+where: [32, 259, 68, 71, 200, 113, 51, 19, 84, 276, 58, 158]
+
+-----------------
+
+t # 363
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 15
+where: [32, 259, 68, 200, 201, 142, 84, 119, 252, 23, 120, 58, 190, 158, 286]
+
+-----------------
+
+t # 364
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Assessment
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 10
+where: [32, 259, 200, 252, 119, 120, 58, 190, 158, 286]
+
+-----------------
+
+t # 365
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Influence
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+
+Support: 10
+where: [32, 258, 68, 200, 142, 240, 113, 51, 117, 23]
+
+-----------------
+
+t # 366
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 24
+where: [259, 140, 19, 276, 158, 32, 167, 171, 172, 51, 185, 58, 191, 193, 71, 200, 201, 77, 84, 213, 113, 117, 119, 252]
+
+-----------------
+
+t # 367
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 16
+where: [32, 259, 71, 200, 201, 77, 113, 51, 19, 84, 117, 119, 276, 58, 252, 158]
+
+-----------------
+
+t # 368
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 4 5 source
+
+Support: 12
+where: [32, 71, 200, 77, 113, 51, 19, 276, 119, 58, 252, 158]
+
+-----------------
+
+t # 369
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 4 5 source
+e 5 6 source
+
+Support: 10
+where: [32, 71, 200, 77, 113, 51, 19, 276, 58, 158]
+
+-----------------
+
+t # 370
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Stakeholder
+v 6 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 2 6 target
+e 4 5 source
+
+Support: 10
+where: [32, 200, 113, 51, 19, 276, 119, 58, 252, 158]
+
+-----------------
+
+t # 371
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+e 2 5 target
+
+Support: 11
+where: [32, 259, 200, 113, 51, 19, 276, 119, 58, 252, 158]
+
+-----------------
+
+t # 372
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 5 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 11
+where: [32, 259, 71, 200, 113, 51, 19, 84, 276, 58, 158]
+
+-----------------
+
+t # 373
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 17
+where: [32, 259, 71, 167, 200, 201, 171, 77, 19, 84, 213, 276, 119, 185, 58, 252, 158]
+
+-----------------
+
+t # 374
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 2 5 target
+
+Support: 11
+where: [32, 259, 71, 200, 19, 84, 276, 119, 58, 252, 158]
+
+-----------------
+
+t # 375
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 11
+where: [71, 167, 171, 77, 19, 84, 213, 276, 119, 185, 252]
+
+-----------------
+
+t # 376
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+
+Support: 11
+where: [32, 259, 71, 200, 113, 51, 19, 84, 276, 58, 158]
+
+-----------------
+
+t # 377
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 14
+where: [32, 71, 167, 200, 171, 172, 77, 19, 84, 213, 276, 119, 185, 252]
+
+-----------------
+
+t # 378
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Association
+v 5 Goal
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+
+Support: 11
+where: [32, 167, 200, 171, 172, 77, 84, 213, 119, 185, 252]
+
+-----------------
+
+t # 379
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 11
+where: [259, 167, 201, 171, 172, 77, 84, 119, 58, 252, 158]
+
+-----------------
+
+t # 380
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 5 source
+e 3 4 target
+
+Support: 10
+where: [259, 167, 201, 171, 77, 84, 119, 58, 252, 158]
+
+-----------------
+
+t # 381
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 12
+where: [32, 259, 68, 71, 200, 113, 51, 19, 84, 276, 58, 158]
+
+-----------------
+
+t # 382
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 14
+where: [32, 71, 167, 200, 171, 172, 77, 19, 84, 213, 276, 119, 185, 252]
+
+-----------------
+
+t # 383
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Association
+v 4 Goal
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+
+Support: 11
+where: [32, 167, 200, 171, 172, 77, 84, 213, 119, 185, 252]
+
+-----------------
+
+t # 384
+v 0 Assessment
+v 1 Association
+v 2 Driver
+v 3 Influence
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 13
+where: [32, 193, 258, 68, 200, 140, 142, 240, 113, 51, 117, 23, 191]
+
+-----------------
+
+t # 385
+v 0 Principle
+v 1 Realization
+v 2 Requirement
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 14
+where: [226, 215, 133, 263, 218, 172, 212, 213, 184, 120, 185, 58, 190, 158]
+
+-----------------
+
+t # 386
+v 0 Principle
+v 1 Realization
+v 2 Realization
+v 3 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 13
+where: [33, 291, 69, 71, 265, 106, 109, 142, 148, 22, 23, 249, 63]
+
+-----------------
+
+t # 387
+v 0 Association
+v 1 Stakeholder
+v 2 Driver
+v 3 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 26
+where: [258, 5, 136, 19, 276, 158, 32, 165, 51, 58, 187, 190, 68, 71, 200, 77, 85, 104, 239, 240, 113, 119, 120, 250, 252, 127]
+
+-----------------
+
+t # 388
+v 0 Association
+v 1 Stakeholder
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 16
+where: [32, 258, 5, 165, 104, 200, 77, 239, 240, 113, 51, 19, 85, 276, 250, 187]
+
+-----------------
+
+t # 389
+v 0 Association
+v 1 Stakeholder
+v 2 Driver
+v 3 Association
+v 4 Stakeholder
+v 5 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 5 target
+e 3 4 source
+
+Support: 10
+where: [258, 165, 77, 239, 240, 113, 51, 19, 85, 276]
+
+-----------------
+
+t # 390
+v 0 Association
+v 1 Stakeholder
+v 2 Driver
+v 3 Association
+v 4 Association
+e 0 1 source
+e 0 2 target
+e 2 3 target
+e 2 4 target
+
+Support: 18
+where: [32, 258, 165, 200, 77, 239, 240, 113, 51, 19, 85, 252, 119, 120, 276, 58, 190, 158]
+
+-----------------
+
+t # 391
+v 0 Association
+v 1 Stakeholder
+v 2 Driver
+v 3 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 10
+where: [32, 258, 165, 200, 239, 240, 85, 119, 187, 252]
+
+-----------------
+
+t # 392
+v 0 Association
+v 1 Stakeholder
+v 2 Driver
+v 3 Influence
+e 0 1 source
+e 0 2 target
+e 2 3 target
+
+Support: 11
+where: [258, 259, 68, 291, 104, 240, 148, 120, 58, 190, 158]
+
+-----------------
+
+t # 393
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 11
+where: [8, 140, 48, 113, 51, 55, 58, 158, 221, 94, 191]
+
+-----------------
+
+t # 394
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+
+Support: 18
+where: [32, 291, 100, 8, 104, 200, 77, 187, 113, 51, 148, 252, 119, 120, 58, 155, 190, 158]
+
+-----------------
+
+t # 395
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Driver
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+
+Support: 15
+where: [32, 291, 104, 200, 77, 113, 51, 148, 252, 119, 120, 58, 187, 190, 158]
+
+-----------------
+
+t # 396
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Driver
+v 5 Association
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 1 3 target
+e 4 5 target
+
+Support: 11
+where: [32, 104, 200, 77, 113, 51, 119, 120, 187, 252, 190]
+
+-----------------
+
+t # 397
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 target
+e 1 3 target
+e 1 4 target
+
+Support: 13
+where: [32, 291, 100, 104, 200, 77, 187, 148, 119, 120, 155, 252, 190]
+
+-----------------
+
+t # 398
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Driver
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 1 3 target
+e 1 4 target
+
+Support: 10
+where: [32, 291, 104, 200, 148, 119, 120, 187, 252, 190]
+
+-----------------
+
+t # 399
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Driver
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 18
+where: [32, 291, 165, 104, 200, 77, 48, 113, 51, 148, 85, 252, 119, 120, 58, 187, 190, 158]
+
+-----------------
+
+t # 400
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Driver
+v 4 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 target
+
+Support: 13
+where: [32, 165, 104, 200, 77, 113, 51, 85, 119, 120, 187, 252, 190]
+
+-----------------
+
+t # 401
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+e 0 1 source
+e 1 2 source
+e 2 3 target
+
+Support: 18
+where: [191, 258, 8, 41, 136, 140, 77, 48, 113, 240, 51, 20, 213, 185, 58, 158, 94, 127]
+
+-----------------
+
+t # 402
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+v 4 Goal
+e 0 1 source
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 11
+where: [8, 41, 140, 48, 20, 213, 185, 58, 158, 94, 191]
+
+-----------------
+
+t # 403
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+v 4 Realization
+e 0 1 source
+e 1 2 source
+e 2 3 target
+e 3 4 target
+
+Support: 10
+where: [258, 8, 41, 48, 240, 213, 185, 58, 158, 94]
+
+-----------------
+
+t # 404
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+v 4 Realization
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 5 source
+e 2 3 target
+e 3 4 target
+
+Support: 10
+where: [258, 8, 41, 48, 240, 213, 185, 58, 158, 94]
+
+-----------------
+
+t # 405
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+
+Support: 13
+where: [258, 8, 41, 140, 48, 240, 20, 213, 185, 58, 158, 94, 191]
+
+-----------------
+
+t # 406
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+v 4 Association
+v 5 Goal
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 4 5 target
+
+Support: 11
+where: [8, 41, 140, 48, 20, 213, 185, 58, 158, 94, 191]
+
+-----------------
+
+t # 407
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Goal
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 4 source
+e 1 5 source
+e 2 3 target
+
+Support: 10
+where: [258, 8, 41, 140, 240, 20, 58, 158, 94, 191]
+
+-----------------
+
+t # 408
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+
+Support: 28
+where: [8, 140, 142, 148, 23, 155, 158, 32, 291, 165, 48, 177, 51, 58, 187, 190, 191, 193, 200, 77, 85, 94, 100, 104, 113, 117, 120, 123]
+
+-----------------
+
+t # 409
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 target
+e 1 4 target
+
+Support: 14
+where: [32, 100, 8, 104, 200, 77, 187, 113, 51, 120, 58, 155, 190, 158]
+
+-----------------
+
+t # 410
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+
+Support: 33
+where: [258, 8, 140, 142, 19, 20, 148, 276, 23, 155, 30, 158, 32, 159, 291, 165, 41, 48, 177, 51, 185, 58, 191, 200, 77, 85, 213, 94, 100, 240, 113, 117, 123]
+
+-----------------
+
+t # 411
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+
+Support: 26
+where: [258, 8, 140, 142, 19, 20, 276, 23, 155, 158, 30, 32, 159, 165, 41, 177, 58, 191, 200, 77, 85, 94, 100, 240, 117, 123]
+
+-----------------
+
+t # 412
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+e 1 5 source
+
+Support: 15
+where: [32, 100, 165, 8, 41, 158, 200, 155, 177, 20, 85, 117, 58, 123, 30]
+
+-----------------
+
+t # 413
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+e 1 5 source
+e 1 6 source
+
+Support: 11
+where: [32, 100, 165, 8, 200, 20, 85, 117, 58, 155, 158]
+
+-----------------
+
+t # 414
+v 0 Association
+v 1 Stakeholder
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+v 7 Association
+e 0 1 source
+e 1 2 source
+e 1 3 source
+e 1 4 source
+e 1 5 source
+e 1 6 source
+e 1 7 source
+
+Support: 11
+where: [32, 100, 165, 8, 200, 20, 85, 117, 58, 155, 158]
+
+-----------------
+

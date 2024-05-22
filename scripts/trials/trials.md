@@ -24,6 +24,42 @@ all_layers
 Selected values: [40, 8]
 400 models 50_200
 
+trial_4
+all_layers
+300_s
+Selected values: [10, 4]
+229 models 100_500
+
+trial_5
+all_layers
+1800_s
+Selected values: [8, 4]
+229 models 100_500
+
+trial_6
+all_layers
+300_s
+Selected values: [5, 4]
+292 models 100_500 + 200_500
+
+trial_7 
+all_layers
+300_s
+Selected values: [5, 4]
+245 models 100_1000
+
+trial_8 
+all_layers
+3600_s
+Selected values: [5, 4]
+245 models 100_1000
+
+trial_9 
+all_layers, no application layer
+3600_s
+Selected values: [5, 4]
+245 models 100_1000
+
 ### single_layers
 
 trial_0
@@ -67,6 +103,24 @@ technology_layer
 900_s
 Selected values: [20, 4]
 300 models 50_200
+
+trial_6
+motivation_layer
+300_s
+Selected values: [10, 4]
+229 models 100_500
+
+trial_7
+motivation_layer
+300_s
+Selected values: [10, 4]
+292 models 100_500 + 200_500
+
+trial_8
+business_layer
+3600_s
+Selected values: [60, 4]
+292 models 100_1000
 
 ### Combined Layers
 

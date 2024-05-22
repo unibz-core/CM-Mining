@@ -1,0 +1,3984 @@
+t # 0
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 9
+where: [0, 96, 132, 167, 46, 142, 181, 188, 63]
+
+-----------------
+
+t # 1
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 9
+where: [0, 96, 132, 167, 46, 142, 181, 188, 63]
+
+-----------------
+
+t # 2
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 5 source
+e 3 4 target
+
+Support: 7
+where: [0, 132, 142, 46, 181, 188, 63]
+
+-----------------
+
+t # 3
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 ApplicationComponent
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 5 source
+e 3 4 target
+e 5 6 target
+
+Support: 5
+where: [0, 132, 142, 46, 188]
+
+-----------------
+
+t # 4
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 5 source
+e 2 6 target
+e 3 4 target
+
+Support: 5
+where: [0, 46, 181, 188, 63]
+
+-----------------
+
+t # 5
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 source
+e 2 5 source
+e 3 4 target
+
+Support: 5
+where: [0, 132, 142, 46, 63]
+
+-----------------
+
+t # 6
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 5 target
+e 3 4 target
+
+Support: 6
+where: [0, 142, 46, 181, 188, 63]
+
+-----------------
+
+t # 7
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 0 5 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 7
+where: [0, 96, 132, 167, 142, 188, 63]
+
+-----------------
+
+t # 8
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 9
+where: [0, 96, 132, 167, 46, 142, 181, 188, 63]
+
+-----------------
+
+t # 9
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 6 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 6
+where: [0, 96, 132, 167, 142, 63]
+
+-----------------
+
+t # 10
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 6 source
+e 3 4 target
+e 4 5 target
+
+Support: 5
+where: [132, 46, 181, 188, 63]
+
+-----------------
+
+t # 11
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 6
+where: [0, 132, 142, 46, 181, 63]
+
+-----------------
+
+t # 12
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 6
+where: [0, 132, 142, 46, 188, 63]
+
+-----------------
+
+t # 13
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 7
+where: [0, 132, 142, 46, 181, 188, 63]
+
+-----------------
+
+t # 14
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 source
+e 2 5 target
+
+Support: 5
+where: [0, 46, 181, 188, 63]
+
+-----------------
+
+t # 15
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 source
+
+Support: 5
+where: [0, 132, 142, 46, 63]
+
+-----------------
+
+t # 16
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 6
+where: [0, 142, 46, 181, 188, 63]
+
+-----------------
+
+t # 17
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 5 target
+e 1 2 target
+e 2 3 source
+e 2 4 target
+
+Support: 5
+where: [0, 142, 46, 181, 63]
+
+-----------------
+
+t # 18
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+
+Support: 9
+where: [0, 96, 132, 167, 46, 142, 181, 188, 63]
+
+-----------------
+
+t # 19
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 6
+where: [0, 132, 142, 46, 188, 63]
+
+-----------------
+
+t # 20
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Triggering
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 5 6 source
+
+Support: 5
+where: [0, 132, 142, 46, 63]
+
+-----------------
+
+t # 21
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Triggering
+v 7 Triggering
+e 0 1 source
+e 0 4 source
+e 0 7 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 5 6 source
+
+Support: 5
+where: [0, 132, 142, 46, 63]
+
+-----------------
+
+t # 22
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Triggering
+e 0 1 source
+e 0 4 source
+e 0 6 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+
+Support: 6
+where: [0, 132, 142, 46, 188, 63]
+
+-----------------
+
+t # 23
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Triggering
+v 7 ApplicationComponent
+e 0 1 source
+e 0 4 source
+e 0 6 source
+e 1 2 target
+e 2 3 source
+e 4 5 target
+e 6 7 target
+
+Support: 5
+where: [0, 132, 142, 46, 188]
+
+-----------------
+
+t # 24
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 4 source
+e 0 5 source
+e 1 2 target
+e 2 3 source
+
+Support: 6
+where: [0, 132, 142, 46, 188, 63]
+
+-----------------
+
+t # 25
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+
+Support: 7
+where: [0, 132, 142, 46, 181, 188, 63]
+
+-----------------
+
+t # 26
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 13
+where: [0, 96, 224, 132, 167, 46, 142, 50, 181, 122, 188, 93, 63]
+
+-----------------
+
+t # 27
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+
+Support: 8
+where: [0, 132, 46, 142, 50, 122, 188, 63]
+
+-----------------
+
+t # 28
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 8
+where: [0, 132, 46, 142, 50, 122, 188, 63]
+
+-----------------
+
+t # 29
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+
+Support: 6
+where: [0, 132, 46, 142, 50, 63]
+
+-----------------
+
+t # 30
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 target
+e 4 6 target
+
+Support: 5
+where: [46, 50, 122, 188, 63]
+
+-----------------
+
+t # 31
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 6
+where: [0, 132, 46, 122, 188, 63]
+
+-----------------
+
+t # 32
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 ApplicationComponent
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 5
+where: [0, 132, 46, 122, 188]
+
+-----------------
+
+t # 33
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 6
+where: [0, 132, 46, 122, 188, 63]
+
+-----------------
+
+t # 34
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 target
+e 3 4 source
+e 4 5 source
+e 4 6 target
+
+Support: 5
+where: [132, 46, 122, 188, 63]
+
+-----------------
+
+t # 35
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+
+Support: 7
+where: [0, 132, 46, 181, 122, 188, 63]
+
+-----------------
+
+t # 36
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+e 4 5 target
+
+Support: 6
+where: [0, 132, 46, 122, 188, 63]
+
+-----------------
+
+t # 37
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Triggering
+e 0 1 source
+e 0 4 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 4 5 target
+
+Support: 5
+where: [132, 46, 122, 188, 63]
+
+-----------------
+
+t # 38
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 4 source
+e 0 5 target
+e 1 2 target
+e 2 3 target
+
+Support: 6
+where: [132, 46, 181, 122, 188, 63]
+
+-----------------
+
+t # 39
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 4 source
+e 0 5 target
+e 0 6 target
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [46, 181, 122, 188, 63]
+
+-----------------
+
+t # 40
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Serving
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 6
+where: [0, 96, 224, 167, 46, 50]
+
+-----------------
+
+t # 41
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Serving
+v 5 Triggering
+e 0 1 source
+e 0 4 target
+e 0 5 target
+e 1 2 target
+e 2 3 target
+
+Support: 6
+where: [0, 96, 224, 167, 46, 50]
+
+-----------------
+
+t # 42
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 13
+where: [0, 96, 224, 132, 167, 46, 142, 50, 181, 122, 188, 93, 63]
+
+-----------------
+
+t # 43
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 4 target
+e 0 5 target
+e 1 2 target
+e 2 3 target
+
+Support: 6
+where: [46, 50, 181, 122, 188, 63]
+
+-----------------
+
+t # 44
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Serving
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 8
+where: [0, 96, 224, 167, 46, 207, 148, 156]
+
+-----------------
+
+t # 45
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Serving
+v 4 Serving
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [0, 224, 46, 207, 148]
+
+-----------------
+
+t # 46
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 12
+where: [0, 96, 132, 198, 167, 46, 142, 188, 181, 122, 156, 63]
+
+-----------------
+
+t # 47
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+e 0 1 source
+e 0 3 source
+e 1 2 target
+e 3 4 target
+
+Support: 8
+where: [0, 132, 46, 142, 188, 122, 156, 63]
+
+-----------------
+
+t # 48
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 0 3 source
+e 0 5 target
+e 1 2 target
+e 3 4 target
+
+Support: 7
+where: [0, 132, 46, 142, 122, 188, 63]
+
+-----------------
+
+t # 49
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 3 source
+e 0 5 target
+e 0 6 target
+e 1 2 target
+e 3 4 target
+
+Support: 5
+where: [0, 46, 122, 188, 63]
+
+-----------------
+
+t # 50
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 1 2 target
+e 3 4 target
+
+Support: 8
+where: [0, 132, 46, 142, 188, 122, 156, 63]
+
+-----------------
+
+t # 51
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 ApplicationComponent
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 1 2 target
+e 3 4 target
+e 5 6 target
+
+Support: 7
+where: [0, 132, 142, 46, 188, 122, 156]
+
+-----------------
+
+t # 52
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 6 target
+e 1 2 target
+e 3 4 target
+
+Support: 5
+where: [0, 142, 46, 122, 63]
+
+-----------------
+
+t # 53
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Triggering
+v 6 Composition
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 6 target
+e 1 2 target
+e 3 4 target
+
+Support: 5
+where: [0, 142, 156, 188, 63]
+
+-----------------
+
+t # 54
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 ApplicationComponent
+v 5 Composition
+e 0 1 source
+e 0 3 source
+e 0 5 target
+e 1 2 target
+e 3 4 target
+
+Support: 6
+where: [0, 142, 188, 122, 156, 63]
+
+-----------------
+
+t # 55
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 3 source
+e 0 4 target
+e 1 2 target
+
+Support: 8
+where: [0, 132, 46, 142, 181, 122, 188, 63]
+
+-----------------
+
+t # 56
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 3 source
+e 0 4 target
+e 0 5 target
+e 1 2 target
+
+Support: 6
+where: [0, 46, 181, 122, 188, 63]
+
+-----------------
+
+t # 57
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 3 source
+e 0 4 source
+e 1 2 target
+
+Support: 8
+where: [0, 132, 46, 142, 188, 122, 156, 63]
+
+-----------------
+
+t # 58
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 3 source
+e 0 4 source
+e 0 5 target
+e 1 2 target
+
+Support: 5
+where: [0, 142, 46, 122, 63]
+
+-----------------
+
+t # 59
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+v 5 Composition
+e 0 1 source
+e 0 3 source
+e 0 4 source
+e 0 5 target
+e 1 2 target
+
+Support: 5
+where: [0, 142, 156, 188, 63]
+
+-----------------
+
+t # 60
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Composition
+e 0 1 source
+e 0 3 source
+e 0 4 target
+e 1 2 target
+
+Support: 6
+where: [0, 142, 188, 122, 156, 63]
+
+-----------------
+
+t # 61
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Flow
+e 0 1 source
+e 0 3 source
+e 0 4 target
+e 1 2 target
+
+Support: 5
+where: [96, 198, 167, 46, 122]
+
+-----------------
+
+t # 62
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Association
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 5
+where: [0, 142, 46, 156, 188]
+
+-----------------
+
+t # 63
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Serving
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 9
+where: [0, 96, 224, 167, 142, 46, 207, 50, 148]
+
+-----------------
+
+t # 64
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Serving
+v 4 Serving
+e 0 1 source
+e 0 3 target
+e 0 4 target
+e 1 2 target
+
+Support: 5
+where: [0, 224, 142, 207, 148]
+
+-----------------
+
+t # 65
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Serving
+v 4 Triggering
+e 0 1 source
+e 0 3 target
+e 0 4 target
+e 1 2 target
+
+Support: 6
+where: [0, 96, 224, 167, 46, 50]
+
+-----------------
+
+t # 66
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 13
+where: [0, 96, 224, 132, 167, 46, 142, 50, 181, 122, 188, 93, 63]
+
+-----------------
+
+t # 67
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 3 target
+e 0 4 target
+e 1 2 target
+
+Support: 8
+where: [0, 46, 142, 50, 181, 122, 188, 63]
+
+-----------------
+
+t # 68
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 6
+where: [0, 142, 188, 122, 156, 63]
+
+-----------------
+
+t # 69
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Association
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [0, 142, 46, 188, 93]
+
+-----------------
+
+t # 70
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Association
+v 4 Triggering
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [0, 142, 46, 188, 93]
+
+-----------------
+
+t # 71
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Flow
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 5
+where: [96, 198, 167, 46, 122]
+
+-----------------
+
+t # 72
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 73
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Triggering
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 74
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Triggering
+v 5 Composition
+e 0 1 source
+e 0 4 source
+e 0 5 target
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 75
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Triggering
+v 5 ApplicationComponent
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+e 4 5 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 76
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Composition
+e 0 1 source
+e 0 4 source
+e 1 2 target
+e 2 3 target
+e 4 5 target
+e 5 6 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 77
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Composition
+v 7 Composition
+e 0 1 source
+e 0 4 source
+e 0 7 target
+e 1 2 target
+e 2 3 target
+e 4 5 target
+e 5 6 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 78
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Triggering
+v 5 ApplicationComponent
+v 6 Composition
+e 0 1 source
+e 0 4 source
+e 0 6 target
+e 1 2 target
+e 2 3 target
+e 4 5 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 79
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Composition
+v 4 Composition
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [142, 156, 122, 188, 63]
+
+-----------------
+
+t # 80
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationComponent
+v 3 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 5
+where: [224, 156, 181, 188, 93]
+
+-----------------
+
+t # 81
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Association
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 6
+where: [0, 168, 46, 188, 156, 93]
+
+-----------------
+
+t # 82
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Serving
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 5
+where: [0, 168, 46, 175, 55]
+
+-----------------
+
+t # 83
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 11
+where: [0, 132, 168, 46, 142, 207, 188, 181, 122, 31, 63]
+
+-----------------
+
+t # 84
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 target
+e 0 4 target
+
+Support: 8
+where: [0, 168, 46, 207, 181, 122, 188, 63]
+
+-----------------
+
+t # 85
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 target
+e 0 4 target
+e 0 5 target
+
+Support: 5
+where: [168, 46, 207, 122, 63]
+
+-----------------
+
+t # 86
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 source
+
+Support: 12
+where: [0, 132, 168, 46, 142, 175, 156, 188, 207, 122, 31, 63]
+
+-----------------
+
+t # 87
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 target
+
+Support: 8
+where: [0, 168, 46, 142, 207, 122, 31, 63]
+
+-----------------
+
+t # 88
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 target
+e 0 5 target
+
+Support: 6
+where: [0, 168, 46, 207, 122, 63]
+
+-----------------
+
+t # 89
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+v 5 Triggering
+v 6 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 target
+e 0 5 target
+e 0 6 target
+
+Support: 5
+where: [168, 46, 207, 122, 63]
+
+-----------------
+
+t # 90
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Composition
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 target
+
+Support: 6
+where: [0, 142, 175, 188, 156, 63]
+
+-----------------
+
+t # 91
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 2 source
+e 0 3 source
+e 0 4 source
+
+Support: 6
+where: [0, 168, 142, 207, 188, 31]
+
+-----------------
+
+t # 92
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Composition
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 8
+where: [0, 142, 175, 156, 188, 122, 31, 63]
+
+-----------------
+
+t # 93
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Flow
+e 0 1 source
+e 0 2 source
+e 0 3 target
+
+Support: 7
+where: [96, 198, 167, 46, 207, 122, 93]
+
+-----------------
+
+t # 94
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Association
+v 3 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [0, 168, 142, 46, 188]
+
+-----------------
+
+t # 95
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Serving
+v 3 TechnologyService
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 5
+where: [0, 137, 46, 175, 125]
+
+-----------------
+
+t # 96
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Serving
+v 3 TechnologyService
+v 4 Realization
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 5
+where: [0, 137, 46, 175, 125]
+
+-----------------
+
+t # 97
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Serving
+v 3 Serving
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 13
+where: [0, 224, 168, 233, 142, 175, 207, 148, 118, 120, 125, 158, 63]
+
+-----------------
+
+t # 98
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Serving
+v 3 Serving
+v 4 Serving
+e 0 1 source
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 6
+where: [0, 224, 168, 233, 148, 158]
+
+-----------------
+
+t # 99
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Serving
+v 3 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 8
+where: [0, 96, 224, 167, 168, 46, 50, 63]
+
+-----------------
+
+t # 100
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Serving
+v 3 ApplicationInterface
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 5
+where: [96, 167, 233, 55, 63]
+
+-----------------
+
+t # 101
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 11
+where: [0, 130, 168, 46, 142, 207, 50, 181, 122, 188, 63]
+
+-----------------
+
+t # 102
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Triggering
+v 3 Triggering
+v 4 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 6
+where: [168, 46, 207, 181, 122, 63]
+
+-----------------
+
+t # 103
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Serving
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [0, 142, 175, 55, 63]
+
+-----------------
+
+t # 104
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [130, 31, 142, 188, 63]
+
+-----------------
+
+t # 105
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+e 0 1 source
+e 0 2 target
+e 2 3 source
+
+Support: 7
+where: [232, 203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 106
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 7
+where: [232, 203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 107
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 source
+
+Support: 6
+where: [203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 108
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 Composition
+v 6 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 source
+e 3 6 source
+
+Support: 6
+where: [203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 109
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 Composition
+v 6 Composition
+v 7 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 source
+e 3 6 source
+e 3 7 source
+
+Support: 5
+where: [203, 44, 175, 188, 63]
+
+-----------------
+
+t # 110
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 ApplicationComponent
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+
+Support: 7
+where: [232, 203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 111
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 ApplicationComponent
+v 6 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 source
+e 4 5 target
+
+Support: 6
+where: [203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 112
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 ApplicationComponent
+v 6 Composition
+v 7 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 source
+e 3 7 source
+e 4 5 target
+
+Support: 6
+where: [203, 44, 175, 243, 188, 63]
+
+-----------------
+
+t # 113
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Composition
+v 3 Grouping
+v 4 Composition
+v 5 ApplicationComponent
+v 6 Composition
+v 7 Composition
+v 8 Composition
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 source
+e 3 7 source
+e 3 8 source
+e 4 5 target
+
+Support: 5
+where: [203, 44, 175, 188, 63]
+
+-----------------
+
+t # 114
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationService
+v 3 Serving
+e 0 1 source
+e 0 3 target
+e 1 2 target
+
+Support: 5
+where: [137, 46, 175, 55, 125]
+
+-----------------
+
+t # 115
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationInterface
+v 3 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 source
+
+Support: 6
+where: [96, 35, 167, 168, 118, 63]
+
+-----------------
+
+t # 116
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationInterface
+v 3 Triggering
+v 4 ApplicationComponent
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 5
+where: [96, 35, 167, 168, 63]
+
+-----------------
+
+t # 117
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationInterface
+v 3 Triggering
+e 0 1 source
+e 1 2 target
+e 2 3 target
+
+Support: 5
+where: [198, 118, 55, 57, 63]
+
+-----------------
+
+t # 118
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 ApplicationInterface
+v 3 Triggering
+e 0 1 source
+e 0 3 source
+e 1 2 target
+
+Support: 7
+where: [96, 198, 167, 168, 55, 57, 63]
+
+-----------------
+
+t # 119
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Flow
+v 3 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [96, 167, 46, 207, 122]
+
+-----------------
+
+t # 120
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Realization
+v 3 Realization
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [130, 232, 181, 156, 93]
+
+-----------------
+
+t # 121
+v 0 ApplicationComponent
+v 1 Triggering
+v 2 Realization
+v 3 Triggering
+e 0 1 source
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [224, 130, 181, 188, 93]
+
+-----------------
+
+t # 122
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+e 0 1 target
+e 0 2 target
+e 2 3 source
+
+Support: 10
+where: [0, 159, 185, 227, 141, 114, 211, 25, 90, 31]
+
+-----------------
+
+t # 123
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Realization
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+
+Support: 8
+where: [0, 185, 227, 141, 114, 211, 25, 159]
+
+-----------------
+
+t # 124
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Realization
+v 5 SystemSoftware
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+
+Support: 6
+where: [0, 185, 227, 141, 25, 159]
+
+-----------------
+
+t # 125
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Realization
+v 5 SystemSoftware
+v 6 Composition
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 target
+
+Support: 5
+where: [185, 227, 141, 25, 159]
+
+-----------------
+
+t # 126
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Realization
+v 5 SystemSoftware
+v 6 Realization
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+
+Support: 5
+where: [185, 227, 141, 25, 159]
+
+-----------------
+
+t # 127
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Realization
+v 5 SystemSoftware
+v 6 Realization
+v 7 Composition
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 target
+e 4 5 source
+e 5 6 source
+e 5 7 target
+
+Support: 5
+where: [185, 227, 141, 25, 159]
+
+-----------------
+
+t # 128
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 source
+
+Support: 6
+where: [0, 185, 141, 114, 25, 31]
+
+-----------------
+
+t # 129
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Serving
+v 5 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 4 5 target
+
+Support: 6
+where: [0, 185, 141, 114, 25, 31]
+
+-----------------
+
+t # 130
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Serving
+v 5 ApplicationComponent
+v 6 Realization
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 6 target
+e 4 5 target
+
+Support: 5
+where: [0, 185, 141, 114, 25]
+
+-----------------
+
+t # 131
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Serving
+v 5 Realization
+e 0 1 target
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 5 target
+
+Support: 5
+where: [0, 185, 141, 114, 25]
+
+-----------------
+
+t # 132
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 TechnologyService
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 0 4 target
+e 2 3 source
+
+Support: 5
+where: [0, 211, 25, 90, 31]
+
+-----------------
+
+t # 133
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 20
+where: [0, 9, 144, 17, 23, 25, 31, 163, 43, 172, 47, 49, 53, 70, 207, 82, 211, 90, 237, 120]
+
+-----------------
+
+t # 134
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 Serving
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 12
+where: [9, 43, 172, 237, 207, 144, 17, 211, 53, 23, 90, 31]
+
+-----------------
+
+t # 135
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 Serving
+v 4 Serving
+v 5 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+
+Support: 6
+where: [43, 172, 237, 144, 53, 23]
+
+-----------------
+
+t # 136
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 Triggering
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 5
+where: [0, 70, 72, 43, 46]
+
+-----------------
+
+t # 137
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 ApplicationService
+e 0 1 target
+e 0 2 target
+e 2 3 source
+
+Support: 10
+where: [9, 43, 107, 237, 46, 144, 17, 53, 23, 31]
+
+-----------------
+
+t # 138
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 ApplicationService
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 0 4 target
+e 2 3 source
+
+Support: 8
+where: [9, 43, 237, 144, 17, 53, 23, 31]
+
+-----------------
+
+t # 139
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 ApplicationService
+v 4 Serving
+v 5 Serving
+e 0 1 target
+e 0 2 target
+e 0 4 target
+e 0 5 target
+e 2 3 source
+
+Support: 6
+where: [9, 43, 237, 144, 53, 23]
+
+-----------------
+
+t # 140
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 ApplicationService
+v 4 Serving
+v 5 Serving
+v 6 Serving
+e 0 1 target
+e 0 2 target
+e 0 4 target
+e 0 5 target
+e 0 6 target
+e 2 3 source
+
+Support: 5
+where: [43, 237, 144, 53, 23]
+
+-----------------
+
+t # 141
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 Node
+e 0 1 target
+e 0 2 target
+e 2 3 source
+
+Support: 5
+where: [82, 23, 217, 90, 31]
+
+-----------------
+
+t # 142
+v 0 ApplicationComponent
+v 1 Association
+v 2 Serving
+v 3 ApplicationInterface
+e 0 1 target
+e 0 2 target
+e 2 3 source
+
+Support: 6
+where: [97, 131, 43, 49, 211, 223]
+
+-----------------
+
+t # 143
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+
+Support: 11
+where: [2, 163, 185, 217, 227, 235, 212, 118, 57, 220, 159]
+
+-----------------
+
+t # 144
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+
+Support: 9
+where: [2, 163, 217, 227, 212, 118, 185, 220, 159]
+
+-----------------
+
+t # 145
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+v 5 Association
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 6
+where: [163, 217, 227, 212, 185, 159]
+
+-----------------
+
+t # 146
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+v 5 Association
+v 6 Composition
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+e 4 6 target
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 147
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+v 5 Association
+v 6 Composition
+v 7 Composition
+e 0 1 target
+e 0 7 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+e 4 6 target
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 148
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+v 5 Association
+v 6 Composition
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 149
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+v 5 Composition
+e 0 1 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 6
+where: [163, 227, 212, 185, 220, 159]
+
+-----------------
+
+t # 150
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationComponent
+v 5 Composition
+v 6 Composition
+e 0 1 target
+e 0 6 target
+e 1 2 source
+e 2 3 source
+e 3 4 target
+e 4 5 target
+
+Support: 6
+where: [163, 227, 212, 185, 220, 159]
+
+-----------------
+
+t # 151
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Composition
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 6
+where: [163, 227, 212, 185, 220, 159]
+
+-----------------
+
+t # 152
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 source
+
+Support: 7
+where: [163, 217, 227, 235, 212, 185, 159]
+
+-----------------
+
+t # 153
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Composition
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 source
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 154
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Composition
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 7
+where: [163, 227, 212, 55, 185, 220, 159]
+
+-----------------
+
+t # 155
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 12
+where: [131, 163, 217, 227, 235, 141, 114, 212, 55, 120, 185, 159]
+
+-----------------
+
+t # 156
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Composition
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 6
+where: [163, 227, 212, 55, 185, 159]
+
+-----------------
+
+t # 157
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 9
+where: [131, 163, 227, 141, 114, 212, 120, 185, 159]
+
+-----------------
+
+t # 158
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+
+Support: 8
+where: [131, 163, 227, 141, 114, 120, 185, 159]
+
+-----------------
+
+t # 159
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Serving
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 0 6 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 120, 185, 159]
+
+-----------------
+
+t # 160
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Serving
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 120, 185, 159]
+
+-----------------
+
+t # 161
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Composition
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 162
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Realization
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 114, 217, 159]
+
+-----------------
+
+t # 163
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Serving
+e 0 1 target
+e 0 3 target
+e 0 4 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 120, 185, 159]
+
+-----------------
+
+t # 164
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 ApplicationInterface
+e 0 1 target
+e 0 3 target
+e 1 2 source
+e 3 4 source
+
+Support: 5
+where: [163, 131, 141, 185, 159]
+
+-----------------
+
+t # 165
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Realization
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 114, 217, 159]
+
+-----------------
+
+t # 166
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Serving
+e 0 1 target
+e 0 3 target
+e 1 2 source
+
+Support: 5
+where: [163, 227, 120, 185, 159]
+
+-----------------
+
+t # 167
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 9
+where: [163, 131, 217, 227, 235, 141, 212, 185, 159]
+
+-----------------
+
+t # 168
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 9
+where: [163, 131, 217, 227, 235, 141, 212, 185, 159]
+
+-----------------
+
+t # 169
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+
+Support: 7
+where: [163, 131, 227, 141, 212, 185, 159]
+
+-----------------
+
+t # 170
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 0 6 target
+e 1 2 source
+e 2 3 target
+
+Support: 6
+where: [163, 131, 227, 141, 185, 159]
+
+-----------------
+
+t # 171
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Composition
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 0 6 target
+e 1 2 source
+e 2 3 target
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 172
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Association
+v 5 Composition
+e 0 1 target
+e 0 4 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 173
+v 0 ApplicationComponent
+v 1 Association
+v 2 ApplicationInterface
+v 3 Association
+v 4 Composition
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 5
+where: [163, 227, 212, 185, 159]
+
+-----------------
+
+t # 174
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 16
+where: [159, 223, 163, 227, 10, 44, 48, 188, 210, 212, 220, 243, 55, 185, 156, 31]
+
+-----------------
+
+t # 175
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Grouping
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+
+Support: 7
+where: [223, 227, 10, 44, 243, 31, 159]
+
+-----------------
+
+t # 176
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Grouping
+v 5 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 6
+where: [223, 227, 10, 44, 31, 159]
+
+-----------------
+
+t # 177
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Grouping
+v 5 Composition
+v 6 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 6
+where: [223, 227, 10, 44, 31, 159]
+
+-----------------
+
+t # 178
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Grouping
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 target
+
+Support: 6
+where: [223, 227, 10, 44, 31, 159]
+
+-----------------
+
+t # 179
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Realization
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 6
+where: [163, 227, 31, 210, 156, 159]
+
+-----------------
+
+t # 180
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+
+Support: 6
+where: [163, 227, 210, 185, 220, 159]
+
+-----------------
+
+t # 181
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+
+Support: 6
+where: [163, 227, 210, 185, 220, 159]
+
+-----------------
+
+t # 182
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 183
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 184
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 185
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+v 9 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 9 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 186
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+v 9 Composition
+v 10 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 9 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+e 9 10 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 187
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+v 9 Composition
+v 10 ApplicationComponent
+v 11 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 9 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+e 9 10 target
+e 10 11 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 188
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+v 9 Composition
+v 10 ApplicationComponent
+v 11 Serving
+v 12 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 9 source
+e 4 12 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+e 9 10 target
+e 10 11 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 189
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+v 9 Composition
+v 10 ApplicationComponent
+v 11 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 9 source
+e 4 11 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+e 9 10 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 190
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Association
+v 9 Composition
+v 10 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 9 source
+e 4 10 source
+e 5 6 target
+e 6 7 target
+e 6 8 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 191
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 5 6 target
+e 6 7 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 192
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Composition
+v 9 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 5 6 target
+e 6 7 target
+e 8 9 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 193
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Composition
+v 9 ApplicationComponent
+v 10 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 5 6 target
+e 6 7 target
+e 8 9 target
+e 9 10 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 194
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Composition
+v 9 ApplicationComponent
+v 10 Serving
+v 11 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 4 11 source
+e 5 6 target
+e 6 7 target
+e 8 9 target
+e 9 10 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 195
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Composition
+v 9 ApplicationComponent
+v 10 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 4 10 source
+e 5 6 target
+e 6 7 target
+e 8 9 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 196
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Association
+v 8 Composition
+v 9 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 4 9 source
+e 5 6 target
+e 6 7 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 197
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 198
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Serving
+v 8 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 5 6 target
+e 6 7 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 199
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Serving
+v 8 Composition
+v 9 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 5 6 target
+e 6 7 target
+e 8 9 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 200
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Serving
+v 8 Composition
+v 9 ApplicationComponent
+v 10 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 4 10 source
+e 5 6 target
+e 6 7 target
+e 8 9 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 201
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Serving
+v 8 Composition
+v 9 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 8 source
+e 4 9 source
+e 5 6 target
+e 6 7 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 202
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 7 source
+e 5 6 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 203
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Composition
+v 8 ApplicationComponent
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 7 source
+e 5 6 target
+e 7 8 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 204
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Composition
+v 8 ApplicationComponent
+v 9 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 7 source
+e 4 9 source
+e 5 6 target
+e 7 8 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 205
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Composition
+v 8 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 7 source
+e 4 8 source
+e 5 6 target
+
+Support: 5
+where: [163, 227, 185, 220, 159]
+
+-----------------
+
+t # 206
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 6 source
+
+Support: 6
+where: [163, 227, 210, 185, 220, 159]
+
+-----------------
+
+t # 207
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Location
+v 5 Composition
+v 6 Composition
+v 7 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+e 4 5 source
+e 4 6 source
+e 4 7 source
+
+Support: 6
+where: [163, 227, 210, 185, 220, 159]
+
+-----------------
+
+t # 208
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Composition
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 5
+where: [159, 163, 227, 185, 223]
+
+-----------------
+
+t # 209
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 15
+where: [159, 97, 223, 131, 163, 185, 217, 227, 172, 237, 23, 120, 25, 90, 31]
+
+-----------------
+
+t # 210
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Serving
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 7
+where: [172, 237, 23, 120, 25, 90, 31]
+
+-----------------
+
+t # 211
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Serving
+v 4 Serving
+v 5 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+
+Support: 5
+where: [172, 237, 23, 90, 31]
+
+-----------------
+
+t # 212
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Serving
+v 4 TechnologyService
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 3 4 source
+
+Support: 6
+where: [185, 227, 25, 90, 31, 159]
+
+-----------------
+
+t # 213
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+
+Support: 26
+where: [128, 131, 132, 136, 141, 146, 23, 25, 28, 159, 31, 163, 48, 185, 57, 188, 201, 82, 210, 212, 217, 220, 227, 112, 114, 120]
+
+-----------------
+
+t # 214
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 10
+where: [159, 131, 163, 185, 217, 227, 23, 120, 25, 31]
+
+-----------------
+
+t # 215
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Serving
+v 5 TechnologyService
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 4 5 source
+
+Support: 5
+where: [185, 227, 25, 31, 159]
+
+-----------------
+
+t # 216
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+
+Support: 19
+where: [131, 132, 136, 141, 23, 28, 159, 31, 163, 48, 185, 57, 82, 210, 217, 220, 227, 114, 120]
+
+-----------------
+
+t # 217
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Serving
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+
+Support: 9
+where: [131, 163, 217, 227, 23, 120, 185, 31, 159]
+
+-----------------
+
+t # 218
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+
+Support: 10
+where: [163, 132, 227, 141, 48, 114, 210, 220, 217, 28]
+
+-----------------
+
+t # 219
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Composition
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 0 6 target
+
+Support: 5
+where: [163, 227, 48, 210, 220]
+
+-----------------
+
+t # 220
+v 0 ApplicationComponent
+v 1 Association
+v 2 Association
+v 3 Association
+v 4 Association
+v 5 Association
+v 6 Association
+e 0 1 target
+e 0 2 target
+e 0 3 target
+e 0 4 target
+e 0 5 target
+e 0 6 target
+
+Support: 5
+where: [227, 132, 48, 217, 220]
+
+-----------------
+

@@ -1,0 +1,1598 @@
+t # 0
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+
+Support: 31
+where: [0, 2, 11, 145, 149, 29, 158, 163, 40, 43, 172, 46, 176, 50, 183, 56, 57, 189, 71, 72, 74, 81, 215, 88, 89, 92, 224, 226, 100, 111, 117]
+
+-----------------
+
+t # 1
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+e 0 1 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 14
+where: [224, 2, 163, 40, 43, 46, 111, 176, 50, 189, 88, 89, 29, 158]
+
+-----------------
+
+t # 2
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 13
+where: [224, 2, 163, 40, 43, 46, 111, 176, 50, 88, 89, 189, 158]
+
+-----------------
+
+t # 3
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+
+Support: 12
+where: [224, 2, 163, 40, 43, 46, 111, 176, 50, 89, 189, 158]
+
+-----------------
+
+t # 4
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+
+Support: 12
+where: [224, 2, 163, 40, 43, 46, 111, 176, 50, 89, 189, 158]
+
+-----------------
+
+t # 5
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+e 0 1 target
+e 0 5 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+
+Support: 10
+where: [224, 2, 163, 43, 46, 111, 176, 50, 189, 158]
+
+-----------------
+
+t # 6
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+v 9 Serving
+e 0 1 target
+e 0 5 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+
+Support: 9
+where: [2, 163, 43, 46, 111, 176, 50, 189, 158]
+
+-----------------
+
+t # 7
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+v 9 Serving
+v 10 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+e 9 10 source
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 8
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+v 9 Serving
+v 10 BusinessService
+v 11 Realization
+e 0 1 target
+e 0 5 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+e 9 10 source
+e 10 11 target
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 9
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+v 9 Serving
+v 10 BusinessService
+v 11 Realization
+v 12 Serving
+e 0 1 target
+e 0 5 target
+e 0 9 target
+e 0 12 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+e 9 10 source
+e 10 11 target
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 10
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+v 9 Serving
+v 10 BusinessService
+v 11 Serving
+e 0 1 target
+e 0 5 target
+e 0 9 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+e 9 10 source
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 11
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Realization
+v 9 Serving
+v 10 Serving
+e 0 1 target
+e 0 5 target
+e 0 9 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 6 8 target
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 12
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+
+Support: 10
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189, 158]
+
+-----------------
+
+t # 13
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 14
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 15
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 16
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 17
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+v 13 Realization
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+e 12 13 target
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 18
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+v 13 Realization
+v 14 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 0 14 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+e 12 13 target
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 19
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+v 13 Realization
+v 14 Serving
+v 15 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 0 14 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+e 12 13 target
+e 14 15 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 20
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+v 13 Realization
+v 14 Serving
+v 15 BusinessService
+v 16 Realization
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 0 14 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+e 12 13 target
+e 14 15 source
+e 15 16 target
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 21
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+v 13 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 0 13 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 22
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 BusinessService
+v 13 Serving
+v 14 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 0 13 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+e 11 12 source
+e 13 14 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 23
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Realization
+v 11 Serving
+v 12 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 11 target
+e 0 12 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 9 10 target
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 24
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 25
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Serving
+v 11 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 10 11 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 26
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Serving
+v 11 BusinessService
+v 12 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 10 target
+e 0 12 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 10 11 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 27
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Serving
+v 11 BusinessService
+v 12 Serving
+v 13 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 10 target
+e 0 12 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+e 10 11 source
+e 12 13 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 28
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 BusinessService
+v 10 Serving
+v 11 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 10 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+e 8 9 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 29
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 30
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Realization
+v 8 Serving
+v 9 Serving
+v 10 Serving
+e 0 1 target
+e 0 5 target
+e 0 8 target
+e 0 9 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 6 7 target
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 31
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+
+Support: 10
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189, 158]
+
+-----------------
+
+t # 32
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 7 8 source
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 33
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 BusinessService
+v 9 Serving
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 7 8 source
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 34
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 BusinessService
+v 9 Serving
+v 10 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 7 8 source
+e 9 10 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 35
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 BusinessService
+v 9 Serving
+v 10 BusinessService
+v 11 Serving
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 9 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 7 8 source
+e 9 10 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 36
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 BusinessService
+v 9 Serving
+v 10 BusinessService
+v 11 Serving
+v 12 BusinessService
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 9 target
+e 0 11 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 7 8 source
+e 9 10 source
+e 11 12 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 37
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 BusinessService
+v 9 Serving
+v 10 Serving
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 9 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+e 7 8 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 38
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 Serving
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 8 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 39
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 BusinessService
+v 7 Serving
+v 8 Serving
+v 9 Serving
+e 0 1 target
+e 0 5 target
+e 0 7 target
+e 0 8 target
+e 0 9 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+e 5 6 source
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 40
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 Serving
+e 0 1 target
+e 0 5 target
+e 0 6 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 11
+where: [2, 163, 40, 43, 46, 111, 176, 50, 88, 189, 158]
+
+-----------------
+
+t # 41
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 Serving
+v 7 Serving
+e 0 1 target
+e 0 5 target
+e 0 6 target
+e 0 7 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 189]
+
+-----------------
+
+t # 42
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Realization
+v 5 Serving
+v 6 Serving
+v 7 Serving
+v 8 Serving
+e 0 1 target
+e 0 5 target
+e 0 6 target
+e 0 7 target
+e 0 8 target
+e 1 2 source
+e 2 3 target
+e 2 4 target
+
+Support: 8
+where: [2, 163, 40, 43, 46, 111, 176, 50]
+
+-----------------
+
+t # 43
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+
+Support: 26
+where: [2, 145, 149, 158, 163, 40, 43, 172, 46, 176, 50, 183, 56, 57, 189, 71, 74, 81, 215, 88, 89, 92, 224, 226, 111, 117]
+
+-----------------
+
+t # 44
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+
+Support: 23
+where: [2, 149, 158, 163, 40, 43, 46, 176, 50, 183, 56, 57, 189, 71, 74, 81, 215, 89, 92, 224, 226, 111, 117]
+
+-----------------
+
+t # 45
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+e 0 1 target
+e 0 4 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+
+Support: 23
+where: [2, 149, 158, 163, 40, 43, 46, 176, 50, 183, 56, 57, 189, 71, 74, 81, 215, 89, 92, 224, 226, 111, 117]
+
+-----------------
+
+t # 46
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+
+Support: 19
+where: [2, 158, 163, 40, 43, 46, 176, 50, 183, 56, 57, 189, 74, 81, 215, 92, 226, 111, 117]
+
+-----------------
+
+t # 47
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+
+Support: 18
+where: [2, 163, 226, 40, 74, 43, 46, 111, 176, 81, 50, 117, 183, 56, 57, 215, 92, 189]
+
+-----------------
+
+t # 48
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+
+Support: 17
+where: [2, 163, 226, 40, 74, 43, 46, 111, 176, 50, 117, 183, 56, 57, 215, 92, 189]
+
+-----------------
+
+t # 49
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+
+Support: 14
+where: [2, 163, 40, 74, 43, 46, 111, 176, 50, 117, 183, 215, 92, 189]
+
+-----------------
+
+t # 50
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+
+Support: 13
+where: [2, 163, 40, 74, 43, 46, 111, 176, 50, 117, 183, 215, 92]
+
+-----------------
+
+t # 51
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+v 12 Realization
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+e 11 12 target
+
+Support: 12
+where: [2, 163, 40, 74, 43, 46, 111, 176, 50, 117, 183, 92]
+
+-----------------
+
+t # 52
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+v 12 Realization
+v 13 Serving
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 0 13 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+e 11 12 target
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 92]
+
+-----------------
+
+t # 53
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+v 12 Realization
+v 13 Serving
+v 14 BusinessService
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 0 13 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+e 11 12 target
+e 13 14 source
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 92]
+
+-----------------
+
+t # 54
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+v 12 Realization
+v 13 Serving
+v 14 BusinessService
+v 15 Realization
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 0 13 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+e 11 12 target
+e 13 14 source
+e 14 15 target
+
+Support: 9
+where: [2, 163, 40, 43, 46, 111, 176, 50, 92]
+
+-----------------
+
+t # 55
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+v 12 Realization
+v 13 Serving
+v 14 BusinessService
+v 15 Realization
+v 16 Serving
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 0 13 target
+e 0 16 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+e 11 12 target
+e 13 14 source
+e 14 15 target
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 92]
+
+-----------------
+
+t # 56
+v 0 BusinessRole
+v 1 Serving
+v 2 BusinessService
+v 3 Realization
+v 4 Serving
+v 5 BusinessService
+v 6 Realization
+v 7 Serving
+v 8 BusinessService
+v 9 Realization
+v 10 Serving
+v 11 BusinessService
+v 12 Realization
+v 13 Serving
+v 14 BusinessService
+v 15 Realization
+v 16 Serving
+v 17 Serving
+e 0 1 target
+e 0 4 target
+e 0 7 target
+e 0 10 target
+e 0 13 target
+e 0 16 target
+e 0 17 target
+e 1 2 source
+e 2 3 target
+e 4 5 source
+e 5 6 target
+e 7 8 source
+e 8 9 target
+e 10 11 source
+e 11 12 target
+e 13 14 source
+e 14 15 target
+
+Support: 8
+where: [2, 163, 43, 46, 111, 176, 50, 92]
+
+-----------------
+
