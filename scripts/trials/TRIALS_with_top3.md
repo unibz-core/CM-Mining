@@ -2,7 +2,6 @@
 2. [SINGLE LAYERS](#single-layers)
 3. [COMBINED LAYERS](#combined-layers)
 
-
 ## ALL LAYERS
 
 | # | Layers | Mining Time | Min Support | Min Nodes | Dataset | Total Models | Patterns found | Top 3 Patterns |
