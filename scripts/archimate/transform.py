@@ -4,9 +4,9 @@ from pathlib import Path
 import archimate.types
 
 
-def clean_graph(graph: nx.Graph) -> tuple[nx.Graph, list]:
+def clean_graph(graph: nx.Graph) -> tuple[nx.DiGraph, list]:
     rel_types = archimate.types.relationship_types
-    new_graph = nx.Graph()
+    new_graph = nx.DiGraph()
     truncated_edges = []
 
     # Process all nodes and store nodes corresponding to elements in the new graph (without any changes)
