@@ -1,0 +1,9 @@
+@startuml
+!include <archimate/Archimate>
+
+Strategy_Capability("0", "Capability")
+Strategy_Capability("2", "Capability")
+Strategy_Capability("4", "Capability")
+Rel_Composition("0", "2")
+Rel_Composition("0", "4")
+@enduml

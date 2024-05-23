@@ -1,0 +1,11 @@
+@startuml
+!include <archimate/Archimate>
+
+Motivation_Driver("1", "Driver")
+rectangle "Element" as 0 #line.dashed
+Rel_Association("1", "0")
+rectangle "Element" as 2 #line.dashed
+Rel_Association("1", "2")
+rectangle "Element" as 3 #line.dashed
+Rel_Association("3", "1")
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+!include <archimate/Archimate>
+
+Motivation_Goal("0", "Goal")
+rectangle "Element" as 1 #line.dashed
+Rel_Realization("1", "0")
+rectangle "Element" as 2 #line.dashed
+Rel_Realization("2", "0")
+rectangle "Element" as 3 #line.dashed
+Rel_Realization("3", "0")
+@enduml

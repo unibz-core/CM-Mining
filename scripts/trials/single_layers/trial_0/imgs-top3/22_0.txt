@@ -1,0 +1,13 @@
+@startuml
+!include <archimate/Archimate>
+
+Application_Component("0", "ApplicationComponent")
+Application_Function("2", "ApplicationFunction")
+Application_Process("4", "ApplicationProcess")
+Application_Process("7", "ApplicationProcess")
+Rel_Assignment("0", "2")
+Rel_Composition("2", "4")
+Rel_Composition("2", "7")
+rectangle "Element" as 5 #line.dashed
+Rel_Flow("4", "5")
+@enduml

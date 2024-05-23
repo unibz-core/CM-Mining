@@ -1,0 +1,9 @@
+@startuml
+!include <archimate/Archimate>
+
+Strategy_Capability("0", "Capability")
+Strategy_Capability("2", "Capability")
+Rel_Composition("0", "2")
+rectangle "Element" as 3 #line.dashed
+Rel_Composition("0", "3")
+@enduml

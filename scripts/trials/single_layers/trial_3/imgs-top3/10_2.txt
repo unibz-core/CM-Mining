@@ -1,0 +1,9 @@
+@startuml
+!include <archimate/Archimate>
+
+Strategy_Resource("1", "Resource")
+Strategy_Capability("2", "Capability")
+Rel_Assignment("1", "2")
+rectangle "Element" as 3 #line.dashed
+Rel_Realization("2", "3")
+@enduml

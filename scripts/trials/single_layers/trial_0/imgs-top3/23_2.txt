@@ -1,0 +1,13 @@
+@startuml
+!include <archimate/Archimate>
+
+Application_Component("0", "ApplicationComponent")
+Application_Function("2", "ApplicationFunction")
+Application_Function("4", "ApplicationFunction")
+Application_Function("6", "ApplicationFunction")
+Application_Function("8", "ApplicationFunction")
+Rel_Assignment("0", "2")
+Rel_Assignment("0", "4")
+Rel_Assignment("0", "6")
+Rel_Assignment("0", "8")
+@enduml
