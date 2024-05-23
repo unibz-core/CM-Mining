@@ -1,0 +1,11 @@
+@startuml
+!include <archimate/Archimate>
+
+Application_Component("0", "ApplicationComponent")
+Technology_Service("2", "TechnologyService")
+Application_Component("4", "ApplicationComponent")
+Rel_Serving("0", "2")
+Rel_Serving("2", "4")
+rectangle "Element" as 5 #line.dashed
+Rel_Realization("5", "2")
+@enduml

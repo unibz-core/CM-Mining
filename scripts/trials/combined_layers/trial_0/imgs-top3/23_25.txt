@@ -1,0 +1,11 @@
+@startuml
+!include <archimate/Archimate>
+
+Application_Component("0", "ApplicationComponent")
+Technology_Service("2", "TechnologyService")
+Technology_Node("4", "Node")
+Technology_Service("6", "TechnologyService")
+Rel_Serving("0", "2")
+Rel_Realization("2", "4")
+Rel_Realization("4", "6")
+@enduml
