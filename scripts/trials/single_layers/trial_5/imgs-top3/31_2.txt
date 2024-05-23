@@ -1,9 +1,0 @@
-@startuml
-!include <archimate/Archimate>
-
-Technology_Node("0", "Node")
-Technology_Service("2", "TechnologyService")
-Rel_Realization("0", "2")
-rectangle "Element" as 3 #line.dashed
-Rel_Serving("2", "3")
-@enduml

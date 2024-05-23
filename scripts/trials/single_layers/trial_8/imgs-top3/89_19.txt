@@ -1,9 +1,0 @@
-@startuml
-!include <archimate/Archimate>
-
-Business_Process("0", "BusinessProcess")
-Business_Process("2", "BusinessProcess")
-Rel_Triggering("0", "2")
-rectangle "Element" as 3 #line.dashed
-Rel_Triggering("2", "3")
-@enduml

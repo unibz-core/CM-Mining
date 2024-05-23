@@ -1,9 +1,0 @@
-@startuml
-!include <archimate/Archimate>
-
-Technology_Node("0", "Node")
-Technology_Service("2", "TechnologyService")
-Technology_Service("4", "TechnologyService")
-Rel_Realization("0", "2")
-Rel_Realization("0", "4")
-@enduml
