@@ -229,7 +229,7 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
                     cleaned_pattern_graph[0].add_edge(node_to_add, existing_node, label=edge[1])
                 elif (existing_node, edge_id, {'label': 'source'}) in host_edges:
                     cleaned_pattern_graph[0].add_edge(existing_node, node_to_add, label=edge[1])
-                elif (existing_node, edge_id, {'label': 'general'}) in host_edges:
+                elif (existing_node, edge_id, {'label': 'specific'}) in host_edges:
                     cleaned_pattern_graph[0].add_edge(existing_node, node_to_add, label=edge[1])
                 else:
                     print("WARNING")
