@@ -125,6 +125,7 @@ def step2():
     '''
     print(f"Loading patterns from '{PATTERNS_FILE}'...")
     pattern_graphs = utils.patterns.convertPatterns(PATTERNS_FILE)
+
     print("[bold green]Done![/bold green]\n")
 
     # clustering
@@ -141,6 +142,10 @@ def step2():
         os.mkdir(PATTERNS_DIR)
 
     print("Generating plantUML diagram text (*.txt) files...")
+    
+    # pattern_graphs_clustered = sorted(pattern_graphs_clustered, key=lambda pattern: pattern[0]['pattern_support'], reverse=True)
+    # pattern_graphs_clustered = pattern_graphs_clustered[:100]
+
     for pattern in pattern_graphs_clustered:
         # file path: ./patterns/<cluster>/<pattern_support>_<pattern_index>.txt
         p_cluster_dir = os.path.join(PATTERNS_DIR, pattern[0]['pattern_cluster'])
@@ -182,8 +187,14 @@ def step3():
     # TODO: fully visualize truncated relationship element
     # TODO: add pattern support and index to diagrams
     pattern_graphs = utils.patterns.convertPatterns(PATTERNS_FILE)
-    uploadgraphs = utils.patterns.load_graphs_from_pickle(PICKLE_FILE)
-    archimate.filter.process_pattern(pattern_graphs, uploadgraphs, None)
+    models = import_models(MODELS_DIR)
+
+    graphs = archimate.transform.create_graphs(models, INPUT_DIR)
+    new_graphs = utils.generateinput.process_graphs([], [], graphs)
+    # new_graphs_with_names = utils.generateinput.process_graphs_with_names([], [], graphs)
+    # uploadgraphs = utils.patterns.load_graphs_from_pickle(PICKLE_FILE)
+
+    archimate.filter.process_pattern(pattern_graphs, new_graphs, None)
 
 
 def start():
