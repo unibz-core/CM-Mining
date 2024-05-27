@@ -199,7 +199,6 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
         if not os.path.exists(DOMAIN_PATTERNS_DIR):
             os.mkdir(DOMAIN_PATTERNS_DIR)
 
-
         for idx, pattern in enumerate(find_patterns_cleaned, start=0):
             cleaned_pattern_graph = archimate.transform.clean_graph(pattern[1])
 
@@ -211,21 +210,29 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
             for edge in truncated_edges:
                 edge_id = edge[0]
                 found_edges = [e for e in host_edges if e[0] == edge_id or e[1] == edge_id]
+                # sometimes source or target node is missing (e.g., when element is part of a filtered layer)
+                if len(found_edges) != 2:
+                    print(f"WARNING: Could not visualize truncated edge: {edge}")
+                    continue
 
                 source_node = found_edges[0][0]
                 target_node = found_edges[1][0]
 
-                
                 existing_node = source_node if source_node in cleaned_pattern_graph[0] else target_node
                 node_to_add = target_node if existing_node == source_node else source_node
-
                 node_data = next(node[1] for node in host_nodes if node[0] == node_to_add)
                 cleaned_pattern_graph[0].add_node(node_to_add, **node_data)
 
-                if (source_node, target_node) in host_graph.edges:
-                    cleaned_pattern_graph[0].add_edge(source_node, target_node, label=edge[1])
+                if (node_to_add, edge_id, {'label': 'source'}) in host_edges:
+                    cleaned_pattern_graph[0].add_edge(node_to_add, existing_node, label=edge[1])
+                elif (node_to_add, edge_id, {'label': 'specific'}) in host_edges:
+                    cleaned_pattern_graph[0].add_edge(node_to_add, existing_node, label=edge[1])
+                elif (existing_node, edge_id, {'label': 'source'}) in host_edges:
+                    cleaned_pattern_graph[0].add_edge(existing_node, node_to_add, label=edge[1])
+                elif (existing_node, edge_id, {'label': 'general'}) in host_edges:
+                    cleaned_pattern_graph[0].add_edge(existing_node, node_to_add, label=edge[1])
                 else:
-                    cleaned_pattern_graph[0].add_edge(target_node, source_node, label=edge[1])
+                    print("WARNING")
 
             # file path: ./domain-patterns/<pattern_index>_<pattern_support>
             dir_path = os.path.join(DOMAIN_PATTERNS_DIR, f"{pattern[0]['pattern_index']}_{pattern[0]['pattern_support']}/")
@@ -235,7 +242,6 @@ def process_pattern(pattern_graphs, host_graphs, converted_patterns_filtered):
             title = f"{{ pattern_support: {pattern[0]['pattern_support']}, pattern_index: {pattern[0]['pattern_index']}, model_index: {pattern[0]['model_index']} }}"
 
             fixed_pattern_graph = fix_graphs(cleaned_pattern_graph[0], host_graph)
-
             archimate.visualization.generate_diagram(
                 fixed_pattern_graph, 
                 [],
