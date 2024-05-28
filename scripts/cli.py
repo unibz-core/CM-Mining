@@ -1,6 +1,7 @@
 from typing import Annotated
 import typer
 import archimate.pipeline
+import archimate.statistics
 
 app = typer.Typer()
 
@@ -19,6 +20,10 @@ def step2_diagrams(max_diagrams: Annotated[int, typer.Option(help="Set maximum a
 @app.command()
 def step3():
     archimate.pipeline.step3()
+
+@app.command()
+def stats():
+    archimate.statistics.print_statistics()
 
 if __name__ == "__main__":
     app()
