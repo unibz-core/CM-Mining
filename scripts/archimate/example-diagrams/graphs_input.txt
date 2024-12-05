@@ -1,0 +1,154 @@
+t # Business
+v 0 Representation
+v 1 Product
+v 2 BusinessObject
+v 3 BusinessService
+v 4 BusinessInteraction
+v 5 BusinessEvent
+v 6 BusinessInterface
+v 7 BusinessActor
+v 8 Contract
+v 9 BusinessCollaboration
+v 10 BusinessFunction
+v 11 BusinessRole
+v 12 BusinessProcess
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 4 Flow
+e 4 5 Assignment
+e 5 6 Association
+e 6 7 Realization
+e 7 8 Triggering
+e 8 9 Specialization
+e 9 10 Aggregation
+e 10 11 Serving
+
+t # Application
+v 0 ApplicationInterface
+v 1 ApplicationComponent
+v 2 DataObject
+v 3 ApplicationCollaboration
+v 4 ApplicationService
+v 5 ApplicationFunction
+v 6 ApplicationEvent
+v 7 ApplicationInteraction
+v 8 ApplicationProcess
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 4 Flow
+e 4 5 Assignment
+e 5 6 Association
+e 6 7 Realization
+e 7 8 Triggering
+e 8 0 Specialization
+e 0 1 Aggregation
+e 1 2 Serving
+
+t # Technology
+v 0 Artifact
+v 1 Node
+v 2 TechnologyEvent
+v 3 Equipment
+v 4 Material
+v 5 TechnologyInteraction
+v 6 DistributionNetwork
+v 7 Device
+v 8 SystemSoftware
+v 9 CommunicationNetwork
+v 10 Facility
+v 11 TechnologyService
+v 12 TechnologyInterface
+v 13 TechnologyProcess
+v 14 TechnologyCollaboration
+v 15 TechnologyFunction
+v 16 Path
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 4 Flow
+e 4 5 Assignment
+e 5 6 Association
+e 6 7 Realization
+e 7 8 Triggering
+e 8 9 Specialization
+e 9 10 Aggregation
+e 10 11 Serving
+
+t # Motivation
+v 0 Assessment
+v 1 Value
+v 2 Principle
+v 3 Requirement
+v 4 Meaning
+v 5 Stakeholder
+v 6 Constraint
+v 7 Goal
+v 8 Driver
+v 9 Outcome
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 4 Flow
+e 4 5 Assignment
+e 5 6 Association
+e 6 7 Realization
+e 7 8 Triggering
+e 8 9 Specialization
+e 9 0 Aggregation
+e 0 1 Serving
+
+t # Strategy
+v 0 Capability
+v 1 CourseOfAction
+v 2 Resource
+v 3 ValueStream
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 0 Flow
+e 0 1 Assignment
+e 1 2 Association
+e 2 3 Realization
+e 3 0 Triggering
+e 0 1 Specialization
+e 1 2 Aggregation
+e 2 3 Serving
+
+t # Implementation & Migration
+v 0 ImplementationEvent
+v 1 Plateau
+v 2 WorkPackage
+v 3 Gap
+v 4 Deliverable
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 4 Flow
+e 4 0 Assignment
+e 0 1 Association
+e 1 2 Realization
+e 2 3 Triggering
+e 3 4 Specialization
+e 4 0 Aggregation
+e 0 1 Serving
+
+t # Other
+v 0 Grouping
+v 1 AndJunction
+v 2 OrJunction
+v 3 Junction
+v 4 Location
+e 0 1 Influence
+e 1 2 Composition
+e 2 3 Access
+e 3 4 Flow
+e 4 0 Assignment
+e 0 1 Association
+e 1 2 Realization
+e 2 3 Triggering
+e 3 4 Specialization
+e 4 0 Aggregation
+e 0 1 Serving
+

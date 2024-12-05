@@ -1,0 +1,118 @@
+trial_0_0
+business + application
+900_s
+Selected values: [10, 8]
+300 models 50_200
+503
+
+trial_0_1
+business + application
+900_s
+Selected values: [10, 12]
+300 models 50_200
+7
+
+trial_0_2
+business + strategy
+900_s
+Selected values: [20, 8]
+300 models 50_200
+449
+
+trial_0_3
+business + motivation
+900_s
+Selected values: [10, 8]
+300 models 50_200
+30
+
+trial_0
+business + application + technology
+1800_s
+Selected values: [10, 6]
+245 models 100_1000
+53
+
+trial_1_0
+application + technology
+900_s
+Selected values: [20, 8]
+300 models 50_200
+13
+
+trial_1_1
+application + motivation
+900_s
+Selected values: [20, 8]
+300 models 50_200
+6
+
+trial_1_2
+application + technology + physical
+900_s
+Selected values: [20, 8]
+300 models 50_200
+13
+
+trial_1_3
+application + technology + physical
+900_s
+Selected values: [10, 8]
+300 models 50_200
+33
+
+trial_1
+application + technology + other
+900_s
+Selected values: [8, 6]
+245 models 100_1000
+211
+
+trial_2_0
+motivation + strategy
+900_s
+Selected values: [10, 6]
+300 models 50_200
+0
+
+trial_3_0
+implementation & migration + physical + technology
+900_s
+Selected values: [10, 8]
+300 models 50_200
+28
+
+trial_3_1
+implementation & migration + motivation + other + strategy
+900_s
+Selected values: [10, 8]
+300 models 50_200
+0
+
+trial_2
+technology + physical + implementation_migration
+900_s
+Selected values: [8, 6]
+245 models 100_1000
+56
+
+trial_3
+motivation + strategy + other
+900_s
+Selected values: [8, 6]
+245 models 100_1000
+1
+
+trial_4
+application + technology + physical
+900_s
+Selected values: [10, 8]
+245 models 100_1000
+22
+
+trial_5
+motivation + strategy + other + implementation_migration
+900_s
+Selected values: [8, 8]
+245 models 100_1000
+0

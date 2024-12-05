@@ -1,0 +1,299 @@
+t # 0
+v 0 ApplicationComponent
+v 1 Realization
+v 2 ApplicationService
+v 3 Serving
+v 4 Serving
+v 5 TechnologyService
+v 6 Realization
+v 7 Node
+e 0 1 source
+e 0 4 target
+e 1 2 target
+e 2 3 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 20
+where: [128, 256, 130, 136, 149, 280, 42, 298, 172, 194, 68, 73, 201, 76, 77, 210, 86, 92, 121, 251]
+
+-----------------
+
+t # 1
+v 0 ApplicationComponent
+v 1 Realization
+v 2 ApplicationService
+v 3 Serving
+v 4 TechnologyService
+v 5 Serving
+v 6 ApplicationComponent
+v 7 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+
+Support: 20
+where: [256, 2, 130, 136, 149, 280, 42, 298, 172, 189, 194, 68, 201, 76, 77, 207, 210, 86, 92, 251]
+
+-----------------
+
+t # 2
+v 0 ApplicationComponent
+v 1 Realization
+v 2 ApplicationService
+v 3 Serving
+v 4 TechnologyService
+v 5 Serving
+v 6 ApplicationComponent
+v 7 Realization
+v 8 ApplicationService
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 5 6 target
+e 6 7 source
+e 7 8 target
+
+Support: 20
+where: [256, 2, 130, 136, 149, 280, 42, 298, 172, 189, 194, 68, 201, 76, 77, 207, 210, 86, 92, 251]
+
+-----------------
+
+t # 3
+v 0 ApplicationComponent
+v 1 Realization
+v 2 ApplicationService
+v 3 Serving
+v 4 TechnologyService
+v 5 Serving
+v 6 ApplicationComponent
+v 7 Realization
+v 8 ApplicationService
+v 9 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 9 target
+e 5 6 target
+e 6 7 source
+e 7 8 target
+
+Support: 20
+where: [256, 2, 130, 136, 149, 280, 42, 298, 172, 189, 194, 68, 201, 76, 77, 207, 210, 86, 92, 251]
+
+-----------------
+
+t # 4
+v 0 ApplicationComponent
+v 1 Realization
+v 2 ApplicationService
+v 3 Serving
+v 4 TechnologyService
+v 5 Serving
+v 6 ApplicationComponent
+v 7 Realization
+v 8 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 8 target
+e 5 6 target
+e 6 7 source
+
+Support: 20
+where: [256, 2, 130, 136, 149, 280, 42, 298, 172, 189, 194, 68, 201, 76, 77, 207, 210, 86, 92, 251]
+
+-----------------
+
+t # 5
+v 0 ApplicationComponent
+v 1 Realization
+v 2 ApplicationService
+v 3 Serving
+v 4 TechnologyService
+v 5 Serving
+v 6 ApplicationComponent
+v 7 Realization
+e 0 1 source
+e 0 3 target
+e 1 2 target
+e 3 4 source
+e 4 5 source
+e 4 7 target
+e 5 6 target
+
+Support: 20
+where: [256, 2, 130, 136, 149, 280, 42, 298, 172, 189, 194, 68, 201, 76, 77, 207, 210, 86, 92, 251]
+
+-----------------
+
+t # 6
+v 0 ApplicationComponent
+v 1 Realization
+v 2 Serving
+v 3 TechnologyService
+v 4 Serving
+v 5 ApplicationComponent
+v 6 Realization
+v 7 Realization
+e 0 1 source
+e 0 2 target
+e 2 3 source
+e 3 4 source
+e 3 7 target
+e 4 5 target
+e 5 6 source
+
+Support: 20
+where: [256, 2, 130, 136, 149, 280, 42, 298, 172, 189, 194, 68, 201, 76, 77, 207, 210, 86, 92, 251]
+
+-----------------
+
+t # 7
+v 0 ApplicationComponent
+v 1 Assignment
+v 2 ApplicationFunction
+v 3 Composition
+v 4 ApplicationProcess
+v 5 Flow
+v 6 Composition
+v 7 ApplicationProcess
+e 0 1 source
+e 1 2 target
+e 2 3 source
+e 2 6 source
+e 3 4 target
+e 4 5 source
+e 6 7 target
+
+Support: 22
+where: [128, 134, 11, 13, 23, 158, 286, 35, 163, 37, 38, 167, 180, 186, 197, 83, 93, 224, 230, 108, 250, 255]
+
+-----------------
+
+t # 8
+v 0 ApplicationComponent
+v 1 Assignment
+v 2 ApplicationFunction
+v 3 Assignment
+v 4 ApplicationFunction
+v 5 Assignment
+v 6 ApplicationFunction
+v 7 Assignment
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 7 source
+e 1 2 target
+e 3 4 target
+e 5 6 target
+
+Support: 25
+where: [128, 134, 262, 8, 263, 264, 11, 12, 13, 23, 26, 158, 163, 37, 170, 299, 71, 205, 82, 83, 102, 103, 230, 250, 126]
+
+-----------------
+
+t # 9
+v 0 ApplicationComponent
+v 1 Assignment
+v 2 ApplicationFunction
+v 3 Assignment
+v 4 ApplicationFunction
+v 5 Assignment
+v 6 ApplicationFunction
+v 7 Assignment
+v 8 ApplicationFunction
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 7 source
+e 1 2 target
+e 3 4 target
+e 5 6 target
+e 7 8 target
+
+Support: 23
+where: [128, 134, 262, 8, 263, 264, 11, 12, 13, 23, 26, 158, 163, 37, 170, 71, 205, 82, 83, 102, 230, 250, 126]
+
+-----------------
+
+t # 10
+v 0 ApplicationComponent
+v 1 Composition
+v 2 ApplicationComponent
+v 3 Composition
+v 4 ApplicationComponent
+v 5 Composition
+v 6 ApplicationComponent
+v 7 Composition
+e 0 1 source
+e 0 3 source
+e 0 5 source
+e 0 7 source
+e 1 2 target
+e 3 4 target
+e 5 6 target
+
+Support: 21
+where: [132, 139, 275, 22, 36, 293, 56, 190, 191, 70, 74, 88, 218, 90, 220, 222, 104, 232, 235, 113, 126]
+
+-----------------
+
+t # 11
+v 0 Access
+v 1 ApplicationComponent
+v 2 Assignment
+v 3 ApplicationFunction
+v 4 Assignment
+v 5 ApplicationFunction
+v 6 DataObject
+v 7 Access
+e 0 1 source
+e 0 6 target
+e 1 2 source
+e 1 4 source
+e 2 3 target
+e 4 5 target
+e 6 7 target
+
+Support: 21
+where: [128, 2, 11, 13, 23, 28, 158, 286, 35, 37, 38, 170, 180, 189, 65, 205, 93, 227, 230, 103, 250]
+
+-----------------
+
+t # 12
+v 0 Access
+v 1 ApplicationComponent
+v 2 Access
+v 3 DataObject
+v 4 Access
+v 5 ApplicationComponent
+v 6 DataObject
+v 7 Access
+e 0 1 source
+e 0 6 target
+e 1 2 source
+e 2 3 target
+e 3 4 target
+e 4 5 source
+e 6 7 target
+
+Support: 22
+where: [128, 268, 154, 28, 285, 158, 166, 297, 46, 50, 57, 189, 193, 194, 70, 104, 232, 235, 248, 249, 252, 127]
+
+-----------------
+
+Read:	0.17 s
+Mine:	117.48 s
+Total:	117.65 s

@@ -1,0 +1,62 @@
+trial_0
+application_layer
+900_s
+Selected values: [20, 8]
+300 models 50_200
+6
+
+trial_1
+business_layer
+900_s
+Selected values: [20, 8]
+300 models 50_200
+332
+
+trial_2
+motivation_layer
+900_s
+Selected values: [10, 4]
+300 models 50_200
+42
+
+trial_3
+strategy_layer
+900_s
+Selected values: [8, 4]
+300 models 50_200
+3
+
+trial_4
+technology_layer
+900_s
+Selected values: [8, 4]
+300 models 50_200
+240
+
+trial_5
+technology_layer
+900_s
+Selected values: [20, 4]
+300 models 50_200
+14
+
+trial_6
+motivation_layer
+300_s
+Selected values: [10, 4]
+229 models 100_500
+168
+
+trial_7
+motivation_layer
+300_s
+Selected values: [10, 4]
+292 models 100_500 + 200_500
+415
+
+trial_8
+business_layer
+3600_s
+Selected values: [60, 4]
+292 models 100_1000
+38

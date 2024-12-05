@@ -1,0 +1,14 @@
+@startuml
+!include <archimate/Archimate>
+
+Grouping(0, "Grouping")
+Junction_And(1, "AndJunction")
+Junction_Or(2, "OrJunction")
+Junction_And(3, "Junction")
+Other_Location(4, "Location")
+Rel_Serving(0, 1)
+Rel_Aggregation(0, 4)
+Rel_Realization(1, 2)
+Rel_Triggering(2, 3)
+Rel_Specialization(3, 4)
+@enduml

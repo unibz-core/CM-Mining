@@ -1,0 +1,28 @@
+@startuml
+!include <archimate/Archimate>
+
+Business_Representation(0, "Representation")
+Business_Product(1, "Product")
+Business_Object(2, "BusinessObject")
+Business_Service(3, "BusinessService")
+Business_Interaction(4, "BusinessInteraction")
+Business_Event(5, "BusinessEvent")
+Business_Interface(6, "BusinessInterface")
+Business_Actor(7, "BusinessActor")
+Business_Contract(8, "Contract")
+Business_Collaboration(9, "BusinessCollaboration")
+Business_Function(10, "BusinessFunction")
+Business_Role(11, "BusinessRole")
+Business_Process(12, "BusinessProcess")
+Rel_Influence(0, 1)
+Rel_Composition(1, 2)
+Rel_Access(2, 3)
+Rel_Flow(3, 4)
+Rel_Assignment(4, 5)
+Rel_Association(5, 6)
+Rel_Realization(6, 7)
+Rel_Triggering(7, 8)
+Rel_Specialization(8, 9)
+Rel_Aggregation(9, 10)
+Rel_Serving(10, 11)
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+!include <archimate/Archimate>
+
+Motivation_Assessment(0, "Assessment")
+Motivation_Value(1, "Value")
+Motivation_Principle(2, "Principle")
+Motivation_Requirement(3, "Requirement")
+Motivation_Meaning(4, "Meaning")
+Motivation_Stakeholder(5, "Stakeholder")
+Motivation_Constraint(6, "Constraint")
+Motivation_Goal(7, "Goal")
+Motivation_Driver(8, "Driver")
+Motivation_Outcome(9, "Outcome")
+Rel_Serving(0, 1)
+Rel_Aggregation(0, 9)
+Rel_Composition(1, 2)
+Rel_Access(2, 3)
+Rel_Flow(3, 4)
+Rel_Assignment(4, 5)
+Rel_Association(5, 6)
+Rel_Realization(6, 7)
+Rel_Triggering(7, 8)
+Rel_Specialization(8, 9)
+@enduml

@@ -1,0 +1,14 @@
+input
+domain_patterns
+patterns
+
+# Python
+.venv
+__pycache__
+
+.DS_Store
+
+scripts/archimate/models
+scripts/domain-patterns
+scripts/trials/**/**/imgs/
+scripts/archimate/models_20_200/

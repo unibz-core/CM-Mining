@@ -1,0 +1,14 @@
+@startuml
+!include <archimate/Archimate>
+
+Implementation_Event(0, "ImplementationEvent")
+Implementation_Plateau(1, "Plateau")
+Implementation_WorkPackage(2, "WorkPackage")
+Implementation_Gap(3, "Gap")
+Implementation_Deliverable(4, "Deliverable")
+Rel_Serving(0, 1)
+Rel_Aggregation(0, 4)
+Rel_Realization(1, 2)
+Rel_Triggering(2, 3)
+Rel_Specialization(3, 4)
+@enduml
