@@ -20,13 +20,13 @@ PICKLE_FILE = './input/graphs.pickle'
 PATTERNS_FILE = './input/outputpatterns.txt'
 PATTERNS_DIR = './patterns/'
 PLANTUML_JAR_PATH = "./utils/plantumlGenerator.jar"
-MINING_DURATION = 60
+MINING_DURATION = 3600 #900
 
 def import_models(directory: Path) -> list[dict]:
     models = []
     for file in os.listdir(directory):
         if file.endswith(".json"):
-            file_path = os.path.join(MODELS_DIR, file)
+            file_path = os.path.join(directory, file)
             with open(file_path, encoding='utf-8') as f:
                 models.append(json.load(f))
     return models
@@ -90,9 +90,20 @@ def step1():
     inputs = utils.gspanMiner.gsparameters(gspan_params)
 
     # use timeout_decorator.timeout to handle function timeout
-    @timeout_decorator.timeout(MINING_DURATION)
+    # @timeout_decorator.timeout(MINING_DURATION)
+    # def run_gspan_with_timeout(inputs):
+    #     return utils.gspanMiner.run_gspan(inputs)
+    
+    ########### TEST
+    import func_timeout
     def run_gspan_with_timeout(inputs):
-        return utils.gspanMiner.run_gspan(inputs)
+        patterns = ""
+        try:
+            patterns = func_timeout.func_timeout(MINING_DURATION, utils.gspanMiner.run_gspan, args=(inputs,))
+        except func_timeout.exceptions.FunctionTimedOut:
+            print("Function execution timed out")
+        return patterns
+    ########### TEST
 
     with Progress(
         SpinnerColumn(spinner_name='point'),
@@ -125,7 +136,6 @@ def step2():
     '''
     print(f"Loading patterns from '{PATTERNS_FILE}'...")
     pattern_graphs = utils.patterns.convertPatterns(PATTERNS_FILE)
-
     print("[bold green]Done![/bold green]\n")
 
     # clustering
@@ -142,10 +152,6 @@ def step2():
         os.mkdir(PATTERNS_DIR)
 
     print("Generating plantUML diagram text (*.txt) files...")
-    
-    # pattern_graphs_clustered = sorted(pattern_graphs_clustered, key=lambda pattern: pattern[0]['pattern_support'], reverse=True)
-    # pattern_graphs_clustered = pattern_graphs_clustered[:100]
-
     for pattern in pattern_graphs_clustered:
         # file path: ./patterns/<cluster>/<pattern_support>_<pattern_index>.txt
         p_cluster_dir = os.path.join(PATTERNS_DIR, pattern[0]['pattern_cluster'])
@@ -159,7 +165,7 @@ def step2():
     print(f"[bold green]Done![/bold green] See patterns output in '{PATTERNS_DIR}'\n")
 
 
-def step2_diagrams(max_diagram_amount: int = None):
+def step3(max_diagram_amount: int = None): #here it does not like the "_"
     '''
     Generate plantUML *.png files for patterns.
     Optionally set max amount of diagrams to generate through `max_diagram_amount`.
@@ -179,7 +185,7 @@ def step2_diagrams(max_diagram_amount: int = None):
     print(f"[bold green]Done![/bold green] See output in '{PATTERNS_DIR}'\n")
 
 
-def step3():
+def step4():
     '''
     - Get domain information
     - Generate plantUML *.txt and *.png files for domain information
@@ -187,14 +193,8 @@ def step3():
     # TODO: fully visualize truncated relationship element
     # TODO: add pattern support and index to diagrams
     pattern_graphs = utils.patterns.convertPatterns(PATTERNS_FILE)
-    models = import_models(MODELS_DIR)
-
-    graphs = archimate.transform.create_graphs(models, INPUT_DIR)
-    new_graphs = utils.generateinput.process_graphs([], [], graphs)
-    # new_graphs_with_names = utils.generateinput.process_graphs_with_names([], [], graphs)
-    # uploadgraphs = utils.patterns.load_graphs_from_pickle(PICKLE_FILE)
-
-    archimate.filter.process_pattern(pattern_graphs, new_graphs, None)
+    uploadgraphs = utils.patterns.load_graphs_from_pickle(PICKLE_FILE)
+    archimate.filter.process_pattern(pattern_graphs, uploadgraphs, None)
 
 
 def start():
